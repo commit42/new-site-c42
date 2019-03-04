@@ -1,13 +1,42 @@
-import React from 'react';
-import { Container } from 'semantic-ui-react'
+import React from "react"
+import { Link, graphql } from "gatsby"
 import Layout from '../components/layout'
 
-const BlogPage = () => {
-  return ( 
-    <Layout>
-
+export default function BlogPage({ data }) {
+  const { edges: posts } = data.allMarkdownRemark
+  return (
+    <Layout className="blog-posts">
+      {posts
+        .filter(post => post.node.frontmatter.title.length > 0)
+        .map(({ node: post }) => {
+          return (
+            <div className="blog-post-preview" key={post.id}>
+              <h1>
+                <Link to={post.frontmatter.path}>{post.frontmatter.title}</Link>
+              </h1>
+              <h2>{post.frontmatter.date}</h2>
+              <p>{post.excerpt}</p>
+            </div>
+          )
+        })}
     </Layout>
-   );
+  )
 }
- 
-export default BlogPage;
+
+export const pageQuery = graphql`
+  query BlogPageQuery {
+    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+      edges {
+        node {
+          excerpt(pruneLength: 250)
+          id
+          frontmatter {
+            title
+            date
+            path
+          }
+        }
+      }
+    }
+  }
+`
