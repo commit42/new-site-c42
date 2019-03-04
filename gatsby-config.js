@@ -17,6 +17,7 @@ module.exports = {
         plugins: [],
       },
     },
+    
     // Doit toujours être en dernier
     `gatsby-plugin-netlify-cms`
   ],
