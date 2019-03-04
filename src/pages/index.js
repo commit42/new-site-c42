@@ -1,3 +1,5 @@
-import React from "react"
+import React from "react";
+import 'semantic-ui-css/semantic.min.css'
+import { Header } from 'semantic-ui-react'
 
-export default () => <div>Hello world!</div>
+export default () => <div><Header>Helloworld</Header></div>
