@@ -9,7 +9,7 @@ const IndexPage = () => {
   return (
     <div style={{backgroundColor: '#424242'}}>
       <Layout>
-        <Container style={{marginTop:"30vh", maxWidth:'100%'}}>
+        <Container style={{marginTop:"30vh", maxWidth:'50%'}}>
           <Grid centered>
             <Grid.Row >
               <Grid.Column>
@@ -21,7 +21,7 @@ const IndexPage = () => {
                 <Navigation />
               </Grid.Column>
             </Grid.Row>
-            <Grid.Row>
+            <Grid.Row style={{ maxWidth:'100%'}}>
               <Grid.Column  textAlign="center">
                 <Header as="h1">
                   <a href="https://reactjs.org/" target="_blank">#React</a>
