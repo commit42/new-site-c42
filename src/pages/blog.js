@@ -16,11 +16,12 @@ class BlogPage extends React.Component {
     console.log(posts)
     return (
       <Layout >
-        <Container text>
+        <Container text style={{marginTop:'2%'}}>
           <Grid>
             <Grid.Row>
               <Grid.Column textAlign="center">
                 <h1>Blog</h1>
+                <div style={{height:'5px', backgroundColor:'black',width:'15%', margin:'auto',borderRadius:'10px'}}></div>
               </Grid.Column>
             </Grid.Row>
             <Grid.Row>
