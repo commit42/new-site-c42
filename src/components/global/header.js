@@ -1,6 +1,6 @@
 import React from 'react';
 import './header.scss'
-import { Menu, Container, Image, Icon, Responsive, Grid } from 'semantic-ui-react';
+import { Menu, Container, Image, Icon } from 'semantic-ui-react';
 import { Link } from 'gatsby'
 import Logo from '../../../static/assets/logo-c42.png'
 
