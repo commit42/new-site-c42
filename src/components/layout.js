@@ -3,16 +3,6 @@ import Header from './global/header';
 import Footer from './global/footer';
 import { graphql, StaticQuery } from "gatsby";
 
-// export default ({ children }) => (
-//   <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
-//     <Header />
-//     <div style={{ flex: '1' }}>
-//       {children}
-//     </div>
-//     <Footer />
-//   </div>
-// )
-
 const layout = ({ children, isHome }) => {
   return (
     <StaticQuery
