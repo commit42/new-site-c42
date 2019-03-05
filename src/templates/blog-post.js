@@ -5,7 +5,7 @@ import Layout from '../components/layout'
 export default function Template({ data }) {
   const { markdownRemark: post } = data
   return (
-    <Layout>
+    <Layout isHome={false}>
       <div className="blog-post">
         <h1>{post.frontmatter.title}</h1>
         <div
