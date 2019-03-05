@@ -6,7 +6,7 @@ import Layout from '../components/layout'
 export default function BlogPage({ data }) {
   const { edges: posts } = data.allMarkdownRemark
   return (
-    <Layout className="blog-posts">
+    <Layout >
       <Container>
         <Grid>
           <Grid.Row>

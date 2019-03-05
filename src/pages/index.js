@@ -9,7 +9,7 @@ import logo from '../../static/assets/logo-c42.png'
 const IndexPage = () => {
   return (
     <div style={{ backgroundColor: '#424242' }}>
-      <Layout>
+      <Layout isHome={true}>
         <Container style={{ marginTop: "30vh", maxWidth: '50%' }}>
           <Grid centered>
             <Grid.Row >
