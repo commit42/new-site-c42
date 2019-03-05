@@ -7,7 +7,7 @@ export default function Template({ data }) {
   const { markdownRemark: post } = data
   return (
     <Layout isHome={false}>
-      <Container text style={{marginTop:'5%'}}>
+      <Container text style={{marginTop:'5%', marginBottom:'5%'}}>
         <Header as="h1">{post.frontmatter.title}</Header>
         <div
           className="blog-post-content"
