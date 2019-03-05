@@ -13,7 +13,7 @@ const Navigation = () => {
             inverted
           />
         </Menu.Item>
-        <Menu.Item className="navlink">
+        <Menu.Item as="a" href="tel:+33582959012">
           <Popup
             trigger={<Icon name="phone" size="big" circular inverted></Icon>}
             content='05.82.95.90.12'
