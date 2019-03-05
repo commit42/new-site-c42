@@ -20,12 +20,12 @@ const layout = ({ children, isHome }) => {
       render={data => {
         return (
           <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
-          <Header />
-          <div style={{ flex: '1' }}>
-            {children}
+            <Header />
+            <div style={{ flex: '1' }}>
+              {children}
+            </div>
+            {!isHome && <Footer />}
           </div>
-          {!isHome && <Footer />}
-        </div>
         )
       }}
     />
