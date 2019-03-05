@@ -1,0 +1,15 @@
+.ui.fluid.card.fade{
+  // box-shadow: inherit;
+  // border-radius: inherit;
+  // border-bottom: 1px solid lightgrey;
+  transition: 0.2s ease-in-out;
+
+  &:hover{
+    box-shadow: 0 5px 10px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+    transition: 0.2s ease-in-out;
+  }
+
+  .content>.header:not(.ui){
+    font-size: 2rem;
+  }
+}

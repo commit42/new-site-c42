@@ -1,7 +1,11 @@
 ---
 path: /posts/second-post
-title: test
+title: My second post
 date: 06/03/2019
+tags:
+  - Test
+  - React
+  - Gatsby
 ---
 
 Qu'est-ce que le Lorem Ipsum?
