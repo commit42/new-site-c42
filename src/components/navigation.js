@@ -4,7 +4,7 @@ import './navigation.scss';
 
 const Navigation = () => {
   return (
-      <Menu as={Responsive} inverted borderless style={{ backgroundColor: '#424242', justifyContent: 'center' }}>
+      <Menu as={Responsive} inverted borderless className="navigation" style={{ backgroundColor: '#424242', justifyContent: 'center' }}>
         <Menu.Item as="a" href="mailto:contact@commit42.fr">
           <Popup
             trigger={<Icon name="mail" size="big" circular inverted></Icon>}
