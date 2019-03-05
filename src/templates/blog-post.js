@@ -1,5 +1,5 @@
 import React from "react"
-import { Container } from 'semantic-ui-react'
+import { Container, Header } from 'semantic-ui-react'
 import { graphql } from "gatsby"
 import Layout from '../components/layout'
 
@@ -8,7 +8,7 @@ export default function Template({ data }) {
   return (
     <Layout isHome={false}>
       <Container text style={{marginTop:'5%'}}>
-        <h1>{post.frontmatter.title}</h1>
+        <Header as="h1">{post.frontmatter.title}</Header>
         <div
           className="blog-post-content"
           dangerouslySetInnerHTML={{ __html: post.html }}
