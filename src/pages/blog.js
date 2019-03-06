@@ -16,7 +16,7 @@ class BlogPage extends React.Component {
     console.log(posts)
     return (
       <Layout >
-        <Container text style={{marginTop:'2%'}}>
+        <Container text style={{marginTop:'3rem',marginBottom:'3rem'}}>
           <Grid>
             <Grid.Row>
               <Grid.Column textAlign="center">
