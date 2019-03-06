@@ -6,12 +6,12 @@
 
 ## :rocket: Quick Start
 
-**1.  Forker ce repo**
-**1.  Aller dans le dossier**
+1.  Forker ce repo
+1.  Aller dans le dossier
     ``` 
     cd new-site-c42
     ```
-**1.  Installer les dépendances**
+1.  Installer les dépendances
        ```
        yarn
        ```
@@ -19,13 +19,11 @@
        ```
        npm install
        ```
-
-**1.  Developper l'application**
+       
+1.  Developper l'application
     ``` 
     gatsby develop
 
     ```
 
     Aller voir à l'adresse ```http://localhost:8000```
-
-  
