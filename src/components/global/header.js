@@ -1,25 +1,28 @@
 import React, { Component } from 'react';
 import './header.scss'
-import { Menu, Container, Image, Button, Icon, Sidebar, Segment, Header } from 'semantic-ui-react';
+import { Menu, Container, Image, Icon, Grid, Segment } from 'semantic-ui-react';
 import { Link } from 'gatsby'
 import Logo from '../../../static/assets/logo-c42.png'
 
 
-const Navigation = () => {
+const Header = () => {
 
   return (
-    <Menu borderless inverted stackable size="massive" style={{ backgroundColor: '#424242', borderRadius: '0' }}>
-      <Container>
-        <Menu.Item as={Link} to="/">
-          <Image src={Logo} style={{ maxWidth: "15%" }} />
-        </Menu.Item>
-        <Menu.Item position="right" as={Link} to="/blog">
-          <Icon name="quote right" inverted></Icon>Blog
+    <Menu borderless inverted size="massive" style={{backgroundColor: '#424242',borderRadius:'0'}}>
+      <Grid container>
+        <Grid.Column mobile={10} computer={14}>
+          <Menu.Item as={Link} to="/">
+            <Image src={Logo} style={{ width: "10rem" }} />
           </Menu.Item>
-      </Container>
+        </Grid.Column>
+        <Grid.Column mobile={6} computer={2} verticalAlign='middle'>
+          <Menu.Item as={Link} to="/blog">
+            <Icon name="quote right" inverted></Icon>Blog
+         </Menu.Item>
+        </Grid.Column>
+      </Grid>
     </Menu>
-
   )
 }
 
-export default Navigation;
+export default Header;
