@@ -3,7 +3,7 @@ import Header from './global/header';
 import Footer from './global/footer';
 import { graphql, StaticQuery } from "gatsby";
 
-const layout = ({ children, isHome }) => {
+const layout = ({ children, isHome, path }) => {
   return (
     <StaticQuery
       query={graphql`
@@ -20,7 +20,7 @@ const layout = ({ children, isHome }) => {
       render={data => {
         return (
           <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
-            <Header />
+            <Header path={path} />
             <div style={{ flex: '1' }}>
               {children}
             </div>

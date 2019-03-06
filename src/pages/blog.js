@@ -13,7 +13,6 @@ class BlogPage extends React.Component {
 
   render() {
     const { edges: posts } = this.props.data.allMarkdownRemark
-    console.log(posts)
     return (
       <Layout >
         <Container text style={{marginTop:'3rem',marginBottom:'3rem'}}>
