@@ -1,4 +1,4 @@
-![Logo commit42](/static/assets/logoc42.png)
+![Logo commit42](/src/static/assets/logoc42.png)
 
 # Nouveau Site de commit42 :sparkles:
 
@@ -23,7 +23,6 @@
 1.  Developper l'application
     ``` 
     gatsby develop
-
     ```
 
     Aller voir à l'adresse ```http://localhost:8000```
