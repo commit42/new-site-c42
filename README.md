@@ -1,4 +1,4 @@
-![Logo commit42](https://github.com/commit42/new-site-c42/blob/mvp/static/assets/logo-c42.png)
+![Logo commit42](https://github.com/commit42/new-site-c42/blob/mvp/static/assets/logo-c42.png | width=150)
 
 # Nouveau Site de commit42 :sparkles:
 
