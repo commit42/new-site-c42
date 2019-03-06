@@ -1,5 +1,5 @@
 ---
-path: /posts/second-post
+path: /blog/second-post
 title: My second post
 date: 06/03/2019
 tags:

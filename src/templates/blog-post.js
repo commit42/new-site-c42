@@ -1,4 +1,5 @@
 import React from "react"
+import "./blog-post.scss"
 import { Container, Header } from 'semantic-ui-react'
 import { graphql } from "gatsby"
 import Layout from '../components/layout'

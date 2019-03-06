@@ -1,5 +1,5 @@
 ---
-path: /posts/test
+path: /blog/test
 title: test
 date: 24/03/2019
 tags:

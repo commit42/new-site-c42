@@ -39,7 +39,7 @@ class BlogPage extends React.Component {
                                 <Card.Description>{post.excerpt}</Card.Description>
                               </Card.Content>
                               <Card.Content extra>
-                                {post.frontmatter.tags.map((tag, index) => <Label key={index}>{tag}</Label>)}
+                                {post.frontmatter.tags && post.frontmatter.tags.map((tag, index) => <Label key={index}>{tag}</Label>)}
                               </Card.Content>
                             </Card>
                           </Transition>
