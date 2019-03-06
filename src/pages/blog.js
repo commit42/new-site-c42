@@ -3,6 +3,7 @@ import './blog.scss';
 import { Link, graphql } from "gatsby"
 import { Container, Grid, Card, Transition, Label } from 'semantic-ui-react'
 import Layout from '../components/layout'
+import moment from 'moment'
 
 class BlogPage extends React.Component {
   state = { visible: false }
@@ -35,11 +36,11 @@ class BlogPage extends React.Component {
                             <Card key={post.id} fluid as={Link} to={post.frontmatter.path}>
                               <Card.Content>
                                 <Card.Header >{post.frontmatter.title}</Card.Header>
-                                <Card.Meta>Posté le {post.frontmatter.date}</Card.Meta>
+                                <Card.Meta>{moment(post.frontmatter.date).format('LL')}</Card.Meta>
                                 <Card.Description>{post.excerpt}</Card.Description>
                               </Card.Content>
                               <Card.Content extra>
-                                {post.frontmatter.tags.map((tag, index) => <Label key={index}>{tag}</Label>)}
+                                {post.frontmatter.tags && post.frontmatter.tags.map((tag, index) => <Label key={index}>{tag}</Label>)}
                               </Card.Content>
                             </Card>
                           </Transition>
