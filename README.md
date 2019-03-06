@@ -1,4 +1,4 @@
-![Logo commit42](/src/static/assets/logo-c42.png)
+![Logo commit42](/assets/logo-c42.png)
 
 # Nouveau Site de commit42 :sparkles:
 
