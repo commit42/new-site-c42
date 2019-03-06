@@ -16,7 +16,7 @@ class IndexPage extends Component {
   render() {
     return (
       <div style={{ backgroundColor: '#424242' }}>
-        <Layout isHome={true}>
+        <Layout isHome={true} path={this.props.location.pathname}>
           <Container style={{ marginTop: "30vh", maxWidth: '50%' }}>
             <Grid centered>
               <Grid.Row >
