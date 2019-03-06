@@ -23,7 +23,7 @@ const Footer = () => {
           </Grid.Row>
           <Grid.Row textAlign="center">
             <Grid.Column mobile={16} tablet={16} computer={16}>
-              {`Tous droits réservés commit42 © ${new Date().getFullYear()} | Mentions légales`}
+              {`Tous droits réservés commit42 © ${new Date().getFullYear()}`}
             </Grid.Column>
           </Grid.Row>
         </Grid>
