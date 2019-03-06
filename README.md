@@ -1,4 +1,4 @@
-![Logo commit42](/static/assets/logoc42.png)
+![Logo commit42](https://github.com/commit42/new-site-c42/blob/mvp/static/assets/logo-c42.png)
 
 # Nouveau Site de commit42 :sparkles:
 
@@ -6,12 +6,12 @@
 
 ## :rocket: Quick Start
 
-**1.  Forker ce repo**
-**1.  Aller dans le dossier**
+1.  Forker ce repo
+1.  Aller dans le dossier
     ``` 
     cd new-site-c42
     ```
-**1.  Installer les dépendances**
+1.  Installer les dépendances
        ```
        yarn
        ```
@@ -19,13 +19,10 @@
        ```
        npm install
        ```
-
-**1.  Developper l'application**
+       
+1.  Developper l'application
     ``` 
     gatsby develop
-
     ```
 
     Aller voir à l'adresse ```http://localhost:8000```
-
-  
