@@ -33,7 +33,7 @@ class BlogPage extends React.Component {
                       .map(({ node: post }) => {
                         return (
                           <Transition visible={this.state.visible} animation='fade up' duration={800}>
-                            <Card key={post.id} fluid as={Link} to={post.frontmatter.path}>
+                            <Card key={post.id} fluid as={Link} to={post.frontmatter.slug}>
                               <Card.Content>
                                 <Card.Header >{post.frontmatter.title}</Card.Header>
                                 <Card.Meta>{moment(post.frontmatter.date).format('LL')}</Card.Meta>
@@ -69,7 +69,7 @@ export const pageQuery = graphql`
           frontmatter {
             title
             date
-            path
+            slug
             tags
           }
         }
