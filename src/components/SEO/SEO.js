@@ -2,6 +2,7 @@ import React from 'react';
 import { Helmet } from "react-helmet"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
+import favicon from '../../../static/favicon.png'
 import Facebook from './Facebook'
 import Twitter from './Twitter'
 
@@ -23,14 +24,16 @@ const SEO = ({ title, description, image, pathname, article }) => {
         const seo = {
           title: title || defaultTitle,
           description: description || defaultDescription,
-          image: `${siteUrl}${image || defaultImage}`,
+          image: `${image || defaultImage}`,
           url: `${siteUrl}${pathname || '/'}`
         }
 
         return (
           <>
             <Helmet title={seo.title}>
+              <html lang="fr" />
               <meta name="description" content={seo.description} />
+              <link rel="shortcut icon" href={favicon}></link>
               <meta name="image" content={seo.image} />
               {seo.url && <meta property="og:url" content={seo.url} />}
               {(article ? true : null) && (
@@ -49,11 +52,11 @@ const SEO = ({ title, description, image, pathname, article }) => {
               type={article ? 'article' : 'website'}
               url={seo.url}
             />
-            <Twitter 
-              title={seo.title} 
-              image={seo.image} 
-              desc={seo.description} 
-              username={twitterUsername} 
+            <Twitter
+              title={seo.title}
+              image={seo.image}
+              desc={seo.description}
+              username={twitterUsername}
             />
           </>
         )
