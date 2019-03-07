@@ -2,6 +2,7 @@ import React from 'react';
 import { Helmet } from "react-helmet"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
+import favicon from '../../../static/favicon.png'
 import Facebook from './Facebook'
 import Twitter from './Twitter'
 
@@ -31,6 +32,7 @@ const SEO = ({ title, description, image, pathname, article }) => {
           <>
             <Helmet title={seo.title}>
               <meta name="description" content={seo.description} />
+              <link rel="shortcut icon" href={favicon}></link>
               <meta name="image" content={seo.image} />
               {seo.url && <meta property="og:url" content={seo.url} />}
               {(article ? true : null) && (
