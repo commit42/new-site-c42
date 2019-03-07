@@ -21,7 +21,7 @@ class IndexPage extends Component {
             <Grid centered>
               <Grid.Row >
                 <Grid.Column>
-                  <Transition visible={this.state.visible} animation='fade down' duration={2000}>
+                  <Transition visible={this.state.visible} animation='fade down' duration={1000}>
                     <Image src={logo} centered />
                   </Transition>
                 </Grid.Column>
@@ -33,7 +33,7 @@ class IndexPage extends Component {
               </Grid.Row>
               <Grid.Row style={{ marginTop: '3vh' }}>
                 <Grid.Column textAlign="center">
-                  <Transition visible={this.state.visible} animation='vertical flip' duration={2000}>
+                  <Transition visible={this.state.visible} animation='vertical flip' duration={1500}>
                     <Header as="h1">
                       <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer" >#React</a>
                       <a href="https://developers.google.com/web/progressive-web-apps/" target="_blank" rel="noopener noreferrer">#PWA</a>
