@@ -11,7 +11,7 @@ export default function Template({ data }) {
     <Layout isHome={false}>
       <SEO
         title={post.frontmatter.title}
-        description={post.frontmatter.description || post.exerpt || 'nothin'}
+        description={post.excerpt || 'nothing here'}
         image={post.frontmatter.thumbnail}
         pathname={post.fields.slug}
         article

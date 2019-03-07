@@ -14,11 +14,15 @@ class BlogPage extends React.Component {
   }
 
   render() {
-    const { edges: posts } = this.props.data.allMarkdownRemark
+    const { edges: posts } = this.props.data.allMarkdownRemark;
 
     return (
-      <Layout >
-        <SEO />
+      <Layout>
+        <SEO
+          title="Blog | commit42"
+          description="Super blog trop cool de commit42"
+          pathname="/blog"
+        />
         <Container text style={{ marginTop: '3rem', marginBottom: '3rem' }}>
           <Grid>
             <Grid.Row>

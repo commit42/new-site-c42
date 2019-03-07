@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'commit42',
+    title: 'commit42 | Studio de développement Web',
     description: 'Studio de développement Web à Toulouse - React - Progressive Web Apps - CakePHP',
     url: 'commit42.fr',
     image: '',
