@@ -5,13 +5,15 @@ backend:
 media_folder: static/assets
 public_folder: /assets
 
+publish_mode: editorial_workflow
+
 collections:
   - name: blog
     label: Blog
     folder: blog
     create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - { name: path, label: Path }
       - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
