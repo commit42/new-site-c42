@@ -14,14 +14,15 @@ class BlogPage extends React.Component {
 
   render() {
     const { edges: posts } = this.props.data.allMarkdownRemark
+
     return (
       <Layout >
-        <Container text style={{marginTop:'3rem',marginBottom:'3rem'}}>
+        <Container text style={{ marginTop: '3rem', marginBottom: '3rem' }}>
           <Grid>
             <Grid.Row>
               <Grid.Column textAlign="center">
                 <h1>Blog</h1>
-                <div style={{height:'5px', backgroundColor:'black',width:'15%', margin:'auto',borderRadius:'10px'}}></div>
+                <div style={{ height: '5px', backgroundColor: 'black', width: '15%', margin: 'auto', borderRadius: '10px' }}></div>
               </Grid.Column>
             </Grid.Row>
             <Grid.Row>
@@ -33,7 +34,7 @@ class BlogPage extends React.Component {
                       .map(({ node: post }) => {
                         return (
                           <Transition visible={this.state.visible} animation='fade up' duration={800}>
-                            <Card key={post.id} fluid as={Link} to={post.frontmatter.slug}>
+                            <Card key={post.id} fluid as={Link} to={post.fields.slug}>
                               <Card.Content>
                                 <Card.Header >{post.frontmatter.title}</Card.Header>
                                 <Card.Meta>{moment(post.frontmatter.date).format('LL')}</Card.Meta>
@@ -44,7 +45,7 @@ class BlogPage extends React.Component {
                               </Card.Content>
                             </Card>
                           </Transition>
-                          
+
                         )
                       })
                   }
@@ -66,10 +67,12 @@ export const pageQuery = graphql`
         node {
           excerpt(pruneLength: 250)
           id
+          fields {
+            slug
+          }
           frontmatter {
             title
             date
-            slug
             tags
           }
         }
