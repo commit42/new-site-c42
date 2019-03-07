@@ -2,7 +2,7 @@ import React from "react"
 import "./blog-post.scss"
 import { Container, Header } from 'semantic-ui-react'
 import { graphql } from "gatsby"
-import SEO from '../components/SEO'
+import SEO from '../components/SEO/SEO'
 import Layout from '../components/layout'
 
 export default function Template({ data }) {
