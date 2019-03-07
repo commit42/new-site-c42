@@ -13,9 +13,8 @@ collections:
     folder: blog
     create: true
     slug: "{{slug}}"
-    preview_path: "blog/{{slug}}"
+    preview_path: "blog/{{year}}/{{month}}/{{slug}}"
     fields:
-      - { name: path, label: path, default: "{{slug}}" }
       - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
