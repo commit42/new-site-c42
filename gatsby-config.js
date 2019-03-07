@@ -1,11 +1,16 @@
 module.exports = {
   siteMetadata: {
     title: 'commit42',
+    description: 'Studio de développement Web à Toulouse - React - Progressive Web Apps - CakePHP',
+    url: 'commit42.fr',
+    image: '',
+    twitterUsername: '@commit42'
   },
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
