@@ -24,13 +24,14 @@ const SEO = ({ title, description, image, pathname, article }) => {
         const seo = {
           title: title || defaultTitle,
           description: description || defaultDescription,
-          image: `${siteUrl}${image || defaultImage}`,
+          image: `${image || defaultImage}`,
           url: `${siteUrl}${pathname || '/'}`
         }
 
         return (
           <>
             <Helmet title={seo.title}>
+              <html lang="fr" />
               <meta name="description" content={seo.description} />
               <link rel="shortcut icon" href={favicon}></link>
               <meta name="image" content={seo.image} />
@@ -51,11 +52,11 @@ const SEO = ({ title, description, image, pathname, article }) => {
               type={article ? 'article' : 'website'}
               url={seo.url}
             />
-            <Twitter 
-              title={seo.title} 
-              image={seo.image} 
-              desc={seo.description} 
-              username={twitterUsername} 
+            <Twitter
+              title={seo.title}
+              image={seo.image}
+              desc={seo.description}
+              username={twitterUsername}
             />
           </>
         )
