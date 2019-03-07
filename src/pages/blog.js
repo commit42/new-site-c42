@@ -2,6 +2,7 @@ import React from "react"
 import './blog.scss';
 import { Link, graphql } from "gatsby"
 import { Container, Grid, Card, Transition, Label } from 'semantic-ui-react'
+import SEO from '../components/SEO'
 import Layout from '../components/layout'
 import moment from 'moment'
 
@@ -13,10 +14,15 @@ class BlogPage extends React.Component {
   }
 
   render() {
-    const { edges: posts } = this.props.data.allMarkdownRemark
+    const { edges: posts } = this.props.data.allMarkdownRemark;
 
     return (
-      <Layout >
+      <Layout>
+        <SEO
+          title="Blog | commit42"
+          description="Super blog trop cool de commit42"
+          pathname="/blog"
+        />
         <Container text style={{ marginTop: '3rem', marginBottom: '3rem' }}>
           <Grid>
             <Grid.Row>

@@ -2,6 +2,7 @@
 title: "Are We Live"
 date: 2018-01-02T14:53:14+01:00
 draft: false
+thumbnail: /assets/bureau.jpg
 aliases:
     - /posts/are-we-live/
 ---

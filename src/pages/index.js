@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import 'semantic-ui-css/semantic.min.css'
 import './index.scss';
 import { Image, Container, Grid, Header, Transition } from 'semantic-ui-react'
+import SEO from "../components/SEO"
 import Layout from "../components/layout";
 import Navigation from '../components/navigation';
 import logo from '../../static/assets/logo-c42.png'
@@ -17,6 +18,7 @@ class IndexPage extends Component {
     return (
       <div style={{ backgroundColor: '#424242' }}>
         <Layout isHome={true} path={this.props.location.pathname}>
+          <SEO />
           <Container style={{ marginTop: "30vh", maxWidth: '50%' }}>
             <Grid centered>
               <Grid.Row >
