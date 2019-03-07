@@ -1,5 +1,4 @@
 import React from "react";
-import SEO from "./global/SEO"
 import Header from './global/header';
 import Footer from './global/footer';
 import { graphql, StaticQuery } from "gatsby";
@@ -21,7 +20,6 @@ const layout = ({ children, isHome, path }) => {
       render={data => {
         return (
           <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
-            <SEO />
               <Header path={path} />
               <div style={{ flex: '1' }}>
                 {children}

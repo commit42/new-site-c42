@@ -2,6 +2,7 @@ import React from "react"
 import './blog.scss';
 import { Link, graphql } from "gatsby"
 import { Container, Grid, Card, Transition, Label } from 'semantic-ui-react'
+import SEO from '../components/SEO'
 import Layout from '../components/layout'
 import moment from 'moment'
 
@@ -17,6 +18,7 @@ class BlogPage extends React.Component {
 
     return (
       <Layout >
+        <SEO />
         <Container text style={{ marginTop: '3rem', marginBottom: '3rem' }}>
           <Grid>
             <Grid.Row>
