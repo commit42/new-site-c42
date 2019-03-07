@@ -32,7 +32,7 @@ class BlogPage extends React.Component {
                       .filter(post => post.node.frontmatter.title.length > 0)
                       .map(({ node: post }) => {
                         return (
-                          <Transition visible={this.state.visible} animation='fade up' duration={1200}>
+                          <Transition visible={this.state.visible} animation='fade up' duration={800}>
                             <Card key={post.id} fluid as={Link} to={post.frontmatter.path}>
                               <Card.Content>
                                 <Card.Header >{post.frontmatter.title}</Card.Header>
