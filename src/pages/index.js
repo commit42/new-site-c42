@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import 'semantic-ui-css/semantic.min.css'
 import './index.scss';
 import { Image, Container, Grid, Header, Transition } from 'semantic-ui-react'
-import SEO from "../components/SEO"
+import SEO from "../components/SEO/SEO"
 import Layout from "../components/layout";
 import Navigation from '../components/navigation';
 import logo from '../../static/assets/logo-c42.png'
