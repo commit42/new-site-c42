@@ -17,6 +17,7 @@
     "gatsby-plugin-netlify-cms": "^3.0.12",
     "gatsby-plugin-sass": "^2.0.10",
     "gatsby-plugin-sharp": "^2.0.25",
+    "gatsby-plugin-slug": "^1.0.1",
     "gatsby-remark-copy-linked-files": "^2.0.9",
     "gatsby-remark-images": "^3.0.6",
     "gatsby-remark-relative-images": "^0.2.2",
