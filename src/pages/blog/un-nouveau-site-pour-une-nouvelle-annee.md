@@ -1,5 +1,4 @@
 ---
-path: /blog/un-nouveau-site-pour-un-nouvelle-annee
 title:  "Un nouveau site pour une nouvelle année"
 date: 2019-02-21T11:16:14+01:00
 tags:  ["gatsby",  "PWA",  "React", "Strapi"]

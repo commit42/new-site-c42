@@ -1,5 +1,4 @@
 ---
-path: /blog/commit-42-recrute-un-developpeur-web-a-toulouse/
 title: "Soirée 'commit 42 recrute'"
 date: 2018-01-02T16:15:04+01:00
 subtitle: "Rdv le jeudi 11 janvier à Etincelle coworking"

@@ -1,5 +1,4 @@
 ---
-path: /blog/8-mois-apres-le-lancement-retrospective
 title: "8 mois après notre lancement, rétrospective de commit42"
 date: 2018-03-21T11:15:04+01:00
 draft: false

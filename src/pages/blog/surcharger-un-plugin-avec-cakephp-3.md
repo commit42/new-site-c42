@@ -1,5 +1,4 @@
 ---
-path: /blog/surcharger-un-plugin-avec-cakephp-3
 title: "Surcharger un plugin avec CakePHP 3"
 date: 2019-01-09T16:40:00+01:00
 draft: false

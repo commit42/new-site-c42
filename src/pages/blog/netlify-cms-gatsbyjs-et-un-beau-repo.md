@@ -1,5 +1,4 @@
 ---
-path: /blog/netlifycms-gatsbyjs-repo
 title:  "Netlify CMS, GatsbyJS et un repo tout beau"
 date: 2019-02-28
 draft:  false

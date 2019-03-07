@@ -1,5 +1,4 @@
 ---
-path: /blog/la-gestion-de-projet-toute-une-organisation
 title:  "La gestion de projet, toute une organisation"
 date: 2019-02-28
 draft:  false

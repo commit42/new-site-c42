@@ -1,5 +1,4 @@
 ---
-path: /blog/nouveau-chef-de-projet
 title: "Un nouveau chef de projet arrive à commit42"
 date: 2018-04-16T10:15:04+01:00
 tags: ["pwa", "react", "recrutement", "lms scorm", "toulouse"]

@@ -1,5 +1,4 @@
 ---
-path: /blog/are-we-live
 title: "Are We Live"
 date: 2018-01-02T14:53:14+01:00
 draft: false
