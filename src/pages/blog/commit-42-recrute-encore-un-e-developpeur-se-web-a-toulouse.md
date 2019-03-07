@@ -1,5 +1,4 @@
 ---
-path: /blog/commit-42-recrute-encore-un-e-developpeur-se-web-a-toulouse/
 title: "commit42 recrute (toujours) un⋅e développeur⋅se web back ou Full Stack à Toulouse"
 date: 2018-09-18T10:02:00+01:00
 draft: false

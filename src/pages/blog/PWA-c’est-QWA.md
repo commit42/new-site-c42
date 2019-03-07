@@ -1,5 +1,4 @@
 ---
-path: /blog/pwa-cest-qwa
 title: "PWA, c’est QWA ?"
 date: 2019-02-05T10:02:00+01:00
 draft: false

@@ -1,5 +1,4 @@
 ---
-path: /blog/securiser-wordpress
 title: "Sécuriser son site Wordpress en 2018"
 date: 2018-08-03T11:40:00+01:00
 draft: false

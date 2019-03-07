@@ -1,5 +1,4 @@
 ---
-path: /blog/du-sang-frais-dans-nos-rangs
 title: "Du sang frais dans nos rangs !"
 date: 2018-07-10T10:02:00+01:00
 draft: false

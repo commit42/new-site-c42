@@ -1,5 +1,4 @@
 ---
-path: /blog/commit-42-recrute-un-developpeur-web/
 title: "commit 42 recrute Un Developpeur Web a Toulouse"
 date: 2018-02-01T15:15:04+01:00
 subtitle: "et nous cherchons surtout un potentiel incroyable !"
