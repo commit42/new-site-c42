@@ -15,6 +15,7 @@ collections:
     slug: "{{slug}}"
     preview_path: "blog/{{slug}}"
     fields:
+      - { name: path, label: path, default: "{{slug}}" }
       - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
