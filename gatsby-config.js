@@ -6,20 +6,17 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-slug`,
-    `gatsby-plugin-netlify-cms-paths`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/blog`,
-        name: "markdown-pages"
-      }
+        name: 'pages',
+        path: `${__dirname}/src/pages`,
+      },
     },
     {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
-          `gatsby-plugin-netlify-cms-paths`,
           {
             resolve: `gatsby-remark-relative-images`,
             options: {

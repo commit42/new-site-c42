@@ -10,10 +10,9 @@ publish_mode: editorial_workflow
 collections:
   - name: blog
     label: Blog
-    folder: blog
+    folder: /src/pages/blog
     create: true
     slug: "{{slug}}"
-    preview_path: "blog/{{year}}/{{month}}/{{slug}}"
     fields:
       - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
