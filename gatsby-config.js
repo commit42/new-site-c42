@@ -23,6 +23,7 @@ module.exports = {
       options: {
         plugins: [
           `gatsby-remark-emoji`,
+          `gatsby-remark-prismjs`,
           {
             resolve: `gatsby-remark-relative-images`,
             options: {
@@ -41,6 +42,7 @@ module.exports = {
               destinationDir: 'static',
             },
           },
+          
         ],
       },
     },
