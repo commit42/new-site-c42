@@ -1,6 +1,6 @@
 ---
 title:  "Netlify CMS, GatsbyJS et un repo tout beau"
-date: 2019-02-28
+date: 2019-03-07
 draft:  false
 tags:  ["NetlifyCMS","GatsbyJS","Netlify"]
 ---
