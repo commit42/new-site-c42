@@ -62,7 +62,7 @@ Le nom de ce fichier est arbitraire, c’est là que seront stocké les fichiers
 De la même façon que dans un projet React, le dossier ```/components``` contient tous les composants. Dans ce dossier on trouvera également un fichier ```layout.js``` car dans Gatsby le layout est un composant qui va contenir toutes les parties redondantes du site (menu, navigation, footer…). Le composant doit en principe entourer les autres composants:
 
 ```jsx
-layout.js
+src/components/layout.js
 
 import React from "react";
 import Navigation from "./global/navigation";
@@ -78,7 +78,8 @@ export default ({ children }) => (
 ```
 
 ```jsx
-index.js
+src/pages/index.js
+
 import React from "react";
 import Layout from "../components/layout";
 
@@ -102,7 +103,7 @@ Ce dossier contient toutes les pages du site. A chaque fois qu’un fichier est 
 Par exemple le fichier ```Articles.js``` donnera la route suivante ```http://localhost/Articles```.
 
 
-### ```/src/templates
+### ```/src/templates```
 
 Les templates sont des fichiers qui donnent la structure pour un même type de données. Dans mon cas je vais avoir un template pour les articles de blog, qui pourrait par exemple donner ça:
 
@@ -160,7 +161,7 @@ export const pageQuery = graphql`
 
 *Exemple:*
 
-```markdown
+```
 ---
 title: Article 1
 Author: Eva
