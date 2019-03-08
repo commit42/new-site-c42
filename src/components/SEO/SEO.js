@@ -33,17 +33,9 @@ const SEO = ({ title, description, image, pathname, article }) => {
             <Helmet title={seo.title}>
               <html lang="fr" />
               <meta name="description" content={seo.description} />
-              <link rel="shortcut icon" href={favicon}></link>
               <meta name="image" content={seo.image} />
-              {seo.url && <meta property="og:url" content={seo.url} />}
-              {(article ? true : null) && (
-                <meta property="og:type" content="article" />
-              )}
-              {seo.title && <meta property="og:title" content={seo.title} />}
-              {seo.description && (
-                <meta property="og:description" content={seo.description} />
-              )}
-              {seo.image && <meta property="og:image" content={seo.image} />}
+              <link rel="shortcut icon" href={favicon}></link>
+
             </Helmet>
             <Facebook
               desc={seo.description}
