@@ -13,6 +13,7 @@ collections:
     folder: src/pages/blog
     create: true
     slug: "{{slug}}"
+    preview_path: "blog/{{slug}}"
     fields:
       - { name: title, label: Title }
       - { name: date, label: Date, widget: date }
