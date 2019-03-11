@@ -20,7 +20,7 @@ module.exports = {
         mergeDefaultDirectives: true,
         directives: {
           "script-src": "'self' www.google-analytics.com",
-          "style-src": "'self' 'unsafe-inline'",
+          "style-src": "'self' https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&subset=latin 'unsafe-inline'",
           "img-src": "'self' data: www.google-analytics.com"
           // you can add your directives or override defaults
         }
