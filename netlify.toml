@@ -1,6 +1,9 @@
 [[headers]]
+  # Define which paths this specific [[headers]] block will cover.
+  for = "/*"
 
   [headers.values]
     X-Frame-Options = "DENY"
     X-XSS-Protection = "1; mode=block"
-    Content-Security-Policy = "default-src 'none'; script-src 'self'; connect-src 'self'; img-src 'self'; style-src 'self';"
+    Content-Security-Policy = "frame-ancestors https://www.facebook.com"
+
