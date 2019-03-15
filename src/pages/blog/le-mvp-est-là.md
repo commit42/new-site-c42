@@ -212,12 +212,12 @@ const  SEO  =  ({  title,  description,  image,  pathname,  article  })  =>  {
               image={seo.image}
               desc={seo.description}
               username={twitterUsername}
-	      />
-	    </>
-           )
-         }}
-      />
-   );
+            />
+          </>
+         )  
+       }}
+    />
+  );
 }
 
 export  default SEO;
