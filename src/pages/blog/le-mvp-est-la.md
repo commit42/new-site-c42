@@ -436,42 +436,42 @@ import SEO from  '../components/SEO/SEO'
 import Layout from  '../components/layout'  
   
 export  default  function  Template({ data }) {  
-	const { markdownRemark: post } = data  
-	return (  
-		<Layout isHome={false}>  
-			<SEO  
-			title={post.frontmatter.title}  
-			description={post.excerpt || 'nothing here'}  
-			image={post.frontmatter.thumbnail}  
-			pathname={post.fields.slug}  
-			article  
-			/>  
-			<Container text style={{ marginTop: '5%', marginBottom: '5%' }}>  
-				<Header as="h1">{post.frontmatter.title}</Header>  
-				<div  
-				className="blog-post-content"  
-				dangerouslySetInnerHTML={{ __html: post.html }}  
-				/>  
-			</Container>  
-		</Layout>  
-	)  
+  const { markdownRemark: post } = data  
+  return (  
+    <Layout isHome={false}>  
+      <SEO  
+        title={post.frontmatter.title}  
+        description={post.excerpt || 'nothing here'}  
+        image={post.frontmatter.thumbnail}  
+        pathname={post.fields.slug}  
+        article  
+       />  
+       <Container text style={{ marginTop: '5%', marginBottom: '5%' }}>  
+         <Header as="h1">{post.frontmatter.title}</Header>  
+         <div 
+           className="blog-post-content"  
+           dangerouslySetInnerHTML={{ __html: post.html }}  
+         />  
+       </Container>  
+     </Layout>  
+   )  
 }  
   
 export const pageQuery = graphql`  
-query BlogPostBySlug($slug: String!) {  
-		markdownRemark(fields: {slug: {eq: $slug}}) {  
-			html  
-			excerpt  
-			fields{  
-				slug  
-			}  
-			frontmatter {  
-				date  
-				title  
-				thumbnail  
-			}  
-		}  
-	}  
+  query BlogPostBySlug($slug: String!) {  
+    markdownRemark(fields: {slug: {eq: $slug}}) {  
+      html  
+      excerpt  
+      fields{  
+        slug  
+      }  
+      frontmatter {  
+        date  
+        title  
+        thumbnail  
+      }  
+    }  
+  }  
 `
 ```
 
@@ -479,11 +479,11 @@ Les “proptypes” utilisées à la fin de chaque composant sont une façon de 
 
 ```jsx
 SEO.propTypes = {  
-	title: PropTypes.string,  
-	description: PropTypes.string,  
-	image: PropTypes.string,  
-	pathname: PropTypes.string,  
-	article: PropTypes.bool,  
+  title: PropTypes.string,  
+  description: PropTypes.string,  
+  image: PropTypes.string,  
+  pathname: PropTypes.string,  
+  article: PropTypes.bool,  
 }
 ```
 
