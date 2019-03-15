@@ -7,15 +7,17 @@ public_folder: /assets
 
 publish_mode: editorial_workflow
 
+slug:
+  encoding: "ascii"
+  clean_accents: true
+  sanitize_replacement: "-"
+
 collections:
   - name: blog
     label: Blog
     folder: src/pages/blog
     create: true
-    slug:
-      encoding: "ascii"
-      clean_accents: true
-      sanitize_replacement: "-"
+    slug: "{{slug}}"
     preview_path: "blog/{{slug}}"
     fields:
       - { name: title, label: Title }
