@@ -93,7 +93,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       const value = createFilePath({ node, getNode })  
 	createNodeField({  
           name: `slug`,  
-	  node,  
+	      node,  
           value,  
        })  
     }  
@@ -174,18 +174,18 @@ import Twitter from  './Twitter'
 const  SEO  =  ({  title,  description,  image,  pathname,  article  })  =>  {
   return (
     <StaticQuery
-	query={query}
-	   render={({
-	      site: {
-		siteMetadata: {
-		    defaultTitle,
-		    defaultDescription,
-	            siteUrl,
-		    defaultImage,
-		    twitterUsername,
-		}
-	      }
-	}) => {
+	   query={query}
+	      render={({
+	         site: {
+		       siteMetadata: {
+		          defaultTitle,
+		          defaultDescription,
+                  siteUrl,
+		          defaultImage,
+		          twitterUsername,
+		        }
+              }
+	       }) => {
 	const  seo = {
 	    title: title || defaultTitle,
 	    description: description || defaultDescription,
