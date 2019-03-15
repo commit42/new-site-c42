@@ -173,25 +173,25 @@ import Twitter from  './Twitter'
 
 const  SEO  =  ({  title,  description,  image,  pathname,  article  })  =>  {
   return (
-    <StaticQuery
-	   query={query}
-	      render={({
-	         site: {
-		       siteMetadata: {
-		          defaultTitle,
-		          defaultDescription,
-                  siteUrl,
-		          defaultImage,
-		          twitterUsername,
-		        }
-              }
-	       }) => {
-	const  seo = {
-	    title: title || defaultTitle,
-	    description: description || defaultDescription,
-	    image: `${siteUrl}${image  ||  defaultImage}`,
-	    url: `${siteUrl}${pathname  ||  '/'}`
-	}  
+    <StaticQuery 
+      query={query}
+      render={({
+        site: {
+          siteMetadata: {
+            defaultTitle,
+            defaultDescription,
+            siteUrl,
+            defaultImage,
+            twitterUsername,
+          } 
+        }
+      }) => {
+        const seo = {
+          title: title || defaultTitle,
+          description: description || defaultDescription,
+          image: `${siteUrl}${image  ||  defaultImage}`,
+          url: `${siteUrl}${pathname  ||  '/'}`
+        }  
 		
 	return (
 	    <>
