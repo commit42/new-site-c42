@@ -458,19 +458,19 @@ export  default  function  Template({ data }) {
   
 export const pageQuery = graphql`  
 query BlogPostBySlug($slug: String!) {  
-		markdownRemark(fields: {slug: {eq: $slug}}) {  
-			html  
-			excerpt  
-			fields{  
-				slug  
-			}  
-			frontmatter {  
-				date  
-				title  
-				thumbnail  
-			}  
-		}  
-	}  
+  markdownRemark(fields: {slug: {eq: $slug}}) {  
+    html  
+    excerpt  
+    fields{  
+      slug  
+    }  
+    frontmatter {  
+      date  
+      title  
+      thumbnail  
+    }  
+  }  
+}  
 `
 ```
 
@@ -478,11 +478,11 @@ Les “proptypes” utilisées à la fin de chaque composant sont une façon de 
 
 ```jsx
 SEO.propTypes = {  
-	title: PropTypes.string,  
-	description: PropTypes.string,  
-	image: PropTypes.string,  
-	pathname: PropTypes.string,  
-	article: PropTypes.bool,  
+  title: PropTypes.string,  
+  description: PropTypes.string,  
+  image: PropTypes.string,  
+  pathname: PropTypes.string,  
+  article: PropTypes.bool,  
 }
 ```
 
