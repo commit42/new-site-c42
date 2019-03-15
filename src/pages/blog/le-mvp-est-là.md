@@ -174,82 +174,84 @@ import Twitter from  './Twitter'
 const  SEO  =  ({  title,  description,  image,  pathname,  article  })  =>  {
   return (
     <StaticQuery
-      query={query}
-        render={({
-          site: {
-            siteMetadata: {
-            defaultTitle,
-            defaultDescription,
-            siteUrl,
-            defaultImage,
-            twitterUsername,
-          }
-        }
-      }) => {
-        const  seo = {
-          title: title || defaultTitle,
-          description: description || defaultDescription,
-          image: `${siteUrl}${image  ||  defaultImage}`,
-          url: `${siteUrl}${pathname  ||  '/'}`
-        }  	
-        return (
-          <>
-            <Helmet  title={seo.title}>
-              <html  lang="fr" />
-              <meta  name="description" content={seo.description} />
-              <meta  name="image" content={seo.image} />
-              <link  rel="shortcut icon" href={favicon}></link>
-            </Helmet>
-            <Facebook
-              desc={seo.description}
-              image={seo.image}
-              title={seo.title}
-              type={article ? 'article' : 'website'}
-              url={seo.url}
-            />
-            <Twitter
-              title={seo.title}
-              image={seo.image}
-              desc={seo.description}
-              username={twitterUsername}
-            />
-          </>
-         )  
-       }}
-    />
-  );
+	query={query}
+	   render={({
+	      site: {
+		siteMetadata: {
+		    defaultTitle,
+		    defaultDescription,
+	            siteUrl,
+		    defaultImage,
+		    twitterUsername,
+		}
+	      }
+	}) => {
+	const  seo = {
+	    title: title || defaultTitle,
+	    description: description || defaultDescription,
+	    image: `${siteUrl}${image  ||  defaultImage}`,
+	    url: `${siteUrl}${pathname  ||  '/'}`
+	}  
+		
+	return (
+	    <>
+	      <Helmet  title={seo.title}>
+	        <html  lang="fr" />
+	        <meta  name="description" content={seo.description} />
+		<meta  name="image" content={seo.image} />
+		<link  rel="shortcut icon" href={favicon}></link>
+	      </Helmet>
+	      <Facebook
+		desc={seo.description}
+		image={seo.image}
+		title={seo.title}
+		type={article ? 'article' : 'website'}
+		url={seo.url}
+	      />
+
+	      <Twitter
+		title={seo.title}
+		image={seo.image}
+		desc={seo.description}
+		username={twitterUsername}
+	      />
+	    </>
+           )
+         }}
+       />
+   );
 }
 
 export  default SEO;
 
 SEO.propTypes =  {
-  title: PropTypes.string,
-  description: PropTypes.string,
-  image: PropTypes.string,
-  pathname: PropTypes.string,
-  article: PropTypes.bool,
+	title: PropTypes.string,
+	description: PropTypes.string,
+	image: PropTypes.string,
+	pathname: PropTypes.string,
+	article: PropTypes.bool,
 }
   
 SEO.defaultProps =  {
-  title:  null,
-  description:  null,
-  image:  null,
-  pathname:  null,
-  article:  false,
+	title:  null,
+	description:  null,
+	image:  null,
+	pathname:  null,
+	article:  false,
 }
 
 const query =  graphql`
-  query SEO {
-    site {
-      siteMetadata {
-        defaultTitle: title
-        defaultDescription: description
-        siteUrl: url
-        defaultImage: image
-        twitterUsername
-      }
-    }
-  }
+	query SEO {
+		site {
+			siteMetadata {
+			defaultTitle: title
+			defaultDescription: description
+			siteUrl: url
+			defaultImage: image
+			twitterUsername
+			}
+		}
+	}
 `;
 ```
 
@@ -261,31 +263,31 @@ import React from  'react'
 import Helmet from  'react-helmet'  
   
 const Facebook = ({ url, name, type, title, desc, image }) => (  
-  <Helmet>  
-    {name && <meta property="og:site_name" content={name} />}  
-    <meta property="og:url" content={url} />  
-    <meta property="og:type" content={type} />  
-    <meta property="og:title" content={title} />  
-    <meta property="og:description" content={desc} />  
-    <meta property="og:image" content={image} />  
-    <meta property="og:image:alt" content={desc} />  
-  </Helmet>  
+	<Helmet>  
+		{name && <meta property="og:site_name" content={name} />}  
+		<meta property="og:url" content={url} />  
+		<meta property="og:type" content={type} />  
+		<meta property="og:title" content={title} />  
+		<meta property="og:description" content={desc} />  
+		<meta property="og:image" content={image} />  
+		<meta property="og:image:alt" content={desc} />  
+	</Helmet>  
 )  
   
 export default Facebook  
   
 Facebook.propTypes = {  
-  url: PropTypes.string.isRequired,  
-  type: PropTypes.string,  
-  title: PropTypes.string.isRequired,  
-  desc: PropTypes.string.isRequired,  
-  image: PropTypes.string.isRequired,  
-  name: PropTypes.string,  
+	url: PropTypes.string.isRequired,  
+	type: PropTypes.string,  
+	title: PropTypes.string.isRequired,  
+	desc: PropTypes.string.isRequired,  
+	image: PropTypes.string.isRequired,  
+	name: PropTypes.string,  
 }  
   
 Facebook.defaultProps = {  
-  type: 'website',  
-  name: null,  
+	type: 'website',  
+	name: null,  
 }
 ```
 
@@ -297,29 +299,29 @@ import React from  'react'
 import Helmet from  'react-helmet'  
   
 const Twitter = ({ type, username, title, desc, image }) => (  
-  <Helmet>  
-    {username && <meta name="twitter:creator" content={username} />}  
-    <meta name="twitter:card" content={type} />  
-    <meta name="twitter:title" content={title} />  
-    <meta name="twitter:description" content={desc} />  
-    <meta name="twitter:image" content={image} />  
-    <meta name="twitter:image:alt" content={desc} />  
-  </Helmet>  
+	<Helmet>  
+		{username && <meta name="twitter:creator" content={username} />}  
+		<meta name="twitter:card" content={type} />  
+		<meta name="twitter:title" content={title} />  
+		<meta name="twitter:description" content={desc} />  
+		<meta name="twitter:image" content={image} />  
+		<meta name="twitter:image:alt" content={desc} />  
+	</Helmet>  
 )  
   
 export default Twitter  
   
 Twitter.propTypes = {  
-  type: PropTypes.string,  
-  username: PropTypes.string,  
-  title: PropTypes.string.isRequired,  
-  desc: PropTypes.string.isRequired,  
-  image: PropTypes.string.isRequired,  
+	type: PropTypes.string,  
+	username: PropTypes.string,  
+	title: PropTypes.string.isRequired,  
+	desc: PropTypes.string.isRequired,  
+	image: PropTypes.string.isRequired,  
 }  
   
 Twitter.defaultProps = {  
-  type: 'summary_large_image',  
-  username: null,  
+	type: 'summary_large_image',  
+	username: null,  
 }
 ```
 
@@ -330,14 +332,14 @@ Je m’explique: grâce à graphQL on récupère d’abord les données du fichi
 // gatsby-config.js
 
 module.exports = {  
-  siteMetadata: {  
-    title: 'commit42 | Studio de développement Web',  
-    description: 'Studio de développement Web à Toulouse - React - Progressive Web Apps - CakePHP',  
-    url: 'https://new-site-c42.netlify.com',  
-    image: '/assets/logo.png',  
-    twitterUsername: '@commit42'  
-  },  
-  plugins: [// ici vos plugins]  
+	siteMetadata: {  
+		title: 'commit42 | Studio de développement Web',  
+		description: 'Studio de développement Web à Toulouse - React - Progressive Web Apps - CakePHP',  
+		url: 'https://new-site-c42.netlify.com',  
+		image: '/assets/logo.png',  
+		twitterUsername: '@commit42'  
+	},  
+	plugins: [// ici vos plugins]  
 }
 ```
 
@@ -345,17 +347,17 @@ module.exports = {
 // src/components/SEO/SEO.js
 
 const query = graphql`  
-  query SEO {  
-    site {  
-      siteMetadata {  
-        defaultTitle: title  
-        defaultDescription: description  
-        siteUrl: url  
-        defaultImage: image  
-        twitterUsername  
-      }  
-    }  
-  }  
+	query SEO {  
+		site {  
+		siteMetadata {  
+			defaultTitle: title  
+			defaultDescription: description  
+			siteUrl: url  
+			defaultImage: image  
+			twitterUsername  
+			}  
+		}  
+	}  
 `;
 ```
 
@@ -365,18 +367,18 @@ Ensuite on passe ces données au composant SEO avec une `StaticQuery` qui permet
 // src/components/SEO/SEO.js
 
 <StaticQuery  
-  query={query}  
-    render={({  
-        site: {  
-          siteMetadata: {  
-            defaultTitle,  
-            defaultDescription,  
-            siteUrl,  
-            defaultImage,  
-            twitterUsername,  
-          }  
-        }  
-      })
+	query={query}  
+	render={({  
+		site: {  
+		siteMetadata: {  
+			defaultTitle,  
+			defaultDescription,  
+			siteUrl,  
+			defaultImage,  
+			twitterUsername,  
+		}  
+	}  
+})
 ```
 
 D’autre part je récupère les propriétés (ou props pour les intimes) qui sont passées au composant SEO.
@@ -393,10 +395,10 @@ On crée ensuite des variable pour afficher soit les props s’il y en a soit le
 // src/components/SEO/SEO.js
   
 const seo = {  
-  title: title || defaultTitle,  
-  description: description || defaultDescription,  
-  image: `${siteUrl}${image || defaultImage}`,  
-  url: `${siteUrl}${pathname || '/'}`  
+	title: title || defaultTitle,  
+	description: description || defaultDescription,  
+	image: `${siteUrl}${image || defaultImage}`,  
+	url: `${siteUrl}${pathname || '/'}`  
 }  
 ```
 
@@ -406,17 +408,17 @@ Ces variables sont par la suite transmises aux composants Facebook et Twitter co
 // src/components/SEO/SEO.js
 
 <Facebook  
-  desc={seo.description}  
-  image={seo.image}  
-  title={seo.title}  
-  type={article ? 'article' : 'website'}  
-  url={seo.url}  
+	desc={seo.description}  
+	image={seo.image}  
+	title={seo.title}  
+	type={article ? 'article' : 'website'}  
+	url={seo.url}  
 />  
 <Twitter  
-  title={seo.title}  
-  image={seo.image}  
-  desc={seo.description}  
-  username={twitterUsername}  
+	title={seo.title}  
+	image={seo.image}  
+	desc={seo.description}  
+	username={twitterUsername}  
 />
 ```
 
@@ -435,42 +437,42 @@ import SEO from  '../components/SEO/SEO'
 import Layout from  '../components/layout'  
   
 export  default  function  Template({ data }) {  
-  const { markdownRemark: post } = data  
-    return (  
-      <Layout isHome={false}>  
-      <SEO  
-        title={post.frontmatter.title}  
-        description={post.excerpt || 'nothing here'}  
-        image={post.frontmatter.thumbnail}  
-        pathname={post.fields.slug}  
-        article  
-      />  
-      <Container text style={{ marginTop: '5%', marginBottom: '5%' }}>  
-        <Header as="h1">{post.frontmatter.title}</Header>  
-          <div  
-            className="blog-post-content" 
-            dangerouslySetInnerHTML={{ __html: post.html }}  
-          />  
-      </Container>  
-    </Layout>  
-  )  
+	const { markdownRemark: post } = data  
+	return (  
+		<Layout isHome={false}>  
+			<SEO  
+			title={post.frontmatter.title}  
+			description={post.excerpt || 'nothing here'}  
+			image={post.frontmatter.thumbnail}  
+			pathname={post.fields.slug}  
+			article  
+			/>  
+			<Container text style={{ marginTop: '5%', marginBottom: '5%' }}>  
+				<Header as="h1">{post.frontmatter.title}</Header>  
+				<div  
+				className="blog-post-content"  
+				dangerouslySetInnerHTML={{ __html: post.html }}  
+				/>  
+			</Container>  
+		</Layout>  
+	)  
 }  
   
 export const pageQuery = graphql`  
 query BlogPostBySlug($slug: String!) {  
-  markdownRemark(fields: {slug: {eq: $slug}}) {  
-    html  
-    excerpt  
-    fields{  
-      slug  
-    }  
-    frontmatter {  
-      date  
-      title  
-      thumbnail  
-    }  
-  }  
-}  
+		markdownRemark(fields: {slug: {eq: $slug}}) {  
+			html  
+			excerpt  
+			fields{  
+				slug  
+			}  
+			frontmatter {  
+				date  
+				title  
+				thumbnail  
+			}  
+		}  
+	}  
 `
 ```
 
@@ -478,11 +480,11 @@ Les “proptypes” utilisées à la fin de chaque composant sont une façon de 
 
 ```jsx
 SEO.propTypes = {  
-  title: PropTypes.string,  
-  description: PropTypes.string,  
-  image: PropTypes.string,  
-  pathname: PropTypes.string,  
-  article: PropTypes.bool,  
+	title: PropTypes.string,  
+	description: PropTypes.string,  
+	image: PropTypes.string,  
+	pathname: PropTypes.string,  
+	article: PropTypes.bool,  
 }
 ```
 
