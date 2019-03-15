@@ -180,7 +180,7 @@ const  SEO  =  ({  title,  description,  image,  pathname,  article  })  =>  {
 		siteMetadata: {
 		    defaultTitle,
 		    defaultDescription,
-	            siteUrl,
+	        siteUrl,
 		    defaultImage,
 		    twitterUsername,
 		}
