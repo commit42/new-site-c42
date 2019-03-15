@@ -50,7 +50,7 @@ Surtout pour configurer les routes (l’url d’accès à une page) comme je le 
 Je souhaitais donc avec des liens avec la structure suivante:
 
 ```
-http://commit42.fr/blog/[insérer ici le nom de l’article]
+http://commit42.com/blog/[insérer ici le nom de l’article]
 ```
 
 Et il se trouve que dans la config de Netlify CMS on peut ajouter une ‘preview_path’ qui permet - du moins c’est ce que je pensais - formater l’url des posts à partir des slugs.
@@ -71,7 +71,7 @@ Ici j’ai défini une collection, donc un type de données, qui s’appelle `po
 Je pensais donc que `preview_path` permettait de configurer la route que l’on souhaite afficher pour les posts, car actuellement la seule route que j’arrivais à afficher est:
 
 ```
-http://commit42.fr/[Insérer ici un slug]
+http://commit42.com/[Insérer ici un slug]
 ```
 
 En fait j’ai fini par comprendre que cette preview path permet, lorsque l’on rédige un article, de voir un aperçu de l’article comme s’il était publié sur le site. Finalement c’est tout à fait logique mais je n’avais pas compris tout de suite.
@@ -92,8 +92,8 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     if (node.internal.type === `MarkdownRemark`) {  
       const value = createFilePath({ node, getNode })  
 	createNodeField({  
-          name: `slug`,  
-	      node,  
+          name: `slug`,          
+          node,  
           value,  
        })  
     }  
@@ -102,7 +102,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 
 Ainsi à chaque fois d’un fichier markdown est détecté, GatsbyJS crée une route à partir du dossier dans lequel est stocké le fichier en question, pour moi `/blog/` en y concaténant son slug à la fin, ce qui donne 
 
-`http://commit42.fr/blog/[Insérer ici un slug]`.
+`http://commit42.com/blog/[Insérer ici un slug]`.
 
 Je vous recommande vivement d’aller voir [cet article](https://scotch.io/tutorials/zero-to-deploy-a-practical-guide-to-static-sites-with-gatsbyjs#toc-creating-blog-pages) qui approfondi ce cas plus en détail et donne des explications sur les fonctions utilisées.
 
@@ -174,18 +174,18 @@ import Twitter from  './Twitter'
 const  SEO  =  ({  title,  description,  image,  pathname,  article  })  =>  {
   return (
     <StaticQuery
-	   query={query}
-	      render={({
-	         site: {
-		       siteMetadata: {
-		          defaultTitle,
-		          defaultDescription,
-                  siteUrl,
-		          defaultImage,
-		          twitterUsername,
-		        }
-              }
-	       }) => {
+	query={query}
+	   render={({
+	      site: {
+		siteMetadata: {
+		    defaultTitle,
+		    defaultDescription,
+	            siteUrl,
+		    defaultImage,
+		    twitterUsername,
+		}
+	      }
+	}) => {
 	const  seo = {
 	    title: title || defaultTitle,
 	    description: description || defaultDescription,
@@ -208,9 +208,8 @@ const  SEO  =  ({  title,  description,  image,  pathname,  article  })  =>  {
 		type={article ? 'article' : 'website'}
 		url={seo.url}
 	      />
-
-	      <Twitter
-		title={seo.title}
+             <Twitter
+                title={seo.title}
 		image={seo.image}
 		desc={seo.description}
 		username={twitterUsername}
