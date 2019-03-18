@@ -487,7 +487,7 @@ SEO.propTypes = {
 }
 ```
 
-Sur l’exemple ci dessous le titre s’attend à recevoir une string (pas des sous-vêtements hein mais une chaîne de caractère), tout comme la description, l’image et le pathname alors que article sera un booléen (true ou false).
+Sur l’exemple ci dessous le titre s’attend à recevoir une string (une chaîne de caractère), tout comme la description, l’image et le pathname alors que article sera un booléen (true ou false).
 
 Les proptypes n’ont pas réellement de rapport avec le référencement mais c’est la première fois que j’en utilise donc je trouvais intéressant de les mentionner tout de même.
 
