@@ -2,26 +2,35 @@
 title: La domotique facile avec IFTTT
 date: 2019-03-20T14:06:21.854Z
 author: Thomas
-thumbnail: >-
-  https://raw.githubusercontent.com/commit42/new-site-c42/master/static/assets/domotique-e1523003863976.jpg
+thumbnail: /assets/objets-connectes-750x400.jpg
 ---
-Bonjour à tous, à toutes ainsi qu’aux autres, aujourd’hui je vais vous présenter la solution domotique adoptée dans les locaux du groupe Occitech afin d’améliorer notre confort (et parce que ça nous faisait bien marrer aussi)
+Bonjour à toutes, à tous ainsi qu’aux autres, aujourd’hui je vais vous présenter la solution domotique mise en place dans les locaux du groupe Occitech afin d’améliorer notre confort (et aussi "_parce que c'est possible_").
 
-Déjà, la domotique, qu’est-ce que c’est ? C’est un mot-valise qui désigne tout ce qui permet d'automatiser son domicile en contrôlant, chauffage, volets, portes… et allumer/éteindre la tireuse à bière et l’arbre de Noël (oui, en Mars !) dans le cas de certains.
+Déjà : **la domotique, qu’est-ce que c’est ?** 
+
+C’est un mot-valise qui désigne tout ce qui permet d'automatiser son domicile en contrôlant, chauffage, volets, portes… et allumer/éteindre la tireuse à bière et l’arbre de Noël (oui, en Mars !) dans le cas de certains.
+
+# Cahier des charge
 
 Le cahier des charges initial était énoncé simplement : 
 
-> # **“_On aimerait ne pas avoir froid le matin en arrivant._**
+> ## **“_On aimerait ne pas avoir froid le matin en arrivant._**
 >
 > _**cdt**_.”
 
 Une des solutions à ce problème est de pouvoir allumer à distance les clims réversibles et les chauffages de nos locaux en partant de chez soi par exemple, donc depuis l’extérieur de notre réseau.
 
-Les clims sont contrôlées par télécommande infrarouge et sont au nombre de 3 : une par openspace et une en salle de réunion. L’alimentation électrique n’est pas accessible (intégrée dans le mur).
+Les clims sont contrôlées par télécommande infrarouge et sont au nombre de 3 : 
 
-Les chauffages sont des radiateurs mobiles, branchés chacun sur une prise qui leur est dédiée.
+* 1 dans l'open-space de commit42, 
+* 1 dans l'open-space d'occitech 
+* 1 en salle de réunion
 
-On souhaiterait un comportement automatique, avec un démarrage à 7h30 et une extinction à 18h00 pour les chauffages et les clims des openspaces afin de ne pas avoir à y penser le matin et éviter aussi les oublis de fin de journée.
+L’alimentation électrique n’est pas accessible (intégrée dans le mur).
+
+Les chauffages, eux sont des radiateurs mobiles, branchés chacun sur une prise qui leur est dédiée.
+
+On souhaiterait un comportement automatique, avec un démarrage à 7h30 et une extinction à 18h00 pour les chauffages et les clims des open-spaces afin de ne pas avoir à y penser le matin et éviter aussi les oublis de fin de journée.
 
 De plus, il faudrait pouvoir donner accès à l’ensemble des commandes aux employés pour ajuster (couper le chauffage s’il fait trop chaud par exemple).
 
