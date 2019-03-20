@@ -45,8 +45,7 @@ Elles utilisent (comme beaucoup) l’application SmartLife (pour la configuratio
 
 ## Émetteur infrarouge
 
-
-<img src="/assets/harmony.png" width="200" style="float:right;margin:15px;" >
+<img src="/assets/harmony.png" width="400" style="float:right;margin:15px;" >
 
 Pour contrôler les clims, nous n’avons pas le choix: il va falloir simuler une télécommande infrarouge.
 
@@ -62,7 +61,7 @@ Le service en ligne Harmony est aussi censé être compatible Alexa, IFTTT, Goog
 
 La configuration des hubs est censée être simple, c’est peut-être le cas pour les appareils déjà présents dans la base de donnée Harmony mais ce n’était le cas d’aucune de nos climatisations.
 
-Pour cela il a fallu rentrer un nouveau modèle en sélectionnant DISPOSITIF MULTIMEDIA (oui, oui) puis rentrer le fabricant et le modèle, valider deux fois pour dire qu’on est bien certains d’avoir le bon numéro de modèle puis CONTRÔLE DOMOTIQUE puis SYSTÈME DE CLIMATISATION et passer au mode apprentissage.
+Pour cela il a fallu rentrer un nouveau modèle en sélectionnant DISPOSITIF MULTIMEDIA (oui, oui) puis rentrer le fabricant et le modèle, valider deux fois pour dire qu’on est **bien** certains d’avoir le bon numéro de modèle puis CONTRÔLE DOMOTIQUE puis SYSTÈME DE CLIMATISATION et passer au mode apprentissage.
 
 Cette procédure d’apprentissage est... laborieuse. Elle consiste à pointer la télécommande de la climatisation vers le Harmony Hub pour qu’il enregistre la commande.
 
@@ -78,9 +77,11 @@ Notre usage est BEAUCOUP plus simple : nous lançons une “activité” dont la
 
 Bref, ça fonctionne pour les 2 modèles différents dont nous disposons, malgré quelques gouttes de sueurs et 3 boites de Lexomil.
 
-Centre de contrôle
+# Centre de contrôle
 
-Première piste : Google Home
+## Première piste : Google Home
+
+<img src="/assets/googlehome.png" width="200" style="float:left;margin:15px;" >
 
 Ce service permet de gérer les appareils via l’interface ou de les renommer pour pouvoir les utiliser avec l’Assistant Google. 
 
@@ -96,7 +97,7 @@ Encore une fois, Harmony nous a joué un tour : les commandes vocales dédiées 
 
 Tant pis, il va falloir concevoir notre propre gestionnaire.
 
-IFTTT : la solution idéale pour qui sait bidouiller
+## IFTTT : la solution idéale pour qui sait bidouiller
 
 IFTTT est un service en ligne permettant d’automatiser des tâches selon des conditions.
 
@@ -120,59 +121,50 @@ Exemple théorique : lire une musique sur spotify lorsque votre pizza dominos es
 
 En résumé, cela peut être schématisé comme suit :
 
+![ifttt domino's](/assets/ifttdominos.jpg "ifttt domino's")
+
 A la manière de Google Home, la première chose à faire est de donner l’accès à IFTTT à vos portails domotiques (ici SmartLife et Harmony).
 
 Nous allons utiliser 3 types de déclencheurs :
 
-L’heure (pour programmer les allumages et extinctions)
+* L’heure (pour programmer les allumages et extinctions)
+* Google Agenda partagé pour réserver la salle de réunion (pour démarrer le chauffage 15 min avant une réunion prévue)
+* Une commande manuelle via la consultation d’une adresse donnée 
 
-Google Agenda partagé pour réserver la salle de réunion (pour démarrer le chauffage 15 min avant une réunion prévue)
-
-Une commande manuelle via la consultation d’une adresse donnée 
-
+<img src="/assets/webhooks.png" width="30px" style="float:right;margin:5px;" >
 Grâce à la dernière fonction, appelée WebHook, avec une page web et des scripts simples, nous pouvons faire une interface que nous hébergerons à une adresse donnée à chacun et protégée par un mot de passe.
 
 Dans le cas d’un déclencheur c’est un ping vers une adresse qui est sous la forme : 
 
-https://maker.ifttt.com/trigger/{event}/with/key/xxxxxxxxxxxxxx
+`https://maker.ifttt.com/trigger/{event}/with/key/xxxxxxxxxxxxxx`
 
 Le petit script rapide :
 
-<script>
-
+`<script>
 function startchauffage() {
-
   var xhttp = new XMLHttpRequest();
-
   xhttp.onreadystatechange = function() {
-
-\    if (this.readyState == 4 && this.status == 200) {
-
-\    document.getElementById("demo").innerHTML = this.responseText;
-
-\    }
-
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("demo").innerHTML = this.responseText;
+    }
   };
-
   xhttp.open("GET", "https://maker.ifttt.com/trigger/startchauffage/with/key/xxxxxxxxxxx", true);
-
   xhttp.send();
-
   alert("Chauffage démarré");
-
 }
-
-</script>
+</script>`
 
 Et il suffit alors de faire un lien type :
 
-<a href="#" onclick="startchauffage()" >Démarrer le chauffage</a>
+`<a href="#" onclick="startchauffage()" >Démarrer le chauffage</a>`
 
 (on verra plus loin comment faire lorsqu’il y a plusieurs actions à réaliser)
 
-Mise en place
+# Mise en place
 
-Programmation horaire
+## Programmation horaire
+
+<img src="/assets/smartlifeprog.png" width="100px" style="float:left;margin:5px;" >
 
 Parfois IFTTT est un peu fastidieux car il est impossible de créer un groupe d’actions pour un déclencheur donné. 
 
@@ -182,7 +174,7 @@ Pour les prises connectées, nous avons donc décidé de nous passer de IFTTT et
 
 Pour les climatiseurs, au vu de l’ergonomie et des lenteurs de l’application Harmony je suis passé par IFTTT (ça se sent que j’en peux plus de cette appli ou pas?).
 
-Programmation conditionnelle
+## Programmation conditionnelle
 
 La seule programmation que nous exploitons actuellement est la suivante :
 
@@ -190,19 +182,23 @@ Si un quelconque évènement est prévu dans le Google Agenda “salle de réu�
 
 On aurait pu l’arrêter 15 min après mais les réunions ne durent pas forcément la durée indiquée sur l’agenda. Le choix a été fait de prévoir une extinction manuelle.
 
-Centre de commande
+## Centre de commande
 
 C’est le mode le plus intéressant au final, avec l’utilisation des WebHooks d’IFTTT on peut créer un véritable centre de commande de notre domotique.
 
-Pour cette première version du centre de commande, nous avons créé une carte stylisée des locaux et avons créé des zones cliquables map grâce à un outil en ligne (https://www.image-map.net/)
+Pour cette première version du centre de commande, nous avons créé une carte stylisée des locaux et avons créé des zones cliquables map grâce à un outil en ligne (<https://www.image-map.net/>)
+
+![](/assets/dessin-sans-titre-25-.png)
 
 Voici donc le fonctionnement de ce mode manuel avec IFTTT lors de la commande d’un climatiseur :
 
-Vous pouvez tester (sans agir sur nos locaux) ici : http://domotique.ethersys.fr/public.html#
+![](/assets/ifttfinal.jpg)
+
+Vous pouvez tester (sans agir sur nos locaux) ici : <http://domotique.ethersys.fr/public.html>
 
 Vous pouvez d’ailleurs en réutiliser le code source et le script permettant plusieurs actions pour vos projets domotique !
 
-Une suite du projet ?
+# Une suite du projet ?
 
 L’une des limites actuelles, qui ne sera pas facilement contournable, est l'absence totale de retour sur l’état (allumé ou éteint) de nos climatisations. Le signal est envoyé, point. 
 
@@ -213,5 +209,7 @@ Comme cet état peut être transmis à IFTTT via Webhooks, on pourrait tout à f
 Ce serait une suite intéressante mais une véritable application web serait alors nécessaire pour stocker les états et serait notifiée par WebHooks lors des changements.
 
 Cela pourrait donner ceci :
+
+![](/assets/ifttfuture.jpg)
 
 En conclusion, en l’état actuel, la solution répond aux besoins et c’est une excellente démonstration de notre plus grande passion : connecter des services entre eux pour en créer un nouveau à la fois plus complet mais aussi plus adapté au besoin !
