@@ -12,7 +12,7 @@ Bonjour à toutes, à tous ainsi qu’aux autres, aujourd’hui je vais vous pr�
 
 Déjà : **la domotique, qu’est-ce que c’est ?** 
 
-C’est un mot-valise qui désigne tout ce qui permet d'automatiser son domicile en contrôlant, chauffage, volets, portes… et allumer/éteindre la tireuse à bière et l’arbre de Noël (oui, en Mars !) dans le cas de certains.
+C’est un mot-valise qui désigne tout ce qui permet de centraliser les solutions automatiques son domicile en contrôlant, chauffage, volets, portes… et allumer/éteindre la tireuse à bière et l’arbre de Noël (oui, en Mars !) dans le cas de certains.
 
 # Cahier des charges
 
