@@ -3,6 +3,10 @@ title: La domotique facile avec IFTTT
 date: 2019-03-20T14:06:21.854Z
 author: Thomas
 thumbnail: /assets/objets-connectes-750x400.jpg
+tags:
+  - ifttt
+  - domotique
+  - MVP
 ---
 Bonjour à toutes, à tous ainsi qu’aux autres, aujourd’hui je vais vous présenter la solution domotique mise en place dans les locaux du groupe Occitech afin d’améliorer notre confort (et aussi "_parce que c'est possible_").
 
@@ -10,15 +14,15 @@ Déjà : **la domotique, qu’est-ce que c’est ?**
 
 C’est un mot-valise qui désigne tout ce qui permet d'automatiser son domicile en contrôlant, chauffage, volets, portes… et allumer/éteindre la tireuse à bière et l’arbre de Noël (oui, en Mars !) dans le cas de certains.
 
-# Cahier des charge
+# Cahier des charges
 
 Le cahier des charges initial était énoncé simplement : 
 
-> ## **“_On aimerait ne pas avoir froid le matin en arrivant._**
+> ## **“_On aimerait ne pas avoir froid le matin en arrivant_**
 >
-> _**cdt**_.”
+> **_cdt._**”
 
-Une des solutions à ce problème est de pouvoir allumer à distance les clims réversibles et les chauffages de nos locaux en partant de chez soi par exemple, donc depuis l’extérieur de notre réseau.
+Une des solutions est de pouvoir allumer les clims réversibles et les chauffages de nos locaux en partant de chez soi par exemple, donc depuis l’extérieur de notre réseau.
 
 Les clims sont contrôlées par télécommande infrarouge et sont au nombre de 3 : 
 
@@ -30,7 +34,7 @@ L’alimentation électrique n’est pas accessible (intégrée dans le mur).
 
 Les chauffages, eux sont des radiateurs mobiles, branchés chacun sur une prise qui leur est dédiée.
 
-On souhaiterait un comportement automatique, avec un démarrage à 7h30 et une extinction à 18h00 pour les chauffages et les clims des open-spaces afin de ne pas avoir à y penser le matin et éviter aussi les oublis de fin de journée.
+Si possible, ajouter un comportement automatique, avec un démarrage à 7h30 et une extinction à 18h00 pour les chauffages et les clims des open-spaces afin de ne pas avoir à y penser le matin et éviter aussi les oublis de fin de journée.
 
 De plus, il faudrait pouvoir donner accès à l’ensemble des commandes aux employés pour ajuster (couper le chauffage s’il fait trop chaud par exemple).
 
@@ -44,27 +48,27 @@ Enfin, un cas particulier : il n’est pas nécessaire de chauffer tous les jour
 
 Pour les chauffages, nous allons simplement mettre et couper le courant.
 
-La majorité des centaines de prises connectées d’entrée de gamme sont suffisantes. 
+La majorité des centaines de prises connectées d’entrée de gamme sont suffisantes et se valent à peut près toutes. 
 
 Il convient de vérifier tout de même qu’elle peuvent supporter la puissance demandée par l’appareil pour éviter tout risque.
 
 Notre choix s’est arrêté sur [ce pack de 3 prises à moins de 30€](https://www.amazon.fr/gp/product/B07M96JCQ6/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1), pour une raison de... promotion en cours.
 
-Elles utilisent (comme beaucoup) l’application SmartLife (pour la configuration et la gestion) qui est compatible Alexa, Google Home, IFTTT (mais pas Homekit).
+Elles utilisent, pour la configuration et la gestion, l’application SmartLife (comme beaucoup) qui est compatible Alexa, Google Home, IFTTT (mais pas Homekit).
 
 ## Émetteur infrarouge
 
 <img src="/assets/harmony.png" width="400" style="float:right;margin:15px;" >
 
-Pour contrôler les clims, nous n’avons pas le choix: il va falloir simuler une télécommande infrarouge.
+Pour contrôler les clims, nous n’avons pas le choix: il va falloir simuler leurs télécommandes infrarouges.
 
-Pour cela il existe quelques de boitiers émetteurs, souvent sous la forme d’un galet, capable d’envoyer un signal infrarouge à 360° pour télécommander les appareils à sa portée et utilisant ce mode de commande.
+Pour cela il existe quelques de boîtiers émetteurs, souvent sous la forme d’un galet, capable d’envoyer un signal infrarouge à 360° pour télécommander les appareils à sa portée et utilisant ce mode de commande.
 
 Ils sont configurés via une application sur smartphone et sont souvent reliés à un service en ligne qui fait la liaison entre l’appareil et le téléphone.
 
-Nous avions le choix entre des **Logitech Harmony Hub** ou des émetteurs infrarouges de marques inconnues, passant par une application demandant des autorisations inquiétantes sur l’appli Android. 
+Nous avions le choix entre des **Logitech Harmony Hub** ou des émetteurs infrarouges de marques inconnues et aux review suspectes. 
 
-On a donc choisi la solution Logitech, un peu chère, pas très ergonomique mais qui a le mérite de finir par fonctionner.
+On a donc choisi la solution Logitech, un peu chère, pas très ergonomique mais qui a eu le mérite de finir par fonctionner.
 
 Le service en ligne Harmony est aussi censé être compatible Alexa, IFTTT, Google Home… mais nous en reparlerons.
 
@@ -80,17 +84,21 @@ Ajoutons le fait que les “tests” lors de la procédure d’apprentissage ne 
 
 Bref, c’est une lutte, en plus c’est lent, ça plante… mais on y est arrivés en prenant de 30 minutes à 1h à pester contre Logitech.
 
-Le principe derrière Harmony est de fonctionner par “Activité”. Qu’est-ce qu’une activité ? Le bon exemple serait “Regarder un film” qui allume la télévision, met la clim en mode silencieux, éteint la lumière du plafond pour passer aux lampes de chevets de part et d’autre de la télévision. Lorsque l’activité est stoppée, le lumières s’inversent, la télé s’éteint.
+Le principe derrière Harmony est de fonctionner par “Activité”. 
+
+**Qu’est-ce qu’une activité ?** 
+
+Le bon exemple serait une activité type “Regarder un film” : Lancer cette activité déclenche une série de commande qui allume la télévision, met la clim en mode silencieux, éteint la lumière du plafond pour passer aux lampes de chevets de part et d’autre de la télévision. Lorsque l’activité est stoppée, le lumières s’inversent, la télé s’éteint, la climatisation revient en mode de ventilation normal.
 
 Notre usage est BEAUCOUP plus simple : nous lançons une “activité” dont la seule action est d’allumer la climatisation. Lors de la fin de l’activité, le signal d’extinction est envoyé.
 
-Bref, ça fonctionne pour les 2 modèles différents dont nous disposons, malgré quelques gouttes de sueurs et 3 boites de Lexomil.
+Bref, ça fonctionne pour tous les modèles dont nous disposons, malgré quelques gouttes de sueurs et 3 boites de Lexomil.
 
 # Centre de contrôle
 
 ## Première piste : Google Home
 
-<img src="/assets/googlehome.png" width="200" style="float:left;margin:15px;" >
+<img src="/assets/photo5805236634210382998.jpg" width="200" style="float:left;margin:15px;" >
 
 Ce service permet de gérer les appareils via l’interface ou de les renommer pour pouvoir les utiliser avec l’Assistant Google. 
 
