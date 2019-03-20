@@ -20,7 +20,7 @@ Le cahier des charges initial était énoncé simplement :
 
 > ## **“_On aimerait ne pas avoir froid le matin en arrivant_**
 >
-> **_cdt._**”
+> _**cdt.**_”
 
 Une des solutions est de pouvoir allumer les clims réversibles et les chauffages de nos locaux en partant de chez soi par exemple, donc depuis l’extérieur de notre réseau.
 
