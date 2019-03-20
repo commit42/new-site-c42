@@ -164,7 +164,7 @@ Et il suffit alors de faire un lien type :
 
 ## Programmation horaire
 
-<img src="/assets/smartlifeprog.png" width="100px" style="float:left;margin:5px;" >
+<img src="/assets/smartlifeprog.png" width="100px" style="float:right;margin:5px;" >
 
 Parfois IFTTT est un peu fastidieux car il est impossible de créer un groupe d’actions pour un déclencheur donné. 
 
@@ -186,9 +186,9 @@ On aurait pu l’arrêter 15 min après mais les réunions ne durent pas forcém
 
 C’est le mode le plus intéressant au final, avec l’utilisation des WebHooks d’IFTTT on peut créer un véritable centre de commande de notre domotique.
 
-Pour cette première version du centre de commande, nous avons créé une carte stylisée des locaux et avons créé des zones cliquables map grâce à un outil en ligne (<https://www.image-map.net/>)
+Pour cette première version du centre de commande (en mode prototypage rapide), nous avons créé une carte stylisée des locaux et avons créé des zones cliquables map grâce à un outil en ligne (<https://www.image-map.net/>)
 
-![](/assets/dessin-sans-titre-25-.png)
+![map occitech](/assets/dessin-sans-titre-25-.png)
 
 Voici donc le fonctionnement de ce mode manuel avec IFTTT lors de la commande d’un climatiseur :
 
