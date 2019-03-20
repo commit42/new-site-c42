@@ -42,7 +42,7 @@ De plus, il faudrait pouvoir donner accès à l’ensemble des commandes aux emp
 
 Enfin, un cas particulier : il n’est pas nécessaire de chauffer tous les jours la salle de réunion mais on doit pouvoir obtenir une température correcte lors des réunions sans avoir à y aller pour y démarrer la clim.
 
-## Les composants
+## Les composants connectés
 
 ### Prises connectées
 
