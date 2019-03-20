@@ -7,6 +7,8 @@ tags:
   - ifttt
   - domotique
   - MVP
+  - harmony
+  - smartlife
 ---
 Bonjour à toutes, à tous ainsi qu’aux autres, aujourd’hui je vais vous présenter la solution domotique mise en place dans les locaux du groupe Occitech afin d’améliorer notre confort (et aussi "_parce que c'est possible_").
 
