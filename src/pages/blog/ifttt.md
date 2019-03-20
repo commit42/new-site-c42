@@ -16,7 +16,7 @@ Déjà : **la domotique, qu’est-ce que c’est ?**
 
 C’est un mot-valise qui désigne tout ce qui permet de centraliser les solutions automatiques son domicile en contrôlant, chauffage, volets, portes… et allumer/éteindre la tireuse à bière et l’arbre de Noël (oui, en Mars !) dans le cas de certains.
 
-# Cahier des charges
+## Cahier des charges
 
 Le cahier des charges initial était énoncé simplement : 
 
