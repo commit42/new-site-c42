@@ -10,7 +10,7 @@ tags:
   - harmony
   - smartlife
 ---
-Bonjour à toutes, à tous ainsi qu’aux autres, aujourd’hui je vais vous présenter la solution domotique mise en place dans les locaux du groupe Occitech afin d’améliorer notre confort (et aussi "_parce que c'est possible_").
+Bonjour à toutes, à tous ainsi qu’aux autres, aujourd’hui c'est Thomas qui vous écrit et je vais vous présenter la solution domotique mise en place par mes soins dans les locaux du groupe Occitech afin d’améliorer notre confort (et aussi "_parce que c'est possible_").
 
 Déjà : **la domotique, qu’est-ce que c’est ?** 
 
@@ -22,7 +22,7 @@ Le cahier des charges initial était énoncé simplement :
 
 > ## **“_On aimerait ne pas avoir froid le matin en arrivant_**
 >
-> _**cdt.**_”
+> **_cdt._**”
 
 Une des solutions est de pouvoir allumer les clims réversibles et les chauffages de nos locaux en partant de chez soi par exemple, donc depuis l’extérieur de notre réseau.
 
@@ -70,7 +70,7 @@ Ils sont configurés via une application sur smartphone et sont souvent reliés 
 
 Nous avions le choix entre des **Logitech Harmony Hub** ou des émetteurs infrarouges de marques inconnues et aux review suspectes. 
 
-On a donc choisi la solution Logitech, un peu chère, pas très ergonomique mais qui a eu le mérite de finir par fonctionner.
+On a donc choisi la solution Logitech, un peu chère, le prix varie littéralement d'un jour à l'autre [sur Amazon](https://www.amazon.fr/gp/product/B014GXQ9YW/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1) mais on peut les trouver régulièrement à 59€ l'unité mais il peut monter jusqu'à 97€. 
 
 Le service en ligne Harmony est aussi censé être compatible Alexa, IFTTT, Google Home… mais nous en reparlerons.
 
