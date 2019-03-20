@@ -102,7 +102,7 @@ Attention : les comptes Google Suite ne sont pas compatibles avec cette fonction
 
 Le principe est simple : on crée un compte sur l’app de l’appareil connecté (exemple : SmartLife, Philips Hue, Logitech Harmony…), on le configure et ensuite, on connecte le compte à Google Home et tous les appareils configurés seront automatiquements ajoutés.
 
-Encore une fois, Harmony nous a joué un tour : les commandes vocales dédiées à l’Assistant Google n’étant pas disponibles en français, l’association de notre compte Harmony avec notre compte Google a été refusé côté Logitech, donc il n’est pas possible non plus de les contrôler via l’interface, ce qui aurait suffit. 
+Encore une fois, Harmony est de retour pour nous a jouer un mauvais tour : les commandes vocales dédiées à l’Assistant Google n’étant pas disponibles en français, l’association de notre compte Harmony avec notre compte Google a été refusé (côté Logitech), donc il n’est pas possible non plus de les contrôler via l’interface Google Home, ce qui nous aurait pourtant suffit. 
 
 Tant pis, il va falloir concevoir notre propre gestionnaire.
 
@@ -116,11 +116,9 @@ Si ceci, alors cela.
 
 Tous nos besoins peuvent être résumés en :
 
-Si il est 7h30 alors allume le chauffage du patron
-
-Si je le demande, éteint la climatisation
-
-etc...
+* _Si il est 7h30 alors allume le chauffage du patron_
+* _Si je le demande, éteint la climatisation_
+* _etc..._
 
 Cette logique (un bloc reliant un déclencheur à un effet) est appelée un “applet”.
 
