@@ -1,5 +1,5 @@
 ---
-title: La domotique facile avec IFTTT
+title: 'Une solution domotique complète avec IFTTT, SmartLife et Logitech Harmony'
 date: 2019-03-20T14:06:21.854Z
 author: Thomas
 thumbnail: /assets/objets-connectes-750x400.jpg
