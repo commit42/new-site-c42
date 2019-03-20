@@ -22,7 +22,7 @@ Le cahier des charges initial était énoncé simplement :
 
 > ## **“_On aimerait ne pas avoir froid le matin en arrivant_**
 >
-> **_cdt._**”
+> _**cdt.**_”
 
 Une des solutions est de pouvoir allumer les clims réversibles et les chauffages de nos locaux en partant de chez soi par exemple, donc depuis l’extérieur de notre réseau.
 
@@ -203,7 +203,7 @@ On aurait pu l’arrêter 15 min après mais les réunions ne durent pas forcém
 
 C’est le mode le plus intéressant au final, avec l’utilisation des WebHooks d’IFTTT on peut créer un véritable centre de commande de notre domotique.
 
-Pour cette première version du centre de commande (en mode prototypage rapide), nous avons créé une carte stylisée des locaux et avons créé des zones cliquables map grâce à un outil en ligne (<https://www.image-map.net/>)
+Pour cette première version du centre de commande (en mode prototypage rapide), nous avons créé une carte stylisée des locaux et avons créé des zones cliquables grâce à un outil en ligne (<https://www.image-map.net/>)
 
 ![map occitech](/assets/dessin-sans-titre-25-.png)
 
