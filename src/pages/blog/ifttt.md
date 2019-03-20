@@ -42,9 +42,9 @@ De plus, il faudrait pouvoir donner accès à l’ensemble des commandes aux emp
 
 Enfin, un cas particulier : il n’est pas nécessaire de chauffer tous les jours la salle de réunion mais on doit pouvoir obtenir une température correcte lors des réunions sans avoir à y aller pour y démarrer la clim.
 
-# Les composants
+## Les composants
 
-## Prises connectées
+### Prises connectées
 
 <img src="/assets/pasted-image-0.png" width="200" style="float:left;margin:15px;" >
 
@@ -58,7 +58,7 @@ Notre choix s’est arrêté sur [ce pack de 3 prises à moins de 30€](https:/
 
 Elles utilisent, pour la configuration et la gestion, l’application SmartLife (comme beaucoup) qui est compatible Alexa, Google Home, IFTTT (mais pas Homekit).
 
-## Émetteur infrarouge
+### Émetteur infrarouge
 
 <img src="/assets/harmony.png" width="400" style="float:right;margin:15px;" >
 
@@ -96,9 +96,9 @@ Notre usage est BEAUCOUP plus simple : nous lançons une “activité” dont la
 
 Bref, ça fonctionne pour tous les modèles dont nous disposons, malgré quelques gouttes de sueurs et 3 boites de Lexomil.
 
-# Centre de contrôle
+## Centre de contrôle
 
-## Première piste : Google Home
+### Première piste : Google Home
 
 <img src="/assets/photo5805236634210382998.jpg" width="200" style="float:left;margin:15px;" >
 
@@ -116,7 +116,7 @@ Encore une fois, Harmony est de retour pour nous a jouer un mauvais tour : les c
 
 Tant pis, il va falloir concevoir notre propre gestionnaire.
 
-## IFTTT : la solution idéale pour qui sait bidouiller
+### IFTTT : la solution idéale pour qui sait bidouiller
 
 IFTTT est un service en ligne permettant d’automatiser des tâches selon des conditions.
 
@@ -177,9 +177,9 @@ Et il suffit alors de faire un lien type :
 
 (on verra plus loin comment faire lorsqu’il y a plusieurs actions à réaliser)
 
-# Mise en place
+## Mise en place
 
-## Programmation horaire
+### Programmation horaire
 
 <img src="/assets/smartlifeprog.png" width="100px" style="float:right;margin:5px;" >
 
@@ -191,7 +191,7 @@ Pour les prises connectées, nous avons donc décidé de nous passer de IFTTT et
 
 Pour les climatiseurs, au vu de l’ergonomie et des lenteurs de l’application Harmony je suis passé par IFTTT (ça se sent que j’en peux plus de cette appli ou pas?).
 
-## Programmation conditionnelle
+### Programmation conditionnelle
 
 La seule programmation que nous exploitons actuellement est la suivante :
 
@@ -199,7 +199,7 @@ Si un quelconque évènement est prévu dans le Google Agenda “salle de réu�
 
 On aurait pu l’arrêter 15 min après mais les réunions ne durent pas forcément la durée indiquée sur l’agenda. Le choix a été fait de prévoir une extinction manuelle.
 
-## Centre de commande
+### Centre de commande
 
 C’est le mode le plus intéressant au final, avec l’utilisation des WebHooks d’IFTTT on peut créer un véritable centre de commande de notre domotique.
 
@@ -215,7 +215,7 @@ Vous pouvez tester (sans agir sur nos locaux) ici : <http://domotique.ethersys.f
 
 Vous pouvez d’ailleurs en réutiliser le code source et le script permettant plusieurs actions pour vos projets domotique !
 
-# Une suite du projet ?
+## Une suite du projet ?
 
 L’une des limites actuelles, qui ne sera pas facilement contournable, est l'absence totale de retour sur l’état (allumé ou éteint) de nos climatisations. Le signal est envoyé, point. 
 
