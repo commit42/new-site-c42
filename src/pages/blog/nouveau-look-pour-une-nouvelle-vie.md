@@ -68,7 +68,7 @@ La page PWA explique les avantages de cette façon de voir les applications, pro
 
 La page de blog recensera tous les articles publiés ; pour chaque article on pourra voir l'auteur, le temps de lecture et les tags associés (en plus des informations classique, titre, résumé, date)
 
-![Nouveau blog de commit42](/assets/blog-list-page.png "Nouveau blog de commit42")
+![Nouveau blog de commit42](/assets/blog.png "Nouveau blog de commit42")
 
 Pour voir mon wireframe et la maquette entière n'hésitez pas à consulter ces liens:
 
