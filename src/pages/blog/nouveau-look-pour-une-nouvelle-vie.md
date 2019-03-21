@@ -110,13 +110,7 @@ C'est finalement un de mes collègue qui m'a glissé l'idée d'un robot ! Finale
 
 Je voulais représenter la flexibilité par un objet réel plus que par un schéma abstrait car je trouve que ça donne tout de suite une image plus parlante et que l'on retient mieux. J'ai donc trouvé intéressant de "tordre" un crayon, habituellement rigide, car le contraste accentue encore plus l'idée de souplesse, adaptabilité etc.
 
-![Esquisses illustration flexibilité](/assets/brouillons-flexibilite.png "Esquisses illustration flexibilité")
-
-
-
 ![Illustration flexibilité](/assets/flexibilite.png "Illustration flexibilité")
-
-
 
 ## Conclusion :clap:
 
