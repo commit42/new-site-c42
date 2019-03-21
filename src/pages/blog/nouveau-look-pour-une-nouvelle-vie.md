@@ -2,7 +2,7 @@
 title: Nouveau look pour une nouvelle vie
 date: 2019-03-21T14:04:14.816Z
 author: Eva
-thumbnail: /assets/robot.png
+thumbnail: /assets/toulouse.png
 tags:
   - Webdesign
   - Graphisme
@@ -104,13 +104,19 @@ Concept pas facile à illustrer car très abstrait. Après avoir imaginé d'abor
 
 C'est finalement un de mes collègue qui m'a glissé l'idée d'un robot ! Finalement je trouve que c'est beaucoup plus parlant que mes premières ébauches car l'image du robot est assez universelle. 
 
-![Illustration robot nouvelles technologies](/assets/robot.png "Illustration robot nouvelles technologies")
+![Illustration robot nouvelles technologies](/assets/robot-2.png "Illustration robot nouvelles technologies")
 
 **Flexibilité**
 
 Je voulais représenter la flexibilité par un objet réel plus que par un schéma abstrait car je trouve que ça donne tout de suite une image plus parlante et que l'on retient mieux. J'ai donc trouvé intéressant de "tordre" un crayon, habituellement rigide, car le contraste accentue encore plus l'idée de souplesse, adaptabilité etc.
 
-**![](https://lh4.googleusercontent.com/7nXrNDjKBdOClvo1ZyjqihSQLJC3s5rYJABU-PwsnmWgbIfysIPoIKoD_Q4WS3yNiUFQY76R-UTg-WWBkaOVV4Yp-jNqegKPn3ypidbiTqInKlws1xjhN9qHFKc5zmN5a_PUmQZu)**
+![Esquisses illustration flexibilité](/assets/brouillons-flexibilite.png "Esquisses illustration flexibilité")
+
+
+
+![Illustration flexibilité](/assets/flexibilite.png "Illustration flexibilité")
+
+
 
 ## Conclusion :clap:
 
