@@ -41,7 +41,7 @@ Roboto est certes, pas très originale, car beaucoup utilisée, mais elle est tr
 
 Le but est de montrer que commit42 ne se repose pas sur ses lauriers, c'est une entreprise innovante, jeune et dynamique donc.
 
-![](https://lh5.googleusercontent.com/pGJDMcd-pcoBwSs4GNR8oixhcxBLUGhutLjdumH7hbEuNXs_757YG3E068vVm3u3ZzmmmqrSZTQzUMDkI734uzbLikLF4DPh3ctf2fMTeK8L3CtaiqC76oxxf6li7EjxPphwkDiT)
+![Nouvelles typographies du site de commti42](/assets/typos-commit42-2.png "Nouvelles typographies du site de commti42")
 
 ## Les maquettes   :triangular_ruler:
 
@@ -55,20 +55,26 @@ La page d'accueil présente les services que propose commit42 ainsi que leur poi
 
 **Homepage**
 
-**![](https://lh4.googleusercontent.com/FpwwM-QmTFFsSn9alGaX8kf13xixWeQvzIqbZFxEjCV6u09Wr2xGQtJss6yEFiz7wCwm02lPNToDL2d4V24qv5eTvzmrPbaQz82_V6f0ZUwhfHY18iIuEtDhMWTjHs6d29cfAUSG)**
+![Homepage nouveau site commit42](/assets/homepage.png "Homepage nouveau site commit42")
+
+****
 
 **PWA**
+
+
 La page PWA explique les avantages de cette façon de voir les applications, proposera (à terme) des petites applications PWA afin que les utilisateurs puissent tester ainsi que les réalisations de commit42 en PWA.
 
-**![](https://lh5.googleusercontent.com/Hyub2NNV-C_AznbU7t1ZUBIiDFfYeJq9JVU2c4ommkOpCUaP4npIG-Fwo5En9mq2gl3f6gJJHyULui9NjiazaZV1Ls7NvDuZNZRmN-uP32Y7VzBmFDCNq7inRvxrBXx6Exo8Wim4)**
+![Page PWA nouveau site commit42](/assets/pwa-page.png "Page PWA nouveau site commit42")
+
+****
 
 **Blog**
 
-La page de blog recensera tous les articles publiés ; pour chaque article on pourra voir l'auteur, le temps de lecture et les tags associés (en plus des informations classique, titre, résumé, date).
+La page de blog recensera tous les articles publiés ; pour chaque article on pourra voir l'auteur, le temps de lecture et les tags associés (en plus des informations classique, titre, résumé, date)
 
-**![](https://lh4.googleusercontent.com/bgK3Yhpytycc6Sck9ldPX_3LNw6kWfnEH-qIYRvG3epjOA4rFIDzPzWSDSVL8GcInYYfeOq3AV6d49AqryJZOK0mzz3o_3gtyjFF7G3vvmvmnoOFvkXK5DxFhOI6GS06PgRt_mGO)**
-\
-\*\*
+![Nouveau blog de commit42](/assets/blog-list-page.png "Nouveau blog de commit42")
+
+
 Pour voir mon wireframe et la maquette entière n'hésitez pas à consulter ces liens:
 
 Wireframe: https://xd.adobe.com/spec/55dbefe4-07bf-4be5-5881-e85876a9aaed-23ea/
@@ -89,15 +95,23 @@ J'ai fait le choix de ne pas utiliser des photographies sur le site mais plutôt
 
 J'ai donc illustré les concepts clés qui devaient figurer sur le site, voici quelques exemples:
 
+****
+
 **Toulouse**
+
+
 Pour illustrer la ville rose j'ai choisi le dôme de la Grave et le Pont Neuf ; ce sont des bâtiments emblématiques de la ville qui sont plus singuliers et identifiables que le Capitole par exemple.
 
-**![](https://lh6.googleusercontent.com/oQurBZxjCu4hai9VHCIMW9wQSlZBTJj1P9Cr8CksL1499FD10OrerwszKlvLvWDdWHu-Ma2R-sXoHbgxc_uOnm5_w0_VV56_P1MqIhVRu7e4JsZePDJueO7-8E6IRPxs4R8PWPSz)**
+![Illustration Toulouse, dôme de la Grave](/assets/toulouse.png "Illustration Toulouse")
+
+****
 
 **Nouvelles technologies**
+
+
 Concept pas facile à illustrer car très abstrait. Après avoir imaginé d'abord une illustration qui faisait plus penser à l'aspect "responsive" (qui n'est pas tout à fait une nouvelle technologie) puis une tablette dont jaillissait des logos de technologies utilisées par commit42, c'est finalement un de mes collègue qui m'a glissé l'idée d'un robot ! Finalement je trouve que c'est beaucoup plus parlant que mes premières ébauches car l'image du robot est assez universelle. 
 
-**![](https://lh4.googleusercontent.com/WIRSMzNjL5zBr-6gb7Gu43SZxGEouU4uEnJzJ5qmc8VKeZ1jQBsCOutn1o9mS_O6Fb6xRtnALTECLH6lVRGM71aLGytHkcAgCzCpCuYOZMJoTzWWc_TJVq1TRu8qpzkEUV6heMJX)**
+![](/assets/brouillon-nouvellestechnos.png)
 
 **![](https://lh3.googleusercontent.com/9oMgQipC7K0qR-HnSLCKLwHuF2K99JypJARw9wM3Z6xvbPRGgf80Iffm_P6rBZC3Xc2D1uHyUcSQ6yJ9XmnnCYsmF8C27rTUjlVe195kQVNG9SzhzgWbjWh0QiJAYKvJth1sFv3b)**
 
