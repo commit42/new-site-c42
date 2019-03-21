@@ -57,23 +57,21 @@ La page d'accueil présente les services que propose commit42 ainsi que leur poi
 
 ![Homepage nouveau site commit42](/assets/homepage.png "Homepage nouveau site commit42")
 
-****
+- - -
 
 **PWA**
-
 
 La page PWA explique les avantages de cette façon de voir les applications, proposera (à terme) des petites applications PWA afin que les utilisateurs puissent tester ainsi que les réalisations de commit42 en PWA.
 
 ![Page PWA nouveau site commit42](/assets/pwa-page.png "Page PWA nouveau site commit42")
 
-****
+- - -
 
 **Blog**
 
 La page de blog recensera tous les articles publiés ; pour chaque article on pourra voir l'auteur, le temps de lecture et les tags associés (en plus des informations classique, titre, résumé, date)
 
 ![Nouveau blog de commit42](/assets/blog-list-page.png "Nouveau blog de commit42")
-
 
 Pour voir mon wireframe et la maquette entière n'hésitez pas à consulter ces liens:
 
@@ -95,23 +93,23 @@ J'ai fait le choix de ne pas utiliser des photographies sur le site mais plutôt
 
 J'ai donc illustré les concepts clés qui devaient figurer sur le site, voici quelques exemples:
 
-****
+- - -
 
 **Toulouse**
-
 
 Pour illustrer la ville rose j'ai choisi le dôme de la Grave et le Pont Neuf ; ce sont des bâtiments emblématiques de la ville qui sont plus singuliers et identifiables que le Capitole par exemple.
 
 ![Illustration Toulouse, dôme de la Grave](/assets/toulouse.png "Illustration Toulouse")
 
-****
+- - -
 
 **Nouvelles technologies**
 
-
 Concept pas facile à illustrer car très abstrait. Après avoir imaginé d'abord une illustration qui faisait plus penser à l'aspect "responsive" (qui n'est pas tout à fait une nouvelle technologie) puis une tablette dont jaillissait des logos de technologies utilisées par commit42, c'est finalement un de mes collègue qui m'a glissé l'idée d'un robot ! Finalement je trouve que c'est beaucoup plus parlant que mes premières ébauches car l'image du robot est assez universelle. 
 
-![](/assets/brouillon-nouvellestechnos.png)
+<img src="/assets/brouillon-nouvellestechnos.png" width="300" style="float:left;margin:15px;" >
+
+<img src="/assets/brouillon-nouvellestechnos3.png" width="300" style="float:right;margin:15px;" >
 
 **![](https://lh3.googleusercontent.com/9oMgQipC7K0qR-HnSLCKLwHuF2K99JypJARw9wM3Z6xvbPRGgf80Iffm_P6rBZC3Xc2D1uHyUcSQ6yJ9XmnnCYsmF8C27rTUjlVe195kQVNG9SzhzgWbjWh0QiJAYKvJth1sFv3b)**
 
