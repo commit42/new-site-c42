@@ -10,7 +10,6 @@ tags:
 ---
 Bonjour à tous, c'est (encore) Eva ! 
 
-
 Après avoir [défini la stack](https://www.commit42.com/blog/un-nouveau-site-pour-une-nouvelle-annee/), [organisé mes sprints](https://www.commit42.com/blog/la-gestion-de-projet-toute-une-organisation/) et fait [un super MVP](https://www.commit42.com/blog/le-mvp-est-la/), j'ai pu m'attaquer à l'aspect visuel du futur site de commit42.
 En effet qui dit refonte de site dit nouveau look ! 
 L'équipe de c42 m'a fait confiance quant aux choix graphiques pour leur nouveau site, j'ai donc revu un peu la charte graphique afin de proposer un design dynamique, coloré et moderne.
@@ -59,13 +58,11 @@ La page d'accueil présente les services que propose commit42 ainsi que leur poi
 
 ![Homepage nouveau site commit42](/assets/homepage.png "Homepage nouveau site commit42")
 
-
 **PWA**
 
 La page PWA explique les avantages de cette façon de voir les applications, proposera (à terme) des petites applications PWA afin que les utilisateurs puissent tester ainsi que les réalisations de commit42 en PWA.
 
 ![Page PWA nouveau site commit42](/assets/pwa-page.png "Page PWA nouveau site commit42")
-
 
 **Blog**
 
@@ -93,26 +90,21 @@ J'ai fait le choix de ne pas utiliser des photographies sur le site mais plutôt
 
 J'ai donc illustré les concepts clés qui devaient figurer sur le site, voici quelques exemples:
 
-
 **Toulouse**
 
 Pour illustrer la ville rose j'ai choisi le dôme de la Grave et le Pont Neuf ; ce sont des bâtiments emblématiques de la ville qui sont plus singuliers et identifiables que le Capitole par exemple.
 
 ![Illustration Toulouse, dôme de la Grave](/assets/toulouse.png "Illustration Toulouse")
 
-
 **Nouvelles technologies**
 
-Concept pas facile à illustrer car très abstrait. Après avoir imaginé d'abord une illustration qui faisait plus penser à l'aspect "responsive" (qui n'est pas tout à fait une nouvelle technologie) puis une tablette dont jaillissait des logos de technologies utilisées par commit42, c'est finalement un de mes collègue qui m'a glissé l'idée d'un robot ! Finalement je trouve que c'est beaucoup plus parlant que mes premières ébauches car l'image du robot est assez universelle. 
+Concept pas facile à illustrer car très abstrait. Après avoir imaginé d'abord une illustration qui faisait plus penser à l'aspect "responsive" (qui n'est pas tout à fait une nouvelle technologie) puis une tablette dont jaillissait des logos de technologies utilisées par commit42.
 
-<img src="/assets/brouillon-nouvellestechnos.png" width="300" style="float:left;margin:15px;" >
+![Brouillons illustrations nouvelles technologies](/assets/brouillons-nouvellestechnos.png "Brouillons illustrations nouvelles technologies")
 
-<img src="/assets/brouillon-nouvellestechnos3.png" width="300" style="float:left;margin:15px;" >
-
-![Brouillon illustration nouvelles technologies](/assets/brouillon-nouvellestechnos2.png "Brouillon illustration nouvelles technologies")
+C'est finalement un de mes collègue qui m'a glissé l'idée d'un robot ! Finalement je trouve que c'est beaucoup plus parlant que mes premières ébauches car l'image du robot est assez universelle. 
 
 ![Illustration robot nouvelles technologies](/assets/robot.png "Illustration robot nouvelles technologies")
-
 
 **Flexibilité**
 
