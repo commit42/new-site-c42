@@ -9,6 +9,8 @@ tags:
   - Illustrations
 ---
 Bonjour à tous, c'est (encore) Eva ! 
+
+
 Après avoir [défini la stack](https://www.commit42.com/blog/un-nouveau-site-pour-une-nouvelle-annee/), [organisé mes sprints](https://www.commit42.com/blog/la-gestion-de-projet-toute-une-organisation/) et fait [un super MVP](https://www.commit42.com/blog/le-mvp-est-la/), j'ai pu m'attaquer à l'aspect visuel du futur site de commit42.
 En effet qui dit refonte de site dit nouveau look ! 
 L'équipe de c42 m'a fait confiance quant aux choix graphiques pour leur nouveau site, j'ai donc revu un peu la charte graphique afin de proposer un design dynamique, coloré et moderne.
@@ -57,7 +59,6 @@ La page d'accueil présente les services que propose commit42 ainsi que leur poi
 
 ![Homepage nouveau site commit42](/assets/homepage.png "Homepage nouveau site commit42")
 
-- - -
 
 **PWA**
 
@@ -65,7 +66,6 @@ La page PWA explique les avantages de cette façon de voir les applications, pro
 
 ![Page PWA nouveau site commit42](/assets/pwa-page.png "Page PWA nouveau site commit42")
 
-- - -
 
 **Blog**
 
@@ -93,7 +93,6 @@ J'ai fait le choix de ne pas utiliser des photographies sur le site mais plutôt
 
 J'ai donc illustré les concepts clés qui devaient figurer sur le site, voici quelques exemples:
 
-- - -
 
 **Toulouse**
 
@@ -101,7 +100,6 @@ Pour illustrer la ville rose j'ai choisi le dôme de la Grave et le Pont Neuf ; 
 
 ![Illustration Toulouse, dôme de la Grave](/assets/toulouse.png "Illustration Toulouse")
 
-- - -
 
 **Nouvelles technologies**
 
@@ -115,7 +113,9 @@ Concept pas facile à illustrer car très abstrait. Après avoir imaginé d'abor
 
 ![Illustration robot nouvelles technologies](/assets/robot.png "Illustration robot nouvelles technologies")
 
+
 **Flexibilité**
+
 Je voulais représenter la flexibilité par un objet réel plus que par un schéma abstrait car je trouve que ça donne tout de suite une image plus parlante et que l'on retient mieux. J'ai donc trouvé intéressant de "tordre" un crayon, habituellement rigide, car le contraste accentue encore plus l'idée de souplesse, adaptabilité etc.
 
 **![](https://lh4.googleusercontent.com/7nXrNDjKBdOClvo1ZyjqihSQLJC3s5rYJABU-PwsnmWgbIfysIPoIKoD_Q4WS3yNiUFQY76R-UTg-WWBkaOVV4Yp-jNqegKPn3ypidbiTqInKlws1xjhN9qHFKc5zmN5a_PUmQZu)**
