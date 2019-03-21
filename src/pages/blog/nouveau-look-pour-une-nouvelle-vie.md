@@ -109,13 +109,11 @@ Concept pas facile à illustrer car très abstrait. Après avoir imaginé d'abor
 
 <img src="/assets/brouillon-nouvellestechnos.png" width="300" style="float:left;margin:15px;" >
 
-<img src="/assets/brouillon-nouvellestechnos3.png" width="300" style="float:right;margin:15px;" >
+<img src="/assets/brouillon-nouvellestechnos3.png" width="300" style="float:left;margin:15px;" >
 
-**![](https://lh3.googleusercontent.com/9oMgQipC7K0qR-HnSLCKLwHuF2K99JypJARw9wM3Z6xvbPRGgf80Iffm_P6rBZC3Xc2D1uHyUcSQ6yJ9XmnnCYsmF8C27rTUjlVe195kQVNG9SzhzgWbjWh0QiJAYKvJth1sFv3b)**
+![Brouillon illustration nouvelles technologies](/assets/brouillon-nouvellestechnos2.png "Brouillon illustration nouvelles technologies")
 
-**![](https://lh5.googleusercontent.com/OLyqwyNIm4QeW8S7tEyBl1flcHcI2Nuyf3MuuIP_791XL7l6ZvCCkJAdsOh5BgoheleFYvfbRFwEri9xibQM1wgs8MbGBOOm86pkhkn6QhY1ha9IDPWpEueqtCKrUtaMHh9VdSqT)**
-
-![](https://lh5.googleusercontent.com/P5l-OjJDPquTp-60DoxhhmVlYUwoSdxnT5cJaYd-sYEt61vzPF4VIvUt0Hg9YLb3ps12ItW5RxoYgryBMB9R6O05d9Ddnasgu1yAU_f3SjcTIdTB6kiFQn0kR9Jh5PGD8jsEFzq4)
+![Illustration robot nouvelles technologies](/assets/robot.png "Illustration robot nouvelles technologies")
 
 **Flexibilité**
 Je voulais représenter la flexibilité par un objet réel plus que par un schéma abstrait car je trouve que ça donne tout de suite une image plus parlante et que l'on retient mieux. J'ai donc trouvé intéressant de "tordre" un crayon, habituellement rigide, car le contraste accentue encore plus l'idée de souplesse, adaptabilité etc.
