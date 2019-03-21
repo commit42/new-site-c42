@@ -114,5 +114,5 @@ Je voulais représenter la flexibilité par un objet réel plus que par un sché
 
 ## Conclusion :clap:
 
-Après ces deux semaines intenses en création graphique, les maquettes sont enfin finies ! A partir de la semaine prochaine, je vais pouvoir commencer à intégrer ce nouveau design au site en commençant par l'existant: la homepage et le blog.
-Nous envisageons aussi la possibilité de changer le logo de commit42 afin qu'il soit plus en accord avec le design que j'ai proposé.
+Après cette semaine et demi intense en création graphique, les maquettes sont enfin finies ! A partir de la semaine prochaine, je vais pouvoir commencer à intégrer ce nouveau design au site en commençant par l'existant: la homepage et le blog.
+Nous envisageons aussi la possibilité de changer le logo de commit42 afin qu'il soit plus en accord avec le design que j'ai proposé (on vous tiendra au courant).
