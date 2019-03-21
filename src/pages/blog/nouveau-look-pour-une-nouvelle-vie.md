@@ -8,7 +8,8 @@ tags:
   - Graphisme
   - Illustrations
 ---
-Bonjour à tous, c'est (encore) Eva ! Après avoir [défini la stack](https://www.commit42.com/blog/un-nouveau-site-pour-une-nouvelle-annee/), [organisé mes sprints] (https://www.commit42.com/blog/la-gestion-de-projet-toute-une-organisation/) et fait [un super MVP](https://www.commit42.com/blog/le-mvp-est-la/), j'ai pu m'attaquer à l'aspect visuel du futur site de commit42.
+Bonjour à tous, c'est (encore) Eva ! 
+Après avoir [défini la stack](https://www.commit42.com/blog/un-nouveau-site-pour-une-nouvelle-annee/), [organisé mes sprints] (https://www.commit42.com/blog/la-gestion-de-projet-toute-une-organisation/) et fait [un super MVP](https://www.commit42.com/blog/le-mvp-est-la/), j'ai pu m'attaquer à l'aspect visuel du futur site de commit42.
 En effet qui dit refonte de site dit nouveau look ! L'équipe de c42 m'a fait confiance quant aux choix graphiques pour leur nouveau site, j'ai donc revu un peu la charte graphique afin de proposer un design dynamique, coloré et moderne.
 
 ## La charte graphique :book:
