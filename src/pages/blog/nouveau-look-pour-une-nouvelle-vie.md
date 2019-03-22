@@ -35,7 +35,7 @@ La typographie du logo de commit42 est **Akrobat Regular** et sur leur site actu
 
 ![Typographies du site de commti42](/assets/typos-commit42.png "Typographies du site de commti42")
 
-Les typographies qui sont utilisées sur l'ancien site de commit étaient celles par défaut sur le thème que qu'ils avaient mis en place, elle ne font pas l'objet d'un choix intentionnel. J'ai donc décidé de les changer afin de choisir de nouvelles typographies qui font sens et qui reflètent plus l'essence de commit42.
+Les typographies qui sont utilisées sur l'ancien site de commit étaient celles par défaut sur le thème que qu'ils avaient mis en place, elles ne font pas l'objet d'un choix intentionnel. J'ai donc décidé de les changer afin de choisir de nouvelles typographies qui font sens et qui reflètent plus l'essence de commit42.
 
 Je suis partie sur **Poppins** et **Roboto**. 
 Roboto est certes, pas très originale, car beaucoup utilisée, mais elle est très lisible. Poppins utilisée en black italic est très grasse et contraste bien avec Roboto, ce qui permet de créer un ensemble dynamique.
