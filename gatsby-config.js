@@ -7,6 +7,7 @@ module.exports = {
     twitterUsername: '@commit42'
   },
   plugins: [
+    `gatsby-plugin-less`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,

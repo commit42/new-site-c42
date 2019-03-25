@@ -1,4 +1,5 @@
 import React from "react";
+import "semantic-ui-less/semantic.less";
 import Header from './global/header';
 import Footer from './global/footer';
 import { graphql, StaticQuery } from "gatsby";
