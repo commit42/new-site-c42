@@ -1,7 +1,7 @@
 import React from "react";
 import "semantic-ui-less/semantic.less";
-import Header from './global/header';
-import Footer from './global/footer';
+import Nav from './global/Nav';
+import Footer from './global/Footer';
 import { graphql, StaticQuery } from "gatsby";
 
 const layout = ({ children, isHome, path }) => {
@@ -21,7 +21,7 @@ const layout = ({ children, isHome, path }) => {
       render={data => {
         return (
           <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
-              <Header path={path} />
+              <Nav path={path} />
               <div style={{ flex: '1' }}>
                 {children}
               </div>
