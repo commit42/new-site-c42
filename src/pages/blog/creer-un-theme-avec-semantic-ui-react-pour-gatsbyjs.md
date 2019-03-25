@@ -2,7 +2,7 @@
 title: Créer un thème avec Semantic UI React pour GatsbyJS
 date: 2019-03-25T15:09:32.644Z
 author: Eva
-thumbnail: /assets/2019-03-25-04-14-11-screenshot.png
+thumbnail: /assets/creer-un-theme-thumbnail.png
 tags:
   - Semantic UI
   - GatsbyJS
