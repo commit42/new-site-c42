@@ -34,7 +34,7 @@ const Footer = () => {
         <Grid.Column textAlign="center" style={{marginTop:'3rem'}}>
           <Grid>
             <Grid.Row >
-              <Grid.Column computer={8} >
+              <Grid.Column computer={8}>
                 <Header as="h4">PWA</Header>
                 <Header as="h4">E-commerce</Header>
               </Grid.Column>
