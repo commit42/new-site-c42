@@ -9,7 +9,7 @@ tags:
   - React
 ---
 Bien le bonjour !
-Contrairement à d'habitude, cet article ne portera pas sur mon avancé de la refonte du projet de commit42. Aujourd'hui je vous montre comment créer son propre thème pour [Semantic UI React](https://react.semantic-ui.com) avec GatsbyJS.
+Contrairement à d'habitude, cet article ne portera pas sur mon avancé de la refonte du site de commit42. Aujourd'hui je vous montre comment créer son propre thème pour [Semantic UI React](https://react.semantic-ui.com) avec GatsbyJS.
 
 Les ressources à ce sujet sont très limitées ; pour ainsi dire je n'en ai trouvé que deux: [une en anglais](https://edmcman.github.io/blog/2018-12-31--theming-semantic-ui-react-in-gatsby-js/) et [une en japonais](https://blog.yohei.tokyo/2019/02/gatsbyjs-semantic-ui/) (d'après google traduction)
 Je me suis dit que ça ne serait pas une mauvaise idée de faire une synthèse de tout ce que j'ai compris. Ça pourra peut-être aider d'autre développeur..es !
