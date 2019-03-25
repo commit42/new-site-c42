@@ -3,7 +3,7 @@ import { Grid, Icon, Header, Card } from 'semantic-ui-react'
 
 const Testimonials = () => {
   return (
-    <Grid style={{ paddingTop: '5%', paddingBottom: '5%' }}>
+    <Grid style={{ paddingTop: '5%', paddingBottom: '5%', backgroundColor: '#F9F9F9' }}>
       <Grid.Row textAlign='center'>
         <Grid.Column>
           <Header as="h2">Ce que nos clients en pensent</Header>

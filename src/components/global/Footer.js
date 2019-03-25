@@ -6,7 +6,7 @@ import Logo from '../../../static/assets/logo-noir-baseline-200.png'
 const Footer = () => {
   return (
 
-    <Grid as={Container} columns={2} divided>
+    <Grid as={Container} columns={2} divided style={{marginTop:'3rem'}}>
       <Grid.Row>
         <Grid.Column>
           <Image src={Logo} />
