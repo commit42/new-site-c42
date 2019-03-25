@@ -25,7 +25,7 @@ const layout = ({ children, isHome, path }) => {
               <div style={{ flex: '1' }}>
                 {children}
               </div>
-              {!isHome && <Footer />}
+              <Footer />
           </div>
         )
       }}
