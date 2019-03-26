@@ -1,0 +1,9 @@
+.ui.center.aligned.grid {
+ .row {
+   .four.column {
+    @media only screen and (max-width: 1200px) {
+      margin-bottom: 5%;
+    }
+   }
+ } 
+}
