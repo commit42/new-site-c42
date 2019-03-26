@@ -8,12 +8,12 @@ const CallToAction = () => {
         <Grid.Column>
           <Container style={{ marginBottom: '5rem' }}>
             <Message size='massive' as={Grid}>
-              <Grid.Row >
-                <Grid.Column width={12}>
+              <Grid.Row>
+                <Grid.Column width={12} verticalAlign='middle'>
                   <Message.Header>Des questions ? Besoin d'information ?</Message.Header>
                 </Grid.Column>
                 <Grid.Column width={4}>
-                  <Button>Contactez-nous !</Button>
+                  <Button primary>Contactez-nous !</Button>
                 </Grid.Column>
               </Grid.Row>
             </Message>

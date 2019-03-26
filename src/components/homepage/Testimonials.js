@@ -52,7 +52,7 @@ const Testimonials = () => {
               </Card.Content>
             </Card>
           </Card.Group>
-          <Header as="h3" style={{ marginTop: '3rem' }}>Voir tous les avis <Icon name="long arrow alternate right" /></Header>
+          <Header as="h4" style={{ marginTop: '3rem' }}>Voir tous les avis <Icon name="long arrow alternate right" /></Header>
         </Grid.Column>
       </Grid.Row>
     </Grid>
