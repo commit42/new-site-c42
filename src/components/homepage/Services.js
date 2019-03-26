@@ -3,11 +3,11 @@ import { Image, Container, Grid, Header, Icon } from 'semantic-ui-react'
 
 const Services = () => {
   return (
-    <Grid textAlign='center' style={{ paddingTop: '5%', paddingBottom: '5%', backgroundColor: '#F9F9F9' }}>
+    <Grid textAlign='center' style={{ marginTop:'0',paddingTop: '8%', paddingBottom: '8%', backgroundColor: '#F9F9F9' }}>
       <Grid.Row>
         <Header as="h2">Découvrez tous nos services</Header>
       </Grid.Row>
-      <Grid.Row>
+      <Grid.Row style={{marginTop:'8rem'}}>
         <Grid.Column width={4}>
           <Grid textAlign='left'>
             <Grid.Row>
