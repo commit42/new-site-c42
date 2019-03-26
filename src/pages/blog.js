@@ -1,6 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-import { Container, Grid, Card, Transition, Label, Image, Header } from 'semantic-ui-react'
+import { Container, Grid, Card, Transition, Label, Image, Header, Icon } from 'semantic-ui-react'
 import SEO from '../components/SEO/SEO'
 import Layout from '../components/layout'
 import moment from 'moment'
@@ -22,7 +22,7 @@ class BlogPage extends React.Component {
           description="Super blog trop cool de commit42"
           pathname="/blog"
         />
-        <Grid as={Container} text style={{ marginTop: '15rem', marginBottom:'5rem' }}>
+        <Grid as={Container} style={{ marginTop: '15rem', marginBottom: '5rem' }}>
           <Grid.Row>
             <Grid.Column>
               <Image src="http://via.placeholder.com/800x500" centered />
@@ -36,36 +36,66 @@ class BlogPage extends React.Component {
           </Grid.Row>
         </Grid>
 
-        <Container fluid style={{backgroundColor: '#F9F9F9', padding:'5rem 0 10rem 0'}}>
-        <Grid as={Container}>
-          <Grid.Row >
-            <Grid.Column width={16}>
-              <Card.Group itemsPerRow={2}>
-                {
-                  posts
-                    .filter(post => post.node.frontmatter.title.length > 0)
-                    .map(({ node: post }) => {
-                      return (
-                        <Transition key={post.id} visible={this.state.visible} animation='fade up' duration={800}>
-                          <Card fluid as={Link} to={post.fields.slug}>
-                            <Card.Content> 
-                              <Card.Header >{post.frontmatter.title}</Card.Header>
-                              <Card.Meta>{moment(post.frontmatter.date).format('LL')}</Card.Meta>
-                              <Card.Description>{post.excerpt}</Card.Description>
-                            </Card.Content>
-                            <Card.Content extra>
-                              {post.frontmatter.tags && post.frontmatter.tags.map((tag, index) => <Label key={index}>{tag}</Label>)}
-                            </Card.Content>
-                          </Card>
-                        </Transition>
+        <Container fluid style={{ backgroundColor: '#F9F9F9', padding: '5rem 0 10rem 0' }}>
+          <Grid as={Container}>
+            <Grid.Row>
+              <Header as="h2" style={{ marginBottom: '5rem' }}>Tous les articles</Header>
+              <Grid.Column width={16}>
+                <Card.Group itemsPerRow={2}>
+                  {
+                    posts
+                      .filter(post => post.node.frontmatter.title.length > 0)
+                      .map(({ node: post }) => {
+                        return (
+                          <Transition key={post.id} visible={this.state.visible} animation='fade up' duration={800}>
+                            <Card fluid as={Link} to={post.fields.slug}>
+                              <Image src={post.frontmatter.thumbnail && post.frontmatter.thumbnail} centered />
 
-                      )
-                    })
-                }
-              </Card.Group>
-            </Grid.Column>
-          </Grid.Row>
-        </Grid>
+                              <Card.Content >
+                                <Card.Header >{post.frontmatter.title}</Card.Header>
+                                <Card.Meta style={{marginTop:'0.5rem', color:'#6BA3D6'}}>
+                                  <span>{moment(post.frontmatter.date).format('Do MMM YYYY')}</span>
+                                  <span> • {post.timeToRead}min à perdre</span>
+                                </Card.Meta>
+                                <Card.Description>{post.excerpt}</Card.Description>
+                              </Card.Content>
+
+                              <Card.Content extra>
+                                {post.frontmatter.tags && post.frontmatter.tags.slice(0, 4).map((tag, index) => <Label key={index}>{tag}</Label>)}
+                              </Card.Content>
+                            </Card>
+
+                            {/* <Card fluid as={Link} to={post.fields.slug}>
+                              <Grid>
+                                <Grid.Column width={6}>
+                                  <Image src={post.frontmatter.thumbnail && post.frontmatter.thumbnail}  fluid />
+                                </Grid.Column>
+                                <Grid.Column width={10} style={{padding: '3rem 2rem 2rem 0'}}>
+
+                                  <Card.Content>
+                                    <Card.Header as="h3">{post.frontmatter.title}</Card.Header>
+                                    <Card.Meta>
+                                      <span>{moment(post.frontmatter.date).format('Do MMM YYYY')}</span>
+                                      <span> • {post.timeToRead}min à perdre</span>
+                                    </Card.Meta>
+                                    <Card.Description style={{ marginTop: '1rem' }}>{post.excerpt}</Card.Description>
+                                  </Card.Content>
+
+                                  <Card.Content extra style={{marginTop: '1rem', color:'#6BA3D6'}}>
+                                    {post.frontmatter.tags && post.frontmatter.tags.slice(0, 4).map((tag, index) => <Label key={index}>{tag}</Label>)}
+                                  </Card.Content>
+                                  
+                                </Grid.Column>
+                              </Grid>
+                            </Card> */}
+                          </Transition>
+                        )
+                      })
+                  }
+                </Card.Group>
+              </Grid.Column>
+            </Grid.Row>
+          </Grid>
         </Container>
       </Layout>
     )
@@ -78,7 +108,8 @@ export const pageQuery = graphql`
     allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
       edges {
         node {
-          excerpt(pruneLength: 250)
+          excerpt(pruneLength: 150)
+          timeToRead
           id
           fields {
             slug
@@ -87,6 +118,8 @@ export const pageQuery = graphql`
             title
             date
             tags
+            thumbnail
+            author
           }
         }
       }
