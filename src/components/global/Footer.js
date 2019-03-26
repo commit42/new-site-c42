@@ -1,6 +1,5 @@
 import React from 'react';
-import Link from 'gatsby'
-import { Grid, Container, Segment, Header, Icon, Image, List } from 'semantic-ui-react';
+import { Grid, Container, Header, Icon, Image, List } from 'semantic-ui-react';
 import Logo from '../../../static/assets/logo-noir-baseline-200.png'
 
 const Footer = () => {
@@ -14,19 +13,19 @@ const Footer = () => {
             <List.Item>
               <List.Icon name='marker map alternate' />
               <List.Content>
-                <a href='#'>35B Boulevard des Recollets, 31400 Toulouse</a>
+                <a href="https://goo.gl/maps/ybGL6XhSb1B2">35B Boulevard des Recollets, 31400 Toulouse</a>
               </List.Content>
             </List.Item>
             <List.Item>
               <List.Icon name='phone' />
               <List.Content>
-                <a href='tel:0582959012'>05 82 95 90 12</a>
+                <a href="tel:0582959012">05 82 95 90 12</a>
               </List.Content>
             </List.Item>
             <List.Item>
               <List.Icon name='envelope' />
               <List.Content>
-                <a href='mailto:contact@commit42.fr'>contact@commit42.fr</a>
+                <a href="mailto:contact@commit42.fr">contact@commit42.fr</a>
               </List.Content>
             </List.Item>
           </List>
@@ -45,9 +44,9 @@ const Footer = () => {
             </Grid.Row>
           </Grid> 
           <div style={{marginTop:'3rem'}}>
-            <a><Icon name="facebook" size='big' link /></a>
-            <a><Icon name="linkedin" size='big' link /></a>
-            <a><Icon name="twitter square" size='big' link /></a>
+            <a href="https://www.facebook.com/commit42/"><Icon name="facebook" size='big' link /></a>
+            <a href="https://www.linkedin.com/company/commit42/?originalSubdomain=fr"><Icon name="linkedin" size='big' link /></a>
+            <a href="https://twitter.com/commit42"><Icon name="twitter square" size='big' link /></a>
           </div>
         </Grid.Column>
       </Grid.Row>

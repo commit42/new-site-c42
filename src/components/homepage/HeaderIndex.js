@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image, Container, Grid, Header, Icon } from 'semantic-ui-react'
+import { Image, Container, Grid, Header } from 'semantic-ui-react'
 
 const HeaderIndex = () => {
   return (

@@ -30,7 +30,7 @@ class BlogPage extends React.Component {
           </Grid.Row>
           <Grid.Row textAlign='center' style={{ marginTop: '3rem' }}>
             <Grid.Column>
-              <Header as="h1">Prenez un ☕ et détendez vous 📖</Header>
+              <Header as="h1">Prenez un <span role="img" aria-label="Coffe cup">☕</span> et détendez vous <span role="img" aria-label="Open book">📖</span></Header>
               <p>Consequat exercitation proident labore culpa. Mollit aliqua sint eu enim aliqua velit irure sunt proident quis. Excepteur qui eu non voluptate aliquip. Dolore aliqua sit pariatur pariatur qui enim. Adipisicing est id laboris labore quis labore ut in esse voluptate.</p>
             </Grid.Column>
           </Grid.Row>
@@ -48,7 +48,7 @@ class BlogPage extends React.Component {
                       return (
                         <Transition key={post.id} visible={this.state.visible} animation='fade up' duration={800}>
                           <Card fluid as={Link} to={post.fields.slug}>
-                            <Card.Content>
+                            <Card.Content> 
                               <Card.Header >{post.frontmatter.title}</Card.Header>
                               <Card.Meta>{moment(post.frontmatter.date).format('LL')}</Card.Meta>
                               <Card.Description>{post.excerpt}</Card.Description>
