@@ -22,9 +22,15 @@ export default function Template({ data }) {
         <Grid as={Container} text>
           <Grid.Column>
             <Header as="h1">{post.frontmatter.title}</Header>
-            <div >
-              <Image src='https://react.semantic-ui.com/images/wireframe/square-image.png' avatar />
-              <span>Eva Spessotto, {moment(date).format("Do MMM YYYY")}</span>
+            <div>
+              {
+                post.frontmatter.author &&
+                <>
+                <Image src='https://react.semantic-ui.com/images/wireframe/square-image.png' avatar />
+                <span>{post.frontmatter.author && post.frontmatter.author}, </span>
+                </>
+              }
+               <span>{moment(date).format("Do MMM YYYY")}</span>
               <span> • {post.timeToRead}min à perdre</span>
             </div>
             <div
@@ -52,6 +58,7 @@ export const pageQuery = graphql`
         date
         title
         thumbnail
+        author
       }
     }
   }
