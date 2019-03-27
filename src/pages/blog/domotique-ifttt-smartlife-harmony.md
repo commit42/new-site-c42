@@ -157,7 +157,8 @@ Dans le cas d’un déclencheur c’est un ping vers une adresse qui est sous la
 
 Le petit script rapide :
 
-`<script>
+```javascript
+<script>
 function startchauffage() {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
@@ -169,7 +170,8 @@ function startchauffage() {
   xhttp.send();
   alert("Chauffage démarré");
 }
-</script>`
+</script>
+```
 
 Et il suffit alors de faire un lien type :
 
