@@ -3,8 +3,8 @@ import { Message, Container, Button, Grid } from 'semantic-ui-react'
 
 const CallToAction = () => {
   return (
-    <Grid>
-      <Grid.Row style={{ backgroundColor: '#F9F9F9' }}>
+    <Grid >
+      <Grid.Row style={{ backgroundColor: '#F9F9F9' }} only='large screen widescreen'>
         <Grid.Column>
           <Container style={{ marginBottom: '5rem' }}>
             <Message size='massive' as={Grid}>
