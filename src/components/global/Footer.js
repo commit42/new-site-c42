@@ -5,11 +5,11 @@ import Logo from '../../../static/assets/logo-noir-baseline-200.png'
 const Footer = () => {
   return (
 
-    <Grid as={Container} columns={2} divided style={{marginTop:'3rem'}}>
-      <Grid.Row>
-        <Grid.Column>
+    <Grid as={Container} columns={2} style={{marginTop:'3rem'}}>
+      <Grid.Row >
+        <Grid.Column tablet={8} computer={8} only='computer tablet'>
           <Image src={Logo} />
-          <List size="big">
+          <List style={{marginTop:'3rem'}}>
             <List.Item>
               <List.Icon name='marker map alternate' />
               <List.Content>
@@ -30,7 +30,7 @@ const Footer = () => {
             </List.Item>
           </List>
         </Grid.Column>
-        <Grid.Column textAlign="center" style={{marginTop:'3rem'}}>
+        <Grid.Column textAlign="center" style={{marginTop:'3rem'}} mobile={16} tablet={8} computer={8}>
           <Grid>
             <Grid.Row >
               <Grid.Column computer={8}>
