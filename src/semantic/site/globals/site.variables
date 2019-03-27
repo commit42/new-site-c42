@@ -16,5 +16,5 @@
 
 /* Links */
 @linkColor: @greyc42;
-@linkHoverColor: @bluec42;
+@linkHoverColor: @greyc42;
 @linkHoverUnderline: none;
