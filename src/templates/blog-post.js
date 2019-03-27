@@ -18,14 +18,14 @@ export default function Template({ data }) {
         pathname={post.fields.slug}
         article
       />
-      <Container fluid style={{ paddingTop: '25rem', paddingBottom: '5%', backgroundColor: '#F9F9F9' }}>
+      <Container fluid style={{ paddingTop: '15rem', paddingBottom: '5%', backgroundColor: '#F9F9F9' }}>
         <Grid as={Container} text>
           <Grid.Column>
             <Header as="h1">{post.frontmatter.title}</Header>
             <div >
               <Image src='https://react.semantic-ui.com/images/wireframe/square-image.png' avatar />
               <span>Eva Spessotto, {moment(date).format("Do MMM YYYY")}</span>
-              <span> | <Icon name="hourglass half" /> Temps de lecture: {post.timeToRead} min</span>
+              <span> • {post.timeToRead}min à perdre</span>
             </div>
             <div
               className="blog-post-content"
