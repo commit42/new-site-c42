@@ -4,11 +4,11 @@ import { Grid, Header } from 'semantic-ui-react'
 
 const Services = () => {
   return (
-    <Grid textAlign='center' style={{ marginTop: '0', paddingTop: '8%', paddingBottom: '8%', backgroundColor: '#F9F9F9' }}>
+    <Grid textAlign='center' style={{  }}>
       <Grid.Row>
-        <Header as="h2" style={{maxWidth:'70%'}}>Découvrez tous nos services</Header>
+        <Header as="h2" textAlign='center'>Découvrez tous nos services</Header>
       </Grid.Row>
-      <Grid.Row style={{ marginTop: '8rem' }}>
+      <Grid.Row style={{ }}>
         <Grid.Column mobile={14} tablet={14} computer={4}>
           <Grid textAlign='left'>
             <Grid.Row>
