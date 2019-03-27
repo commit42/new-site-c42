@@ -15,7 +15,7 @@ const Services = () => {
             <Grid.Row >
               <Grid.Column mobile={2} tablet={1} computer={2}>
                 <Fade bottom>
-                  <Header as="h3" >
+                  <Header as="h3">
                     <i className="far fa-mobile"></i>
                   </Header>
                 </Fade>

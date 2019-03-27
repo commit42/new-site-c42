@@ -11,7 +11,7 @@ const Pitch = () => {
         <Grid.Column>
           <Container text>
             <Fade bottom>
-              <Header as="h3" inverted>Made in toulouse</Header>
+              <Header as="h3" className='primary'>Made in toulouse</Header>
               <p style={{ color: "white", marginBottom: "5rem" }}>Et cupidatat deserunt proident nisi do pariatur nisi pariatur aute excepteur magna. Mollit ut dolore sunt tempor. Non elit minim elit elit ex irure minim id nostrud. Aliquip ex fugiat nostrud duis consectetur do ad labore eiusmod nostrud enim. Et incididunt occaecat velit Lorem irure enim. Eiusmod nostrud consequat esse aliqua labore do laboris.</p>
               <Image src="https://via.placeholder.com/800x300" />
             </Fade>
@@ -22,7 +22,7 @@ const Pitch = () => {
         <Grid.Column>
           <Container text>
             <Fade bottom>
-              <Header as="h3">A la pointe</Header>
+              <Header as="h3" className='primary'>A la pointe</Header>
               <p style={{ marginBottom: "5rem" }}>Et cupidatat deserunt proident nisi do pariatur nisi pariatur aute excepteur magna. Mollit ut dolore sunt tempor. Non elit minim elit elit ex irure minim id nostrud. Aliquip ex fugiat nostrud duis consectetur do ad labore eiusmod nostrud enim. Et incididunt occaecat velit Lorem irure enim. Eiusmod nostrud consequat esse aliqua labore do laboris.</p>
               <Image src="https://via.placeholder.com/800x300" />
             </Fade>
@@ -33,7 +33,7 @@ const Pitch = () => {
         <Grid.Column>
           <Container text>
             <Fade bottom>
-              <Header as="h3" inverted>Flexibilité</Header>
+              <Header as="h3" className='primary'>Flexibilité</Header>
               <p style={{ color: "white", marginBottom: "5rem" }}>Et cupidatat deserunt proident nisi do pariatur nisi pariatur aute excepteur magna. Mollit ut dolore sunt tempor. Non elit minim elit elit ex irure minim id nostrud. Aliquip ex fugiat nostrud duis consectetur do ad labore eiusmod nostrud enim. Et incididunt occaecat velit Lorem irure enim. Eiusmod nostrud consequat esse aliqua labore do laboris.</p>
               <Image src="https://via.placeholder.com/800x300" />
             </Fade>
