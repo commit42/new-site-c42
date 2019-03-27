@@ -1,11 +1,12 @@
 import React from 'react';
+import './pitch.scss';
 import { Image, Container, Grid, Header } from 'semantic-ui-react'
 
 
 const Pitch = () => {
   return (
-    <Grid>
-      <Grid.Row style={{ paddingTop: '5%', paddingBottom: '5%', backgroundColor: '#424242' }}>
+    <Grid id="pitch-container">
+      <Grid.Row style={{ backgroundColor: '#424242' }}>
         <Grid.Column>
           <Container text>
             <Header as="h3" inverted>Made in toulouse</Header>
@@ -14,7 +15,7 @@ const Pitch = () => {
           </Container>
         </Grid.Column>
       </Grid.Row>
-      <Grid.Row style={{ paddingTop: '5%', paddingBottom: '5%', backgroundColor: '#F9F9F9' }}>
+      <Grid.Row style={{ backgroundColor: '#F9F9F9' }}>
         <Grid.Column>
           <Container text>
             <Header as="h3">A la pointe</Header>
@@ -23,7 +24,7 @@ const Pitch = () => {
           </Container>
         </Grid.Column>
       </Grid.Row>
-      <Grid.Row style={{ paddingTop: '5%', paddingBottom: '5%', backgroundColor: '#424242' }}>
+      <Grid.Row style={{ backgroundColor: '#424242' }}>
         <Grid.Column>
           <Container text>
             <Header as="h3" inverted>Flexibilité</Header>
