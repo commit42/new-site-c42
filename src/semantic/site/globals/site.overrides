@@ -30,3 +30,25 @@ a{
   transition: 0.2s ease;
   }
 }
+
+h2 {
+  color: @bluec42;
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.6em;
+}
+
+h4 {
+  font-family: 'Poppins';
+  font-size: 1.2em;
+}
+
+.gatsby-highlight{
+  margin: 0 0 2rem 0;
+}
+
+:not(pre) > code[class*="language-"] {
+ border-radius: 0;
+}
