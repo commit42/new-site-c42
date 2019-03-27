@@ -10,7 +10,6 @@ const Services = () => {
         <Header as="h2" textAlign='center'>Découvrez tous nos services</Header>
       </Grid.Row>
       <Grid.Row>
-
         <Grid.Column mobile={14} tablet={14} computer={4}>
           <Grid textAlign='left'>
             <Grid.Row >
