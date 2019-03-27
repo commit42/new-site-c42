@@ -38,34 +38,35 @@ class BlogPage extends React.Component {
 
         <Container fluid style={{ backgroundColor: '#F9F9F9', padding: '5rem 0 10rem 0' }}>
           <Grid as={Container}>
-            <Grid.Row>
+            <Grid.Row >
               <Header as="h2" style={{ marginBottom: '5rem' }}>Tous les articles</Header>
-              <Grid.Column width={16}>
-                <Card.Group itemsPerRow={2}>
-                  {
-                    posts
-                      .filter(post => post.node.frontmatter.title.length > 0)
-                      .map(({ node: post }) => {
-                        return (
-                          <Transition key={post.id} visible={this.state.visible} animation='fade up' duration={800}>
-                            <Card fluid as={Link} to={post.fields.slug}>
-                              <Image src={post.frontmatter.thumbnail && post.frontmatter.thumbnail} centered />
+            </Grid.Row>
+            <Grid.Row>
+              {
+                posts
+                  .filter(post => post.node.frontmatter.title.length > 0)
+                  .map(({ node: post }) => {
+                    return (
+                      <Grid.Column mobile={16} tablet={8} computer={8} style={{marginBottom:'3rem'}}>
+                        <Transition key={post.id} visible={this.state.visible} animation='fade up' duration={800}>
+                          <Card fluid as={Link} to={post.fields.slug} >
+                            <Image src={post.frontmatter.thumbnail && post.frontmatter.thumbnail} centered />
 
-                              <Card.Content >
-                                <Card.Header >{post.frontmatter.title}</Card.Header>
-                                <Card.Meta style={{marginTop:'0.5rem', color:'#6BA3D6'}}>
-                                  <span>{moment(post.frontmatter.date).format('Do MMM YYYY')}</span>
-                                  <span> • {post.timeToRead}min à perdre</span>
-                                </Card.Meta>
-                                <Card.Description>{post.excerpt}</Card.Description>
-                              </Card.Content>
+                            <Card.Content >
+                              <Card.Header >{post.frontmatter.title}</Card.Header>
+                              <Card.Meta style={{ marginTop: '0.5rem', color: '#6BA3D6' }}>
+                                <span>{moment(post.frontmatter.date).format('Do MMM YYYY')}</span>
+                                <span> • {post.timeToRead}min à perdre</span>
+                              </Card.Meta>
+                              <Card.Description>{post.excerpt}</Card.Description>
+                            </Card.Content>
 
-                              <Card.Content extra>
-                                {post.frontmatter.tags && post.frontmatter.tags.slice(0, 4).map((tag, index) => <Label key={index}>{tag}</Label>)}
-                              </Card.Content>
-                            </Card>
+                            <Card.Content extra>
+                              {post.frontmatter.tags && post.frontmatter.tags.slice(0, 4).map((tag, index) => <Label key={index}>{tag}</Label>)}
+                            </Card.Content>
+                          </Card>
 
-                            {/* <Card fluid as={Link} to={post.fields.slug}>
+                          {/* <Card fluid as={Link} to={post.fields.slug}>
                               <Grid>
                                 <Grid.Column width={6}>
                                   <Image src={post.frontmatter.thumbnail && post.frontmatter.thumbnail}  fluid />
@@ -88,12 +89,12 @@ class BlogPage extends React.Component {
                                 </Grid.Column>
                               </Grid>
                             </Card> */}
-                          </Transition>
-                        )
-                      })
-                  }
-                </Card.Group>
-              </Grid.Column>
+                        </Transition>
+                      </Grid.Column>
+
+                    )
+                  })
+              }
             </Grid.Row>
           </Grid>
         </Container>
