@@ -4,6 +4,7 @@ import { Container, Grid, Card, Transition, Label, Image, Header, Icon } from 's
 import SEO from '../components/SEO/SEO'
 import Layout from '../components/layout'
 import moment from 'moment'
+import Fade from 'react-reveal/Fade';
 
 class BlogPage extends React.Component {
   state = { visible: false }
@@ -47,8 +48,7 @@ class BlogPage extends React.Component {
                   .filter(post => post.node.frontmatter.title.length > 0)
                   .map(({ node: post }) => {
                     return (
-                      <Grid.Column mobile={16} tablet={8} computer={8} style={{marginBottom:'3rem'}}>
-                        <Transition key={post.id} visible={this.state.visible} animation='fade up' duration={800}>
+                      <Grid.Column key={post.id} mobile={16} tablet={8} computer={8} style={{marginBottom:'3rem'}}>
                           <Card fluid as={Link} to={post.fields.slug} >
                             <Image src={post.frontmatter.thumbnail && post.frontmatter.thumbnail} centered />
 
@@ -89,7 +89,6 @@ class BlogPage extends React.Component {
                                 </Grid.Column>
                               </Grid>
                             </Card> */}
-                        </Transition>
                       </Grid.Column>
 
                     )
