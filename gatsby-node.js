@@ -2,6 +2,10 @@ const path = require("path")
 const { createFilePath } = require("gatsby-source-filesystem")
 const { fmImagesToRelative } = require("gatsby-remark-relative-images")
 
+exports.onCreatePage = ({ page }) => {
+  if (page.path.match('/'))
+}
+
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
   const blogPostTemplate = path.resolve(`src/templates/blog-post.js`)
