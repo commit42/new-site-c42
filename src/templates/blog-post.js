@@ -14,7 +14,10 @@ export default function Template({ data }) {
       <SEO
         title={post.frontmatter.title}
         description={post.excerpt || "nothing here"}
-        image={post.frontmatter.thumbnail}
+        image={
+          post.frontmatter.thumbnail &&
+          post.frontmatter.thumbnail.childImageSharp.fluid
+        }
         pathname={post.fields.slug}
         article
       />
