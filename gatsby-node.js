@@ -1,5 +1,6 @@
 const path = require("path")
 const { createFilePath } = require("gatsby-source-filesystem")
+const { fmImagesToRelative } = require("gatsby-remark-relative-images")
 
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
@@ -17,7 +18,13 @@ exports.createPages = ({ actions, graphql }) => {
             }
             frontmatter {
               tags
-              thumbnail
+              thumbnail {
+                childImageSharp {
+                  fluid(maxWidth: 980) {
+                    src
+                  }
+                }
+              }
             }
           }
         }
@@ -42,6 +49,7 @@ exports.createPages = ({ actions, graphql }) => {
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
+  fmImagesToRelative(node)
 
   if (node.internal.type === `MarkdownRemark`) {
     const value = createFilePath({ node, getNode })
@@ -57,8 +65,11 @@ exports.onCreateWebpackConfig = ({ actions }) => {
   actions.setWebpackConfig({
     resolve: {
       alias: {
-        '../../theme.config$': path.join(__dirname, 'src/semantic/theme.config'),
+        "../../theme.config$": path.join(
+          __dirname,
+          "src/semantic/theme.config"
+        ),
       },
     },
-  });
-};
+  })
+}

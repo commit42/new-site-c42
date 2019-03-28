@@ -3,7 +3,7 @@ backend:
   repo: commit42/new-site-c42
 
 media_folder: static/assets
-public_folder: /assets
+public_folder: assets
 
 publish_mode: editorial_workflow
 
@@ -28,5 +28,9 @@ collections:
       - { name: date, label: Date, widget: date }
       - { name: author, label: Author }
       - { name: thumbnail, label: Thumbnail, widget: image }
-      - { name: tags, label: Tags(séparer par une virgule et un espace), widget: list }
+      - {
+          name: tags,
+          label: Tags(séparer par une virgule et un espace),
+          widget: list,
+        }
       - { name: body, label: Body, widget: markdown }
