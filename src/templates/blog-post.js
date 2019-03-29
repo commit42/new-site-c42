@@ -1,6 +1,6 @@
 import React from "react"
 import "./blog-post.scss"
-import { Container, Header, Image, Icon, Grid } from "semantic-ui-react"
+import { Container, Header, Image, Grid } from "semantic-ui-react"
 import { graphql } from "gatsby"
 import moment from "moment"
 import SEO from "../components/SEO/SEO"

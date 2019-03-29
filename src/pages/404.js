@@ -1,26 +1,38 @@
 import React from "react"
 import { Link } from "gatsby"
 import { Container, Grid, Header, Button } from "semantic-ui-react"
+import Layout from "../components/layout"
+import "./404.scss"
 
 const PageNotFound = () => {
   return (
-    <Container fluid>
-      <Grid textAlign="center">
-        <Grid.Row>
-          <Grid.Column>
-            <Header as="h2" textAlign="center">
-              404
+    <Layout>
+      <Container fluid>
+        <Grid textAlign="center">
+          <Grid.Row>
+            <Grid.Column textAlign="center">
+              <Header
+                as="h2"
+                textAlign="center"
+                style={{ fontSize: "10rem", marginBottom: "3rem" }}
+              >
+                404
+              </Header>
+            </Grid.Column>
+          </Grid.Row>
+          <Grid.Row>
+            <Header as="h3" style={{ maxWidth: "90%", textAlign: "center" }}>
+              Oups, on dirait que cette page n'existe pas...
             </Header>
-          </Grid.Column>
-        </Grid.Row>
-        <Grid.Row>Oups, cette page n'existe pas...</Grid.Row>
-        <Grid.Row>
-          <Button as={Link} to="/">
-            Retourner sur la page d'accueil ?
-          </Button>
-        </Grid.Row>
-      </Grid>
-    </Container>
+          </Grid.Row>
+          <Grid.Row style={{ marginTop: "10rem" }}>
+            <Button as={Link} to="/">
+              Retourner sur la page d'accueil ?
+            </Button>
+          </Grid.Row>
+        </Grid>
+      </Container>
+    </Layout>
   )
 }
 
