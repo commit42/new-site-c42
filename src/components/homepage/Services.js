@@ -20,7 +20,7 @@ const Services = ({ data }) => {
                   <Grid.Column mobile={2} tablet={1} computer={2}>
                     <Fade bottom>
                       <Header as="h3">
-                        <i className="far fa-shopping-cart" />
+                        <i className={`far fa-${service.icon}`} />
                       </Header>
                     </Fade>
                   </Grid.Column>
