@@ -39,10 +39,6 @@ collections:
     label: Page
     folder: src/pages/content
     create: true
-    files:
-      - file: src/pages/content/index.md
-        label: Landing Page
-        name: index
-        fields:
-          - { name: header, label: Header, widget: string }
-          - { name: description, label: Description, widget: text }
+    fields:
+      - { name: header, label: Header, widget: string }
+      - { name: description, label: Description, widget: text }
