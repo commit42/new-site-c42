@@ -8,34 +8,18 @@ import Pitch from "../components/homepage/Pitch"
 import Testimonials from "../components/homepage/Testimonials"
 import CallToAction from "../components/homepage/CallToAction"
 
-// class IndexPage extends Component {
-//   render() {
-//     console.log(data)
-//     return (
-//       <div>
-//         <Layout isHome={true} path={this.props.location.pathname}>
-//           <SEO />
-//           <HeaderIndex />
-//           <Services />
-//           <Pitch />
-//           <Testimonials />
-//           <CallToAction />
-//         </Layout>
-//       </div>
-//     )
-//   }
-// }
-
 const IndexPage = ({ data }) => {
-  console.log(data)
+  const {
+    markdownRemark: { frontmatter: indexData },
+  } = data
   return (
     <div>
       <Layout>
         <SEO />
-        <HeaderIndex />
-        <Services />
-        <Pitch />
-        <Testimonials />
+        <HeaderIndex data={indexData.head} />
+        <Services data={indexData.services} />
+        <Pitch data={indexData.pitch} />
+        <Testimonials data={indexData.testimonials} />
         <CallToAction />
       </Layout>
     </div>
@@ -49,8 +33,30 @@ export const indexPageQuery = graphql`
     markdownRemark(frontmatter: { pageName: { eq: "index" } }) {
       frontmatter {
         pageName
+        head {
+          description
+          heading
+          image
+        }
         services {
           heading
+          servicesList {
+            description
+            title
+          }
+        }
+        pitch {
+          description
+          image
+          title
+        }
+        testimonials {
+          heading
+          testimonialsList {
+            author
+            rating
+            text
+          }
         }
       }
     }
