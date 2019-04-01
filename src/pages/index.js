@@ -44,6 +44,7 @@ export const indexPageQuery = graphql`
           servicesList {
             description
             title
+            icon
           }
         }
         pitch {

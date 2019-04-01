@@ -24,7 +24,7 @@ const Testimonials = ({ data }) => {
           <Card.Group centered>
             {data.testimonialsList.map((t, index) => {
               return (
-                <Fade bottom key={index}>
+                <Fade  key={index}>
                   <Card>
                     <Card.Content>
                       <div>
