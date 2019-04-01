@@ -149,7 +149,7 @@ collections:
                     {
                       name: testimonial1, 
                       label: Testimonial1, 
-                      widget: object: 
+                      widget: object, 
                         {name: text: Text: widget: text}, 
                         {name: author, label: Author, widget: string}, 
                         {name: rating, label: Rating, widget: number}
