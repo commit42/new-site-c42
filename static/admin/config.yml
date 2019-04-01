@@ -42,7 +42,17 @@ collections:
         label: Landing Page
         name: index
         fields:
-          - { name: header, label: Header, widget: string }
+          - {
+              name: header,
+              label: Header,
+              widget: object,
+              fields:
+                [
+                  { name: heading, label: Heading, widget: string },
+                  { name: description, label: Description, widget: text },
+                  { name: image, label: Image, widget: image },
+                ],
+            }
           - { name: description, label: Description, widget: text }
       - file: src/pages/content/blog.md
         label: Blog Page
