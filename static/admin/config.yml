@@ -61,101 +61,100 @@ collections:
               fields:
                 [
                   {
-                    name: service1, 
-                    label: Service1, 
-                    widget: object, 
-                    fields: 
+                    name: service1,
+                    label: Service1,
+                    widget: object,
+                    fields:
                       [
                         { name: title, label: Title, widhet: string },
                         { name: description, label: Description, widget: text },
-                      ]
+                      ],
                   },
                   {
-                    name: service2, 
-                    label: Service2, 
-                    widget: object, 
-                    fields: 
+                    name: service2,
+                    label: Service2,
+                    widget: object,
+                    fields:
                       [
                         { name: title, label: Title, widhet: string },
                         { name: description, label: Description, widget: text },
-                      ]
+                      ],
                   },
                   {
-                    name: service3, 
-                    label: Service3, 
-                    widget: object, 
-                    fields: 
+                    name: service3,
+                    label: Service3,
+                    widget: object,
+                    fields:
                       [
                         { name: title, label: Title, widhet: string },
                         { name: description, label: Description, widget: text },
-                      ]
-                  }
-                  
+                      ],
+                  },
                 ],
             }
           - {
               name: pitch,
               label: Pitch,
               widget: object,
-              fields: 
+              fields:
                 [
-                  { 
-                    name: section1, 
-                    label: Section1, 
-                    widget: object, 
-                    fields: 
+                  {
+                    name: section1,
+                    label: Section1,
+                    widget: object,
+                    fields:
                       [
-                        { name: title, label: Title , widget: string }, 
-                        { name: description, label: Description, widget: text }, 
-                        { name: image ,label: Image , widget: image } 
-                      ]
+                        { name: title, label: Title, widget: string },
+                        { name: description, label: Description, widget: text },
+                        { name: image, label: Image, widget: image },
+                      ],
                   },
-                  { 
-                    name: section2, 
-                    label: Section2, 
-                    widget: object, 
-                    fields: 
+                  {
+                    name: section2,
+                    label: Section2,
+                    widget: object,
+                    fields:
                       [
-                        {name: title, label: Title , widget: string }, 
-                        {name: description, label: Description, widget: text }, 
-                        {name: image ,label: Image , widget: image } 
-                      ]
+                        { name: title, label: Title, widget: string },
+                        { name: description, label: Description, widget: text },
+                        { name: image, label: Image, widget: image },
+                      ],
                   },
-                  { 
-                    name: section3, 
-                    label: Section3, 
-                    widget: object, 
-                    fields: 
+                  {
+                    name: section3,
+                    label: Section3,
+                    widget: object,
+                    fields:
                       [
-                        { name: title, label: Title , widget: string }, 
-                        { name: description, label: Description, widget: text }, 
-                        { name: image ,label: Image , widget: image } 
-                      ]
-                  } 
-                ]
+                        { name: title, label: Title, widget: string },
+                        { name: description, label: Description, widget: text },
+                        { name: image, label: Image, widget: image },
+                      ],
+                  },
+                ],
             }
           - {
-            name: testimonials, 
-            label: Testimonials, 
-            widget: object, 
-            fields: 
-              [
-                {name: heading, label: Heading, widget: string},
-                {
-                  name: testimonialsCards, 
-                  label: TestimonialsCards, 
-                  widget: object, 
-                  fields: [
-                    {
-                      name: testimonial1, 
-                      label: Testimonial1, 
-                      widget: object, 
-                        {name: text: Text: widget: text}, 
-                        {name: author, label: Author, widget: string}, 
-                        {name: rating, label: Rating, widget: number}
-                    }
-                  ]
-                }
-              ]
+              name: testimonials,
+              label: Testimonials,
+              widget: object,
+              fields:
+                [
+                  { name: heading, label: Heading, widget: string },
+                  {
+                    name: testimonialsCards,
+                    label: TestimonialsCards,
+                    widget: object,
+                    fields:
+                      [
+                        {
+                          name: testimonial1,
+                          label: Testimonial1,
+                          widget: object,
+                          { name: text, label: Text, widget: text },
+                          { name: author, label: Author, widget: string },
+                          { name: rating, label: Rating, widget: number },
+                        },
+                      ],
+                  },
+                ],
             }
-          
