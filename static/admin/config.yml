@@ -30,15 +30,13 @@ collections:
       - { name: thumbnail, label: Thumbnail, widget: image }
       - {
           name: tags,
-          label: Tags(séparer par une virgule et un espace),
+          label: Tags (séparer par une virgule et un espace),
           widget: list,
         }
       - { name: body, label: Body, widget: markdown }
 
   - name: pages
     label: Page
-    folder: src/pages/content
-    create: true
     files:
       - file: src/pages/content/index.md
         label: Landing Page
