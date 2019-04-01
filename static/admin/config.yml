@@ -133,31 +133,3 @@ collections:
                   },
                 ],
             }
-          - {
-              name: testimonials,
-              label: Testimonials,
-              widget: object,
-              fields:
-                [
-                  { name: heading, label: Heading, widget: string },
-                  {
-                    name: testimonialsCards,
-                    label: TestimonialsCards,
-                    widget: object,
-                    fields:
-                      [
-                        {
-                          name: testimonial1,
-                          label: Testimonial1,
-                          widget: object,
-                          fields:
-                            [
-                              { name: text, label: Text, widget: text },
-                              { name: author, label: Author, widget: string },
-                              { name: rating, label: Rating, widget: number },
-                            ],
-                        },
-                      ],
-                  },
-                ],
-            }
