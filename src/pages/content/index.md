@@ -22,6 +22,7 @@ services:
         velit nisi deserunt cillum Lorem esse est proident commodo eu anim irure
         nostrud. Ea ut labore non esse dolore.
       title: Web App PWA
+      icon: mobile
     - description: >-
         Exercitation fugiat dolore elit exercitation et ullamco aliquip culpa
         sint. Do Lorem ullamco cillum pariatur non culpa. Incididunt consequat
@@ -31,6 +32,7 @@ services:
         velit nisi deserunt cillum Lorem esse est proident commodo eu anim irure
         nostrud. Ea ut labore non esse dolore.
       title: E-commerce
+      icon: shopping-cart
     - description: >-
         Exercitation fugiat dolore elit exercitation et ullamco aliquip culpa
         sint. Do Lorem ullamco cillum pariatur non culpa. Incididunt consequat
@@ -40,6 +42,7 @@ services:
         velit nisi deserunt cillum Lorem esse est proident commodo eu anim irure
         nostrud. Ea ut labore non esse dolore.
       title: Sites sur-mesure
+      icon: ruler
 pitch:
   - description: >-
       Exercitation fugiat dolore elit exercitation et ullamco aliquip culpa
