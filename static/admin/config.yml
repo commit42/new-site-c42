@@ -44,8 +44,8 @@ collections:
         fields:
           - { name: pageName, label: Page Name, widget: string }
           - {
-              name: header,
-              label: Header,
+              name: head,
+              label: Head,
               widget: object,
               fields:
                 [
