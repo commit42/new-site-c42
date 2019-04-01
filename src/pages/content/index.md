@@ -15,11 +15,4 @@ services:
     title: "Site sur-mesure"
     description: "Cillum ex quis aliquip laborum ad do consequat eiusmod in nostrud labore aliquip veniam. Exercitation sunt cupidatat ad elit enim laboris. Eu enim nostrud ad et occaecat."
     image: /assets/bureau.jpg
-testimonials:
-  heading: "Ce que nos clients en pensent"
-  testimonialCards:
-    testimonial1:
-      text: "Officia dolor commodo laborum reprehenderit voluptate sint in ullamco minim deserunt aute. Sunt cillum exercitation reprehenderit Lorem eu do mollit magna excepteur tempor excepteur aute. Officia Lorem in est voluptate ipsum laborum. Proident quis nulla et exercitation consequat consequat consectetur Lorem anim commodo. Amet incididunt sunt consequat esse velit tempor commodo cupidatat aliqua magna ut sunt laborum cupidatat. Cillum dolore sint eu magna qui laborum mollit dolor nisi ex pariatur enim consequat. Deserunt nostrud elit Lorem excepteur proident in esse cupidatat veniam consequat consequat est officia."
-      author: "Jacques Chirac"
-      rating: 5
 ---
