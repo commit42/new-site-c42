@@ -48,12 +48,41 @@ collections:
               widget: object,
               fields:
                 [
+                  { name: image, label: Image, widget: image },
                   { name: heading, label: Heading, widget: string },
+                  { name: description, label: Description, widget: text },
+                ],
+            }
+          - {
+              name: services,
+              label: Services,
+              widget: object,
+              fields:
+                [
+                  { name: heading, label: Heading, widget: string },
+                  {
+                    name: servicesList,
+                    label: Services List,
+                    widget: list,
+                    fields:
+                      [
+                        { name: title, label: Title, widget: string },
+                        { name: description, label: Description, widget: text },
+                      ],
+                  },
+                ],
+            }
+          - {
+              name: pitch,
+              label: Pitch,
+              widget: list,
+              fields:
+                [
+                  { name: title, label: Title, widget: string },
                   { name: description, label: Description, widget: text },
                   { name: image, label: Image, widget: image },
                 ],
             }
-          - { name: description, label: Description, widget: text }
       - file: src/pages/content/blog.md
         label: Blog Page
         name: Blog
