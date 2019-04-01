@@ -89,7 +89,7 @@ class BlogPage extends React.Component {
 }
 export default BlogPage
 
-export const pageQuery = graphql`
+export const BlogPageQuery = graphql`
   query BlogPageQuery {
     allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
       edges {
