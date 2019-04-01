@@ -44,3 +44,9 @@ collections:
         fields:
           - { name: header, label: Header, widget: string }
           - { name: description, label: Description, widget: text }
+      - file: src/pages/content/blog.md
+        label: Blog Page
+        name: Blog
+        fields:
+          - { name: header, label: Header, widget: string }
+          - { name: description, label: Description, widget: text }
