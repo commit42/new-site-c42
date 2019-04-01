@@ -1,4 +1,5 @@
 ---
+pageName: index
 header:
   heading: Studio  d'innovation web
   image: static/assets/bureau.jpg
