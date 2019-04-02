@@ -9,7 +9,7 @@ head:
     anim. In anim reprehenderit consectetur tempor do anim eiusmod amet velit
     ullamco.
   heading: Studio  d'innovation web
-  image: static/assets/bureau.jpg
+  image: /assets/header-img-c42.png
 services:
   heading: Découvrez tous nos services
   servicesList:
@@ -21,8 +21,8 @@ services:
         cillum. Aute officia ipsum exercitation pariatur fugiat labore. Labore
         velit nisi deserunt cillum Lorem esse est proident commodo eu anim irure
         nostrud. Ea ut labore non esse dolore.
-      title: Web App PWA
       icon: mobile
+      title: Web App PWA
     - description: >-
         Exercitation fugiat dolore elit exercitation et ullamco aliquip culpa
         sint. Do Lorem ullamco cillum pariatur non culpa. Incididunt consequat
@@ -31,8 +31,8 @@ services:
         cillum. Aute officia ipsum exercitation pariatur fugiat labore. Labore
         velit nisi deserunt cillum Lorem esse est proident commodo eu anim irure
         nostrud. Ea ut labore non esse dolore.
-      title: E-commerce
       icon: shopping-cart
+      title: E-commerce
     - description: >-
         Exercitation fugiat dolore elit exercitation et ullamco aliquip culpa
         sint. Do Lorem ullamco cillum pariatur non culpa. Incididunt consequat
@@ -41,8 +41,8 @@ services:
         cillum. Aute officia ipsum exercitation pariatur fugiat labore. Labore
         velit nisi deserunt cillum Lorem esse est proident commodo eu anim irure
         nostrud. Ea ut labore non esse dolore.
-      title: Sites sur-mesure
       icon: ruler
+      title: Sites sur-mesure
 pitch:
   - description: >-
       Exercitation fugiat dolore elit exercitation et ullamco aliquip culpa
@@ -52,8 +52,7 @@ pitch:
       cillum. Aute officia ipsum exercitation pariatur fugiat labore. Labore
       velit nisi deserunt cillum Lorem esse est proident commodo eu anim irure
       nostrud. Ea ut labore non esse dolore.
-    image: >-
-      https://raw.githubusercontent.com/commit42/new-site-c42/master/static/assets/brouillons-flexibilite.png
+    image: /assets/toulouse-c42.png
     title: Made in toulouse
   - description: >-
       Exercitation fugiat dolore elit exercitation et ullamco aliquip culpa
@@ -63,8 +62,7 @@ pitch:
       cillum. Aute officia ipsum exercitation pariatur fugiat labore. Labore
       velit nisi deserunt cillum Lorem esse est proident commodo eu anim irure
       nostrud. Ea ut labore non esse dolore.
-    image: >-
-      https://raw.githubusercontent.com/commit42/new-site-c42/master/static/assets/brouillons-nouvellestechnos.png
+    image: /assets/nouvelles-technologies-c42.png
     title: A la pointe
   - description: >-
       Exercitation fugiat dolore elit exercitation et ullamco aliquip culpa
@@ -74,8 +72,7 @@ pitch:
       cillum. Aute officia ipsum exercitation pariatur fugiat labore. Labore
       velit nisi deserunt cillum Lorem esse est proident commodo eu anim irure
       nostrud. Ea ut labore non esse dolore.
-    image: >-
-      https://raw.githubusercontent.com/commit42/new-site-c42/master/static/assets/flexibilite.png
+    image: /assets/flexibilite-c42.png
     title: Flexibilité
 testimonials:
   heading: Ce qu'en pensent nos clients
@@ -91,3 +88,4 @@ testimonials:
         velit nisi deserunt cillum Lorem esse est proident commodo eu anim irure
         nostrud. Ea ut labore non esse dolore.
 ---
+
