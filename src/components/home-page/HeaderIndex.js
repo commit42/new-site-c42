@@ -11,7 +11,7 @@ const HeaderIndex = ({ data }) => {
           <Image
             fluid
             style={{ maxHeight: "100vh" }}
-            src={data.image.childImageSharp.fluid.src}
+            src=""
           />
         </Grid.Column>
         <Grid.Column as={Container} text verticalAlign="middle">

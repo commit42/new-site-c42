@@ -38,13 +38,7 @@ export const indexPageQuery = graphql`
         head {
           description
           heading
-          image {
-            childImageSharp {
-              fluid(maxWidth: 980) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
+          image 
         }
         services {
           heading
@@ -57,13 +51,8 @@ export const indexPageQuery = graphql`
         pitch {
           description
           title
-          image {
-            childImageSharp {
-              fluid(maxWidth: 980) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
+          image 
+          darkBg
         }
         testimonials {
           heading
