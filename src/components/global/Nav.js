@@ -1,5 +1,5 @@
 import React from 'react';
-import { Menu, Image, Container } from 'semantic-ui-react';
+import { Menu, Image, Container, Header } from 'semantic-ui-react';
 import { Link } from 'gatsby'
 import Headroom from 'react-headroom';
 import Logo from '../../../static/assets/logo-noir-sansfond.png'
@@ -14,7 +14,7 @@ const Nav = (props) => {
             <Image src={Logo}/>
           </Menu.Item>
       <Menu.Item as={Link} to="/blog" position="right">
-        <h2 style={{ fontFamily: 'Poppins', color: 'black' }}>Blog</h2>
+        <Header as="h3" style={{ fontFamily: 'Poppins', color: 'black' }}>Blog</Header>
       </Menu.Item>
       </Container>
     </Menu>
