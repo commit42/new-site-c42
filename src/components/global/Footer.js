@@ -60,7 +60,7 @@ const Footer = () => {
           
         </Grid.Column>
       </Grid.Row>
-      <Grid.Row textAlign="center" style={{ marginTop: "3rem" }}>
+      <Grid.Row textAlign="center" style={{ marginTop: "1rem" }}>
         <Grid.Column mobile={16} tablet={16} computer={16}>
           <small>{`Tous droits réservés commit42 © ${new Date().getFullYear()}`}</small>
         </Grid.Column>
