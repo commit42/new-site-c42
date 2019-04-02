@@ -56,6 +56,7 @@ export const indexPageQuery = graphql`
         pitch {
           description
           title
+          darkBg
           image {
             childImageSharp {
               fluid(maxWidth: 980) {
