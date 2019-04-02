@@ -8,7 +8,7 @@ const HeaderBlogPage = ({data}) => {
       <Grid.Row>
         <Grid.Column>
           <Fade top>
-            <Image src={data.image.childImageSharp.fluid.src} centered />
+            <Image src="http://via.placeholder.com/800x500" centered />
           </Fade>
         </Grid.Column>
       </Grid.Row>
