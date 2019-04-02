@@ -3,6 +3,7 @@ import "./headerIndex.scss"
 import { Image, Container, Grid, Header } from "semantic-ui-react"
 
 const HeaderIndex = ({ data }) => {
+  console.log(data)
   return (
     <Grid>
       <Grid.Row columns={2}>
@@ -10,7 +11,7 @@ const HeaderIndex = ({ data }) => {
           <Image
             fluid
             style={{ maxHeight: "100vh" }}
-            src="https://via.placeholder.com/800x1000"
+            src={data.image.childImageSharp.fluid.src}
           />
         </Grid.Column>
         <Grid.Column as={Container} text verticalAlign="middle">

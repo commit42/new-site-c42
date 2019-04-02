@@ -5,10 +5,10 @@ import Fade from "react-reveal/Fade"
 
 const Pitch = ({ data }) => {
   return (
-    <Grid id="pitch-container">
+    <Grid id="pitch-container" >
       <Grid.Row style={{ backgroundColor: "#424242" }}>
         <Grid.Column>
-          <Container text>
+          <Container text >
             <Fade bottom>
               <Header as="h3" className="primary">
                 {data[0].title}
@@ -16,7 +16,7 @@ const Pitch = ({ data }) => {
               <p style={{ color: "white", marginBottom: "5rem" }}>
                 {data[0].description}
               </p>
-              <Image src="https://via.placeholder.com/800x300" />
+                <Image style={{ margin: "auto" }} src={data[0].image.childImageSharp.fluid.src} />
             </Fade>
           </Container>
         </Grid.Column>
@@ -29,7 +29,7 @@ const Pitch = ({ data }) => {
                 {data[1].title}
               </Header>
               <p style={{ marginBottom: "5rem" }}>{data[1].description}</p>
-              <Image src="https://via.placeholder.com/800x300" />
+                <Image style={{ margin: "auto" }} src={data[1].image.childImageSharp.fluid.src} />
             </Fade>
           </Container>
         </Grid.Column>
@@ -44,7 +44,7 @@ const Pitch = ({ data }) => {
               <p style={{ color: "white", marginBottom: "5rem" }}>
                 {data[2].description}
               </p>
-              <Image src="https://via.placeholder.com/800x300" />
+              <Image style={{ margin: "auto" }} src={data[2].image.childImageSharp.fluid.src}  />
             </Fade>
           </Container>
         </Grid.Column>
