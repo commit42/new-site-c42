@@ -13,7 +13,6 @@ const IndexPage = ({ data }) => {
   const {
     markdownRemark: { frontmatter: indexData },
   } = data
-  console.log(indexData)
   return (
     <div>
       <Layout>

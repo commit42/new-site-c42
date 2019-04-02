@@ -2,7 +2,6 @@ import React from "react"
 import "./pitch.scss"
 import { Image, Container, Grid, Header } from "semantic-ui-react"
 import Fade from "react-reveal/Fade"
-import { isBinary } from "babel-types";
 
 const Pitch = ({ data }) => {
 return (
