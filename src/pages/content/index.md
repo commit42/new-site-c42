@@ -44,7 +44,8 @@ services:
       icon: ruler
       title: Sites sur-mesure
 pitch:
-  - description: >-
+  - darkBg: true
+    description: >-
       Exercitation fugiat dolore elit exercitation et ullamco aliquip culpa
       sint. Do Lorem ullamco cillum pariatur non culpa. Incididunt consequat
       nisi adipisicing culpa adipisicing labore esse voluptate dolore minim
@@ -54,7 +55,8 @@ pitch:
       nostrud. Ea ut labore non esse dolore.
     image: /assets/toulouse-c42.png
     title: Made in toulouse
-  - description: >-
+  - darkBg: false
+    description: >-
       Exercitation fugiat dolore elit exercitation et ullamco aliquip culpa
       sint. Do Lorem ullamco cillum pariatur non culpa. Incididunt consequat
       nisi adipisicing culpa adipisicing labore esse voluptate dolore minim
@@ -64,7 +66,8 @@ pitch:
       nostrud. Ea ut labore non esse dolore.
     image: /assets/nouvelles-technologies-c42.png
     title: A la pointe
-  - description: >-
+  - darkBg: true
+    description: >-
       Exercitation fugiat dolore elit exercitation et ullamco aliquip culpa
       sint. Do Lorem ullamco cillum pariatur non culpa. Incididunt consequat
       nisi adipisicing culpa adipisicing labore esse voluptate dolore minim
