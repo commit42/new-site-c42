@@ -39,10 +39,10 @@ export const indexPageQuery = graphql`
           heading
           image {
             childImageSharp {
-                fluid(maxWidth: 980) {
-                  ...GatsbyImageSharpFluid
-                }
+              fluid(maxWidth: 980) {
+                ...GatsbyImageSharpFluid
               }
+            }
           }
         }
         services {
@@ -58,10 +58,10 @@ export const indexPageQuery = graphql`
           title
           image {
             childImageSharp {
-                fluid(maxWidth: 980) {
-                  ...GatsbyImageSharpFluid
-                }
+              fluid(maxWidth: 980) {
+                ...GatsbyImageSharpFluid
               }
+            }
           }
         }
         testimonials {
