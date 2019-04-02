@@ -5,50 +5,26 @@ import Fade from "react-reveal/Fade"
 
 const Pitch = ({ data }) => {
   return (
-    <Grid id="pitch-container" >
-      <Grid.Row style={{ backgroundColor: "#424242" }}>
-        <Grid.Column>
-          <Container text >
-            <Fade bottom>
-              <Header as="h3" className="primary">
-                {data[0].title}
-              </Header>
-              <p style={{ color: "white", marginBottom: "5rem" }}>
-                {data[0].description}
-              </p>
-                <Image style={{ margin: "auto" }} src={data[0].image.childImageSharp.fluid.src} />
-            </Fade>
-          </Container>
-        </Grid.Column>
-      </Grid.Row>
-      <Grid.Row style={{ backgroundColor: "#F9F9F9" }}>
-        <Grid.Column>
-          <Container text>
-            <Fade bottom>
-              <Header as="h3" className="primary">
-                {data[1].title}
-              </Header>
-              <p style={{ marginBottom: "5rem" }}>{data[1].description}</p>
-                <Image style={{ margin: "auto" }} src={data[1].image.childImageSharp.fluid.src} />
-            </Fade>
-          </Container>
-        </Grid.Column>
-      </Grid.Row>
-      <Grid.Row style={{ backgroundColor: "#424242" }}>
-        <Grid.Column>
-          <Container text>
-            <Fade bottom>
-              <Header as="h3" className="primary">
-                {data[2].title}
-              </Header>
-              <p style={{ color: "white", marginBottom: "5rem" }}>
-                {data[2].description}
-              </p>
-              <Image style={{ margin: "auto" }} src={data[2].image.childImageSharp.fluid.src}  />
-            </Fade>
-          </Container>
-        </Grid.Column>
-      </Grid.Row>
+    <Grid id="pitch-container">
+      {data.map((row, index) => {
+        return (
+          <Grid.Row style={{ backgroundColor: "#424242" }}>
+            <Grid.Column>
+              <Container text>
+                <Fade bottom>
+                  <Header as="h3" className="primary">
+                    {row.title}
+                  </Header>
+                  <p style={{ color: "white", marginBottom: "5rem" }}>
+                    {row.description}
+                  </p>
+                  <Image style={{ margin: "auto" }} src={row.image} />
+                </Fade>
+              </Container>
+            </Grid.Column>
+          </Grid.Row>
+        )
+      })}
     </Grid>
   )
 }
