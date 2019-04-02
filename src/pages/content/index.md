@@ -9,7 +9,7 @@ head:
     anim. In anim reprehenderit consectetur tempor do anim eiusmod amet velit
     ullamco.
   heading: Studio  d'innovation web
-  image: static/assets/bureau.jpg
+  image: /assets/header-img-c42.png
 services:
   heading: Découvrez tous nos services
   servicesList:
