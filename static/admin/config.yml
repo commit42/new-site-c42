@@ -113,3 +113,4 @@ collections:
           - { name: header, label: Header, widget: string }
           - { name: description, label: Description, widget: text }
           - { name: image, label: Image, widget: image }
+          - { name: darkBG, label: Dark Background, widget: boolean, default: false }
