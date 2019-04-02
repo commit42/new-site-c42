@@ -16,7 +16,7 @@ const Pitch = ({ data }) => {
               <p style={{ color: "white", marginBottom: "5rem" }}>
                 {data[0].description}
               </p>
-                <Image style={{ margin: "auto" }} src={data[0].image.childImageSharp.fluid.src} />
+                <Image style={{ margin: "auto" }} src={data[0].image} />
             </Fade>
           </Container>
         </Grid.Column>
@@ -29,7 +29,7 @@ const Pitch = ({ data }) => {
                 {data[1].title}
               </Header>
               <p style={{ marginBottom: "5rem" }}>{data[1].description}</p>
-                <Image style={{ margin: "auto" }} src={data[1].image.childImageSharp.fluid.src} />
+                <Image style={{ margin: "auto" }} src={data[1].image} />
             </Fade>
           </Container>
         </Grid.Column>
@@ -44,7 +44,7 @@ const Pitch = ({ data }) => {
               <p style={{ color: "white", marginBottom: "5rem" }}>
                 {data[2].description}
               </p>
-              <Image style={{ margin: "auto" }} src={data[2].image.childImageSharp.fluid.src}  />
+              <Image style={{ margin: "auto" }} src={data[2].image}  />
             </Fade>
           </Container>
         </Grid.Column>
