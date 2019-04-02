@@ -112,3 +112,4 @@ collections:
           - { name: pageName, label: Page Name, widget: string }
           - { name: header, label: Header, widget: string }
           - { name: description, label: Description, widget: text }
+          - { name: image, label: Image, widget: image }
