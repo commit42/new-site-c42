@@ -12,7 +12,7 @@ const Pitch = ({ data }) => {
             <Grid.Column>
               <Container text>
                 <Fade bottom>
-                  <Header as="h3" className="primary">
+                  <Header as="h3" className="primary" style={{marginBottom:'1rem'}}>
                     {row.title}
                   </Header>
                   <p style={{ color: "white", marginBottom: "5rem" }}>
