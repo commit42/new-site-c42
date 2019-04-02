@@ -37,7 +37,7 @@ export const indexPageQuery = graphql`
         head {
           description
           heading
-          image 
+          image
         }
         services {
           heading
@@ -49,9 +49,8 @@ export const indexPageQuery = graphql`
         }
         pitch {
           description
+          image
           title
-          image 
-          darkBg
         }
         testimonials {
           heading

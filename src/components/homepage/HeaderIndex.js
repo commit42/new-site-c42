@@ -10,7 +10,7 @@ const HeaderIndex = ({ data }) => {
           <Image
             fluid
             style={{ maxHeight: "100vh" }}
-            src={data.image}
+            src="https://via.placeholder.com/800x1000"
           />
         </Grid.Column>
         <Grid.Column as={Container} text verticalAlign="middle">
