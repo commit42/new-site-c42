@@ -2,7 +2,7 @@
     User Variable Overrides
 *******************************/
 
-.ui.fluid.card {
+.ui.fluid.card, .ui.card {
     border-radius: none;
     display: flex!important;
     flex-direction: column;
