@@ -44,7 +44,7 @@ const Footer = () => {
             </Grid.Row>
           </Grid> 
           <div style={{marginTop:'3rem'}}>
-            <a href="https://www.facebook.com/commit42/"><Icon name="facebook" size='big' link /></a>
+            <a href="https://www.facebook.com/commit42/" ><Icon name="facebook" size='big' link /></a>
             <a href="https://www.linkedin.com/company/commit42/?originalSubdomain=fr"><Icon name="linkedin" size='big' link /></a>
             <a href="https://twitter.com/commit42"><Icon name="twitter square" size='big' link /></a>
           </div>
