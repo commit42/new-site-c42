@@ -1,6 +1,6 @@
 import React from "react"
-import { graphql } from "gatsby"
 import "semantic-ui-css/semantic.min.css"
+import { graphql } from "gatsby"
 import SEO from "../components/SEO/SEO"
 import Layout from "../components/layout"
 import HeaderIndex from "../components/homepage/HeaderIndex"
@@ -37,7 +37,13 @@ export const indexPageQuery = graphql`
         head {
           description
           heading
-          image
+          image {
+            childImageSharp {
+              fluid(maxWidth: 980) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
         }
         services {
           heading
@@ -49,8 +55,14 @@ export const indexPageQuery = graphql`
         }
         pitch {
           description
-          image
           title
+          image {
+            childImageSharp {
+              fluid(maxWidth: 980) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
         }
         testimonials {
           heading

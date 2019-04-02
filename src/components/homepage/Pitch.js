@@ -18,7 +18,7 @@ const Pitch = ({ data }) => {
                   <p style={{ color: "white", marginBottom: "5rem" }}>
                     {row.description}
                   </p>
-                  <Image style={{ margin: "auto" }} src={row.image} />
+                  <Image style={{ margin: "auto" }} src={row.image.childImageSharp.fluid.src} />
                 </Fade>
               </Container>
             </Grid.Column>
