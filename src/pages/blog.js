@@ -124,6 +124,13 @@ export const BlogPageQuery = graphql`
       frontmatter {
 				header
         description
+        image {
+          childImageSharp {
+            fluid(maxWidth: 980) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
   }
