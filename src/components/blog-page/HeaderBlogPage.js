@@ -2,7 +2,7 @@ import React from "react"
 import { Container, Grid, Image, Header } from "semantic-ui-react"
 import Fade from "react-reveal/Fade"
 
-const HeaderBlogPage = () => {
+const HeaderBlogPage = ({data}) => {
   return (
     <Grid as={Container} style={{ marginTop: "15rem", marginBottom: "5rem" }}>
       <Grid.Row>
@@ -16,22 +16,9 @@ const HeaderBlogPage = () => {
         <Grid.Column>
           <Fade top>
             <Header as="h1">
-              Prenez un{" "}
-              <span role="img" aria-label="Coffe cup">
-                ☕
-              </span>{" "}
-              et détendez vous{" "}
-              <span role="img" aria-label="Open book">
-                📖
-              </span>
+              {data.header}
             </Header>
-            <p>
-              Consequat exercitation proident labore culpa. Mollit aliqua sint
-              eu enim aliqua velit irure sunt proident quis. Excepteur qui eu
-              non voluptate aliquip. Dolore aliqua sit pariatur pariatur qui
-              enim. Adipisicing est id laboris labore quis labore ut in esse
-              voluptate.
-            </p>
+            <p>{data.description}</p>
           </Fade>
         </Grid.Column>
       </Grid.Row>

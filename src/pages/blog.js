@@ -1,14 +1,18 @@
 import React from "react"
+import Image from "gatsby-image"
+import moment from "moment"
+
 import { Link, graphql } from "gatsby"
 import { Container, Grid, Card, Label, Header } from "semantic-ui-react"
-import moment from "moment"
+
 import SEO from "../components/SEO/SEO"
 import Layout from "../components/layout"
 import HeaderBlogPage from "../components/blog-page/HeaderBlogPage"
-import Image from "gatsby-image"
 class BlogPage extends React.Component {
   render() {
     const { edges: posts } = this.props.data.allMarkdownRemark
+    const blogData = this.props.data.markdownRemark.frontmatter 
+    console.log(blogData)
     return (
       <Layout>
         <SEO
@@ -16,7 +20,7 @@ class BlogPage extends React.Component {
           description="Super blog trop cool de commit42"
           pathname="/blog"
         />
-        <HeaderBlogPage />
+        <HeaderBlogPage data={blogData}/>
 
         <Container
           fluid
@@ -114,6 +118,12 @@ export const BlogPageQuery = graphql`
             }
           }
         }
+      }
+    }
+    markdownRemark(frontmatter: { pageName: { eq: "blog" } }) {
+      frontmatter {
+				header
+        description
       }
     }
   }
