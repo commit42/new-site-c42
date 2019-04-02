@@ -3,11 +3,11 @@ import { graphql } from "gatsby"
 import "semantic-ui-css/semantic.min.css"
 import SEO from "../components/SEO/SEO"
 import Layout from "../components/layout"
-import HeaderIndex from "../components/homepage/HeaderIndex"
-import Services from "../components/homepage/Services"
-import Pitch from "../components/homepage/Pitch"
-import Testimonials from "../components/homepage/Testimonials"
-import CallToAction from "../components/homepage/CallToAction"
+import HeaderIndex from "../components/home-page/HeaderIndex"
+import Services from "../components/home-page/Services"
+import Pitch from "../components/home-page/Pitch"
+import Testimonials from "../components/home-page/Testimonials"
+import CallToAction from "../components/home-page/CallToAction"
 
 const IndexPage = ({ data }) => {
   const {
