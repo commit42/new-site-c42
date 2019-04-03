@@ -45,36 +45,23 @@ services:
       title: Sites sur-mesure
 pitch:
   - darkBg: true
-    description: >-
-      Exercitation fugiat dolore elit exercitation et ullamco aliquip culpa
-      sint. Do Lorem ullamco cillum pariatur non culpa. Incididunt consequat
-      nisi adipisicing culpa adipisicing labore esse voluptate dolore minim
-      culpa. Voluptate eu et qui eu aliquip nulla minim eiusmod enim Lorem est
-      cillum. Aute officia ipsum exercitation pariatur fugiat labore. Labore
-      velit nisi deserunt cillum Lorem esse est proident commodo eu anim irure
-      nostrud. Ea ut labore non esse dolore.
+    description: >
+      Disposez près de chez vous d’une écoute attentive et experte pour vous
+      guider dans la définition de vos projets.
+
+
+      Nous vous aidons à en estimer le budget et vous conseillons dans une
+      démarche de réalisation agile.
     image: /assets/toulouse-c42.png
     title: Made in toulouse
   - darkBg: false
-    description: >-
-      Exercitation fugiat dolore elit exercitation et ullamco aliquip culpa
-      sint. Do Lorem ullamco cillum pariatur non culpa. Incididunt consequat
-      nisi adipisicing culpa adipisicing labore esse voluptate dolore minim
-      culpa. Voluptate eu et qui eu aliquip nulla minim eiusmod enim Lorem est
-      cillum. Aute officia ipsum exercitation pariatur fugiat labore. Labore
-      velit nisi deserunt cillum Lorem esse est proident commodo eu anim irure
-      nostrud. Ea ut labore non esse dolore.
+    description: Faites bénéficier à vos projets des dernières technologies disponibles
     image: /assets/nouvelles-technologies-c42.png
     title: A la pointe
   - darkBg: true
     description: >-
-      Exercitation fugiat dolore elit exercitation et ullamco aliquip culpa
-      sint. Do Lorem ullamco cillum pariatur non culpa. Incididunt consequat
-      nisi adipisicing culpa adipisicing labore esse voluptate dolore minim
-      culpa. Voluptate eu et qui eu aliquip nulla minim eiusmod enim Lorem est
-      cillum. Aute officia ipsum exercitation pariatur fugiat labore. Labore
-      velit nisi deserunt cillum Lorem esse est proident commodo eu anim irure
-      nostrud. Ea ut labore non esse dolore.
+      En régie ou pour renforcer vos équipes sur un projet précis, nous vous
+      accompagnons de manière harmonieuse dans votre activité. 
     image: /assets/flexibilite-c42.png
     title: Flexibilité
 testimonials:
