@@ -63,7 +63,7 @@ export default SEO;
 SEO.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
-  image: PropTypes.string,
+  image: PropTypes.object,
   pathname: PropTypes.string,
   article: PropTypes.bool,
 }

@@ -27,6 +27,7 @@ export default function Template({ data }) {
         style={{
           paddingBottom: "5%",
           backgroundColor: "#F9F9F9",
+          minHeight:'100vh'
         }}
       >
         <Grid as={Container} text>

@@ -12,7 +12,6 @@ class BlogPage extends React.Component {
   render() {
     const { edges: posts } = this.props.data.allMarkdownRemark
     const blogData = this.props.data.markdownRemark.frontmatter
-    console.log(blogData)
     return (
       <Layout>
         <SEO
