@@ -50,7 +50,7 @@ const Testimonials = ({ data }) => {
             })}
           </Card.Group>
           <Header as="h4" style={{ marginTop: "3rem" }}>
-            Voir tous les avis <Icon name="long arrow alternate right" />
+            <a href="https://www.google.com/search?q=commit42+avis&oq=commit42+avis&aqs=chrome..69i57.2474j0j7&sourceid=chrome&ie=UTF-8#lrd=0x12aebb873c60e57b:0x2ca3be697d36200,1,,,">Voir tous les avis <Icon name="long arrow alternate right" /></a>
           </Header>
         </Grid.Column>
       </Grid.Row>
