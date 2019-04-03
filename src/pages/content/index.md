@@ -1,36 +1,20 @@
 ---
 pageName: index
 head:
-  description: >-
-    Mollit pariatur magna duis id voluptate ipsum ipsum pariatur in aliquip.
-    Elit id cupidatat est ullamco ea proident Lorem commodo. Laboris labore
-    nostrud laboris eiusmod aliqua amet id esse ipsum in officia. Proident
-    exercitation nulla deserunt magna aliqua ipsum ut. Est dolore id anim velit
-    anim. In anim reprehenderit consectetur tempor do anim eiusmod amet velit
-    ullamco.
+  description: 'On est beaux, on est doux on sent bon on est gentils'
   heading: Studio  d'innovation web
   image: /assets/header-img-c42.png
 services:
   heading: Découvrez tous nos services
   servicesList:
     - description: >-
-        Exercitation fugiat dolore elit exercitation et ullamco aliquip culpa
-        sint. Do Lorem ullamco cillum pariatur non culpa. Incididunt consequat
-        nisi adipisicing culpa adipisicing labore esse voluptate dolore minim
-        culpa. Voluptate eu et qui eu aliquip nulla minim eiusmod enim Lorem est
-        cillum. Aute officia ipsum exercitation pariatur fugiat labore. Labore
-        velit nisi deserunt cillum Lorem esse est proident commodo eu anim irure
-        nostrud. Ea ut labore non esse dolore.
+        L'avenir du web ! Rapide, disponible hors ligne... Retrouvez les
+        avantages d'une application mobile dans un site web
       icon: mobile
       title: Web App PWA
     - description: >-
-        Exercitation fugiat dolore elit exercitation et ullamco aliquip culpa
-        sint. Do Lorem ullamco cillum pariatur non culpa. Incididunt consequat
-        nisi adipisicing culpa adipisicing labore esse voluptate dolore minim
-        culpa. Voluptate eu et qui eu aliquip nulla minim eiusmod enim Lorem est
-        cillum. Aute officia ipsum exercitation pariatur fugiat labore. Labore
-        velit nisi deserunt cillum Lorem esse est proident commodo eu anim irure
-        nostrud. Ea ut labore non esse dolore.
+        Activité majoritaire de commit42, nous pouvons vous aider dans vos
+        boutiques Magento
       icon: shopping-cart
       title: E-commerce
     - description: >-
@@ -42,53 +26,81 @@ services:
         velit nisi deserunt cillum Lorem esse est proident commodo eu anim irure
         nostrud. Ea ut labore non esse dolore.
       icon: ruler
-      title: Sites sur-mesure
+      title: Applications web sur-mesure
 pitch:
   - darkBg: true
-    description: >-
-      Exercitation fugiat dolore elit exercitation et ullamco aliquip culpa
-      sint. Do Lorem ullamco cillum pariatur non culpa. Incididunt consequat
-      nisi adipisicing culpa adipisicing labore esse voluptate dolore minim
-      culpa. Voluptate eu et qui eu aliquip nulla minim eiusmod enim Lorem est
-      cillum. Aute officia ipsum exercitation pariatur fugiat labore. Labore
-      velit nisi deserunt cillum Lorem esse est proident commodo eu anim irure
-      nostrud. Ea ut labore non esse dolore.
+    description: >
+      Rien de mieux qu'un interlocuteur près de chez vous pour préparer et
+      réaliser un projet !
+
+
+      En choisissant commit42, vous bénéficiez d'une écoute attentive et experte
+      pour vous guider dans la définition de vos projets : nous vous aidons à en
+      estimer le budget et vous conseillons dans une démarche de réalisation
+      agile.
+
+
+      Tout le monde est bienvenu pour nous rendre visite alors si vous avez un
+      projet et souhaitez rencontrer l'équipe, venez-donc prendre un café avec
+      nous, il parait qu'on a le meilleur de Toulouse ! 
     image: /assets/toulouse-c42.png
     title: Made in toulouse
   - darkBg: false
-    description: >-
-      Exercitation fugiat dolore elit exercitation et ullamco aliquip culpa
-      sint. Do Lorem ullamco cillum pariatur non culpa. Incididunt consequat
-      nisi adipisicing culpa adipisicing labore esse voluptate dolore minim
-      culpa. Voluptate eu et qui eu aliquip nulla minim eiusmod enim Lorem est
-      cillum. Aute officia ipsum exercitation pariatur fugiat labore. Labore
-      velit nisi deserunt cillum Lorem esse est proident commodo eu anim irure
-      nostrud. Ea ut labore non esse dolore.
+    description: >
+      Si vous avez un nouveau projet, il mérite les meilleures technologies
+      disponibles.
+
+
+      A l'inverse, si vous avez une architecture existante, nous sommes
+      suffisamment versatiles pour prendre le relai 
     image: /assets/nouvelles-technologies-c42.png
-    title: A la pointe
+    title: Multi-compétences
   - darkBg: true
     description: >-
-      Exercitation fugiat dolore elit exercitation et ullamco aliquip culpa
-      sint. Do Lorem ullamco cillum pariatur non culpa. Incididunt consequat
-      nisi adipisicing culpa adipisicing labore esse voluptate dolore minim
-      culpa. Voluptate eu et qui eu aliquip nulla minim eiusmod enim Lorem est
-      cillum. Aute officia ipsum exercitation pariatur fugiat labore. Labore
-      velit nisi deserunt cillum Lorem esse est proident commodo eu anim irure
-      nostrud. Ea ut labore non esse dolore.
+      Travailler en agile, c'est bien... être flexible c'est mieux !
+
+      Nous définissons avec vous les méthodes de travail au démarrage du projet
+      et nous savons nous adapter au besoins techniques ou humains. 
+
+      Mais nous ne sommes jamais passifs : fort d'une expérience avec de
+      multiples clients , nous avons testé autant de méthodes et saurons vous
+      faire bénéficier de cette expérience.
+
+      Nous pouvons aussi travailler en régie ou pour renforcer vos équipes sur
+      un projet précis.
+
+      Dans tous les cas nous vous accompagnons de manière harmonieuse au sein de
+      votre activité. 
     image: /assets/flexibilite-c42.png
     title: Flexibilité
 testimonials:
   heading: Ce qu'en pensent nos clients
   testimonialsList:
-    - author: Jacques Chirac
+    - author: Guillaume R.
       rating: 5
       text: >-
-        Exercitation fugiat dolore elit exercitation et ullamco aliquip culpa
-        sint. Do Lorem ullamco cillum pariatur non culpa. Incididunt consequat
-        nisi adipisicing culpa adipisicing labore esse voluptate dolore minim
-        culpa. Voluptate eu et qui eu aliquip nulla minim eiusmod enim Lorem est
-        cillum. Aute officia ipsum exercitation pariatur fugiat labore. Labore
-        velit nisi deserunt cillum Lorem esse est proident commodo eu anim irure
-        nostrud. Ea ut labore non esse dolore.
+        L'équipe est centrée sur le service et la satisfaction du client.
+        Excellente implication de tous dans le projet. Un vrai plaisir de
+        travailler avec Commit42
+    - author: Nicolas G.
+      rating: 5
+      text: >
+        Les résultats sont à la hauteur des engagements, merci à l'équipe pro et
+        sympathique de Commit42
+    - author: Ghislaine C.
+      rating: 5
+      text: |
+        Equipe très à l'écoute des besoins du client et réactive
+    - author: Samuel G.
+      rating: 5
+      text: |
+        Très bonne agence de développement, équipe professionnelle
+    - author: Patrice R.
+      rating: 5
+      text: >-
+        Compétence et réactivité sont les deux qualificatifs qui viennent à
+        l'esprit pour cette équipe jeune et dynamique. Notre site e-commerce n'a
+        plus connu d'arrêt depuis que nous avons choisi l'hébergement et
+        l'ingénierie chez Commit 42.
 ---
 
