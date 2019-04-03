@@ -75,7 +75,7 @@ pitch:
       cillum. Aute officia ipsum exercitation pariatur fugiat labore. Labore
       velit nisi deserunt cillum Lorem esse est proident commodo eu anim irure
       nostrud. Ea ut labore non esse dolore.
-    image: /assets/flexibilite-c42.png
+    image: /assets/flexibilite-350.png
     title: Flexibilité
 testimonials:
   heading: Ce qu'en pensent nos clients

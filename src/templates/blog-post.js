@@ -23,8 +23,8 @@ export default function Template({ data }) {
       />
       <Container
         fluid
+        className="header-post"
         style={{
-          paddingTop: "15rem",
           paddingBottom: "5%",
           backgroundColor: "#F9F9F9",
         }}
