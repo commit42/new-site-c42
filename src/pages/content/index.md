@@ -42,7 +42,7 @@ services:
         velit nisi deserunt cillum Lorem esse est proident commodo eu anim irure
         nostrud. Ea ut labore non esse dolore.
       icon: ruler
-      title: Sites sur-mesure
+      title: Applications web sur-mesure
 pitch:
   - darkBg: true
     description: >
