@@ -1,0 +1,9 @@
+/*******************************
+        Site Overrides
+*******************************/
+
+.ui.message {
+	background: @yellowc42;
+	border-radius: 100px;
+	box-shadow: none;
+}

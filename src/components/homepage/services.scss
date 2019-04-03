@@ -1,0 +1,19 @@
+.ui.center.aligned.grid {
+  margin-top: 0;
+  padding-top: 8%;
+  padding-bottom: 8%; 
+  background: #F9F9F9;
+ .row{
+   h2{
+    margin-bottom: 8rem;
+    @media only screen and (max-width: 1200px) {
+      margin-bottom: 5%;
+    }
+   }
+   .four.column {
+    @media only screen and (max-width: 1200px) {
+      margin-bottom: 8%;
+    }
+   }
+ } 
+}

@@ -35,6 +35,7 @@ const SEO = ({ title, description, image, pathname, article }) => {
               <meta name="description" content={seo.description} />
               <meta name="image" content={seo.image} />
               <link rel="shortcut icon" href={favicon}></link>
+              <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-Bx4pytHkyTDy3aJKjGkGoHPt3tvv6zlwwjc3iqN7ktaiEMLDPqLSZYts2OjKcBx1" crossorigin="anonymous"/>
 
             </Helmet>
             <Facebook
