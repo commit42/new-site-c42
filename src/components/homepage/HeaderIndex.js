@@ -11,6 +11,7 @@ const HeaderIndex = ({ data }) => {
             fluid
             style={{ maxHeight: "100vh" }}
             src={data.image.childImageSharp.fluid.src}
+            alt="Motifs commit42"
           />
         </Grid.Column>
         <Grid.Column as={Container} text verticalAlign="middle">
