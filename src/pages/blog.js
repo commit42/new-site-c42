@@ -24,14 +24,9 @@ class BlogPage extends React.Component {
 
         <Container
           fluid
-          style={{ backgroundColor: "#F9F9F9", padding: "5rem 0 10rem 0" }}
+          style={{ backgroundColor: "#F9F9F9", padding: "5rem 0 5rem 0" }}
         >
           <Grid as={Container}>
-            <Grid.Row>
-              <Header as="h2" style={{ marginBottom: "5rem" }}>
-                Tous les articles
-              </Header>
-            </Grid.Row>
             <Grid.Row>
               {posts
                 .filter(post => post.node.frontmatter.title.length > 0)
