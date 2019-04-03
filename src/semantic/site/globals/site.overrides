@@ -65,3 +65,8 @@ h4 {
 :not(pre) > code[class*="language-"] {
  border-radius: 0;
 }
+
+p{
+  font-size: 18px;
+  line-height: 30px;
+}

@@ -7,7 +7,7 @@
 @subheaderFont: 'Poppins';
 @pageFont: 'Roboto';
 
-@fontSize : 16px;
+@fontSize : 18px;
 
 /* Colors */
 @bluec42: #6BA3D6;
