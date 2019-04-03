@@ -62,9 +62,15 @@ pitch:
     image: /assets/toulouse-c42.png
     title: Made in toulouse
   - darkBg: false
-    description: Faites bénéficier à vos projets des dernières technologies disponibles
+    description: >
+      Si vous avez un nouveau projet, il mérite les meilleures technologies
+      disponibles.
+
+
+      A l'inverse, si vous avez une architecture existante, nous sommes
+      suffisamment versatiles pour prendre le relai 
     image: /assets/nouvelles-technologies-c42.png
-    title: A la pointe
+    title: Multi-compétences
   - darkBg: true
     description: >-
       En régie ou pour renforcer vos équipes sur un projet précis, nous vous
