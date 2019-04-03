@@ -46,12 +46,19 @@ services:
 pitch:
   - darkBg: true
     description: >
-      Disposez près de chez vous d’une écoute attentive et experte pour vous
-      guider dans la définition de vos projets.
+      Rien de mieux qu'un interlocuteur près de chez vous pour préparer et
+      réaliser un projet !
 
 
-      Nous vous aidons à en estimer le budget et vous conseillons dans une
-      démarche de réalisation agile.
+      En choisissant commit42, vous bénéficiez d'une écoute attentive et experte
+      pour vous guider dans la définition de vos projets : nous vous aidons à en
+      estimer le budget et vous conseillons dans une démarche de réalisation
+      agile.
+
+
+      Tout le monde est bienvenu pour nous rendre visite alors si vous avez un
+      projet et souhaitez rencontrer l'équipe, venez-donc prendre un café avec
+      nous, il parait qu'on a le meilleur de Toulouse ! 
     image: /assets/toulouse-c42.png
     title: Made in toulouse
   - darkBg: false
