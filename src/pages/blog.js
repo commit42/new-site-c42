@@ -11,7 +11,7 @@ import HeaderBlogPage from "../components/blog-page/HeaderBlogPage"
 class BlogPage extends React.Component {
   render() {
     const { edges: posts } = this.props.data.allMarkdownRemark
-    const blogData = this.props.data.markdownRemark.frontmatter 
+    const blogData = this.props.data.markdownRemark.frontmatter
     console.log(blogData)
     return (
       <Layout>
@@ -20,7 +20,7 @@ class BlogPage extends React.Component {
           description="Super blog trop cool de commit42"
           pathname="/blog"
         />
-        <HeaderBlogPage data={blogData}/>
+        <HeaderBlogPage data={blogData} />
 
         <Container
           fluid
@@ -72,14 +72,20 @@ class BlogPage extends React.Component {
                           <Card.Description>{post.excerpt}</Card.Description>
                         </Card.Content>
 
-                        <Card.Content extra>
-                          {post.frontmatter.tags &&
-                            post.frontmatter.tags
+                        {post.frontmatter.tags && (
+                          <Card.Content extra>
+                            {post.frontmatter.tags
                               .slice(0, 4)
                               .map((tag, index) => (
-                                <Label key={index}>{tag}</Label>
+                                <Label
+                                  key={index}
+                                  style={{ marginBottom: "0.5rem" }}
+                                >
+                                  {tag}
+                                </Label>
                               ))}
-                        </Card.Content>
+                          </Card.Content>
+                        )}
                       </Card>
                     </Grid.Column>
                   )
@@ -122,7 +128,7 @@ export const BlogPageQuery = graphql`
     }
     markdownRemark(frontmatter: { pageName: { eq: "blog" } }) {
       frontmatter {
-				header
+        header
         description
         image {
           childImageSharp {
