@@ -73,8 +73,20 @@ pitch:
     title: Multi-compétences
   - darkBg: true
     description: >-
-      En régie ou pour renforcer vos équipes sur un projet précis, nous vous
-      accompagnons de manière harmonieuse dans votre activité. 
+      Travailler en agile, c'est bien... être flexible c'est mieux !
+
+      Nous définissons avec vous les méthodes de travail au démarrage du projet
+      et nous savons nous adapter au besoins techniques ou humains. 
+
+      Mais nous ne sommes jamais passifs : fort d'une expérience avec de
+      multiples clients , nous avons testé autant de méthodes et saurons vous
+      faire bénéficier de cette expérience.
+
+      Nous pouvons aussi travailler en régie ou pour renforcer vos équipes sur
+      un projet précis.
+
+      Dans tous les cas nous vous accompagnons de manière harmonieuse au sein de
+      votre activité. 
     image: /assets/flexibilite-c42.png
     title: Flexibilité
 testimonials:
