@@ -75,6 +75,14 @@ module.exports = {
       }`,
       },
     },
+    {
+      resolve: 'gatsby-plugin-matomo',
+      options: {
+        siteId: '1',
+        matomoUrl: 'https://commit42.occitech.eu',
+        siteUrl: 'https://www.commit42.com/'
+      }
+    },
     // Doit toujours être en dernier
     `gatsby-plugin-netlify-cms`,
   ],

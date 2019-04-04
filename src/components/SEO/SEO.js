@@ -1,9 +1,10 @@
 import React from "react"
-import { Helmet } from "react-helmet"
 import PropTypes from "prop-types"
+import { Helmet } from "react-helmet"
 import { StaticQuery, graphql } from "gatsby"
 import Facebook from "./Facebook"
 import Twitter from "./Twitter"
+
 import favicon from "../../../static/favicon.ico"
 import favicon32 from "../../../static/assets/favicon/favicon-32.png"
 import favicon64 from "../../../static/assets/favicon/favicon-64.png"
@@ -142,6 +143,8 @@ const SEO = ({ title, description, image, pathname, article }) => {
                 type="text/css"
                 href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
               />
+
+              
             </Helmet>
             <Facebook
               desc={seo.description}
