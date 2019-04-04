@@ -71,7 +71,7 @@ pitch:
 
       Dans tous les cas nous vous accompagnons de manière harmonieuse au sein de
       votre activité. 
-    image: /assets/flexibilite-c42.png
+    image: /assets/flexibilite-c42-400.png
     title: Flexibilité
 testimonials:
   heading: Ce qu'en pensent nos clients
