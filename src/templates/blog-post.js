@@ -1,6 +1,7 @@
 import React from "react"
 import "./blog-post.scss"
-import { Container, Header, Image, Grid } from "semantic-ui-react"
+import {Link} from 'gatsby'
+import { Container, Header, Label, Grid } from "semantic-ui-react"
 import { graphql } from "gatsby"
 import moment from "moment"
 import SEO from "../components/SEO/SEO"
@@ -27,7 +28,7 @@ export default function Template({ data }) {
         style={{
           paddingBottom: "5%",
           backgroundColor: "#F9F9F9",
-          minHeight:'100vh'
+          minHeight: "100vh",
         }}
       >
         <Grid as={Container} text>
@@ -43,10 +44,23 @@ export default function Template({ data }) {
                   <span>
                     {post.frontmatter.author && post.frontmatter.author},{" "}
                   </span>
+                  
                 </>
               )}
               <span>{moment(date).format("Do MMM YYYY")}</span>
               <span> • {post.timeToRead}min à perdre</span>
+              <div style={{marginTop:"2rem"}}>
+                {post.frontmatter.tags.slice(0, 4).map((tag, index) => (
+                  <Label
+                    key={index}
+                    style={{ marginBottom: "0.5rem" }}
+                    as={Link}
+                    to={`/tags/${tag}`}
+                  >
+                    {tag}
+                  </Label>
+                ))}
+              </div>
             </div>
             <div
               className="blog-post-content"
@@ -71,6 +85,7 @@ export const pageQuery = graphql`
       }
       frontmatter {
         date
+        tags
         title
         author
         thumbnail {
