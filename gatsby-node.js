@@ -1,6 +1,40 @@
 const path = require("path")
+const _ = require("lodash")
 const { createFilePath } = require("gatsby-source-filesystem")
 const { fmImagesToRelative } = require("gatsby-remark-relative-images")
+
+const createTagPages = (createPage, posts) => {
+  const tagTemplate = path.resolve("src/templates/tagTemplate.js")
+
+  const postsByTag = {}
+
+  posts.forEach(({ node }) => {
+    if (node.frontmatter.tags) {
+      node.frontmatter.tags.forEach(tag => {
+        if (!postsByTag[tag]) {
+          postsByTag[tag] = []
+        }
+
+        postsByTag[tag].push(node)
+      })
+    }
+  })
+
+  const tags = Object.keys(postsByTag)
+
+  tags.forEach(tagName => {
+    const posts = postsByTag[tagName]
+
+    createPage({
+      path: `/tags/${tagName}`,
+      component: tagTemplate,
+      context: {
+        posts,
+        tagName,
+      },
+    })
+  })
+}
 
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
@@ -13,11 +47,16 @@ exports.createPages = ({ actions, graphql }) => {
       ) {
         edges {
           node {
+            excerpt(pruneLength: 150)
+            timeToRead
+            id
             fields {
               slug
             }
             frontmatter {
               tags
+              title
+              date
               thumbnail {
                 childImageSharp {
                   fluid(maxWidth: 980) {
@@ -35,7 +74,12 @@ exports.createPages = ({ actions, graphql }) => {
       return Promise.reject(result.errors)
     }
 
-    result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    const posts = result.data.allMarkdownRemark.edges
+
+    // Permet de générer les pages pour les tags
+    createTagPages(createPage, posts)
+
+    posts.forEach(({ node }) => {
       createPage({
         path: node.fields.slug,
         component: blogPostTemplate,
@@ -49,6 +93,8 @@ exports.createPages = ({ actions, graphql }) => {
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
+
+  // Sert pour l'optimisation des images
   fmImagesToRelative(node)
 
   if (node.internal.type === `MarkdownRemark`) {
