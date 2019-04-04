@@ -3,7 +3,7 @@ import { Grid, Icon, Header, Card, Container } from "semantic-ui-react"
 import Fade from "react-reveal/Fade"
 import Carousel from "nuka-carousel"
 
-const Testimonials = ({ data }) => {
+const Testimonials = ({ data, isMobile }) => {
   return (
     <Container
       fluid
@@ -35,26 +35,27 @@ const Testimonials = ({ data }) => {
             cellAlign="center"
             dragging={true}
             swiping={true}
-            // slideWidth="500px"
+            slideWidth={isMobile ? "300px" : "700px"}
             withoutControls={true}
-            slideIndex="3"
+            slideIndex={3}
             wrapAround={true}
-            
+            pauseOnHover={true}
           >
-            {data.testimonialsList.map((t, index) => {
+            {data.testimonialsList.map((testimonial, index) => {
               return (
                 <Grid.Column
                   style={{ marginBottom: "3rem" }}
                   mobile={16}
                   tablet={8}
                   computer={5}
+                  key={index}
                 >
-                  <Card fluid key={index}>
+                  <Card fluid>
                     <Card.Content>
                       <div
                         style={{ display: "flex", justifyContent: "center" }}
                       >
-                        {Array.apply(null, { length: t.rating }).map((e, i) => (
+                        {Array.apply(null, { length: testimonial.rating }).map((e, i) => (
                           <Icon name="star" color="yellow" key={i} />
                         ))}
                       </div>
@@ -62,12 +63,12 @@ const Testimonials = ({ data }) => {
                         textAlign="left"
                         style={{ marginTop: "2rem" }}
                       >
-                        {t.text}
+                        {testimonial.text}
                       </Card.Description>
                     </Card.Content>
 
                     <Card.Content extra>
-                      <Card.Header textAlign="center">{t.author}</Card.Header>
+                      <Card.Header textAlign="center">{testimonial.author}</Card.Header>
                     </Card.Content>
                   </Card>
                 </Grid.Column>
