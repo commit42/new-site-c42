@@ -40,8 +40,7 @@ const BlogCard = ({ post }) => {
               <Label
                 key={index}
                 style={{ marginBottom: "0.5rem" }}
-                as={Link}
-                to={`/tags/${tag}`}
+                href={`/tags/${tag}`}
               >
                 {tag}
               </Label>
