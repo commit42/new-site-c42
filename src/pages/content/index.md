@@ -53,7 +53,7 @@ pitch:
 
       A l'inverse, si vous avez une architecture existante, nous sommes
       suffisamment versatiles pour prendre le relai 
-    image: /assets/nouvelles-technologies-c42.png
+    image: /assets/nouvelles-technologies-c42-500.png
     title: Multi-compétences
   - darkBg: true
     description: >-

@@ -9,13 +9,13 @@ const HeaderIndex = ({ data }) => {
         <Grid.Column only="large screen computer">
           <Image
             fluid
-            style={{ maxHeight: "100vh" }}
+            style={{ maxHeight: "100vh"}}
             src={data.image.childImageSharp.fluid.src}
             alt="Motifs commit42"
           />
         </Grid.Column>
-        <Grid.Column as={Container} text verticalAlign="middle">
-          <Header as="h1">{data.heading}</Header>
+        <Grid.Column as={Container} textAlign="center" text verticalAlign="middle">
+          <Header as="h1" >{data.heading}</Header>
           <p>{data.description}</p>
         </Grid.Column>
       </Grid.Row>
