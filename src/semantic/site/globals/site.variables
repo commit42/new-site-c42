@@ -1,0 +1,22 @@
+/*******************************
+     User Global Variables
+*******************************/
+
+/* Fonts */
+@headerFont: 'Poppins Black';
+@subheaderFont: 'Poppins';
+@pageFont: 'Roboto';
+
+@fontSize : 18px;
+
+/* Colors */
+@bluec42: #6BA3D6;
+@yellowc42: #FFE800;
+@greyc42: #424242;
+
+@primary: @bluec42
+
+/* Links */
+@linkColor: @greyc42;
+@linkHoverColor: @greyc42;
+@linkHoverUnderline: none;

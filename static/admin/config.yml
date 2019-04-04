@@ -3,7 +3,7 @@ backend:
   repo: commit42/new-site-c42
 
 media_folder: static/assets
-public_folder: /assets
+public_folder: assets
 
 publish_mode: editorial_workflow
 
@@ -18,7 +18,7 @@ slug:
 
 collections:
   - name: blog
-    label: Blog
+    label: Post
     folder: src/pages/blog
     create: true
     slug: "{{slug}}"
@@ -28,5 +28,89 @@ collections:
       - { name: date, label: Date, widget: date }
       - { name: author, label: Author }
       - { name: thumbnail, label: Thumbnail, widget: image }
-      - { name: tags, label: Tags(séparer par une virgule et un espace), widget: list }
+      - {
+          name: tags,
+          label: Tags (séparer par une virgule et un espace),
+          widget: list,
+        }
       - { name: body, label: Body, widget: markdown }
+
+  - name: pages
+    label: Page
+    files:
+      - file: src/pages/content/index.md
+        label: Landing Page
+        name: index
+        fields:
+          - { name: pageName, label: Page Name, widget: string }
+          - {
+              name: head,
+              label: Head,
+              widget: object,
+              fields:
+                [
+                  { name: image, label: Image, widget: image },
+                  { name: heading, label: Heading, widget: string },
+                  { name: description, label: Description, widget: text },
+                ],
+            }
+          - {
+              name: services,
+              label: Services,
+              widget: object,
+              fields:
+                [
+                  { name: heading, label: Heading, widget: string },
+                  {
+                    name: servicesList,
+                    label: Services List,
+                    widget: list,
+                    fields:
+                      [
+                        { name: title, label: Title, widget: string },
+                        { name: description, label: Description, widget: text },
+                        { name: icon, label: Icon Name, widget: string },
+                      ],
+                  },
+                ],
+            }
+          - {
+              name: pitch,
+              label: Pitch,
+              widget: list,
+              fields:
+                [
+                  { name: title, label: Title, widget: string },
+                  { name: description, label: Description, widget: text },
+                  { name: image, label: Image, widget: image },
+                  { name: darkBg, label: Dark Background, widget: boolean }
+                ],
+            }
+          - {
+              name: testimonials,
+              label: Testimonials,
+              widget: object,
+              fields:
+                [
+                  { name: heading, label: Heading, widget: string },
+                  {
+                    name: testimonialsList,
+                    label: Testimonials List,
+                    widget: list,
+                    fields:
+                      [
+                        { name: text, label: Text, widget: text },
+                        { name: author, label: Author, widget: string },
+                        { name: rating, label: rating, widget: number },
+                      ],
+                  },
+                ],
+            }
+      - file: src/pages/content/blog.md
+        label: Blog Page
+        name: Blog
+        fields:
+          - { name: pageName, label: Page Name, widget: string }
+          - { name: header, label: Header, widget: string }
+          - { name: description, label: Description, widget: text }
+          - { name: image, label: Image, widget: image }

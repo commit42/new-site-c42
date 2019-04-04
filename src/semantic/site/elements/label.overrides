@@ -1,0 +1,9 @@
+/*******************************
+         Site Overrides
+*******************************/
+
+.ui.label  {
+  background: @yellowc42;
+  border-radius: 10px;
+  font-family: 'Poppins';
+}

@@ -1,0 +1,26 @@
+/*******************************
+         Site Overrides
+*******************************/
+
+.ui.button {
+  border-radius: 20px;
+  font-family: 'Poppins';
+  font-size: 1.2rem;
+  transition: 0.2s ease;
+  box-shadow: 10px 9px 37px -15px rgba(0,0,0,0.75);
+  background: @yellowc42;
+    &:hover {
+      background: @bluec42;
+      transition: 0.2s ease;
+    }
+}
+
+ .ui.primary.button {
+    background: @bluec42;
+    transition: 0.2s ease;
+    box-shadow: 10px 9px 37px -15px rgba(0,0,0,0.75);
+    &:hover {
+      background: @greyc42;
+      transition: 0.2s ease;
+    }
+}

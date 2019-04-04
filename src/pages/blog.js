@@ -1,21 +1,17 @@
 import React from "react"
-import './blog.scss';
+import Image from "gatsby-image"
+import moment from "moment"
+
 import { Link, graphql } from "gatsby"
-import { Container, Grid, Card, Transition, Label } from 'semantic-ui-react'
-import SEO from '../components/SEO/SEO'
-import Layout from '../components/layout'
-import moment from 'moment'
+import { Container, Grid, Card, Label, Header } from "semantic-ui-react"
 
+import SEO from "../components/SEO/SEO"
+import Layout from "../components/layout"
+import HeaderBlogPage from "../components/blog-page/HeaderBlogPage"
 class BlogPage extends React.Component {
-  state = { visible: false }
-
-  componentDidMount() {
-    this.setState({ visible: !this.state.visible })
-  }
-
   render() {
-    const { edges: posts } = this.props.data.allMarkdownRemark;
-
+    const { edges: posts } = this.props.data.allMarkdownRemark
+    const blogData = this.props.data.markdownRemark.frontmatter
     return (
       <Layout>
         <SEO
@@ -23,40 +19,71 @@ class BlogPage extends React.Component {
           description="Super blog trop cool de commit42"
           pathname="/blog"
         />
-        <Container text style={{ marginTop: '3rem', marginBottom: '3rem' }}>
-          <Grid>
-            <Grid.Row>
-              <Grid.Column textAlign="center">
-                <h1>Blog</h1>
-                <div style={{ height: '5px', backgroundColor: 'black', width: '15%', margin: 'auto', borderRadius: '10px' }}></div>
-              </Grid.Column>
-            </Grid.Row>
-            <Grid.Row>
-              <Grid.Column>
-                <Card.Group>
-                  {
-                    posts
-                      .filter(post => post.node.frontmatter.title.length > 0)
-                      .map(({ node: post }) => {
-                        return (
-                          <Transition key={post.id} visible={this.state.visible} animation='fade up' duration={800}>
-                            <Card  fluid as={Link} to={post.fields.slug}>
-                              <Card.Content>
-                                <Card.Header >{post.frontmatter.title}</Card.Header>
-                                <Card.Meta>{moment(post.frontmatter.date).format('LL')}</Card.Meta>
-                                <Card.Description>{post.excerpt}</Card.Description>
-                              </Card.Content>
-                              <Card.Content extra>
-                                {post.frontmatter.tags && post.frontmatter.tags.map((tag, index) => <Label key={index}>{tag}</Label>)}
-                              </Card.Content>
-                            </Card>
-                          </Transition>
+        <HeaderBlogPage data={blogData} />
 
-                        )
-                      })
-                  }
-                </Card.Group>
-              </Grid.Column>
+        <Container
+          fluid
+          style={{ backgroundColor: "#F9F9F9", padding: "5rem 0 5rem 0" }}
+        >
+          <Grid as={Container}>
+            <Grid.Row>
+              {posts
+                .filter(post => post.node.frontmatter.title.length > 0)
+                .map(({ node: post }) => {
+                  return (
+                    <Grid.Column
+                      key={post.id}
+                      mobile={16}
+                      tablet={8}
+                      computer={5}
+                      style={{ marginBottom: "3rem" }}
+                    >
+                      <Card fluid as={Link} to={post.fields.slug}>
+                        {post.frontmatter.thumbnail != null && (
+                          <Image
+                            fluid={
+                              post.frontmatter.thumbnail.childImageSharp.fluid
+                            }
+                            centered
+                          />
+                        )}
+
+                        <Card.Content>
+                          <Card.Header>{post.frontmatter.title}</Card.Header>
+                          <Card.Meta
+                            style={{
+                              marginTop: "0.5rem",
+                              color: "#6BA3D6",
+                            }}
+                          >
+                            <span>
+                              {moment(post.frontmatter.date).format(
+                                "Do MMM YYYY"
+                              )}
+                            </span>
+                            <span> • {post.timeToRead}min à perdre</span>
+                          </Card.Meta>
+                          <Card.Description>{post.excerpt}</Card.Description>
+                        </Card.Content>
+
+                        {post.frontmatter.tags && (
+                          <Card.Content extra>
+                            {post.frontmatter.tags
+                              .slice(0, 4)
+                              .map((tag, index) => (
+                                <Label
+                                  key={index}
+                                  style={{ marginBottom: "0.5rem" }}
+                                >
+                                  {tag}
+                                </Label>
+                              ))}
+                          </Card.Content>
+                        )}
+                      </Card>
+                    </Grid.Column>
+                  )
+                })}
             </Grid.Row>
           </Grid>
         </Container>
@@ -64,14 +91,15 @@ class BlogPage extends React.Component {
     )
   }
 }
-export default BlogPage;
+export default BlogPage
 
-export const pageQuery = graphql`
+export const BlogPageQuery = graphql`
   query BlogPageQuery {
     allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
       edges {
         node {
-          excerpt(pruneLength: 250)
+          excerpt(pruneLength: 150)
+          timeToRead
           id
           fields {
             slug
@@ -80,10 +108,30 @@ export const pageQuery = graphql`
             title
             date
             tags
+            author
+            thumbnail {
+              childImageSharp {
+                fluid(maxWidth: 980) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    markdownRemark(frontmatter: { pageName: { eq: "blog" } }) {
+      frontmatter {
+        header
+        description
+        image {
+          childImageSharp {
+            fluid(maxWidth: 980) {
+              ...GatsbyImageSharpFluid
+            }
           }
         }
       }
     }
   }
 `
-

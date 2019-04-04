@@ -1,10 +1,10 @@
-import React from 'react';
+import React from "react"
 import { Helmet } from "react-helmet"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
-import favicon from '../../../static/favicon.png'
-import Facebook from './Facebook'
-import Twitter from './Twitter'
+import favicon from "../../../static/favicon.png"
+import Facebook from "./Facebook"
+import Twitter from "./Twitter"
 
 const SEO = ({ title, description, image, pathname, article }) => {
   return (
@@ -18,14 +18,14 @@ const SEO = ({ title, description, image, pathname, article }) => {
             siteUrl,
             defaultImage,
             twitterUsername,
-          }
-        }
+          },
+        },
       }) => {
         const seo = {
           title: title || defaultTitle,
           description: description || defaultDescription,
           image: `${siteUrl}${image || defaultImage}`,
-          url: `${siteUrl}${pathname || '/'}`
+          url: `${siteUrl}${pathname || "/"}`,
         }
 
         return (
@@ -34,14 +34,32 @@ const SEO = ({ title, description, image, pathname, article }) => {
               <html lang="fr" />
               <meta name="description" content={seo.description} />
               <meta name="image" content={seo.image} />
-              <link rel="shortcut icon" href={favicon}></link>
+              <link rel="shortcut icon" href={favicon} />
+              <link
+                rel="stylesheet"
+                href="https://pro.fontawesome.com/releases/v5.8.1/css/all.css"
+                integrity="sha384-Bx4pytHkyTDy3aJKjGkGoHPt3tvv6zlwwjc3iqN7ktaiEMLDPqLSZYts2OjKcBx1"
+                crossorigin="anonymous"
+              />
 
+              {/* slick */}
+              <link
+                rel="stylesheet"
+                type="text/css"
+                charset="UTF-8"
+                href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
+              />
+              <link
+                rel="stylesheet"
+                type="text/css"
+                href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
+              />
             </Helmet>
             <Facebook
               desc={seo.description}
               image={seo.image}
               title={seo.title}
-              type={article ? 'article' : 'website'}
+              type={article ? "article" : "website"}
               url={seo.url}
             />
             <Twitter
@@ -54,15 +72,15 @@ const SEO = ({ title, description, image, pathname, article }) => {
         )
       }}
     />
-  );
+  )
 }
 
-export default SEO;
+export default SEO
 
 SEO.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
-  image: PropTypes.string,
+  image: PropTypes.object,
   pathname: PropTypes.string,
   article: PropTypes.bool,
 }
@@ -87,4 +105,4 @@ const query = graphql`
       }
     }
   }
-`;
+`
