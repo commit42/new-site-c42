@@ -3,7 +3,7 @@ module.exports = {
     title: "commit42 | Studio de développement Web",
     description:
       "Studio de développement Web à Toulouse - React - Progressive Web Apps - CakePHP",
-    url: "https://new-site-c42.netlify.com",
+    url: "https://www.commit42.com/",
     image: "/assets/logo.png",
     twitterUsername: "@commit42",
   },
@@ -11,6 +11,7 @@ module.exports = {
     `gatsby-plugin-less`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
