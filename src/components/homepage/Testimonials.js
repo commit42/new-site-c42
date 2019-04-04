@@ -1,18 +1,12 @@
 import React from "react"
+import "./testimonials.scss"
 import { Grid, Icon, Header, Card, Container } from "semantic-ui-react"
 import Fade from "react-reveal/Fade"
 import Carousel from "nuka-carousel"
 
 const Testimonials = ({ data, isMobile }) => {
   return (
-    <Container
-      fluid
-      style={{
-        paddingTop: "5%",
-        paddingBottom: "5%",
-        backgroundColor: "#F9F9F9",
-      }}
-    >
+    <Container fluid className="testimonials-list">
       <Grid as={Container}>
         <Grid.Row textAlign="center">
           <Grid.Column>
@@ -55,9 +49,11 @@ const Testimonials = ({ data, isMobile }) => {
                       <div
                         style={{ display: "flex", justifyContent: "center" }}
                       >
-                        {Array.apply(null, { length: testimonial.rating }).map((e, i) => (
-                          <Icon name="star" color="yellow" key={i} />
-                        ))}
+                        {Array.apply(null, { length: testimonial.rating }).map(
+                          (e, i) => (
+                            <Icon name="star" color="yellow" key={i} />
+                          )
+                        )}
                       </div>
                       <Card.Description
                         textAlign="left"
@@ -68,7 +64,9 @@ const Testimonials = ({ data, isMobile }) => {
                     </Card.Content>
 
                     <Card.Content extra>
-                      <Card.Header textAlign="center">{testimonial.author}</Card.Header>
+                      <Card.Header textAlign="center">
+                        {testimonial.author}
+                      </Card.Header>
                     </Card.Content>
                   </Card>
                 </Grid.Column>
