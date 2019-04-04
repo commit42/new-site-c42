@@ -36,10 +36,10 @@ export default function Template({ data }) {
             <div>
               {post.frontmatter.author && (
                 <>
-                  <Image
+                  {/* <Image
                     src="https://react.semantic-ui.com/images/wireframe/square-image.png"
                     avatar
-                  />
+                  /> */}
                   <span>
                     {post.frontmatter.author && post.frontmatter.author},{" "}
                   </span>
