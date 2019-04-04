@@ -1,6 +1,7 @@
 import React from "react"
 import { Grid, Icon, Header, Card, Container } from "semantic-ui-react"
 import Fade from "react-reveal/Fade"
+import Carousel from "nuka-carousel"
 
 const Testimonials = ({ data }) => {
   return (
@@ -23,76 +24,60 @@ const Testimonials = ({ data }) => {
         <Grid.Row
           as={Container}
           textAlign="center"
-          style={{ marginTop: "5rem" }}
+          style={{ marginTop: "6rem" }}
           centered
         >
-          {/* <Grid.Column>
-          <Card.Group centered>
+          <Carousel
+            transitionMode="scroll3d"
+            slidesToScroll="auto"
+            autoplay={true}
+            autoplayReverse={true}
+            cellAlign="center"
+            dragging={true}
+            swiping={true}
+            // slideWidth="500px"
+            withoutControls={true}
+            slideIndex="3"
+            wrapAround={true}
+            
+          >
             {data.testimonialsList.map((t, index) => {
               return (
-                <Fade  key={index}>
-                  <Card style={{margin:'0 10px 0 10px'}}>
+                <Grid.Column
+                  style={{ marginBottom: "3rem" }}
+                  mobile={16}
+                  tablet={8}
+                  computer={5}
+                >
+                  <Card fluid key={index}>
                     <Card.Content>
-                      <div>
-                        {
-                          Array.apply(null, { length: t.rating }).map((e, i) => (
-                            <Icon name="star" color="yellow" key={i} />
-                          ))
-                        }
+                      <div
+                        style={{ display: "flex", justifyContent: "center" }}
+                      >
+                        {Array.apply(null, { length: t.rating }).map((e, i) => (
+                          <Icon name="star" color="yellow" key={i} />
+                        ))}
                       </div>
                       <Card.Description
                         textAlign="left"
-                        style={{ marginTop: "1rem" }}
+                        style={{ marginTop: "2rem" }}
                       >
                         {t.text}
                       </Card.Description>
-                      <Card.Header style={{ marginTop: "1rem"}}>
-                        {t.author}
-                      </Card.Header>
+                    </Card.Content>
+
+                    <Card.Content extra>
+                      <Card.Header textAlign="center">{t.author}</Card.Header>
                     </Card.Content>
                   </Card>
-                </Fade>
+                </Grid.Column>
               )
             })}
-          </Card.Group>
-        </Grid.Column> */}
-          {data.testimonialsList.map((t, index) => {
-            return (
-              <Grid.Column
-                style={{ marginBottom: "3rem" }}
-                key={index}
-                mobile={16}
-                tablet={8}
-                computer={5}
-              >
-                <Card fluid>
-                  <Card.Content>
-                    <div style={{display:'flex', justifyContent:'center'}}>
-                      {Array.apply(null, { length: t.rating }).map((e, i) => (
-                        <Icon name="star" color="yellow" key={i} />
-                      ))}
-                    </div>
-                    <Card.Description
-                      textAlign="left"
-                      style={{ marginTop: "2rem" }}
-                    >
-                      {t.text}
-                    </Card.Description>
-                  </Card.Content>
-
-                  <Card.Content extra >
-                    <Card.Header textAlign="center" >
-                      {t.author}
-                    </Card.Header>
-                  </Card.Content>
-                </Card>
-              </Grid.Column>
-            )
-          })}
+          </Carousel>
         </Grid.Row>
         <Grid.Row>
           <Grid.Column textAlign="center">
-            <Header as="h4" style={{ marginTop: "3rem" }}>
+            <Header as="h4">
               <a href="https://www.google.com/search?q=commit42+avis&oq=commit42+avis&aqs=chrome..69i57.2474j0j7&sourceid=chrome&ie=UTF-8#lrd=0x12aebb873c60e57b:0x2ca3be697d36200,1,,,">
                 Voir tous les avis <Icon name="long arrow alternate right" />
               </a>
