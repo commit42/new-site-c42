@@ -3,7 +3,7 @@ module.exports = {
     title: "commit42 | Studio de développement Web",
     description:
       "Studio de développement Web à Toulouse - React - Progressive Web Apps - CakePHP",
-    url: "https://www.commit42.com/",
+    siteUrl: "https://www.commit42.com/",
     image: "/assets/logo.png",
     twitterUsername: "@commit42",
   },
@@ -11,7 +11,6 @@ module.exports = {
     `gatsby-plugin-less`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -53,6 +52,27 @@ module.exports = {
             },
           },
         ],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        output: `/commit42-sitemap.xml`,
+        query: `
+        {
+          site {
+            siteMetadata {
+              siteUrl
+            }
+          }
+          allSitePage {
+            edges {
+              node {
+                path
+              }
+            }
+          }
+      }`,
       },
     },
     // Doit toujours être en dernier
