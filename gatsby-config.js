@@ -79,7 +79,7 @@ module.exports = {
       resolve: 'gatsby-plugin-matomo',
       options: {
         siteId: '1',
-        matomoUrl: 'https://commit42.occitech.eu',
+        matomoUrl: 'http://analytics.commit42.fr',
         siteUrl: 'https://www.commit42.com/'
       }
     },
