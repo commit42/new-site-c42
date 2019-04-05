@@ -12,7 +12,6 @@ import Layout from "../components/layout"
 export default function Template({ data }) {
   const { markdownRemark: post } = data
   const date = post.frontmatter.date
-   console.log(post.frontmatter.tags) 
 
   return (
     <Layout>
@@ -76,3 +75,28 @@ export default function Template({ data }) {
   )
 }
 
+export const pageQuery = graphql`
+  query BlogPostBySlug($slug: String!) {
+    markdownRemark(fields: { slug: { eq: $slug } }) {
+      html
+      excerpt
+      timeToRead
+      fields {
+        slug
+      }
+      frontmatter {
+        date
+        tags
+        title
+        author
+        thumbnail {
+          childImageSharp {
+            fluid(maxWidth: 980) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    }
+  }
+`

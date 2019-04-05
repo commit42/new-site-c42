@@ -37,7 +37,7 @@ const BlogCard = ({ post }) => {
 
         {post.frontmatter.tags && (
           <Card.Content extra>
-            {post.frontmatter.tags.slice(0, 4).map((tag, index) => (
+            {post.frontmatter.tags.map((tag, index) => (
               <Label
                 key={index}
                 style={{ marginBottom: "0.5rem" }}

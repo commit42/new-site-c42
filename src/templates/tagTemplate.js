@@ -9,6 +9,7 @@ import BlogCard from "../components/blog-page/BlogCard"
 
 const TagTemplate = ({ data, pageContext }) => {
   const { posts, tagName } = pageContext
+  console.log(posts)
   return (
     <Layout>
       <SEO
