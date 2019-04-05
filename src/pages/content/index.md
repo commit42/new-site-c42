@@ -38,7 +38,7 @@ pitch:
       Tout le monde est bienvenu pour nous rendre visite alors si vous avez un
       projet et souhaitez rencontrer l'équipe, venez-donc prendre un café avec
       nous, il parait qu'on a le meilleur de Toulouse ! 
-    image: /assets/toulouse-c42.png
+    image: /assets/toulouse-c42-1000.png
     title: Made in toulouse
   - darkBg: false
     description: >

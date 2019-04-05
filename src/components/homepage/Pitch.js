@@ -8,9 +8,10 @@ const Pitch = ({ data }) => {
   return (
     <Grid id="pitch-container">
       {data.map((row, index) => {
-        const altText = row.image.childImageSharp.fixed.src.slice(47, -4)
+        const altText = row.image.childImageSharp.fluid.src.slice(47, -12)
         const isDarkBg = row.darkBg ? "#424242" : "white"
         const isDarkText = row.darkBg ? "white" : "black"
+        console.log(altText)
         return (
           <Grid.Row key={index} style={{ backgroundColor: `${isDarkBg}` }}>
             <Grid.Column>
@@ -29,8 +30,9 @@ const Pitch = ({ data }) => {
                   <div style={{ textAlign: "center" }}>
                     <Image
                       style={{ margin: "auto" }}
-                      fixed={row.image.childImageSharp.fixed}
+                      fluid={row.image.childImageSharp.fluid}
                       alt={altText}
+                      className={`${altText}`}
                     />
                   </div>
                 </Fade>

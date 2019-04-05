@@ -2,5 +2,20 @@
   .row {
     padding-top: 8rem;
     padding-bottom: 8rem;
+    .toulouse- {
+      @media only screen and (min-width: 723px) {
+        max-width: 90%;
+      }
+    }
+    .nouvelles-technologies {
+      @media only screen and (min-width: 723px) {
+        max-width: 70%;
+      }
+    }
+    .flexibilite {
+      @media only screen and (min-width: 723px) {
+        max-width: 60%;
+      }
+    }
   }
 }
