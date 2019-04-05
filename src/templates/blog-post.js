@@ -1,15 +1,19 @@
 import React from "react"
 import "./blog-post.scss"
-import {Link} from 'gatsby'
+import moment from "moment"
+import kebabCase from "lodash/kebabCase"
+import { Link } from "gatsby"
 import { Container, Header, Label, Grid } from "semantic-ui-react"
 import { graphql } from "gatsby"
-import moment from "moment"
+
 import SEO from "../components/SEO/SEO"
 import Layout from "../components/layout"
 
 export default function Template({ data }) {
   const { markdownRemark: post } = data
   const date = post.frontmatter.date
+   console.log(post.frontmatter.tags) 
+
   return (
     <Layout>
       <SEO
@@ -44,17 +48,16 @@ export default function Template({ data }) {
                   <span>
                     {post.frontmatter.author && post.frontmatter.author},{" "}
                   </span>
-                  
                 </>
               )}
               <span>{moment(date).format("Do MMM YYYY")}</span>
               <span> • {post.timeToRead}min à perdre</span>
-              <div style={{marginTop:"2rem"}}>
+              <div style={{ marginTop: "2rem" }}>
                 {post.frontmatter.tags.slice(0, 4).map((tag, index) => (
                   <Label
                     key={index}
                     style={{ marginBottom: "0.5rem" }}
-                    href={`/tags/${tag}`}
+                    href={`/tags/${kebabCase(tag)}`}
                   >
                     {tag}
                   </Label>
@@ -73,28 +76,3 @@ export default function Template({ data }) {
   )
 }
 
-export const pageQuery = graphql`
-  query BlogPostBySlug($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      html
-      excerpt
-      timeToRead
-      fields {
-        slug
-      }
-      frontmatter {
-        date
-        tags
-        title
-        author
-        thumbnail {
-          childImageSharp {
-            fluid(maxWidth: 980) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-      }
-    }
-  }
-`

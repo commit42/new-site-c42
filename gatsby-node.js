@@ -26,7 +26,7 @@ const createTagPages = (createPage, posts) => {
     const posts = postsByTag[tagName]
 
     createPage({
-      path: `/tags/${tagName}`,
+      path: `/tags/${_.kebabCase(tagName)}`,
       component: tagTemplate,
       context: {
         posts,

@@ -1,8 +1,9 @@
 import React from "react"
 import { Link } from "gatsby"
-import  Image  from "gatsby-image"
-import moment from "moment"
 import { Card, Label, Grid } from "semantic-ui-react"
+import  Image  from "gatsby-image"
+import kebabCase from "lodash/kebabCase"
+import moment from "moment"
 
 const BlogCard = ({ post }) => {
   return (
@@ -12,15 +13,15 @@ const BlogCard = ({ post }) => {
       computer={5}
       style={{ marginBottom: "3rem" }}
     >
-      <Card fluid as={Link} to={post.fields.slug}>
-        {post.frontmatter.thumbnail != null && (
+      <Card fluid >
+        {/* {post.frontmatter.thumbnail != null && (
           <Image
             fluid={post.frontmatter.thumbnail.childImageSharp.fluid}
             centered
           />
-        )}
+        )} */}
 
-        <Card.Content>
+        <Card.Content as={Link} to={post.fields.slug}>
           <Card.Header>{post.frontmatter.title}</Card.Header>
           <Card.Meta
             style={{
@@ -40,7 +41,7 @@ const BlogCard = ({ post }) => {
               <Label
                 key={index}
                 style={{ marginBottom: "0.5rem" }}
-                href={`/tags/${tag}`}
+                href={`/tags/${kebabCase(tag)}/`}
               >
                 {tag}
               </Label>

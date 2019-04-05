@@ -2,10 +2,10 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import Helmet from 'react-helmet'
 
-const Facebook = ({ url, name, type, title, desc, image }) => (
+const Facebook = ({ siteUrl, name, type, title, desc, image }) => (
   <Helmet>
     {name && <meta property="og:site_name" content={name} />}
-    <meta property="og:url" content={url} />
+    <meta property="og:url" content={siteUrl} />
     <meta property="og:type" content={type} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={desc} />
@@ -17,7 +17,7 @@ const Facebook = ({ url, name, type, title, desc, image }) => (
 export default Facebook
 
 Facebook.propTypes = {
-  url: PropTypes.string.isRequired,
+  siteUrl: PropTypes.string.isRequired,
   type: PropTypes.string,
   title: PropTypes.string.isRequired,
   desc: PropTypes.string.isRequired,

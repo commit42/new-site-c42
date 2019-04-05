@@ -1,9 +1,7 @@
 import React from "react"
-import Image from "gatsby-image"
-import moment from "moment"
 
-import { Link, graphql } from "gatsby"
-import { Container, Grid, Card, Label } from "semantic-ui-react"
+import { graphql } from "gatsby"
+import { Container, Grid } from "semantic-ui-react"
 
 import SEO from "../components/SEO/SEO"
 import Layout from "../components/layout"
