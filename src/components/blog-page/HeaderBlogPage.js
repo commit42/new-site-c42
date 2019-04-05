@@ -1,16 +1,16 @@
 import React from "react"
 import Fade from "react-reveal/Fade"
 import "./headerBlog.scss"
-// import { Image } from "gatsby-image"
-import { Container, Grid, Header, Image } from "semantic-ui-react"
+import  Image  from "gatsby-image"
+import { Container, Grid, Header } from "semantic-ui-react"
 
 const HeaderBlogPage = ({ data }) => {
   return (
     <Grid as={Container} className="header-blog">
       <Grid.Row>
-        <Grid.Column>
+        <Grid.Column textAlign="center">
           <Fade top>
-            <Image src={data.image.childImageSharp.fluid.src} centered />
+            <Image fixed={data.image.childImageSharp.fixed} />
           </Fade>
         </Grid.Column>
       </Grid.Row>

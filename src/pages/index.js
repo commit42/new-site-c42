@@ -90,8 +90,8 @@ export const indexPageQuery = graphql`
           darkBg
           image {
             childImageSharp {
-              fluid(maxWidth: 980) {
-                ...GatsbyImageSharpFluid
+              fixed(width: 800) {
+                ...GatsbyImageSharpFixed
               }
             }
           }

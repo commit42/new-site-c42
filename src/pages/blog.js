@@ -59,7 +59,7 @@ export const BlogPageQuery = graphql`
             author
             thumbnail {
               childImageSharp {
-                fluid(maxWidth: 980) {
+                fluid(maxWidth: 950) {
                   ...GatsbyImageSharpFluid
                 }
               }
@@ -74,8 +74,8 @@ export const BlogPageQuery = graphql`
         description
         image {
           childImageSharp {
-            fluid(maxWidth: 980) {
-              ...GatsbyImageSharpFluid
+            fixed(width: 400) {
+              ...GatsbyImageSharpFixed
             }
           }
         }

@@ -1,6 +1,7 @@
 import React from "react"
 import "./headerIndex.scss"
-import { Image, Container, Grid, Header } from "semantic-ui-react"
+import Image from "gatsby-image"
+import { Container, Grid, Header } from "semantic-ui-react"
 
 const HeaderIndex = ({ data }) => {
   return (
@@ -10,7 +11,7 @@ const HeaderIndex = ({ data }) => {
           <Image
             fluid
             style={{ maxHeight: "100vh"}}
-            src={data.image.childImageSharp.fluid.src}
+            fluid={data.image.childImageSharp.fluid}
             alt="Motifs commit42"
           />
         </Grid.Column>
