@@ -15,12 +15,12 @@ const HeaderBlogPage = ({ data }) => {
         </Grid.Column>
       </Grid.Row>
       <Grid.Row textAlign="center" style={{ marginTop: "3rem" }}>
-        <Grid.Column>
+        <Grid.Column >
           <Fade top>
             <Header as="h1" style={{ marginBottom: "2rem" }}>
               {data.header}
             </Header>
-            <p>{data.description}</p>
+            <p style={{maxWidth:"70%", margin:'auto'}}>{data.description}</p>
           </Fade>
         </Grid.Column>
       </Grid.Row>

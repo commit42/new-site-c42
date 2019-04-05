@@ -74,7 +74,7 @@ export const BlogPageQuery = graphql`
         description
         image {
           childImageSharp {
-            fixed(width: 400) {
+            fixed(width: 350) {
               ...GatsbyImageSharpFixed
             }
           }
