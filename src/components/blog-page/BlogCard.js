@@ -1,11 +1,12 @@
 import React from "react"
 import { Link } from "gatsby"
 import { Card, Label, Grid } from "semantic-ui-react"
-import  Image  from "gatsby-image"
+import Image from "gatsby-image"
 import kebabCase from "lodash/kebabCase"
 import moment from "moment"
 
 const BlogCard = ({ post }) => {
+  console.log(post)
   return (
     <Grid.Column
       mobile={16}
@@ -13,13 +14,13 @@ const BlogCard = ({ post }) => {
       computer={5}
       style={{ marginBottom: "3rem" }}
     >
-      <Card fluid >
-        {/* {post.frontmatter.thumbnail != null && (
+      <Card fluid>
+        {post.frontmatter.thumbnail != null && (
           <Image
             fluid={post.frontmatter.thumbnail.childImageSharp.fluid}
             centered
           />
-        )} */}
+        )}
 
         <Card.Content as={Link} to={post.fields.slug}>
           <Card.Header>{post.frontmatter.title}</Card.Header>
