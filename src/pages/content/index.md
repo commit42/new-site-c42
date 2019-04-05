@@ -1,30 +1,36 @@
 ---
 pageName: index
 head:
-  description: 'On est beaux, on est doux on sent bon on est gentils'
+  description: >+
+    On aurait pu vous dire qu’on va révolutionner le monde, mais on préfère vous
+    promettre de vous accompagner dans vos projets web, que ce soit une
+    application ou une boutique e-commerce, que votre projet soit petit, gros,
+    moyen.
+
+    Et là ensemble, on pourra le changer, le monde.
+
   heading: Studio  d'innovation web
   image: /assets/header-img-c42.png
 services:
   heading: Découvrez tous nos services
   servicesList:
     - description: >-
-        L'avenir du web ! Rapide, disponible hors ligne... Retrouvez les
-        avantages d'une application mobile dans un site web
+        L'avenir du web ! Rapide, disponible hors ligne et idéal pour le
+        référencement, retrouvez les avantages d'une application mobile dans un
+        site web.
       icon: mobile
       title: Web App PWA
     - description: >-
-        Activité majoritaire de commit42, nous pouvons vous aider dans vos
-        boutiques Magento
+        Pour créer votre site ou l’améliorer, nous pouvons vous accompagner dans
+        la vie de votre boutique, vous conseiller et vous aider non seulement à
+        vendre plus, mais surtout mieux !
       icon: shopping-cart
       title: E-commerce
     - description: >-
-        Exercitation fugiat dolore elit exercitation et ullamco aliquip culpa
-        sint. Do Lorem ullamco cillum pariatur non culpa. Incididunt consequat
-        nisi adipisicing culpa adipisicing labore esse voluptate dolore minim
-        culpa. Voluptate eu et qui eu aliquip nulla minim eiusmod enim Lorem est
-        cillum. Aute officia ipsum exercitation pariatur fugiat labore. Labore
-        velit nisi deserunt cillum Lorem esse est proident commodo eu anim irure
-        nostrud. Ea ut labore non esse dolore.
+        En utilisant les dernières technologies, nous créons avec vous l’outil
+        qu’il vous faut à partir de vos besoins que nous définirons ensemble et
+        nous serons à vos côtés pour le faire évoluer en fonction de votre
+        activité. 
       icon: ruler
       title: Applications web sur-mesure
 pitch:
@@ -47,32 +53,28 @@ pitch:
     title: Made in toulouse
   - darkBg: false
     description: >
-      Si vous avez un nouveau projet, il mérite les meilleures technologies
-      disponibles.
+      Nous maîtrisons les technologies les plus performantes du web, Node,
+      React, CakePHP, ainsi que des moins performantes, parce que tous les
+      projets n’ont pas la chance d’avoir été créés il y a moins de 2 ans. 
 
-
-      A l'inverse, si vous avez une architecture existante, nous sommes
-      suffisamment versatiles pour prendre le relai 
+      (Par contre le COBOL et le Turbo Pascal c’est non.)
     image: /assets/nouvelles-technologies-c42.png
-    title: Multi-compétences
+    title: Un couteau suisse technlogique
   - darkBg: true
     description: >-
-      Travailler en agile, c'est bien... être flexible c'est mieux !
+      Travailler en agile, c'est bien... être flexible c'est mieux ! 
 
       Nous définissons avec vous les méthodes de travail au démarrage du projet
       et nous savons nous adapter au besoins techniques ou humains. 
 
       Mais nous ne sommes jamais passifs : fort d'une expérience avec de
-      multiples clients , nous avons testé autant de méthodes et saurons vous
-      faire bénéficier de cette expérience.
+      multiples clients , nous saurons vous en faire bénéficier. 
 
       Nous pouvons aussi travailler en régie ou pour renforcer vos équipes sur
-      un projet précis.
-
-      Dans tous les cas nous vous accompagnons de manière harmonieuse au sein de
-      votre activité. 
+      un projet précis. Dans tous les cas nous vous accompagnons de manière
+      harmonieuse au sein de votre activité.
     image: /assets/flexibilite-c42.png
-    title: Flexibilité
+    title: Une équipe flexible
 testimonials:
   heading: Ce qu'en pensent nos clients
   testimonialsList:
