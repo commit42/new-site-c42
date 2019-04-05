@@ -45,7 +45,7 @@ pitch:
       Nous maîtrisons les technologies les plus performantes du web, Node, React, CakePHP, ainsi que des moins performantes, parce que tous les projets n’ont pas la chance d’avoir été créés il y a moins de 2 ans. 
       (Par contre le COBOL et le Turbo Pascal c’est non.)
     image: /assets/nouvelles-technologies-c42-500.png
-    title: Un couteau suisse technlogique
+    title: Un couteau suisse technologique
   - darkBg: true
     description: >-
       Travailler en agile, c'est bien... être flexible c'est mieux ! 
