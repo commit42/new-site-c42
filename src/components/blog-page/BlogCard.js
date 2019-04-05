@@ -6,7 +6,6 @@ import kebabCase from "lodash/kebabCase"
 import moment from "moment"
 
 const BlogCard = ({ post }) => {
-  console.log(post)
   return (
     <Grid.Column
       mobile={16}

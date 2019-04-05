@@ -1,7 +1,8 @@
 import React from "react"
-import { Grid, Container } from "semantic-ui-react"
+import { Grid, Container, Header } from "semantic-ui-react"
 import startCase from "lodash/startCase"
 import kebabCase from "lodash/kebabCase"
+import Fade from "react-reveal/Fade"
 
 import Layout from "../components/layout"
 import SEO from "../components/SEO/SEO"
@@ -9,7 +10,7 @@ import BlogCard from "../components/blog-page/BlogCard"
 
 const TagTemplate = ({ data, pageContext }) => {
   const { posts, tagName } = pageContext
-  console.log(posts)
+  console.log(data)
   return (
     <Layout>
       <SEO
@@ -17,15 +18,26 @@ const TagTemplate = ({ data, pageContext }) => {
         description={`Tous les articles sur le thème: ${startCase(tagName)}`}
         pathname={`/tags/${kebabCase(tagName)}`}
       />
+      <Grid as={Container} style={{marginTop:'3rem', marginBottom:'3rem'}}>
+        <Grid.Row textAlign="center" style={{ marginTop: "3rem" }}>
+          <Grid.Column>
+            <Fade top>
+              <Header as="h1" style={{ marginBottom: "2rem" }}>
+                {startCase(tagName)}
+              </Header>
+            </Fade>
+          </Grid.Column>
+        </Grid.Row>
+      </Grid>
       <Container
         fluid
-        style={{ backgroundColor: "#F9F9F9", padding: "5rem 0 5rem 0", minHeight:'90vh'}}
+        style={{
+          backgroundColor: "#F9F9F9",
+          padding: "5rem 0 5rem 0",
+        }}
       >
         <Grid as={Container}>
           <Grid.Row>
-            <h1>Posts about {`${tagName}`}</h1>
-          </Grid.Row>
-          <Grid.Row >
             {posts.map(post => {
               return <BlogCard post={post} key={post.id} />
             })}
@@ -37,3 +49,21 @@ const TagTemplate = ({ data, pageContext }) => {
 }
 
 export default TagTemplate
+
+export const TagPageQuery = graphql`
+  query TagPageQuery {
+    markdownRemark(frontmatter: { pageName: { eq: "blog" } }) {
+      frontmatter {
+        header
+        description
+        image {
+          childImageSharp {
+            fluid(maxWidth: 980) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    }
+  }
+`

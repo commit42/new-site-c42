@@ -11,7 +11,6 @@ class BlogPage extends React.Component {
   render() {
     const { edges: posts } = this.props.data.allMarkdownRemark
     const blogData = this.props.data.markdownRemark.frontmatter
-    console.log(posts)
     return (
       <Layout>
         <SEO
@@ -19,6 +18,7 @@ class BlogPage extends React.Component {
           description="Super blog trop cool de commit42"
           pathname="/blog"
         />
+        
         <HeaderBlogPage data={blogData} />
 
         <Container
