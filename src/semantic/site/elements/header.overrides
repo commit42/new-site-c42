@@ -13,6 +13,7 @@ h1.ui.header {
 h2.ui.header {
   font-size: 2.5rem;
   color: @bluec42;
+  font-family: 'Poppins Black';
 }
 
 h3.ui.header {
