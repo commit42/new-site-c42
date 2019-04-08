@@ -38,13 +38,13 @@ pitch:
       Tout le monde est bienvenu pour nous rendre visite alors si vous avez un
       projet et souhaitez rencontrer l'équipe, venez-donc prendre un café avec
       nous, il parait qu'on a le meilleur de Toulouse ! 
-    image: /assets/toulouse-c42-1000.png
+    image: /assets/toulouse-c42.png
     title: Made in toulouse
   - darkBg: false
     description: >
       Nous maîtrisons les technologies les plus performantes du web, Node, React, CakePHP, ainsi que des moins performantes, parce que tous les projets n’ont pas la chance d’avoir été créés il y a moins de 2 ans. 
       (Par contre le COBOL et le Turbo Pascal c’est non.)
-    image: /assets/nouvelles-technologies-c42-500.png
+    image: /assets/nouvelles-technologies-c42.png
     title: Un couteau suisse technologique
   - darkBg: true
     description: >-
@@ -52,7 +52,7 @@ pitch:
       Nous définissons avec vous les méthodes de travail au démarrage du projet et nous savons nous adapter au besoins techniques ou humains. 
       Mais nous ne sommes jamais passifs : fort d'une expérience avec de multiples clients , nous saurons vous en faire bénéficier. 
       Nous pouvons aussi travailler en régie ou pour renforcer vos équipes sur un projet précis. Dans tous les cas nous vous accompagnons de manière harmonieuse au sein de votre activité.
-    image: /assets/flexibilite-c42-400.png
+    image: /assets/flexibilite-c42.png
     title: Une équipe flexible
 testimonials:
   heading: Ce qu'en pensent nos clients

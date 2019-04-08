@@ -61,6 +61,7 @@ export const BlogPageQuery = graphql`
               childImageSharp {
                 fluid(maxWidth: 950) {
                   ...GatsbyImageSharpFluid
+                  originalName
                 }
               }
             }
@@ -76,6 +77,7 @@ export const BlogPageQuery = graphql`
           childImageSharp {
             fixed(width: 350) {
               ...GatsbyImageSharpFixed
+              originalName
             }
           }
         }

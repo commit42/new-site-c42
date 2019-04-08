@@ -19,7 +19,6 @@ import faviconApple114 from "../../../static/assets/favicon/apple-touch-icon-114
 import faviconApple120 from "../../../static/assets/favicon/apple-touch-icon-120x120.png"
 import faviconApple144 from "../../../static/assets/favicon/apple-touch-icon-144x144.png"
 
-
 const SEO = ({ title, description, image, pathname, article }) => {
   return (
     <StaticQuery
@@ -46,10 +45,17 @@ const SEO = ({ title, description, image, pathname, article }) => {
           <>
             <Helmet title={seo.title}>
               <html lang="fr" />
+              <meta
+                name="viewport"
+                content="width=device-width, initial-scale=1.0"
+              />
+
               <meta name="description" content={seo.description} />
               <meta name="image" content={seo.image} />
               <link rel="shortcut icon" href={favicon} />
               <link rel="icon" href={favicon} />
+
+              {/* Favicon */}
               <link
                 rel="icon"
                 type="image/png"
@@ -126,25 +132,16 @@ const SEO = ({ title, description, image, pathname, article }) => {
               {/* fontawesome */}
               <link
                 rel="stylesheet"
-                href="https://pro.fontawesome.com/releases/v5.8.1/css/all.css"
-                integrity="sha384-Bx4pytHkyTDy3aJKjGkGoHPt3tvv6zlwwjc3iqN7ktaiEMLDPqLSZYts2OjKcBx1"
+                href="https://pro.fontawesome.com/releases/v5.8.1/css/regular.css"
+                integrity="sha384-ELBQxbOyxSZRtZPNO1mVgYkEzMOXFNmQY6CLV1nw+4IZoiHWeuwYTnABxPxxsuBE"
                 crossorigin="anonymous"
               />
-
-              {/* slick */}
               <link
                 rel="stylesheet"
-                type="text/css"
-                charset="UTF-8"
-                href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
+                href="https://pro.fontawesome.com/releases/v5.8.1/css/fontawesome.css"
+                integrity="sha384-4HqGlagEHMyfaDQVabl1wx7GCtGw6hDl3sKJEhqQjOCrXrvizhaA2j4hK8Piewtr"
+                crossorigin="anonymous"
               />
-              <link
-                rel="stylesheet"
-                type="text/css"
-                href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
-              />
-
-              
             </Helmet>
             <Facebook
               desc={seo.description}

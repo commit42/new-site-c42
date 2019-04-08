@@ -6,6 +6,7 @@ import kebabCase from "lodash/kebabCase"
 import moment from "moment"
 
 const BlogCard = ({ post }) => {
+  const altText = post.frontmatter.thumbnail && post.frontmatter.thumbnail.childImageSharp.fluid.originalName.slice(0, -4)
   return (
     <Grid.Column
       mobile={16}
@@ -17,6 +18,7 @@ const BlogCard = ({ post }) => {
         {post.frontmatter.thumbnail != null && (
           <Image
             fluid={post.frontmatter.thumbnail.childImageSharp.fluid}
+            alt={altText}
             centered
           />
         )}

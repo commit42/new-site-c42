@@ -85,7 +85,6 @@ export const BlogPageTemplate = ({
                     <Card.Content extra>
                       {tags &&
                         tags
-                          .slice(0, 4)
                           .map((tag, index) => (
                             <Label key={index}>{tag}</Label>
                           ))}

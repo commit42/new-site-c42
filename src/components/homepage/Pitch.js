@@ -8,10 +8,9 @@ const Pitch = ({ data }) => {
   return (
     <Grid id="pitch-container">
       {data.map((row, index) => {
-        const altText = row.image.childImageSharp.fluid.src.slice(47, -12)
+        const altText = row.image.childImageSharp.fluid.originalName.slice(0, -4)
         const isDarkBg = row.darkBg ? "#424242" : "white"
         const isDarkText = row.darkBg ? "white" : "black"
-        console.log(altText)
         return (
           <Grid.Row key={index} style={{ backgroundColor: `${isDarkBg}` }}>
             <Grid.Column>

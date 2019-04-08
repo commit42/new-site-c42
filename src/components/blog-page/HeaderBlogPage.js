@@ -10,7 +10,7 @@ const HeaderBlogPage = ({ data }) => {
       <Grid.Row>
         <Grid.Column textAlign="center">
           <Fade top>
-            <Image fixed={data.image.childImageSharp.fixed} />
+            <Image fixed={data.image.childImageSharp.fixed} alt={data.image.childImageSharp.fixed.originalName.slice(0, -4)}/>
           </Fade>
         </Grid.Column>
       </Grid.Row>

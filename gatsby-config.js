@@ -76,13 +76,26 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-matomo',
+      resolve: "gatsby-plugin-matomo",
       options: {
-        siteId: '1',
-        matomoUrl: 'http://analytics.commit42.fr',
-        siteUrl: 'https://www.commit42.com/'
-      }
+        siteId: "1",
+        matomoUrl: "http://analytics.commit42.fr",
+        siteUrl: "https://www.commit42.com/",
+      },
     },
+    {
+      resolve: "gatsby-plugin-manifest",
+      options: {
+        name: "Site de commit42",
+        short_name: "commit42",
+        start_url: "/",
+        background_color: "#6BA3D6",
+        theme_color: "#424242",
+        display: "standalone",
+        icon: "static/assets/favicon/favicon.png",
+      },
+    },
+    "gatsby-plugin-offline",
     // Doit toujours être en dernier
     `gatsby-plugin-netlify-cms`,
   ],

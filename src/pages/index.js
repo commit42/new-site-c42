@@ -92,6 +92,7 @@ export const indexPageQuery = graphql`
             childImageSharp {
               fluid(maxWidth: 800) {
                 ...GatsbyImageSharpFluid
+                originalName
               }
             }
           }
