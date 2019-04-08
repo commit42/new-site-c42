@@ -6,6 +6,7 @@
 @headerFont: 'Poppins Black';
 @subheaderFont: 'Poppins';
 @pageFont: 'Roboto';
+@fontName : 'Roboto';
 
 @fontSize : 18px;
 @importGoogleFonts : false;
