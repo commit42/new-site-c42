@@ -52,7 +52,7 @@ export default function Template({ data }) {
               <span>{moment(date).format("Do MMM YYYY")}</span>
               <span> • {post.timeToRead}min à perdre</span>
               <div style={{ marginTop: "2rem" }}>
-                {post.frontmatter.tags.slice(0, 4).map((tag, index) => (
+                {post.frontmatter.tags && post.frontmatter.tags.map((tag, index) => (
                   <Label
                     key={index}
                     style={{ marginBottom: "0.5rem" }}
