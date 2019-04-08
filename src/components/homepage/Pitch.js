@@ -1,8 +1,10 @@
 import React from "react"
 import "./pitch.scss"
 import Image from "gatsby-image"
-import { Container, Grid, Header } from "semantic-ui-react"
 import Fade from "react-reveal/Fade"
+import { Container, Grid, Header } from "semantic-ui-react"
+
+import formatText from "../../helpers/formatText"
 
 const Pitch = ({ data }) => {
   return (
@@ -23,9 +25,9 @@ const Pitch = ({ data }) => {
                   >
                     {row.title}
                   </Header>
-                  <p style={{ color: `${isDarkText}`, marginBottom: "5rem" }}>
-                    {row.description}
-                  </p>
+                  <div style={{ color: `${isDarkText}`, marginBottom: "5rem" }}>
+                    {formatText(row.description)}
+                  </div>
                   <div style={{ textAlign: "center" }}>
                     <Image
                       style={{ margin: "auto" }}
