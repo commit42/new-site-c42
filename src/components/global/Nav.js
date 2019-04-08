@@ -11,7 +11,7 @@ const Nav = (props) => {
     <Menu  borderless inverted size="massive" style={{ backgroundColor: 'white', borderRadius: '0', margin: '0' }}>
      <Container>
       <Menu.Item as={Link} to="/" >
-            <Image src={Logo}/>
+            <Image src={Logo} alt="Logo commit42" />
           </Menu.Item>
       <Menu.Item as={Link} to="/blog" position="right">
         <Header as="h3" style={{ fontFamily: 'Poppins', color: 'black' }}>Blog</Header>

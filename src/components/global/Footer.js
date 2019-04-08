@@ -8,7 +8,7 @@ const Footer = () => {
     <Grid as={Container}>
       <Grid.Row centered style={{marginTop:'4rem'}} >
         <Grid.Column verticalAlign="middle" computer={4} only="computer"> 
-          <Image src={Logo} as={Link} to="/" />
+          <Image src={Logo} as={Link} to="/" alt="Logo commit42" />
         </Grid.Column>
 
         <Grid.Column computer={6} mobile={10}>
