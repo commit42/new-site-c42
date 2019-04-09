@@ -1,17 +1,18 @@
 import React from "react"
 import "./pitch.scss"
 import Image from "gatsby-image"
-import { Container, Grid, Header } from "semantic-ui-react"
 import Fade from "react-reveal/Fade"
+import { Container, Grid, Header } from "semantic-ui-react"
+
+import formatText from "../../helpers/formatText"
 
 const Pitch = ({ data }) => {
   return (
     <Grid id="pitch-container">
       {data.map((row, index) => {
-        const altText = row.image.childImageSharp.fluid.src.slice(47, -12)
+        const altText = row.image.childImageSharp.fluid.originalName.slice(0, -4)
         const isDarkBg = row.darkBg ? "#424242" : "white"
         const isDarkText = row.darkBg ? "white" : "black"
-        console.log(altText)
         return (
           <Grid.Row key={index} style={{ backgroundColor: `${isDarkBg}` }}>
             <Grid.Column>
@@ -24,9 +25,9 @@ const Pitch = ({ data }) => {
                   >
                     {row.title}
                   </Header>
-                  <p style={{ color: `${isDarkText}`, marginBottom: "5rem" }}>
-                    {row.description}
-                  </p>
+                  <div style={{ color: `${isDarkText}`, marginBottom: "5rem" }}>
+                    {formatText(row.description)}
+                  </div>
                   <div style={{ textAlign: "center" }}>
                     <Image
                       style={{ margin: "auto" }}

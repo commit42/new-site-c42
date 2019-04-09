@@ -1,4 +1,5 @@
 import React from "react"
+import { graphql } from "gatsby"
 import { Grid, Container, Header } from "semantic-ui-react"
 import startCase from "lodash/startCase"
 import kebabCase from "lodash/kebabCase"
@@ -10,7 +11,6 @@ import BlogCard from "../components/blog-page/BlogCard"
 
 const TagTemplate = ({ data, pageContext }) => {
   const { posts, tagName } = pageContext
-  console.log(data)
   return (
     <Layout>
       <SEO
@@ -18,7 +18,7 @@ const TagTemplate = ({ data, pageContext }) => {
         description={`Tous les articles sur le thème: ${startCase(tagName)}`}
         pathname={`/tags/${kebabCase(tagName)}`}
       />
-      <Grid as={Container} style={{marginTop:'3rem', marginBottom:'3rem'}}>
+      <Grid as={Container} style={{ marginTop: "3rem", marginBottom: "3rem" }}>
         <Grid.Row textAlign="center" style={{ marginTop: "3rem" }}>
           <Grid.Column>
             <Fade top>

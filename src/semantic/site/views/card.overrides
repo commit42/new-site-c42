@@ -10,8 +10,14 @@
     height: 100%;
     box-shadow: none;
     transition: 0.2s ease;
+    font-family: @pageFont;
     .content {
         border-top: none;
+    }
+    .extra.content {
+        .center.aligned.header{
+            font-family:  'Poppins Black';
+        }
     }
     &:hover {
         box-shadow: 10px 10px 24px -10px rgba(0,0,0,0.66);

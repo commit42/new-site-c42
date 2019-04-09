@@ -1,6 +1,7 @@
 import React from "react"
 import "./headerIndex.scss"
 import Image from "gatsby-image"
+import formatText from "../../helpers/formatText"
 import { Container, Grid, Header } from "semantic-ui-react"
 
 const HeaderIndex = ({ data }) => {
@@ -15,9 +16,9 @@ const HeaderIndex = ({ data }) => {
             alt="Motifs commit42"
           />
         </Grid.Column>
-        <Grid.Column as={Container} textAlign="center" text verticalAlign="middle">
+        <Grid.Column as={Container} text verticalAlign="middle">
           <Header as="h1" >{data.heading}</Header>
-          <p>{data.description}</p>
+          {formatText(data.description)}
         </Grid.Column>
       </Grid.Row>
     </Grid>

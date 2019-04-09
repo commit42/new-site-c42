@@ -5,14 +5,16 @@
 @font-face {
   font-family: 'Poppins Black';
   font-style: BlackItalic;
-  src: url('fonts/Poppins-BlackItalic.ttf');
+  font-display: swap;
+  src: local('Poppins Black'),local('PoppinsBlack'), url('fonts/Poppins-BlackItalic.ttf');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
 @font-face {
   font-family: 'Poppins';
   font-style: Bold;
-  src: url('fonts/Poppins-Bold.ttf');
+  font-display: swap;
+  src: local('Poppins'),url('fonts/Poppins-Bold.ttf');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
@@ -20,7 +22,8 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  src: url('fonts/Roboto-Light.ttf');
+  font-display: swap;
+  src: local('Roboto'), url('fonts/Roboto-Light.ttf');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
@@ -28,38 +31,43 @@
   font-family: 'Roboto Italic';
   font-style: normal;
   font-weight: 400;
-  src: url('fonts/Roboto-LightItalic.ttf');
+  font-display: swap;
+  src: local('Poppins Italic'), url('fonts/Roboto-LightItalic.ttf');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
-
-a:not(.item) {
-  color: @greyc42;
-  transition: 0.2s ease-in-out;
-  font-weight: bold;
+a {
   font-family: 'Roboto Italic';
-  &:hover {
-    color: @bluec42;
+  &:not(.item){
+    color: @greyc42;
     transition: 0.2s ease-in-out;
+    font-weight: bold;
+      &:hover {
+        color: @bluec42;
+        transition: 0.2s ease-in-out;
+      }
+      &.content{
+      font-family: @pageFont;
+    }
   }
-  &.content{
-  font-family: @pageFont;
+}
 
-  }
+body{
+  font-family: 'Roboto';
 }
 
 h2 {
   color: @bluec42;
-  font-size: 2em;
+  font-size: 2rem;
 }
 
 h3 {
-  font-size: 1.6em;
+  font-size: 1.6rem;
 }
 
 h4 {
   font-family: 'Poppins';
-  font-size: 1.2em;
+  font-size: 1.2rem;
 }
 
 .gatsby-highlight{
@@ -73,4 +81,5 @@ h4 {
 p{
   font-size: 18px;
   line-height: 30px;
+  font-family: @pageFont;
 }

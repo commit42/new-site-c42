@@ -64,6 +64,7 @@ exports.createPages = ({ actions, graphql }) => {
                     srcSet
                     aspectRatio
                     sizes
+                    originalName
                   }
                 }
               }
