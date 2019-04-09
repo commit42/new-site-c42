@@ -1,8 +1,13 @@
 ---
-title:  "Un nouveau site pour une nouvelle année"
-date: 2019-02-21T11:16:14+01:00
-tags:  ["gatsby",  "PWA",  "React", "Strapi"]
-
+title: Un nouveau site pour une nouvelle année
+date: 2019-02-21T10:16:14.000Z
+author: Eva
+thumbnail: /assets/technos-front.png
+tags:
+  - gatsby
+  - PWA
+  - React
+  - Strapi
 ---
 
 Quoi de mieux pour commencer l’année que d’un peu de nouveauté ? L’équipe de commit42 est très heureuse de vous annoncer la refonte prochaine du site web et blog !
