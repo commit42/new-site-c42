@@ -1,6 +1,6 @@
 import React from "react"
 import "./testimonials.scss"
-import { Grid, Icon, Header, Card, Container } from "semantic-ui-react"
+import { Grid, Icon, Header, Card, Container, Button } from "semantic-ui-react"
 import Fade from "react-reveal/Fade"
 import Carousel from "nuka-carousel"
 
@@ -26,14 +26,26 @@ const Testimonials = ({ data, isMobile }) => {
             slidesToScroll="auto"
             autoplay={true}
             autoplayReverse={true}
+            autoplayInterval={5000}
             cellAlign="center"
             dragging={true}
             swiping={true}
-            slideWidth={isMobile ? "300px" : "700px"}
-            withoutControls={true}
+            slideWidth={isMobile ? "500px" : "700px"}
+            withoutControls={false}
             slideIndex={3}
             wrapAround={true}
             pauseOnHover={true}
+            renderCenterLeftControls={({ previousSlide }) => (
+              <Button
+                onClick={previousSlide}
+                compact
+                icon="arrow left"
+                primary
+              />
+            )}
+            renderCenterRightControls={({ nextSlide }) => (
+              <Button onClick={nextSlide} compact icon="arrow right" primary />
+            )}
           >
             {data.testimonialsList.map((testimonial, index) => {
               return (
@@ -41,7 +53,7 @@ const Testimonials = ({ data, isMobile }) => {
                   style={{ marginBottom: "3rem" }}
                   mobile={16}
                   tablet={8}
-                  computer={5}
+                  computer={10}
                   key={index}
                 >
                   <Card fluid>

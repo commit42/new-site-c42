@@ -1,5 +1,4 @@
 import React from "react"
-// import "semantic-ui-css/semantic.min.css"
 import { graphql } from "gatsby"
 import SEO from "../components/SEO/SEO"
 import Layout from "../components/layout"
