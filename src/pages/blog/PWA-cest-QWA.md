@@ -1,10 +1,14 @@
 ---
-title: "PWA, c’est QWA ?"
-date: 2019-02-05T10:02:00+01:00
-draft: false
-subtitle: ""
-tags: ["pwa", "react", "magento", "toulouse"]
-show_prev_next: ""
+title: 'PWA, c’est QWA ?'
+date: 2019-02-05T09:02:00.000Z
+author: Thomas
+thumbnail: >-
+  https://raw.githubusercontent.com/commit42/new-site-c42/master/static/assets/Responsive-minimal-PWA.png
+tags:
+  - pwa
+  - react
+  - magento
+  - toulouse
 ---
 
 ![PWA](/assets/Responsive-minimal-PWA.png)
