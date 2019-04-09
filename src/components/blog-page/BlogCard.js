@@ -6,7 +6,9 @@ import kebabCase from "lodash/kebabCase"
 import moment from "moment"
 
 const BlogCard = ({ post }) => {
-  const altText = post.frontmatter.thumbnail && post.frontmatter.thumbnail.childImageSharp.fluid.originalName.slice(0, -4)
+  const altText =
+    post.frontmatter.thumbnail &&
+    post.frontmatter.thumbnail.childImageSharp.fluid.originalName.slice(0, -4)
   return (
     <Grid.Column
       mobile={16}
@@ -14,7 +16,7 @@ const BlogCard = ({ post }) => {
       computer={5}
       style={{ marginBottom: "3rem" }}
     >
-      <Card fluid>
+      <Card fluid as={Link} to={post.fields.slug}>
         {post.frontmatter.thumbnail != null && (
           <Image
             fluid={post.frontmatter.thumbnail.childImageSharp.fluid}
@@ -23,7 +25,7 @@ const BlogCard = ({ post }) => {
           />
         )}
 
-        <Card.Content as={Link} to={post.fields.slug}>
+        <Card.Content>
           <Card.Header>{post.frontmatter.title}</Card.Header>
           <Card.Meta
             style={{
