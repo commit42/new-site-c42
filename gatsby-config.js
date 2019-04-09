@@ -4,7 +4,7 @@ module.exports = {
     description:
       "Studio de développement Web à Toulouse - React - Progressive Web Apps - CakePHP",
     siteUrl: "https://www.commit42.com/",
-    image: "/assets/logo.png",
+    image: "../src/favicon.png",
     twitterUsername: "@commit42",
   },
   plugins: [
@@ -89,13 +89,14 @@ module.exports = {
         name: "Site de commit42",
         short_name: "commit42",
         start_url: "/",
-        background_color: "#6BA3D6",
+        background_color: "#ffffff",
         theme_color: "#424242",
         display: "standalone",
-        icon: "static/assets/favicon/favicon.png",
+        icon: "src/favicon.png",
       },
     },
     "gatsby-plugin-offline",
+    `gatsby-plugin-favicon`,
     // Doit toujours être en dernier
     `gatsby-plugin-netlify-cms`,
   ],
