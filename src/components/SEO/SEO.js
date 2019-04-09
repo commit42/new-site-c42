@@ -43,15 +43,6 @@ const SEO = ({ title, description, image, pathname, article }) => {
               <link rel="shortcut icon" href={favicon} />
               <link rel="icon" href={favicon} />
 
-              {/* Favicon */}
-              <link
-                rel="icon"
-                type="image/png"
-                sizes="192x192"
-                href={favicon}
-              />
-
-
               {/* fontawesome */}
               <link
                 rel="stylesheet"
