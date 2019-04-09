@@ -5,8 +5,8 @@
     color: @bluec42;
 }
 
-h1.ui.header {
-  font-size: 3rem !important;
+h1.ui.header{
+  font-size: 3rem;
   font-family: 'Poppins Black';
 }
 
