@@ -19,7 +19,7 @@
             font-family:  'Poppins Black';
         }
     }
-    &:hover {
+    &:hover:not(.testimonial) {
         box-shadow: 10px 10px 24px -10px rgba(0,0,0,0.66);
         transition: 0.2s ease;
 

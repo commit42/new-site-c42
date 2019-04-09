@@ -71,7 +71,7 @@ const Testimonials = ({ data, isMobile }) => {
                   computer={5}
                   textAlign="center"
                 >
-                  <Card fluid key={index}>
+                  <Card fluid key={index} className="testimonial">
                     <Card.Content>
                       <div
                         style={{ display: "flex", justifyContent: "center" }}
