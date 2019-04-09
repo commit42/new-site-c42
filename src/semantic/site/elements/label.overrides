@@ -2,8 +2,18 @@
          Site Overrides
 *******************************/
 
-.ui.label  {
+a.ui.label  {
   background: @yellowc42;
   border-radius: 10px;
   font-family: 'Poppins';
+  transition: 0.2s ease;
+  &:hover{
+    background-color: @greyc42;
+    color: white;
+    transition: 0.2s ease;
+  }
+  &:focus{
+    background: @greyc42;
+    color: white;
+  }
 }

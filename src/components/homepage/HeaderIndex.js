@@ -1,6 +1,8 @@
 import React from "react"
 import "./headerIndex.scss"
-import { Image, Container, Grid, Header } from "semantic-ui-react"
+import Image from "gatsby-image"
+import formatText from "../../helpers/formatText"
+import { Container, Grid, Header } from "semantic-ui-react"
 
 const HeaderIndex = ({ data }) => {
   return (
@@ -9,13 +11,14 @@ const HeaderIndex = ({ data }) => {
         <Grid.Column only="large screen computer">
           <Image
             fluid
-            style={{ maxHeight: "100vh" }}
-            src={data.image.childImageSharp.fluid.src}
+            style={{ maxHeight: "100vh"}}
+            fluid={data.image.childImageSharp.fluid}
+            alt="Motifs commit42"
           />
         </Grid.Column>
         <Grid.Column as={Container} text verticalAlign="middle">
-          <Header as="h1">{data.heading}</Header>
-          <p>{data.description}</p>
+          <Header as="h1" >{data.heading}</Header>
+          {formatText(data.description)}
         </Grid.Column>
       </Grid.Row>
     </Grid>

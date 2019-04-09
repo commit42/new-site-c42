@@ -1,5 +1,6 @@
 import React from "react"
 import "semantic-ui-less/semantic.less"
+import"../../static/css/c42-theme.css"
 import Nav from "./global/Nav"
 import Footer from "./global/Footer"
 import { graphql, StaticQuery } from "gatsby"

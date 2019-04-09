@@ -23,4 +23,7 @@
       background: @greyc42;
       transition: 0.2s ease;
     }
+     &:focus {
+      background: @greyc42;
+    }
 }

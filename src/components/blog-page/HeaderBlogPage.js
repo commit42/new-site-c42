@@ -1,24 +1,26 @@
 import React from "react"
-import { Container, Grid, Image, Header } from "semantic-ui-react"
 import Fade from "react-reveal/Fade"
+import "./headerBlog.scss"
+import  Image  from "gatsby-image"
+import { Container, Grid, Header } from "semantic-ui-react"
 
-const HeaderBlogPage = ({data}) => {
+const HeaderBlogPage = ({ data }) => {
   return (
-    <Grid as={Container} style={{ marginTop: "15rem", marginBottom: "5rem" }}>
+    <Grid as={Container} className="header-blog">
       <Grid.Row>
-        <Grid.Column>
+        <Grid.Column textAlign="center">
           <Fade top>
-            <Image src={data.image.childImageSharp.fluid.src} centered />
+            <Image fixed={data.image.childImageSharp.fixed} alt={data.image.childImageSharp.fixed.originalName.slice(0, -4)}/>
           </Fade>
         </Grid.Column>
       </Grid.Row>
       <Grid.Row textAlign="center" style={{ marginTop: "3rem" }}>
-        <Grid.Column>
+        <Grid.Column >
           <Fade top>
-            <Header as="h1">
+            <Header as="h1" style={{ marginBottom: "2rem" }}>
               {data.header}
             </Header>
-            <p>{data.description}</p>
+            <p style={{maxWidth:"70%", margin:'auto'}}>{data.description}</p>
           </Fade>
         </Grid.Column>
       </Grid.Row>

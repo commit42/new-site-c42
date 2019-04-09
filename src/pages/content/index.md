@@ -5,15 +5,11 @@ head:
     commit42 est spécialisé dans les technologies React, PHP, NodeJS, Vuejs,
     Magento et PWA.
 
-
     Nos projets peuvent varier de la maintenance d’une boutique en ligne à la
     réalisation d’applications métiers spécifiques dont des Web App PWA.
 
-
     Les locaux sont partagés avec une autre entreprise, Occitech (dont on est la
     spin-off) avec qui on partage la fibre, les conseils, les repas…
-
-
   heading: Studio  d'innovation web
   image: /assets/header-img-c42.png
 services:
@@ -43,15 +39,12 @@ pitch:
     description: >
       0% de sous-traitance, tout est produit localement !
 
-
       Le code créé au sein de commit42 est d’origine contrôlée : rédigé par des
       développeurs tous salariés, en plein centre de la dynamique ville de
       Toulouse. 
 
-
       Vous serez donc toujours en contact direct avec les personnes en charge de
       donner vie à vos projets. 
-
 
       Si vous en avez la possibilité, vous êtes les bienvenus dans nos locaux
       pendant que nous travaillons pour vous. C’est la manière la plus efficace
@@ -60,7 +53,6 @@ pitch:
       Vous serez accueilli(e) dans de bonnes conditions, vous disposerez d’une
       connexion internet, de boissons chaudes et froides à volonté et d’un
       espace fermé.
-
 
       Nous collaborons régulièrement avec d’autres acteurs du web de la région
       afin de compléter mutuellement nos compétences et vous en faire bénéficier
@@ -76,12 +68,10 @@ pitch:
       niveau et les améliorer (mise à jours de sécurité, performances, nouveaux
       besoins)
 
-
       En séparant la partie métier (back) des écrans utilisateurs (front) le
       tout connecté par des API, nous répondons aux paradigmes modernes
       d’architectures évolutives.
-
-
+      
       Nous croyons qu’un projet informatique doit être fait en respectant un
       certain niveau de qualité pour qu’il reste stable et maintenable dans le
       temps. C’est pourquoi le code est versionné, systématiquement revu, et les
@@ -145,4 +135,3 @@ testimonials:
         plus connu d'arrêt depuis que nous avons choisi l'hébergement et
         l'ingénierie chez Commit 42.
 ---
-

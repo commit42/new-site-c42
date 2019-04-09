@@ -5,13 +5,15 @@
     color: @bluec42;
 }
 
-h1.ui.header {
+h1.ui.header{
   font-size: 3rem;
+  font-family: 'Poppins Black';
 }
 
 h2.ui.header {
   font-size: 2.5rem;
-  color: @bluec42
+  color: @bluec42;
+  font-family: 'Poppins Black';
 }
 
 h3.ui.header {
