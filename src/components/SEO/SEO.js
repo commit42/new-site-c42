@@ -6,7 +6,6 @@ import Facebook from "./Facebook"
 import Twitter from "./Twitter"
 import favicon from "../../../static/favicon.ico"
 
-
 const SEO = ({ title, description, image, pathname, article }) => {
   return (
     <StaticQuery
@@ -55,6 +54,18 @@ const SEO = ({ title, description, image, pathname, article }) => {
                 href="https://pro.fontawesome.com/releases/v5.8.1/css/fontawesome.css"
                 integrity="sha384-4HqGlagEHMyfaDQVabl1wx7GCtGw6hDl3sKJEhqQjOCrXrvizhaA2j4hK8Piewtr"
                 crossorigin="anonymous"
+              />
+
+              {/* React swiper */}
+              <script src="https://unpkg.com/react-id-swiper@2.1.1/lib/react-id-swiper.js" />
+              <script src="https://unpkg.com/react-id-swiper@2.1.1/lib/react-id-swiper.min.js" />
+              <link
+                rel="stylesheet"
+                href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.css"
+              />
+              <link
+                rel="stylesheet"
+                href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css"
               />
             </Helmet>
             <Facebook

@@ -1,10 +1,34 @@
-import React from "react"
+import React, { useState } from "react"
 import "./testimonials.scss"
 import { Grid, Icon, Header, Card, Container, Button } from "semantic-ui-react"
 import Fade from "react-reveal/Fade"
 import Carousel from "nuka-carousel"
+import Swiper from "react-id-swiper"
+import { Navigation, Pagination, Autoplay } from "swiper/dist/js/swiper.esm"
 
 const Testimonials = ({ data, isMobile }) => {
+  const [swiper, updateSwiper] = useState(null)
+
+  const goNext = () => {
+    if (swiper !== null) {
+      swiper.slideNext()
+    }
+  }
+
+  const goPrev = () => {
+    if (swiper !== null) {
+      swiper.slidePrev()
+    }
+  }
+
+  const params = {
+    modules: [Pagination, Navigation, Autoplay], // Add nescessary modules here
+    loop: true,
+    spaceBetween: 80,
+    autoplay: true,
+    slidesPerView: "3",
+  }
+
   return (
     <Container fluid className="testimonials-list">
       <Grid as={Container}>
@@ -15,48 +39,18 @@ const Testimonials = ({ data, isMobile }) => {
             </Fade>
           </Grid.Column>
         </Grid.Row>
-        <Grid.Row
-          as={Container}
-          textAlign="center"
-          style={{ marginTop: "6rem" }}
-          centered
-        >
-          <Carousel
-            transitionMode="scroll3d"
-            slidesToScroll="auto"
-            autoplay={true}
-            autoplayReverse={true}
-            autoplayInterval={5000}
-            cellAlign="center"
-            dragging={true}
-            swiping={true}
-            slideWidth={isMobile ? "500px" : "700px"}
-            withoutControls={false}
-            slideIndex={3}
-            wrapAround={true}
-            pauseOnHover={true}
-            renderCenterLeftControls={({ previousSlide }) => (
-              <Button
-                onClick={previousSlide}
-                compact
-                icon="arrow left"
-                primary
-              />
-            )}
-            renderCenterRightControls={({ nextSlide }) => (
-              <Button onClick={nextSlide} compact icon="arrow right" primary />
-            )}
-          >
+        <Grid.Row textAlign="center" style={{ marginTop: "6rem" }} centered>
+          <Swiper getSwiper={updateSwiper} modules={[Navigation]} {...params}>
             {data.testimonialsList.map((testimonial, index) => {
               return (
                 <Grid.Column
                   style={{ marginBottom: "3rem" }}
                   mobile={16}
-                  tablet={8}
-                  computer={10}
-                  key={index}
+                  tablet={16}
+                  computer={5}
+                  textAlign="center"
                 >
-                  <Card fluid>
+                  <Card fluid key={index} onClick={goNext}>
                     <Card.Content>
                       <div
                         style={{ display: "flex", justifyContent: "center" }}
@@ -84,9 +78,23 @@ const Testimonials = ({ data, isMobile }) => {
                 </Grid.Column>
               )
             })}
-          </Carousel>
+          </Swiper>
+          <div style={{ marginTop: "2rem" }}>
+            <Button
+              onClick={goPrev}
+              primary
+              style={{ marginRight: "1rem" }}
+              icon="arrow left"
+            />
+            <Button
+              onClick={goNext}
+              style={{ marginLeft: "1rem" }}
+              primary
+              icon="arrow right"
+            />
+          </div>
         </Grid.Row>
-        <Grid.Row>
+        <Grid.Row style={{ marginTop: "2rem" }}>
           <Grid.Column textAlign="center">
             <Header as="h4">
               <a href="https://www.google.com/search?q=commit42+avis&oq=commit42+avis&aqs=chrome..69i57.2474j0j7&sourceid=chrome&ie=UTF-8#lrd=0x12aebb873c60e57b:0x2ca3be697d36200,1,,,">
