@@ -137,6 +137,7 @@ pre[data-line] {
 }
 pre[class*="language-"] > code[class*="language-"] {
   position: relative;
+  z-index: 0;
 }
 .line-highlight {
   position: absolute;

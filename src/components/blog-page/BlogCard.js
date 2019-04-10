@@ -14,7 +14,7 @@ const BlogCard = ({ post }) => {
       mobile={16}
       tablet={8}
       computer={5}
-      style={{ marginBottom: "3rem" }}
+      style={{ marginBottom: "3rem", zIndex: "0" }}
     >
       <Card fluid as={Link} to={post.fields.slug}>
         {post.frontmatter.thumbnail != null && (
