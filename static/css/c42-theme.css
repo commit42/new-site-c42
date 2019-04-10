@@ -12,11 +12,12 @@
 */
 
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 600;
-  src: url('../../src/semantic/site/globals/fonts/Roboto-Light.ttf');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+  src: url("../../src/semantic/site/globals/fonts/Roboto-Light.ttf");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC,
+    U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
 pre[class*="language-"],
@@ -24,7 +25,7 @@ code[class*="language-"] {
   color: #6aa4d6;
   font-size: 13px;
   text-shadow: none;
-  font-family: 'Roboto', Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  font-family: "Roboto", Monaco, "Andale Mono", "Ubuntu Mono", monospace;
   direction: ltr;
   text-align: left;
   white-space: pre;
@@ -54,23 +55,22 @@ code[class*="language-"]::mozselection {
 }
 pre[class*="language-"] {
   padding: 1em;
-  margin: .5em 0;
+  margin: 0.5em 0;
   overflow: auto;
   background: #424242;
 }
 :not(pre) > code[class*="language-"] {
-  padding: .1em .3em;
-  border-radius: .3em;
+  padding: 0.1em 0.3em;
+  border-radius: 0.3em;
   color: #424242;
   background: #ffe900;
-  font-family: 'Roboto', Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-
+  font-family: "Roboto", Monaco, "Andale Mono", "Ubuntu Mono", monospace;
 }
 /*********************************************************
 * Tokens
 */
 .namespace {
-  opacity: .7;
+  opacity: 0.7;
 }
 .token.comment,
 .token.prolog,
@@ -137,7 +137,6 @@ pre[data-line] {
 }
 pre[class*="language-"] > code[class*="language-"] {
   position: relative;
-  z-index: 1;
 }
 .line-highlight {
   position: absolute;
@@ -152,4 +151,3 @@ pre[class*="language-"] > code[class*="language-"] {
   line-height: inherit;
   white-space: pre;
 }
-
