@@ -4,7 +4,7 @@ module.exports = {
     description:
       "Studio de développement Web à Toulouse - React - Progressive Web Apps - CakePHP",
     siteUrl: "https://www.commit42.com/",
-    image: "../src/favicon.png",
+    image: "assets/favicon.png",
     twitterUsername: "@commit42",
   },
   plugins: [
