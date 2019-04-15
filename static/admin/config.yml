@@ -130,5 +130,5 @@ collections:
     label: Auteurs
     folder: src/pages/authors
     fields:
-      - { name: name, label: Nom, widget: String }
+      - { name: name, label: Nom, widget: string }
       - { name: avatar, label: Avatar, widget: image }
