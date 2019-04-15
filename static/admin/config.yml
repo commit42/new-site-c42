@@ -7,7 +7,7 @@ public_folder: assets
 
 publish_mode: editorial_workflow
 
-logo_url: https://www.commit42.com/assets/logo.png
+logo_url: https://www.commit42.com/assets/favicon.png
 
 site_url: https://www.commit42.com
 
@@ -18,58 +18,66 @@ slug:
 
 collections:
   - name: blog
-    label: Post
+    label: Articles
     folder: src/pages/blog
     create: true
     slug: "{{slug}}"
     preview_path: "blog/{{slug}}"
     fields:
-      - { name: title, label: Title }
+      - { name: title, label: Titre }
       - { name: date, label: Date, widget: date }
-      - { name: author, label: Author }
-      - { name: thumbnail, label: Thumbnail, widget: image }
+      - { name: author, label: Auteur }
+      - { name: thumbnail, label: Vignette, widget: image }
       - {
           name: tags,
           label: Tags (séparer par une virgule et un espace),
           widget: list,
         }
-      - { name: body, label: Body, widget: markdown }
+      - { name: body, label: Texte, widget: markdown }
 
   - name: pages
     label: Page
     files:
       - file: src/pages/content/index.md
-        label: Landing Page
+        label: Page d'accueil
         name: index
         fields:
-          - { name: pageName, label: Page Name, widget: string }
+          - {
+              name: pageName,
+              label: Nom de la page (en minuscules),
+              widget: string,
+            }
           - {
               name: head,
-              label: Head,
+              label: En-tête,
               widget: object,
               fields:
                 [
                   { name: image, label: Image, widget: image },
-                  { name: heading, label: Heading, widget: string },
+                  { name: heading, label: Titre, widget: string },
                   { name: description, label: Description, widget: text },
                 ],
             }
           - {
-              name: services,
-              label: Services,
+              name: servicesList,
+              label: Liste des services,
               widget: object,
               fields:
                 [
-                  { name: heading, label: Heading, widget: string },
+                  { name: heading, label: Titre, widget: string },
                   {
-                    name: servicesList,
-                    label: Services List,
+                    name: services,
+                    label: Services,
                     widget: list,
                     fields:
                       [
-                        { name: title, label: Title, widget: string },
+                        { name: title, label: Titre, widget: string },
                         { name: description, label: Description, widget: text },
-                        { name: icon, label: Icon Name, widget: string },
+                        {
+                          name: icon,
+                          label: Nom de l'icône associée,
+                          widget: string,
+                        },
                       ],
                   },
                 ],
@@ -80,37 +88,41 @@ collections:
               widget: list,
               fields:
                 [
-                  { name: title, label: Title, widget: string },
+                  { name: title, label: Titre, widget: string },
                   { name: description, label: Description, widget: text },
                   { name: image, label: Image, widget: image },
-                  { name: darkBg, label: Dark Background, widget: boolean }
+                  { name: darkBg, label: Fond noir ?, widget: boolean },
                 ],
             }
           - {
-              name: testimonials,
-              label: Testimonials,
+              name: testimonialsList,
+              label: Liste des temoignages,
               widget: object,
               fields:
                 [
-                  { name: heading, label: Heading, widget: string },
+                  { name: heading, label: Titre, widget: string },
                   {
-                    name: testimonialsList,
-                    label: Testimonials List,
+                    name: testimonials,
+                    label: Témoignages,
                     widget: list,
                     fields:
                       [
-                        { name: text, label: Text, widget: text },
-                        { name: author, label: Author, widget: string },
-                        { name: rating, label: rating, widget: number },
+                        { name: text, label: Texte, widget: text },
+                        { name: author, label: Auteur, widget: string },
+                        { name: rating, label: Note (sur 5), widget: number },
                       ],
                   },
                 ],
             }
       - file: src/pages/content/blog.md
-        label: Blog Page
+        label: Page blog
         name: Blog
         fields:
-          - { name: pageName, label: Page Name, widget: string }
-          - { name: header, label: Header, widget: string }
+          - {
+              name: pageName,
+              label: Nom de la page (en minuscules),
+              widget: string,
+            }
+          - { name: header, label: Titre, widget: string }
           - { name: description, label: Description, widget: text }
           - { name: image, label: Image, widget: image }

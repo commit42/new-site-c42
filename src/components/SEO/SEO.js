@@ -42,6 +42,11 @@ const SEO = ({ title, description, image, pathname, article }) => {
               <link rel="shortcut icon" href={favicon} />
               <link rel="icon" href={favicon} />
 
+              <meta
+                name="google-site-verification"
+                content="LF-7NXdTmuJR-Tb6JKkD7Zs0uXN-YcIIxjeSNZs7YYg"
+              />
+
               {/* fontawesome */}
               <link
                 rel="stylesheet"
