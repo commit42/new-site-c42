@@ -1,4 +1,5 @@
 import React from "react"
+import "../../globals.scss"
 import { Message, Container, Button, Grid, Icon } from "semantic-ui-react"
 
 const CallToAction = () => {
@@ -9,7 +10,7 @@ const CallToAction = () => {
         only="large screen widescreen"
       >
         <Grid.Column>
-          <Container style={{ marginBottom: "5rem" }}>
+          <Container className="mb-5">
             <Message size="massive" as={Grid}>
               <Grid.Row>
                 <Grid.Column width={12} verticalAlign="middle">
