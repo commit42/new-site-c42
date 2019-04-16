@@ -16,8 +16,10 @@ const HeaderHome = ({ data }) => {
           />
         </Grid.Column>
         <Grid.Column as={Container} text verticalAlign="middle">
-          <Header as="h1">{data.heading}</Header>
-          {formatText(data.description)}
+          <div className="header-text-container">
+            <Header as="h1">{data.heading}</Header>
+            {formatText(data.description)}
+          </div>
         </Grid.Column>
       </Grid.Row>
     </Grid>
