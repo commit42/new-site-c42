@@ -1,6 +1,7 @@
 import React from "react"
-import Fade from "react-reveal/Fade"
 import "./HeaderBlog.scss"
+import "../../globals.scss"
+import Fade from "react-reveal/Fade"
 import Image from "gatsby-image"
 import { Container, Grid, Header } from "semantic-ui-react"
 
@@ -17,15 +18,13 @@ const HeaderBlog = ({ data }) => {
           </Fade>
         </Grid.Column>
       </Grid.Row>
-      <Grid.Row textAlign="center" style={{ marginTop: "3rem" }}>
+      <Grid.Row textAlign="center" className="mt-3">
         <Grid.Column>
           <Fade top>
-            <Header as="h1" style={{ marginBottom: "2rem" }}>
+            <Header as="h1" className="header-blog--heading">
               {data.header}
             </Header>
-            <p style={{ maxWidth: "70%", margin: "auto" }}>
-              {data.description}
-            </p>
+            <p className="header-blog--description">{data.description}</p>
           </Fade>
         </Grid.Column>
       </Grid.Row>
