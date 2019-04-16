@@ -128,7 +128,7 @@ collections:
           - { name: image, label: Image, widget: image }
   - name: authors
     label: Auteurs
-    folder: src/pages/authors
+    folder: src/content/authors
     fields:
       - { name: name, label: Nom, widget: string }
       - { name: avatar, label: Avatar, widget: image }
