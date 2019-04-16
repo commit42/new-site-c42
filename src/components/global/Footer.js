@@ -1,4 +1,5 @@
 import React from "react"
+import "../../globals.scss"
 import { Link } from "gatsby"
 import { Grid, Container, Header, Icon, Image, List } from "semantic-ui-react"
 import Logo from "../../../static/assets/logo-noir-baseline-200.png"
@@ -6,8 +7,8 @@ import Logo from "../../../static/assets/logo-noir-baseline-200.png"
 const Footer = () => {
   return (
     <Grid as={Container}>
-      <Grid.Row centered style={{marginTop:'4rem'}} >
-        <Grid.Column verticalAlign="middle" computer={4} only="computer"> 
+      <Grid.Row centered className="mt-4">
+        <Grid.Column verticalAlign="middle" computer={4} only="computer">
           <Image src={Logo} as={Link} to="/" alt="Logo commit42" />
         </Grid.Column>
 
@@ -34,7 +35,7 @@ const Footer = () => {
               </List.Content>
             </List.Item>
           </List>
-          <div style={{marginTop:'2rem'}}>
+          <div className="mt-2">
             <a href="https://www.facebook.com/commit42/">
               <Icon name="facebook" size="big" link />
             </a>
@@ -57,10 +58,9 @@ const Footer = () => {
               Blog
             </List.Item>
           </List>
-          
         </Grid.Column>
       </Grid.Row>
-      <Grid.Row textAlign="center" style={{ marginTop: "1rem" }}>
+      <Grid.Row textAlign="center" className="mt-1">
         <Grid.Column mobile={16} tablet={16} computer={16}>
           <small>{`Tous droits réservés commit42 © ${new Date().getFullYear()}`}</small>
         </Grid.Column>
