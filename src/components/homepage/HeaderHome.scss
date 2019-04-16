@@ -1,0 +1,10 @@
+.ui.grid {
+  .two.column.row {
+    .ui.text.container.middle.aligned.column {
+      @media only screen and (max-width: 1200px) {
+        margin: 20vh 0 15vh 0;
+        width: 90% !important;
+      }
+    }
+  }
+}

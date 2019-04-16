@@ -1,10 +1,9 @@
 import React, { useState } from "react"
 import "./testimonials.scss"
 import { Grid, Icon, Header, Card, Container, Button } from "semantic-ui-react"
-import Fade from "react-reveal/Fade"
-import Carousel from "nuka-carousel"
-import Swiper from "react-id-swiper"
 import { Navigation, Pagination, Autoplay } from "swiper/dist/js/swiper.esm"
+import Fade from "react-reveal/Fade"
+import Swiper from "react-id-swiper"
 
 const Testimonials = ({ data, isMobile }) => {
   const [swiper, updateSwiper] = useState(null)
@@ -22,23 +21,20 @@ const Testimonials = ({ data, isMobile }) => {
   }
 
   const params = {
-    modules: [Pagination, Navigation, Autoplay], // Add nescessary modules here
+    modules: [Pagination, Navigation, Autoplay],
     loop: true,
     spaceBetween: 80,
     autoplay: true,
     slidesPerView: "3",
     breakpoints: {
-      // when window width is <= 320px
       320: {
         slidesPerView: 1,
         spaceBetween: 10,
       },
-      // when window width is <= 480px
       480: {
         slidesPerView: 1,
         spaceBetween: 20,
       },
-      // when window width is <= 640px
       640: {
         slidesPerView: 2,
         spaceBetween: 20,
@@ -70,6 +66,7 @@ const Testimonials = ({ data, isMobile }) => {
                   tablet={16}
                   computer={5}
                   textAlign="center"
+                  key={index}
                 >
                   <Card fluid key={index} className="testimonial">
                     <Card.Content>

@@ -4,7 +4,7 @@ const { createFilePath } = require("gatsby-source-filesystem")
 const { fmImagesToRelative } = require("gatsby-remark-relative-images")
 
 const createTagPages = (createPage, posts) => {
-  const tagTemplate = path.resolve("src/templates/tagTemplate.js")
+  const tagTemplate = path.resolve("src/templates/TagTemplate.js")
 
   const postsByTag = {}
 
@@ -38,7 +38,7 @@ const createTagPages = (createPage, posts) => {
 
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
-  const blogPostTemplate = path.resolve(`src/templates/blog-post.js`)
+  const blogPostTemplate = path.resolve(`src/templates/BlogPostTemplate.js`)
   return graphql(`
     {
       allMarkdownRemark(

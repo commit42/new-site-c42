@@ -1,8 +1,8 @@
 import React from "react"
 import { graphql } from "gatsby"
-import SEO from "../components/SEO/SEO"
-import Layout from "../components/layout"
-import HeaderIndex from "../components/homepage/HeaderIndex"
+import Layout from "../components/Layout"
+import SEO from "../components/seo/SEO"
+import HeaderHome from "../components/homepage/HeaderHome"
 import Services from "../components/homepage/Services"
 import Pitch from "../components/homepage/Pitch"
 import Testimonials from "../components/homepage/Testimonials"
@@ -38,18 +38,15 @@ class IndexPage extends React.Component {
       markdownRemark: { frontmatter: indexData },
     } = this.props.data
     const { viewportWidth } = this.state
-    const isMobile = Boolean(viewportWidth <= 800);
+    const isMobile = Boolean(viewportWidth <= 800)
     return (
       <div>
         <Layout>
           <SEO />
-          <HeaderIndex data={indexData.head} />
+          <HeaderHome data={indexData.head} />
           <Services data={indexData.services} />
           <Pitch data={indexData.pitch} />
-          <Testimonials
-            data={indexData.testimonials}
-            isMobile={isMobile}
-          />
+          <Testimonials data={indexData.testimonials} isMobile={isMobile} />
           <CallToAction />
         </Layout>
       </div>

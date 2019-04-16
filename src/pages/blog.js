@@ -3,10 +3,10 @@ import React from "react"
 import { graphql } from "gatsby"
 import { Container, Grid } from "semantic-ui-react"
 
-import SEO from "../components/SEO/SEO"
-import Layout from "../components/layout"
-import HeaderBlogPage from "../components/blog-page/HeaderBlogPage"
-import BlogCard from "../components/blog-page/BlogCard"
+import SEO from "../components/seo/SEO"
+import Layout from "../components/Layout"
+import HeaderBlog from "../components/blog/HeaderBlog"
+import BlogCard from "../components/blog/BlogCard"
 class BlogPage extends React.Component {
   render() {
     const { edges: posts } = this.props.data.allMarkdownRemark
@@ -18,8 +18,8 @@ class BlogPage extends React.Component {
           description="Super blog trop cool de commit42"
           pathname="/blog"
         />
-        
-        <HeaderBlogPage data={blogData} />
+
+        <HeaderBlog data={blogData} />
 
         <Container
           fluid

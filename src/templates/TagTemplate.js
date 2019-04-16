@@ -5,9 +5,9 @@ import startCase from "lodash/startCase"
 import kebabCase from "lodash/kebabCase"
 import Fade from "react-reveal/Fade"
 
-import Layout from "../components/layout"
-import SEO from "../components/SEO/SEO"
-import BlogCard from "../components/blog-page/BlogCard"
+import Layout from "../components/Layout"
+import SEO from "../components/seo/SEO"
+import BlogCard from "../components/blog/BlogCard"
 
 const TagTemplate = ({ data, pageContext }) => {
   const { posts, tagName } = pageContext
