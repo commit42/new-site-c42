@@ -7,6 +7,7 @@ a.ui.label  {
   border-radius: 10px;
   font-family: 'Poppins';
   transition: 0.2s ease;
+  margin-bottom: 0.5rem;
   &:hover{
     background-color: @greyc42;
     color: white;
