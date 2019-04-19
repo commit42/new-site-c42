@@ -6,7 +6,7 @@ import { Navigation, Pagination, Autoplay } from "swiper/dist/js/swiper.esm"
 import Fade from "react-reveal/Fade"
 import Swiper from "react-id-swiper"
 
-const Testimonials = ({ data, isMobile }) => {
+const Testimonials = ({ data }) => {
   const [swiper, updateSwiper] = useState(null)
 
   const goNext = () => {

@@ -10,35 +10,11 @@ import CallToAction from "../components/homepage/CallToAction"
 
 const isClient = typeof window !== "undefined"
 class IndexPage extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = { viewportWidth: 0 }
-  }
-
-  componentDidMount() {
-    if (isClient) {
-      window.addEventListener("resize", this.updateWindowDimensions)
-      setTimeout(() => {
-        this.updateWindowDimensions()
-      }, 500)
-    }
-  }
-
-  componentWillUnmount() {
-    if (isClient)
-      window.removeEventListener("resize", this.updateWindowDimensions)
-  }
-
-  updateWindowDimensions = () => {
-    this.setState({ viewportWidth: window.innerWidth })
-  }
-
   render() {
     const {
       markdownRemark: { frontmatter: indexData },
     } = this.props.data
-    const { viewportWidth } = this.state
-    const isMobile = Boolean(viewportWidth <= 800)
+
     return (
       <div>
         <Layout>
@@ -46,7 +22,7 @@ class IndexPage extends React.Component {
           <HeaderHome data={indexData.head} />
           <Services data={indexData.services} />
           <Pitch data={indexData.pitch} />
-          <Testimonials data={indexData.testimonials} isMobile={isMobile} />
+          <Testimonials data={indexData.testimonials} />
           <CallToAction />
         </Layout>
       </div>
