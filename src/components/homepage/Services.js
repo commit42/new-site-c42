@@ -5,7 +5,7 @@ import Fade from "react-reveal/Fade"
 
 const Services = ({ data }) => {
   return (
-    <Grid textAlign="center" style={{}}>
+    <Grid textAlign="center" className="services--container">
       <Grid.Row>
         <Header as="h2" textAlign="center">
           Découvrez tous nos services
