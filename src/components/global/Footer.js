@@ -7,7 +7,7 @@ import Logo from "../../../static/assets/logo-noir-baseline-200.png"
 const Footer = () => {
   return (
     <Grid as={Container}>
-      <Grid.Row centered className="mt-4">
+      <Grid.Row centered className="mt-6">
         <Grid.Column verticalAlign="middle" computer={4} only="computer">
           <Image src={Logo} as={Link} to="/" alt="Logo commit42" />
         </Grid.Column>
