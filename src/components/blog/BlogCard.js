@@ -34,9 +34,7 @@ const BlogCard = ({ post }) => {
         {post.frontmatter.tags && (
           <Card.Content extra>
             {post.frontmatter.tags.map((tag, index) => (
-              <Label key={index} href={`/tags/${kebabCase(tag)}/`}>
-                {tag}
-              </Label>
+              <Label key={index}>{tag}</Label>
             ))}
           </Card.Content>
         )}

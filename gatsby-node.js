@@ -42,7 +42,7 @@ exports.createPages = ({ actions, graphql }) => {
   return graphql(`
     {
       allMarkdownRemark(
-        sort: { order: DESC, fields: [frontmatter___date] }
+        sort: { order: ASC, fields: [frontmatter___date] }
         limit: 1000
       ) {
         edges {
@@ -83,12 +83,14 @@ exports.createPages = ({ actions, graphql }) => {
     // Permet de générer les pages pour les tags
     createTagPages(createPage, posts)
 
-    posts.forEach(({ node }) => {
+    posts.forEach(({ node }, index) => {
       createPage({
         path: node.fields.slug,
         component: blogPostTemplate,
         context: {
           slug: node.fields.slug,
+          prev: index === 0 ? null : posts[index - 1].node,
+          next: index === posts.length - 1 ? null : posts[index + 1].node,
         },
       })
     })
