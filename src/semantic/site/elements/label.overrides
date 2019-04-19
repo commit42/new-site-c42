@@ -18,3 +18,10 @@ a.ui.label  {
     color: white;
   }
 }
+div.ui.label{
+  background: @yellowc42;
+  border-radius: 10px;
+  font-family: 'Poppins';
+  transition: 0.2s ease;
+  margin-bottom: 0.5rem;
+}
