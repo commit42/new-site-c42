@@ -1,5 +1,6 @@
 import React, { useState } from "react"
-import "./testimonials.scss"
+import "./Testimonials.scss"
+import "../../globals.scss"
 import { Grid, Icon, Header, Card, Container, Button } from "semantic-ui-react"
 import { Navigation, Pagination, Autoplay } from "swiper/dist/js/swiper.esm"
 import Fade from "react-reveal/Fade"
@@ -24,7 +25,6 @@ const Testimonials = ({ data, isMobile }) => {
     modules: [Pagination, Navigation, Autoplay],
     loop: true,
     spaceBetween: 80,
-    autoplay: true,
     slidesPerView: "3",
     breakpoints: {
       320: {
@@ -56,7 +56,7 @@ const Testimonials = ({ data, isMobile }) => {
             </Fade>
           </Grid.Column>
         </Grid.Row>
-        <Grid.Row textAlign="center" style={{ marginTop: "6rem" }} centered>
+        <Grid.Row textAlign="center" className="mt-5" centered>
           <Swiper getSwiper={updateSwiper} modules={[Navigation]} {...params}>
             {data.testimonialsList.map((testimonial, index) => {
               return (
@@ -70,19 +70,14 @@ const Testimonials = ({ data, isMobile }) => {
                 >
                   <Card fluid key={index} className="testimonial">
                     <Card.Content>
-                      <div
-                        style={{ display: "flex", justifyContent: "center" }}
-                      >
+                      <div className="rating-container">
                         {Array.apply(null, { length: testimonial.rating }).map(
                           (e, i) => (
                             <Icon name="star" color="yellow" key={i} />
                           )
                         )}
                       </div>
-                      <Card.Description
-                        textAlign="left"
-                        style={{ marginTop: "2rem" }}
-                      >
+                      <Card.Description textAlign="left" className="mt-2">
                         {testimonial.text}
                       </Card.Description>
                     </Card.Content>
@@ -97,16 +92,16 @@ const Testimonials = ({ data, isMobile }) => {
               )
             })}
           </Swiper>
-          <div style={{ marginTop: "2rem" }}>
+          <div className="mt-2 btn">
             <Button
               onClick={goPrev}
               primary
-              style={{ marginRight: "1rem" }}
+              className="btn--prev"
               icon="arrow left"
             />
             <Button
+              className="btn--next"
               onClick={goNext}
-              style={{ marginLeft: "1rem" }}
               primary
               icon="arrow right"
             />
