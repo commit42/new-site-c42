@@ -15,6 +15,8 @@ export default function BlogPostTemplate({ data, pageContext }) {
   const { markdownRemark: post } = data
   const date = post.frontmatter.date
 
+  console.log(pageContext)
+
   return (
     <Layout>
       <SEO
@@ -75,31 +77,33 @@ export default function BlogPostTemplate({ data, pageContext }) {
           </Grid.Row>
         </Grid>
       </Container>
-      <Container
-        fluid
-        style={{
-          backgroundColor: "#F9F9F9",
-        }}
-        className="prev-next-posts-container"
-      >
-        <Grid as={Container} text className="mt-5 p-5">
-          <Grid.Row>
-            <Header as="h2">Lire aussi:</Header>
-          </Grid.Row>
-          <Grid.Row>
-            {next !== null && (
-              <Grid.Column width={8}>
-                <BlogCard post={next} />
-              </Grid.Column>
-            )}
-            {prev !== null && (
-              <Grid.Column width={8}>
-                <BlogCard post={prev} />
-              </Grid.Column>
-            )}
-          </Grid.Row>
-        </Grid>
-      </Container>
+      {(prev || next) && (
+        <Container
+          fluid
+          style={{
+            backgroundColor: "#F9F9F9",
+          }}
+          className="prev-next-posts-container"
+        >
+          <Grid as={Container} text className="mt-5 p-5">
+            <Grid.Row>
+              <Header as="h2">Lire aussi:</Header>
+            </Grid.Row>
+            <Grid.Row>
+              {next && next.excerpt && (
+                <Grid.Column width={8}>
+                  <BlogCard post={next} />
+                </Grid.Column>
+              )}
+              {prev && prev.excerpt && (
+                <Grid.Column width={8}>
+                  <BlogCard post={prev} />
+                </Grid.Column>
+              )}
+            </Grid.Row>
+          </Grid>
+        </Container>
+      )}
     </Layout>
   )
 }
