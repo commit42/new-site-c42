@@ -26,7 +26,9 @@ const Services = ({ data }) => {
                   </Grid.Column>
                   <Grid.Column mobile={14} tablet={15} computer={14}>
                     <Fade bottom>
-                      <Header as="h3" style={{marginBottom:'1rem'}}>{service.title}</Header>
+                      <Header as="h3" style={{ marginBottom: "1rem" }}>
+                        {service.title}
+                      </Header>
                       <p>{service.description}</p>
                     </Fade>
                   </Grid.Column>

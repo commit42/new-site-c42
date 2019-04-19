@@ -1,23 +1,23 @@
 .ui.center.aligned.grid {
   margin-top: 0;
   padding-top: 8rem;
-  padding-bottom: 8rem; 
-  background: #F9F9F9;
+  padding-bottom: 8rem;
+  background: #f9f9f9;
   @media only screen and (max-width: 1200px) {
-      padding-bottom: 2rem;
-      padding-top: 5rem;
+    padding-bottom: 2rem;
+    padding-top: 5rem;
+  }
+  .row {
+    h2 {
+      margin-bottom: 8rem;
+      @media only screen and (max-width: 1200px) {
+        margin-bottom: 5rem;
+      }
     }
- .row{
-   h2{
-    margin-bottom: 8rem;
-    @media only screen and (max-width: 1200px) {
-      margin-bottom: 5rem;
+    .four.column {
+      @media only screen and (max-width: 1200px) {
+        margin-bottom: 5rem;
+      }
     }
-   }
-   .four.column {
-    @media only screen and (max-width: 1200px) {
-      margin-bottom: 5rem;
-    }
-   }
- } 
+  }
 }
