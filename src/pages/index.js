@@ -8,7 +8,6 @@ import Pitch from "../components/homepage/Pitch"
 import Testimonials from "../components/homepage/Testimonials"
 import CallToAction from "../components/homepage/CallToAction"
 
-const isClient = typeof window !== "undefined"
 class IndexPage extends React.Component {
   render() {
     const {

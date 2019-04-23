@@ -64,28 +64,45 @@ const ContactForm = () => {
           </Grid.Row>
           <Grid.Row className="contact-links">
             <Grid.Column width={7}>
-              <Icon
-                name="map marker alternate"
-                color="blue"
-                size="large"
-                circular
-                inverted
-              />
-              35B Boulevard des Récollets, 31400 Toulouse
+              <a
+                href=" https://goo.gl/maps/ybGL6XhSb1B2"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Icon
+                  name="map marker alternate"
+                  color="blue"
+                  size="large"
+                  circular
+                  inverted
+                  link
+                />
+                35B Boulevard des Récollets, 31400 Toulouse
+              </a>
             </Grid.Column>
             <Grid.Column width={4}>
-              <Icon name="phone" color="blue" size="large" circular inverted />
-              05 82 95 90 12
+              <a href="tel:0582959012">
+                <Icon
+                  name="phone"
+                  color="blue"
+                  size="large"
+                  circular
+                  inverted
+                />
+                05 82 95 90 12
+              </a>
             </Grid.Column>
             <Grid.Column width={4}>
-              <Icon
-                name="envelope"
-                color="blue"
-                size="large"
-                circular
-                inverted
-              />
-              contact@commit42.fr
+              <a href="mailto:contact@commit42.fr">
+                <Icon
+                  name="envelope"
+                  color="blue"
+                  size="large"
+                  circular
+                  inverted
+                />
+                contact@commit42.fr
+              </a>
             </Grid.Column>
           </Grid.Row>
         </Grid>

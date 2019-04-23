@@ -4,7 +4,6 @@ import "../../globals.scss"
 import { Link } from "gatsby"
 import { Card, Label, Grid } from "semantic-ui-react"
 import Image from "gatsby-image"
-import kebabCase from "lodash/kebabCase"
 import moment from "moment"
 
 const BlogCard = ({ post }) => {

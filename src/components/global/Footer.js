@@ -17,7 +17,11 @@ const Footer = () => {
             <List.Item>
               <List.Icon name="marker map alternate" />
               <List.Content>
-                <a href="https://goo.gl/maps/ybGL6XhSb1B2">
+                <a
+                  href="https://goo.gl/maps/ybGL6XhSb1B2"
+                  target="_blank"
+                  el="noopener noreferrer"
+                >
                   35B Boulevard des Recollets, 31400 Toulouse
                 </a>
               </List.Content>
