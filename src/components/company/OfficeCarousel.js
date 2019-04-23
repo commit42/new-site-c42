@@ -49,13 +49,13 @@ const OfficeCarousel = () => {
         <Grid.Row>
           <Swiper {...params}>
             <Grid.Column>
-              <Image src="http://placeimg.com/640/300/animals" fluid />
+              <Image src="https://via.placeholder.com/800x400" fluid />
             </Grid.Column>
             <Grid.Column>
-              <Image src="http://placeimg.com/640/300/animals" fluid />
+              <Image src="https://via.placeholder.com/800x400" fluid />
             </Grid.Column>
             <Grid.Column>
-              <Image src="http://placeimg.com/640/300/animals" fluid />
+              <Image src="https://via.placeholder.com/800x400" fluid />
             </Grid.Column>
           </Swiper>
         </Grid.Row>
