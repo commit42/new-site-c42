@@ -57,12 +57,15 @@ const Footer = () => {
             <List.Item as={Link} to="/blog">
               Blog
             </List.Item>
+            <List.Item as={Link} to="/la-societe">
+              La societe
+            </List.Item>
           </List>
         </Grid.Column>
       </Grid.Row>
       <Grid.Row textAlign="center" className="mt-1">
         <Grid.Column mobile={16} tablet={16} computer={16}>
-          <small>{`Tous droits réservés commit42 © ${new Date().getFullYear()}`}</small>
+          <small>{`Tous droits réservés | commit42 © ${new Date().getFullYear()}`}</small>
         </Grid.Column>
       </Grid.Row>
     </Grid>

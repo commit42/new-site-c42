@@ -1,0 +1,31 @@
+@import "../../globals.scss";
+
+.ui.fluid.container.primary.office-carousel {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  z-index: 0;
+}
+
+// Bullets
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: $bluec42;
+}
+
+// Center icon in button
+.ui.button.swiper-button-next {
+  display: flex;
+  justify-content: center;
+}
+
+.ui.button.swiper-button-prev {
+  display: flex;
+  justify-content: center;
+}
+
+.ui.button:not(.icon) > .right.icon:not(.button):not(.dropdown) {
+  margin: auto;
+}
+
+.ui.button:not(.icon) > .left.icon:not(.button):not(.dropdown) {
+  margin: auto;
+}

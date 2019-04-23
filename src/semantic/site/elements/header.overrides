@@ -16,6 +16,12 @@ h2.ui.header {
   font-family: 'Poppins Black';
 }
 
+h2.ui.header.secondary {
+  font-size: 2.5rem;
+  color: black;;
+  font-family: 'Poppins Black';
+}
+
 h3.ui.header {
   font-size: 2rem;
   font-family: 'Poppins';

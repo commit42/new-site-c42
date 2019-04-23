@@ -1,0 +1,20 @@
+.ui.container.contact-header {
+  padding: 8rem 0 8rem 0;
+}
+
+.ui.fluid.container.primary.contact-form-container {
+  padding: 8rem;
+  .row.contact-form {
+    padding: 3rem;
+    background: white;
+    .submit-btn {
+      margin-top: 2rem;
+    }
+  }
+  .contact-links {
+    margin-top: 3rem;
+    .icon {
+      margin-right: 1rem;
+    }
+  }
+}

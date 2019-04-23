@@ -15,6 +15,10 @@
     }
 }
 
+.ui.button:focus{
+  background-color: @yellowc42;
+}
+
  .ui.primary.button {
     background: @bluec42;
     transition: 0.2s ease;
@@ -26,4 +30,8 @@
      &:focus {
       background: @greyc42;
     }
+}
+
+.ui.vertical.animated.button {
+  z-index: 0;
 }
