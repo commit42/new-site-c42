@@ -17,7 +17,11 @@ const Footer = () => {
             <List.Item>
               <List.Icon name="marker map alternate" />
               <List.Content>
-                <a href="https://goo.gl/maps/ybGL6XhSb1B2">
+                <a
+                  href="https://goo.gl/maps/ybGL6XhSb1B2"
+                  target="_blank"
+                  el="noopener noreferrer"
+                >
                   35B Boulevard des Recollets, 31400 Toulouse
                 </a>
               </List.Content>
@@ -57,12 +61,15 @@ const Footer = () => {
             <List.Item as={Link} to="/blog">
               Blog
             </List.Item>
+            <List.Item as={Link} to="/la-societe">
+              La societe
+            </List.Item>
           </List>
         </Grid.Column>
       </Grid.Row>
       <Grid.Row textAlign="center" className="mt-1">
         <Grid.Column mobile={16} tablet={16} computer={16}>
-          <small>{`Tous droits réservés commit42 © ${new Date().getFullYear()}`}</small>
+          <small>{`Tous droits réservés | commit42 © ${new Date().getFullYear()}`}</small>
         </Grid.Column>
       </Grid.Row>
     </Grid>

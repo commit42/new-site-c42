@@ -15,6 +15,9 @@ const Nav = props => {
         <Menu.Item as={Link} to="/blog" position="right">
           <Header as="h3">Blog</Header>
         </Menu.Item>
+        <Menu.Item as={Link} to="/la-societe">
+          <Header as="h3">La societe</Header>
+        </Menu.Item>
       </Container>
     </Menu>
   )
