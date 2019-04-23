@@ -1,4 +1,6 @@
 import React from "react"
+import "./BlogCard.scss"
+import "../../globals.scss"
 import { Link } from "gatsby"
 import { Card, Label, Grid } from "semantic-ui-react"
 import Image from "gatsby-image"
@@ -10,12 +12,7 @@ const BlogCard = ({ post }) => {
     post.frontmatter.thumbnail &&
     post.frontmatter.thumbnail.childImageSharp.fluid.originalName.slice(0, -4)
   return (
-    <Grid.Column
-      mobile={16}
-      tablet={8}
-      computer={5}
-      style={{ marginBottom: "3rem", zIndex: "0" }}
-    >
+    <Grid.Column mobile={16} tablet={8} computer={5} className="blogcard">
       <Card fluid as={Link} to={post.fields.slug}>
         {post.frontmatter.thumbnail != null && (
           <Image
@@ -27,12 +24,7 @@ const BlogCard = ({ post }) => {
 
         <Card.Content>
           <Card.Header>{post.frontmatter.title}</Card.Header>
-          <Card.Meta
-            style={{
-              marginTop: "0.5rem",
-              color: "#6BA3D6",
-            }}
-          >
+          <Card.Meta className="mt-1">
             <span>{moment(post.frontmatter.date).format("Do MMM YYYY")}</span>
             <span> • {post.timeToRead}min à perdre</span>
           </Card.Meta>
@@ -42,13 +34,7 @@ const BlogCard = ({ post }) => {
         {post.frontmatter.tags && (
           <Card.Content extra>
             {post.frontmatter.tags.map((tag, index) => (
-              <Label
-                key={index}
-                style={{ marginBottom: "0.5rem" }}
-                href={`/tags/${kebabCase(tag)}/`}
-              >
-                {tag}
-              </Label>
+              <Label key={index}>{tag}</Label>
             ))}
           </Card.Content>
         )}

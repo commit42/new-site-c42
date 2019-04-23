@@ -4,7 +4,7 @@ const { createFilePath } = require("gatsby-source-filesystem")
 const { fmImagesToRelative } = require("gatsby-remark-relative-images")
 
 const createTagPages = (createPage, posts) => {
-  const tagTemplate = path.resolve("src/templates/tagTemplate.js")
+  const tagTemplate = path.resolve("src/templates/TagTemplate.js")
 
   const postsByTag = {}
 
@@ -38,11 +38,11 @@ const createTagPages = (createPage, posts) => {
 
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
-  const blogPostTemplate = path.resolve(`src/templates/blog-post.js`)
+  const blogPostTemplate = path.resolve(`src/templates/BlogPostTemplate.js`)
   return graphql(`
     {
       allMarkdownRemark(
-        sort: { order: DESC, fields: [frontmatter___date] }
+        sort: { order: ASC, fields: [frontmatter___date] }
         limit: 1000
       ) {
         edges {
@@ -83,12 +83,14 @@ exports.createPages = ({ actions, graphql }) => {
     // Permet de générer les pages pour les tags
     createTagPages(createPage, posts)
 
-    posts.forEach(({ node }) => {
+    posts.forEach(({ node }, index) => {
       createPage({
         path: node.fields.slug,
         component: blogPostTemplate,
         context: {
           slug: node.fields.slug,
+          prev: index === 0 ? null : posts[index - 1].node,
+          next: index === posts.length - 1 ? null : posts[index + 1].node,
         },
       })
     })

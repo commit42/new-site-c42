@@ -1,0 +1,17 @@
+.ui.fluid.container.testimonials-list {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background-color: #f9f9f9;
+  .rating-container {
+    display: flex;
+    justify-content: center;
+  }
+  .btn {
+    &--prev {
+      margin-right: 2rem;
+    }
+    &--next {
+      margin-left: 2rem;
+    }
+  }
+}

@@ -1,12 +1,12 @@
 import React, { useState } from "react"
-import "./testimonials.scss"
+import "./Testimonials.scss"
+import "../../globals.scss"
 import { Grid, Icon, Header, Card, Container, Button } from "semantic-ui-react"
-import Fade from "react-reveal/Fade"
-import Carousel from "nuka-carousel"
-import Swiper from "react-id-swiper"
 import { Navigation, Pagination, Autoplay } from "swiper/dist/js/swiper.esm"
+import Fade from "react-reveal/Fade"
+import Swiper from "react-id-swiper"
 
-const Testimonials = ({ data, isMobile }) => {
+const Testimonials = ({ data }) => {
   const [swiper, updateSwiper] = useState(null)
 
   const goNext = () => {
@@ -22,23 +22,19 @@ const Testimonials = ({ data, isMobile }) => {
   }
 
   const params = {
-    modules: [Pagination, Navigation, Autoplay], // Add nescessary modules here
+    modules: [Pagination, Navigation, Autoplay],
     loop: true,
     spaceBetween: 80,
-    autoplay: true,
     slidesPerView: "3",
     breakpoints: {
-      // when window width is <= 320px
       320: {
         slidesPerView: 1,
         spaceBetween: 10,
       },
-      // when window width is <= 480px
       480: {
         slidesPerView: 1,
         spaceBetween: 20,
       },
-      // when window width is <= 640px
       640: {
         slidesPerView: 2,
         spaceBetween: 20,
@@ -60,7 +56,7 @@ const Testimonials = ({ data, isMobile }) => {
             </Fade>
           </Grid.Column>
         </Grid.Row>
-        <Grid.Row textAlign="center" style={{ marginTop: "6rem" }} centered>
+        <Grid.Row textAlign="center" className="mt-5" centered>
           <Swiper getSwiper={updateSwiper} modules={[Navigation]} {...params}>
             {data.testimonialsList.map((testimonial, index) => {
               return (
@@ -70,22 +66,18 @@ const Testimonials = ({ data, isMobile }) => {
                   tablet={16}
                   computer={5}
                   textAlign="center"
+                  key={index}
                 >
                   <Card fluid key={index} className="testimonial">
                     <Card.Content>
-                      <div
-                        style={{ display: "flex", justifyContent: "center" }}
-                      >
+                      <div className="rating-container">
                         {Array.apply(null, { length: testimonial.rating }).map(
                           (e, i) => (
                             <Icon name="star" color="yellow" key={i} />
                           )
                         )}
                       </div>
-                      <Card.Description
-                        textAlign="left"
-                        style={{ marginTop: "2rem" }}
-                      >
+                      <Card.Description textAlign="left" className="mt-2">
                         {testimonial.text}
                       </Card.Description>
                     </Card.Content>
@@ -100,16 +92,16 @@ const Testimonials = ({ data, isMobile }) => {
               )
             })}
           </Swiper>
-          <div style={{ marginTop: "2rem" }}>
+          <div className="mt-2 btn">
             <Button
               onClick={goPrev}
               primary
-              style={{ marginRight: "1rem" }}
+              className="btn--prev"
               icon="arrow left"
             />
             <Button
+              className="btn--next"
               onClick={goNext}
-              style={{ marginLeft: "1rem" }}
               primary
               icon="arrow right"
             />

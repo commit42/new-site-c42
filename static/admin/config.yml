@@ -36,7 +36,7 @@ collections:
       - { name: body, label: Texte, widget: markdown }
 
   - name: pages
-    label: Page
+    label: Pages
     files:
       - file: src/pages/content/index.md
         label: Page d'accueil
@@ -126,3 +126,9 @@ collections:
           - { name: header, label: Titre, widget: string }
           - { name: description, label: Description, widget: text }
           - { name: image, label: Image, widget: image }
+  - name: authors
+    label: Auteurs
+    folder: src/content/authors
+    fields:
+      - { name: name, label: Nom, widget: string }
+      - { name: avatar, label: Avatar, widget: image }

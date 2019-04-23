@@ -1,0 +1,17 @@
+.ui.grid {
+  .two.column.row {
+    .ui.text.container.middle.aligned.column {
+      .header-text-container {
+        min-width: 70%;
+        max-width: 90%;
+        margin: auto;
+        margin: 5rem 0 auto 0;
+        width: 90% !important;
+      }
+      @media only screen and (max-width: 1000px) {
+        margin: 10vh 0 15vh 0;
+        width: 90% !important;
+      }
+    }
+  }
+}
