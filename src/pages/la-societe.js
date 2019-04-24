@@ -41,7 +41,14 @@ export const companyPageQuery = graphql`
         header
         teamList {
           members {
-            avatar
+            avatar {
+              childImageSharp {
+                fluid(maxWidth: 800) {
+                  ...GatsbyImageSharpFluid
+                  originalName
+                }
+              }
+            }
             name
             presentation
             socials {
@@ -60,7 +67,14 @@ export const companyPageQuery = graphql`
         contact {
           headerContact {
             heading
-            imgHeader
+            imgHeader {
+              childImageSharp {
+                fluid(maxWidth: 400) {
+                  ...GatsbyImageSharpFluid
+                  originalName
+                }
+              }
+            }
           }
           contactForm {
             name {
