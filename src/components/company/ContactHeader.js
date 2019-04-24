@@ -1,5 +1,5 @@
 import React from "react"
-import "./Contact.scss"
+import "./CompanyPage.scss"
 import { Grid, Container, Header, Image } from "semantic-ui-react"
 
 const ContactHeader = () => {

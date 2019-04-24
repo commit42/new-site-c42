@@ -1,5 +1,5 @@
 import React from "react"
-import "./OfficeCarousel.scss"
+import "./CompanyPage.scss"
 import Swiper from "react-id-swiper"
 import { Pagination, Navigation } from "swiper/dist/js/swiper.esm"
 import { Container, Grid, Header, Image, Button, Icon } from "semantic-ui-react"

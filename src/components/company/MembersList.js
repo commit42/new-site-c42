@@ -1,5 +1,5 @@
 import React from "react"
-import "./MembersList.scss"
+import "./CompanyPage.scss"
 import { Grid, Image, Header, Container, Button, Icon } from "semantic-ui-react"
 
 const MembersList = () => {
@@ -11,7 +11,12 @@ const MembersList = () => {
         </Header>
       </Grid.Row>
       <Grid.Row textAlign="center" className="members-list--container">
-        <Grid.Column width={4}>
+        <Grid.Column
+          mobile={16}
+          tablet={8}
+          computer={4}
+          className="member-list--item"
+        >
           <Image src="https://via.placeholder.com/250" circular centered />
           <Header as="h2">Thomas Forest</Header>
           <p>
@@ -38,7 +43,12 @@ const MembersList = () => {
             </Button.Content>
           </Button>
         </Grid.Column>
-        <Grid.Column width={4}>
+        <Grid.Column
+          mobile={16}
+          tablet={8}
+          computer={4}
+          className="member-list--item"
+        >
           <Image src="https://via.placeholder.com/250" circular centered />
           <Header as="h2">Flavien Beninca</Header>
           <p>
@@ -59,7 +69,12 @@ const MembersList = () => {
             </Button.Content>
           </Button>
         </Grid.Column>
-        <Grid.Column width={4}>
+        <Grid.Column
+          mobile={16}
+          tablet={8}
+          computer={4}
+          className="member-list--item"
+        >
           <Image src="https://via.placeholder.com/250" circular centered />
           <Header as="h2">Mathieu Haage</Header>
           <p>
@@ -80,7 +95,12 @@ const MembersList = () => {
             </Button.Content>
           </Button>
         </Grid.Column>
-        <Grid.Column width={4}>
+        <Grid.Column
+          mobile={16}
+          tablet={8}
+          computer={4}
+          className="member-list--item"
+        >
           <Image src="https://via.placeholder.com/250" circular centered />
           <Header as="h2">Valentin Eutrope</Header>
           <p>
