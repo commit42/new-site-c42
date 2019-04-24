@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import { graphql } from "gatsby"
 
 import Layout from "../components/Layout"
 import SEO from "../components/seo/SEO"
@@ -25,7 +26,7 @@ class CompanyPage extends Component {
         <MembersList data={companyData.teamList} />
         <OfficeCarousel data={companyData.office} />
         <ContactForm data={companyData.contact} />
-        <MapToCompany />
+        <MapToCompany data={companyData.gpsDatas} />
       </Layout>
     )
   }
@@ -45,7 +46,7 @@ export const companyPageQuery = graphql`
             name
             presentation
             socials {
-              icon
+              link
               name
             }
           }
@@ -61,7 +62,6 @@ export const companyPageQuery = graphql`
           headerContact {
             heading
             imgHeader {
-              id
               childImageSharp {
                 id
                 fluid {
@@ -81,10 +81,10 @@ export const companyPageQuery = graphql`
             phoneNumber
             email
           }
-          gpsDatas {
-            latitude
-            longitude
-          }
+        }
+        gpsDatas {
+          latitude
+          longitude
         }
       }
     }

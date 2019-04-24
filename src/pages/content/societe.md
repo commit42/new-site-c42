@@ -1,6 +1,6 @@
 ---
 pageName: societe
-header: /assets/huehuehue.jpg
+header: https://raw.githubusercontent.com/commit42/new-site-c42/master/static//assets/huehuehue.jpg
 teamList:
   heading: L'équipe
   members:
