@@ -17,7 +17,14 @@ const MembersList = ({ data }) => {
             const { avatar, name, presentation, socials } = member
             const links = socials.map(social => {
               return (
-                <Button animated="vertical" key={social.name}>
+                <Button
+                  animated="vertical"
+                  key={social.name}
+                  as="a"
+                  href={social.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <Button.Content hidden>Go !</Button.Content>
                   <Button.Content visible>
                     <Icon name={social.name} />
