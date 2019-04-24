@@ -163,7 +163,7 @@ collections:
                           fields:
                             [
                               { name: name, label: Nom, widget: string },
-                              { name: icon, label: Icone, widget: string },
+                              { name: link, label: Link, widget: string },
                             ],
                         },
                       ],
@@ -223,7 +223,7 @@ collections:
                             ],
                         },
                         {
-                          name: name,
+                          name: surname,
                           label: Prénom,
                           widget: object,
                           fields:
@@ -237,7 +237,7 @@ collections:
                             ],
                         },
                         {
-                          name: name,
+                          name: email,
                           label: Email,
                           widget: object,
                           fields:
@@ -251,7 +251,7 @@ collections:
                             ],
                         },
                         {
-                          name: name,
+                          name: phoneNumber,
                           label: Numéro de téléphone,
                           widget: object,
                           fields:
@@ -265,7 +265,7 @@ collections:
                             ],
                         },
                         {
-                          name: name,
+                          name: subject,
                           label: Sujet,
                           widget: object,
                           fields:
@@ -315,8 +315,8 @@ collections:
                     widget: object,
                     fields:
                       [
-                        { name: latitude, label: Latitude, widget: number },
-                        { name: longitude, label: Longitude, widget, number },
+                        { name: latitude, label: Latitude, widget: string },
+                        { name: longitude, label: Longitude, widget: string },
                       ],
                   },
                 ],
