@@ -9,7 +9,11 @@ const ContactHeader = () => {
         <Grid.Row>
           <Grid.Column>
             <Image src="https://via.placeholder.com/250x150" fluid />
-            <Header as="h2" textAlign="center">
+            <Header
+              as="h2"
+              textAlign="center"
+              className="contact-header--header"
+            >
               Ne soyez pas timides, contactez-nous !
             </Header>
           </Grid.Column>
