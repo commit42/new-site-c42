@@ -14,7 +14,6 @@ import ContactHeader from "./ContactHeader"
 
 const ContactForm = ({ data }) => {
   const { contactForm, contactLinks, headerContact } = data
-  console.log(contactLinks)
   return (
     <>
       <ContactHeader data={headerContact} />
