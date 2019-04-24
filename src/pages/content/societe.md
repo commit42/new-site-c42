@@ -4,8 +4,7 @@ header: /assets/huehuehue.jpg
 teamList:
   heading: L'équipe
   members:
-    - avatar: >-
-        https://raw.githubusercontent.com/commit42/new-site-c42/master/static/assets/phil.png
+    - avatar: /assets/huehuehue.jpg
       name: Thomas Forest
       presentation: >-
         Elit nulla dolor aliqua esse minim commodo. Aute laboris laborum irure
@@ -52,10 +51,8 @@ office:
     reprehenderit.
   heading: Nos locaux
   pictures:
-    - picture: >-
-        https://raw.githubusercontent.com/commit42/new-site-c42/master/static/assets/PWAappshell.png
-    - picture: >-
-        https://raw.githubusercontent.com/commit42/new-site-c42/master/static/assets/locaux.png
+    - picture: /assets/huehuehue.jpg
+    - picture: /assets/locaux.png
 contact:
   contactForm:
     email:
