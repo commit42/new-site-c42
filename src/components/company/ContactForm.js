@@ -12,17 +12,24 @@ import {
 
 import ContactHeader from "./ContactHeader"
 
-const ContactForm = () => {
+const ContactForm = ({ data }) => {
+  const { contactForm, contactLinks, headerContact } = data
+  console.log(contactForm)
   return (
     <>
-      <ContactHeader />
+      <ContactHeader data={headerContact} />
       <Container fluid className="primary contact-form-container">
         <Grid as={Container}>
           <Grid.Row className="contact-form">
             <Grid.Column>
               <Form>
                 <Form.Group widths="equal">
-                  <Form.Input fluid label="Nom" placeholder="Michel" required />
+                  <Form.Input
+                    fluid
+                    label={contactForm.name.label}
+                    placeholder={contactForm.name.placeholder}
+                    required
+                  />
                   <Form.Input
                     fluid
                     label="Prenom"

@@ -5,7 +5,6 @@ import { Pagination, Navigation } from "swiper/dist/js/swiper.esm"
 import { Container, Grid, Header, Image, Button, Icon } from "semantic-ui-react"
 
 const OfficeCarousel = ({ data }) => {
-  console.log(data)
   const params = {
     modules: [Pagination, Navigation],
     spaceBetween: 30,
