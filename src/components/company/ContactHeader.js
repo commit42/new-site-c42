@@ -8,7 +8,7 @@ const ContactHeader = ({ data }) => {
       <Grid>
         <Grid.Row>
           <Grid.Column>
-            <Image src={data.imgHeader} fluid />
+            <Image src={data.imgHeader} centered />
             <Header
               as="h2"
               textAlign="center"

@@ -60,13 +60,7 @@ export const companyPageQuery = graphql`
         contact {
           headerContact {
             heading
-            imgHeader {
-              childImageSharp {
-                fluid(maxWidth: 980) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
+            imgHeader
           }
           contactForm {
             name {

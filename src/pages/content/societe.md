@@ -51,7 +51,7 @@ office:
     reprehenderit.
   heading: Nos locaux
   pictures:
-    - picture: /assets/huehuehue.jpg
+    - picture: /assets/locaux.png
     - picture: /assets/locaux.png
 contact:
   contactForm:

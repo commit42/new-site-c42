@@ -13,6 +13,24 @@ const OfficeCarousel = ({ data }) => {
       type: "bullets",
       clickable: true,
     },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+      480: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      640: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      1920: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+    },
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
@@ -45,7 +63,7 @@ const OfficeCarousel = ({ data }) => {
               data.pictures.map((picture, index) => {
                 return (
                   <Grid.Column key={index}>
-                    <Image src={picture} fluid />
+                    <Image src={picture.picture} fluid />
                   </Grid.Column>
                 )
               })}
