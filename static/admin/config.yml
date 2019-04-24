@@ -321,9 +321,3 @@ collections:
                   },
                 ],
             }
-  - name: authors
-    label: Auteurs
-    folder: src/content/authors
-    fields:
-      - { name: name, label: Nom, widget: string }
-      - { name: avatar, label: Avatar, widget: image }
