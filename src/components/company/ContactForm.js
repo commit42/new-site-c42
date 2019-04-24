@@ -14,7 +14,7 @@ import ContactHeader from "./ContactHeader"
 
 const ContactForm = ({ data }) => {
   const { contactForm, contactLinks, headerContact } = data
-  console.log(contactForm)
+  console.log(contactLinks)
   return (
     <>
       <ContactHeader data={headerContact} />
@@ -83,7 +83,7 @@ const ContactForm = ({ data }) => {
                   circular
                   inverted
                 />
-                35B Boulevard des Récollets, 31400 Toulouse
+                {contactLinks.adress}
               </a>
             </Grid.Column>
             <Grid.Column
@@ -100,7 +100,7 @@ const ContactForm = ({ data }) => {
                   circular
                   inverted
                 />
-                05 82 95 90 12
+                {contactLinks.phoneNumber}
               </a>
             </Grid.Column>
             <Grid.Column mobile={16} tablet={8} computer={4}>
@@ -112,7 +112,7 @@ const ContactForm = ({ data }) => {
                   circular
                   inverted
                 />
-                contact@commit42.fr
+                {contactLinks.email}
               </a>
             </Grid.Column>
           </Grid.Row>
