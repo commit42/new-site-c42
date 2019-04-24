@@ -309,17 +309,15 @@ collections:
                         { name: email, label: Email, widget: string },
                       ],
                   },
-                  
                 ],
             }
-            - {
-                name: gpsDatas,
-                label: Coordonnées GPS,
-                widget: object,
-                fields:
-                  [
-                    { name: latitude, label: Latitude, widget: string },
-                    { name: longitude, label: Longitude, widget: string },
-                  ],
-              }
-
+          - {
+              name: gpsDatas,
+              label: Coordonnées GPS,
+              widget: object,
+              fields:
+                [
+                  { name: latitude, label: Latitude, widget: string },
+                  { name: longitude, label: Longitude, widget: string },
+                ],
+            }
