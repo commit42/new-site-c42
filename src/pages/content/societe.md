@@ -12,9 +12,9 @@ teamList:
         elit qui. Dolor deserunt mollit velit non nisi consectetur esse magna ut
         sunt ipsum. Enim pariatur sint velit labore consequat.
       socials:
-        - icon: 'https://twitter.com/Phil_Goud'
+        - link: 'https://www.gatsbyjs.org/'
           name: twitter
-        - icon: 'https://github.com/'
+        - link: 'https://www.gatsbyjs.org/'
           name: github
     - avatar: /assets/huehuehue.jpg
       name: Flavien Beninca
@@ -23,7 +23,7 @@ teamList:
         elit qui. Dolor deserunt mollit velit non nisi consectetur esse magna ut
         sunt ipsum. Enim pariatur sint velit labore consequat.
       socials:
-        - icon: 'https://github.com/'
+        - link: 'https://www.gatsbyjs.org/'
           name: github
     - avatar: /assets/huehuehue.jpg
       name: Mathieu Haage
@@ -32,7 +32,7 @@ teamList:
         elit qui. Dolor deserunt mollit velit non nisi consectetur esse magna ut
         sunt ipsum. Enim pariatur sint velit labore consequat.
       socials:
-        - icon: 'https://github.com/'
+        - link: 'https://www.gatsbyjs.org/'
           name: github
     - avatar: /assets/huehuehue.jpg
       name: Valentin Eutrope
@@ -41,7 +41,7 @@ teamList:
         elit qui. Dolor deserunt mollit velit non nisi consectetur esse magna ut
         sunt ipsum. Enim pariatur sint velit labore consequat.
       socials:
-        - icon: 'https://github.com/'
+        - link: 'https://www.gatsbyjs.org/'
           name: github
 office:
   description: >-
@@ -53,23 +53,38 @@ office:
   heading: Nos locaux
   pictures:
     - picture: >-
-        https://raw.githubusercontent.com/commit42/new-site-c42/master/static/assets/bureau.jpg
+        https://raw.githubusercontent.com/commit42/new-site-c42/master/static/assets/PWAappshell.png
     - picture: >-
         https://raw.githubusercontent.com/commit42/new-site-c42/master/static/assets/locaux.png
 contact:
   contactForm:
+    email:
+      label: Email
+      placeholder: michel@michel.michel
     name:
       label: Nom
       placeholder: Michel
+    phoneNumber:
+      label: Ton 06
+      placeholder: 00 00 00 00 00
+    subject:
+      label: Un projet ? Des questions ?
+      placeholder: Dis nous tout
+    surname:
+      label: Prénom
+      placeholder: Michel
+    textarea:
+      label: Parlez-nous !
+      placeholder: Parlez-moi de votre enfance...
   contactLinks:
     adress: '35B Boulevard des Récollets, 31400 Toulouse'
     email: contact@commit42.fr
     phoneNumber: 05 05 05 05 05
-  gpsDatas:
-    latitude: 434343
-    longitude: '1.441882'
   headerContact:
     heading: 'Ne soyez pas timides, contactez-nous !'
     imgHeader: /assets/huehuehue.jpg
+gpsDatas:
+  latitude: '43.584412'
+  longitude: '1.441882'
 ---
 
