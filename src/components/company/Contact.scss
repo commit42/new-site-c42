@@ -7,8 +7,18 @@
   .row.contact-form {
     padding: 3rem;
     background: white;
+    border-radius: 10px;
+
+    .ui.form .fields .field .ui.input input,
+    .ui.form .field .ui.input input,
+    textarea {
+      background: #f9f9f9;
+      border: 0;
+      color: black;
+    }
     .submit-btn {
-      margin-top: 2rem;
+      margin: 3rem auto auto auto;
+      display: flex;
     }
   }
   .contact-links {
