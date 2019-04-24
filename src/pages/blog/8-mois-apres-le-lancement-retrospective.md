@@ -2,12 +2,8 @@
 title: "8 mois après notre lancement, rétrospective de commit42"
 date: 2018-03-21T11:15:04+01:00
 draft: false
-subtitle: ""
 tags: ["pwa", "react", "magento", "lms scorm", "toulouse"]
-show_prev_next: ""
 ---
-
-
 
 Il y a à peu près 8 mois (août 2017), commençait l'aventure commit42. Une aventure imaginée par deux passionnés du web : Etienne et Pierre (pour savoir le pourquoi du comment, c'est [par ici](https://www.occitech.fr/blog/2017/02/nouvelle-equipe-de-developpement/) voire [là](https://www.occitech.fr/blog/2017/10/actualites-de-fin-dannee-pourquoi-ce-silence/)).
 
@@ -19,27 +15,26 @@ Nous voulions aujourd'hui faire une rétrospective des projets que nous avons pu
 
 Pour ceux qui n'ont pas le temps (ou l'envie), de lire jusqu'au bout, voici les points à retenir :
 
-* Magento
-  * 2 boutiques mises au propre (mise à jour, sécurité, performance)
-  * 3 en support mensuel (patch de sécurité et conseil au cas par cas)
-* Progressive Web Apps
-  * déploiement d'une Progressive Web App
-  * en React
-* LMS - SCORM
-  * 3 projets LMS-SCORM
-  * alternant Vue.js et React
-* CakePHP
-  * accompagement d'une plateforme sur la montée en version en Cake 3
-  * support et maintenance d'un projet "historique" en CakePHP 1
-  * mise en place d'un CMS basé sur Croogo, lui même basé sur CakePHP
-* Données et automatisation
-  * mise en place d'outils pour centraliser et automatiser certains traitements data
-  * passer de feuilles Excel difficilement partageable à une interface web ergonomique qui prend en source de données ces mêmes fichiers Excel
+- Magento
+  - 2 boutiques mises au propre (mise à jour, sécurité, performance)
+  - 3 en support mensuel (patch de sécurité et conseil au cas par cas)
+- Progressive Web Apps
+  - déploiement d'une Progressive Web App
+  - en React
+- LMS - SCORM
+  - 3 projets LMS-SCORM
+  - alternant Vue.js et React
+- CakePHP
+  - accompagement d'une plateforme sur la montée en version en Cake 3
+  - support et maintenance d'un projet "historique" en CakePHP 1
+  - mise en place d'un CMS basé sur Croogo, lui même basé sur CakePHP
+- Données et automatisation
+  - mise en place d'outils pour centraliser et automatiser certains traitements data
+  - passer de feuilles Excel difficilement partageable à une interface web ergonomique qui prend en source de données ces mêmes fichiers Excel
 
 &nbsp;
 
 ![Magento](/assets/magento.jpg)
-
 
 ## Magento
 
@@ -55,7 +50,7 @@ ECommerce oblige, il y a de temps en temps des coups de chaud qui nous mobilisen
 &nbsp;
 
 ![Progressive Web Apps](/assets/pwa.jpg)
-*crédit image : http://halwits.com/progressive-web-app/*
+_crédit image : http://halwits.com/progressive-web-app/_
 
 ## Progressive Web App (PWA)
 
@@ -63,8 +58,9 @@ L'année 2018 a débuté avec le développement d'une Progressive Web App. Un de
 En tant que développeurs, c'est toujours un plaisir de travailler avec des technos dans l'air du temps ! Mélangez cela avec React, et vous avez une équipe de développeurs comblés !
 
 ---
+
 ![Nous faisons du SCORM](/assets/scorm.png)
-*crédit image : https://www.learnupon.com/what-is-scorm/*
+_crédit image : https://www.learnupon.com/what-is-scorm/_
 
 ## LMS-SCORM
 
@@ -72,7 +68,6 @@ Hasard des compétences, nous nous sommes rendus compte qu'un membre de l'équip
 Si SCORM n'évolue que très peu depuis 2004, nous avons réussi à rendre son développement plus simple (et plus agréable) en utilisant des technos récentes comme Vue.js et React.
 
 ---
-
 
 ![CakePHP](/assets/cakephp.jpg)
 
@@ -82,25 +77,22 @@ D'autres projets sur-mesure, notamment en CakePHP, ont rythmé nos semaines. Nou
 
 ---
 
-
 ## L'humain
 
 A travers, les projets, c'est une équipe qui prend plaisir à venir chaque jour et à collaborer ensemble. Il y a un vrai esprit d'équipe et une ambiance vraiment sympa ! Cela peut sembler cliché à dire, mais venez passer quelques heures avec nous, et vous comprendrez.
 
 ---
+
 ![Bilboquet](/assets/bilboquet.gif)
 
 ## La suite
 
 La suite s'annonce prometteuse et le carnet de commandes est (déjà) bien fourni, et avec des projets similaires : PWA, LMS-SCORM, CakePHP ...
 
-
 A très vite pour la suite de nos projets !
 
 ---
 
 #### Besoin d'échanger sur un problème technologique, web ou e-commerce ? Nous sommes à votre écoute pour échanger à [contact@commit42.fr](mailto:contact@commit42.fr).
-
-
 
 Flavien, Giovanni et Maxime

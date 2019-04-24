@@ -20,7 +20,7 @@ const Footer = () => {
                 <a
                   href="https://goo.gl/maps/ybGL6XhSb1B2"
                   target="_blank"
-                  el="noopener noreferrer"
+                  rel="noopener noreferrer"
                 >
                   35B Boulevard des Recollets, 31400 Toulouse
                 </a>
@@ -40,13 +40,25 @@ const Footer = () => {
             </List.Item>
           </List>
           <div className="mt-2">
-            <a href="https://www.facebook.com/commit42/">
+            <a
+              href="https://www.facebook.com/commit42/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Icon name="facebook" size="big" link />
             </a>
-            <a href="https://www.linkedin.com/company/commit42/?originalSubdomain=fr">
+            <a
+              href="https://www.linkedin.com/company/commit42/?originalSubdomain=fr"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Icon name="linkedin" size="big" link />
             </a>
-            <a href="https://twitter.com/commit42">
+            <a
+              href="https://twitter.com/commit42"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Icon name="twitter square" size="big" link />
             </a>
           </div>

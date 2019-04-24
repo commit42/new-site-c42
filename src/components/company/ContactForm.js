@@ -1,5 +1,5 @@
 import React from "react"
-import "./Contact.scss"
+import "./CompanyPage.scss"
 import "../../globals.scss"
 import {
   Grid,
@@ -12,17 +12,23 @@ import {
 
 import ContactHeader from "./ContactHeader"
 
-const ContactForm = () => {
+const ContactForm = ({ data }) => {
+  const { contactForm, contactLinks, headerContact } = data
   return (
     <>
-      <ContactHeader />
+      <ContactHeader data={headerContact} />
       <Container fluid className="primary contact-form-container">
         <Grid as={Container}>
           <Grid.Row className="contact-form">
             <Grid.Column>
               <Form>
                 <Form.Group widths="equal">
-                  <Form.Input fluid label="Nom" placeholder="Michel" required />
+                  <Form.Input
+                    fluid
+                    label={contactForm.name.label}
+                    placeholder={contactForm.name.placeholder}
+                    required
+                  />
                   <Form.Input
                     fluid
                     label="Prenom"
@@ -62,8 +68,8 @@ const ContactForm = () => {
               </Form>
             </Grid.Column>
           </Grid.Row>
-          <Grid.Row className="contact-links">
-            <Grid.Column width={7}>
+          <Grid.Row className="contact-links--container">
+            <Grid.Column mobile={16} tablet={8} computer={7}>
               <a
                 href=" https://goo.gl/maps/ybGL6XhSb1B2"
                 target="_blank"
@@ -75,12 +81,16 @@ const ContactForm = () => {
                   size="large"
                   circular
                   inverted
-                  link
                 />
-                35B Boulevard des Récollets, 31400 Toulouse
+                {contactLinks.adress}
               </a>
             </Grid.Column>
-            <Grid.Column width={4}>
+            <Grid.Column
+              mobile={16}
+              tablet={8}
+              computer={4}
+              className="contact-links--item"
+            >
               <a href="tel:0582959012">
                 <Icon
                   name="phone"
@@ -89,10 +99,10 @@ const ContactForm = () => {
                   circular
                   inverted
                 />
-                05 82 95 90 12
+                {contactLinks.phoneNumber}
               </a>
             </Grid.Column>
-            <Grid.Column width={4}>
+            <Grid.Column mobile={16} tablet={8} computer={4}>
               <a href="mailto:contact@commit42.fr">
                 <Icon
                   name="envelope"
@@ -101,7 +111,7 @@ const ContactForm = () => {
                   circular
                   inverted
                 />
-                contact@commit42.fr
+                {contactLinks.email}
               </a>
             </Grid.Column>
           </Grid.Row>

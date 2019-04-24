@@ -8,23 +8,6 @@ module.exports = {
     twitterUsername: "@commit42",
   },
   plugins: [
-    `gatsby-plugin-less`,
-    `gatsby-plugin-sass`,
-    `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/static/assets`,
-        name: `assets`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: "pages",
-        path: `${__dirname}/src/pages`,
-      },
-    },
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     {
@@ -54,6 +37,23 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/static/assets`,
+        name: `assets`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: "pages",
+        path: `${__dirname}/src/pages`,
+      },
+    },
+    `gatsby-plugin-less`,
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-sitemap`,
       options: {
@@ -95,7 +95,7 @@ module.exports = {
         icon: "src/favicon.png",
       },
     },
-    "gatsby-plugin-offline",
+    `gatsby-plugin-offline`,
     `gatsby-plugin-favicon`,
     // Doit toujours être en dernier
     `gatsby-plugin-netlify-cms`,

@@ -1,10 +1,11 @@
 import React from "react"
+import "./CompanyPage.scss"
 import { Container, Image } from "semantic-ui-react"
 
-const HeaderCompany = () => {
+const HeaderCompany = ({ data }) => {
   return (
-    <Container fluid>
-      <Image src="https://via.placeholder.com/800x300" fluid />
+    <Container fluid className="header-comapny-img">
+      <Image src={data} fluid style={{ maxHeight: "500px" }} />
     </Container>
   )
 }
