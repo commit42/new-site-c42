@@ -10,6 +10,10 @@ import MapToCompany from "../components/company/MapToCompany"
 
 class CompanyPage extends Component {
   render() {
+    const {
+      markdownRemark: { frontmatter: companyData },
+    } = this.props.data
+    console.log(companyData)
     return (
       <Layout>
         <SEO
@@ -17,10 +21,10 @@ class CompanyPage extends Component {
           description="Découvrez l'équipe de commit42 !"
           pathname="/la-societe"
         />
-        <HeaderCompany />
-        <MembersList />
-        <OfficeCarousel />
-        <ContactForm />
+        <HeaderCompany data={companyData.header} />
+        <MembersList data={companyData.teamList} />
+        <OfficeCarousel data={companyData.office} />
+        <ContactForm data={companyData.contact} />
         <MapToCompany />
       </Layout>
     )
@@ -28,3 +32,61 @@ class CompanyPage extends Component {
 }
 
 export default CompanyPage
+
+export const companyPageQuery = graphql`
+  query companyPageQuery {
+    markdownRemark(frontmatter: { pageName: { eq: "societe" } }) {
+      frontmatter {
+        pageName
+        header
+        teamList {
+          members {
+            avatar
+            name
+            presentation
+            socials {
+              icon
+              name
+            }
+          }
+        }
+        office {
+          heading
+          description
+          pictures {
+            picture
+          }
+        }
+        contact {
+          headerContact {
+            heading
+            imgHeader {
+              id
+              childImageSharp {
+                id
+                fluid {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+          contactForm {
+            name {
+              label
+              placeholder
+            }
+          }
+          contactLinks {
+            adress
+            phoneNumber
+            email
+          }
+          gpsDatas {
+            latitude
+            longitude
+          }
+        }
+      }
+    }
+  }
+`
