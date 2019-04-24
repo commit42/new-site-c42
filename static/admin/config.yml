@@ -126,6 +126,201 @@ collections:
           - { name: header, label: Titre, widget: string }
           - { name: description, label: Description, widget: text }
           - { name: image, label: Image, widget: image }
+      - file: src/pages/content/societe.md
+        label: Page societe
+        name: Societe
+        fields:
+          - {
+              name: pageName,
+              label: Nom de la page (en minuscules),
+              widget: string,
+            }
+          - { name: header, label: Image d'en-tête, widget: image }
+          - {
+              name: teamList,
+              label: La dream team,
+              widget: object,
+              fields:
+                [
+                  { name: heading, label: Titre, widget: string },
+                  {
+                    name: members,
+                    label: Membres de l'équipe,
+                    widget: list,
+                    fields:
+                      [
+                        { name: avatar, label: Avatar, widget: image },
+                        { name: name, label: Nom et/ou prénom, widget: string },
+                        {
+                          name: presentation,
+                          label: Présentation,
+                          widget: text,
+                        },
+                        {
+                          name: socials,
+                          label: Réseaux Sociaux,
+                          widget: list,
+                          fields:
+                            [
+                              { name: name, label: Nom, widget: string },
+                              { name: icon, label: Icone, widget: string },
+                            ],
+                        },
+                      ],
+                  },
+                ],
+            }
+          - {
+              name: office,
+              label: Locaux,
+              widget: object,
+              fields:
+                [
+                  { name: heading, label: Titre, widget: string },
+                  { name: description, label: Description, widget: text },
+                  {
+                    name: pictures,
+                    label: Photos,
+                    widget: list,
+                    fields: [{ name: picture, label: Photo, widget: image }],
+                  },
+                ],
+            }
+          - {
+              name: contact,
+              label: Contact,
+              widget: object,
+              fields:
+                [
+                  {
+                    name: headerContact,
+                    label: En-tête contact,
+                    widget: object,
+                    fields:
+                      [
+                        { name: imgHeader, label: Image, widget: image },
+                        { name: heading, label: Titre, widget: string },
+                      ],
+                  },
+                  {
+                    name: contactForm,
+                    label: Labels formulaire de contact,
+                    widget: object,
+                    fields:
+                      [
+                        {
+                          name: name,
+                          label: Nom,
+                          widget: object,
+                          fields:
+                            [
+                              { name: label, label: Label, widget: string },
+                              {
+                                name: placeholder,
+                                label: Placeholder,
+                                widget: string,
+                              },
+                            ],
+                        },
+                        {
+                          name: name,
+                          label: Prénom,
+                          widget: object,
+                          fields:
+                            [
+                              { name: label, label: Label, widget: string },
+                              {
+                                name: placeholder,
+                                label: Placeholder,
+                                widget: string,
+                              },
+                            ],
+                        },
+                        {
+                          name: name,
+                          label: Email,
+                          widget: object,
+                          fields:
+                            [
+                              { name: label, label: Label, widget: string },
+                              {
+                                name: placeholder,
+                                label: Placeholder,
+                                widget: string,
+                              },
+                            ],
+                        },
+                        {
+                          name: name,
+                          label: Numéro de téléphone,
+                          widget: object,
+                          fields:
+                            [
+                              { name: label, label: Label, widget: string },
+                              {
+                                name: placeholder,
+                                label: Placeholder,
+                                widget: string,
+                              },
+                            ],
+                        },
+                        {
+                          name: name,
+                          label: Sujet,
+                          widget: object,
+                          fields:
+                            [
+                              { name: label, label: Label, widget: string },
+                              {
+                                name: placeholder,
+                                label: Placeholder,
+                                widget: string,
+                              },
+                            ],
+                        },
+                        {
+                          name: name,
+                          label: Partie texte,
+                          widget: object,
+                          fields:
+                            [
+                              { name: label, label: Label, widget: string },
+                              {
+                                name: placeholder,
+                                label: Placeholder,
+                                widget: string,
+                              },
+                            ],
+                        },
+                      ],
+                  },
+                  {
+                    name: contactLinks,
+                    label: Informations de contact,
+                    widget: object,
+                    fields:
+                      [
+                        { name: adress, label: Adresse, widget: string },
+                        {
+                          name: phoneNumber,
+                          label: Numéro de téléphone,
+                          widget: string,
+                        },
+                        { name: email, label: Email, widget: string },
+                      ],
+                  },
+                  {
+                    name: gpsDatas,
+                    label: Coordonnées GPS,
+                    widget: object,
+                    fields:
+                      [
+                        { name: latitude, label: Latitude, widget: number },
+                        { name: longitude, label: Longitude, widget, number },
+                      ],
+                  },
+                ],
+            }
   - name: authors
     label: Auteurs
     folder: src/content/authors
