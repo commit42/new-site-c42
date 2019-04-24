@@ -14,7 +14,6 @@ class CompanyPage extends Component {
     const {
       markdownRemark: { frontmatter: companyData },
     } = this.props.data
-
     return (
       <Layout>
         <SEO
@@ -26,7 +25,7 @@ class CompanyPage extends Component {
         <MembersList data={companyData.teamList} />
         <OfficeCarousel data={companyData.office} />
         <ContactForm data={companyData.contact} />
-        <MapToCompany data={companyData.contact.gpsDatas} />
+        <MapToCompany data={companyData.gpsDatas} />
       </Layout>
     )
   }
@@ -46,7 +45,7 @@ export const companyPageQuery = graphql`
             name
             presentation
             socials {
-              icon
+              link
               name
             }
           }
@@ -61,7 +60,13 @@ export const companyPageQuery = graphql`
         contact {
           headerContact {
             heading
-            imgHeader
+            imgHeader {
+              childImageSharp {
+                fluid(maxWidth: 980) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
           contactForm {
             name {
@@ -74,10 +79,10 @@ export const companyPageQuery = graphql`
             phoneNumber
             email
           }
-          gpsDatas {
-            latitude
-            longitude
-          }
+        }
+        gpsDatas {
+          latitude
+          longitude
         }
       }
     }

@@ -3,17 +3,18 @@ import Map from "pigeon-maps"
 import Marker from "pigeon-marker"
 import { Container } from "semantic-ui-react"
 const MapToCompany = ({ data }) => {
-  console.log(data)
+  const latitude = parseFloat(data.latitude)
+  const longitude = parseFloat(data.longitude)
   return (
     <Container fluid>
       <Map
-        center={[43.584412, 1.441882]}
+        center={[latitude, longitude]}
         zoom={16}
         height={600}
         metaWheelZoom={true}
       >
         <Marker
-          anchor={[43.584412, 1.441882]}
+          anchor={[latitude, longitude]}
           payload={1}
           onClick={({ event, anchor, payload }) => {}}
         />
