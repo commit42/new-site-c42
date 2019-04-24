@@ -15,7 +15,6 @@ class CompanyPage extends Component {
       markdownRemark: { frontmatter: companyData },
     } = this.props.data
 
-    console.log(companyData)
     return (
       <Layout>
         <SEO
