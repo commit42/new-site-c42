@@ -1,6 +1,7 @@
 import React from "react"
 import "./CompanyPage.scss"
-import { Grid, Container, Header, Image } from "semantic-ui-react"
+import Image from "gatsby-image"
+import { Grid, Container, Header } from "semantic-ui-react"
 
 const ContactHeader = ({ data }) => {
   return (
@@ -8,7 +9,7 @@ const ContactHeader = ({ data }) => {
       <Grid>
         <Grid.Row>
           <Grid.Column>
-            <Image src={data.imgHeader} centered />
+            <Image fluid={data.imgHeader.childImageSharp.fluid} />
             <Header
               as="h2"
               textAlign="center"

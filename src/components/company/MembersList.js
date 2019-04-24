@@ -1,6 +1,7 @@
 import React from "react"
 import "./CompanyPage.scss"
-import { Grid, Image, Header, Container, Button, Icon } from "semantic-ui-react"
+import Image from "gatsby-image"
+import { Grid, Header, Container, Button, Icon } from "semantic-ui-react"
 
 const MembersList = ({ data }) => {
   return (
@@ -40,7 +41,7 @@ const MembersList = ({ data }) => {
                 className="member-list--item"
                 key={name}
               >
-                <Image src={avatar} circular centered />
+                <Image fluid={avatar.childImageSharp.fluid} />
                 <Header as="h2">{name}</Header>
                 <p>{presentation}</p>
                 <div>{links}</div>
