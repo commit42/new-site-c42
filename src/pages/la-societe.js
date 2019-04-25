@@ -21,7 +21,7 @@ class CompanyPage extends Component {
           description="Découvrez l'équipe de commit42 !"
           pathname="/la-societe"
         />
-        <HeaderCompany data={companyData.header} />
+        <HeaderCompany data={companyData.imgHeader} />
         <MembersList data={companyData.teamList} />
         <OfficeCarousel data={companyData.office} />
         <ContactForm data={companyData.contact} />
@@ -38,7 +38,13 @@ export const companyPageQuery = graphql`
     markdownRemark(frontmatter: { pageName: { eq: "societe" } }) {
       frontmatter {
         pageName
-        header
+        imgHeader {
+          childImageSharp {
+            fluid(maxWidth: 800) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
         teamList {
           members {
             avatar {

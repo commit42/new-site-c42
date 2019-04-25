@@ -1,6 +1,6 @@
 ---
 pageName: societe
-header: /assets/huehuehue.jpg
+imgHeader: /assets/huehuehue.jpg
 teamList:
   heading: L'équipe
   members:

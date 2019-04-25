@@ -135,7 +135,7 @@ collections:
               label: Nom de la page (en minuscules),
               widget: string,
             }
-          - { name: header, label: Image d'en-tête, widget: image }
+          - { name: imgHeader, label: Image d'en-tête, widget: image }
           - {
               name: teamList,
               label: La dream team,
