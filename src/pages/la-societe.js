@@ -38,13 +38,7 @@ export const companyPageQuery = graphql`
     markdownRemark(frontmatter: { pageName: { eq: "societe" } }) {
       frontmatter {
         pageName
-        header {
-          childImageSharp {
-            fluid(maxWidth: 800) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
+        header
         teamList {
           members {
             avatar {
