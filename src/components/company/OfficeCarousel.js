@@ -9,6 +9,8 @@ const OfficeCarousel = ({ data }) => {
   const params = {
     modules: [Pagination, Navigation],
     spaceBetween: 30,
+    slidesPerView: 1,
+    rebuildOnUpdate: true,
     pagination: {
       el: ".swiper-pagination",
       type: "bullets",

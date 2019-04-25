@@ -28,6 +28,38 @@
   }
 }
 
+//// Carousel locaux
+.ui.fluid.container.primary.office-carousel {
+  padding: 8rem 0 8rem 0;
+  @media only screen and (max-width: 1200px) {
+    padding: 5rem 0 5rem 0;
+  }
+}
+
+// Bullets
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: $bluec42;
+}
+
+// Center icon in button
+.ui.button.swiper-button-next {
+  display: flex;
+  justify-content: center;
+}
+
+.ui.button.swiper-button-prev {
+  display: flex;
+  justify-content: center;
+}
+
+.ui.button:not(.icon) > .right.icon:not(.button):not(.dropdown) {
+  margin: auto;
+}
+
+.ui.button:not(.icon) > .left.icon:not(.button):not(.dropdown) {
+  margin: auto;
+}
+
 //// Header contact form
 .ui.container.contact-header {
   padding: 8rem 0 6rem 0;
@@ -80,37 +112,4 @@
       margin-right: 1rem;
     }
   }
-}
-
-//// Carousel locaux
-.ui.fluid.container.primary.office-carousel {
-  padding: 8rem 0 8rem 0;
-  z-index: 0;
-  @media only screen and (max-width: 1200px) {
-    padding: 5rem 0 5rem 0;
-  }
-}
-
-// Bullets
-.swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background: $bluec42;
-}
-
-// Center icon in button
-.ui.button.swiper-button-next {
-  display: flex;
-  justify-content: center;
-}
-
-.ui.button.swiper-button-prev {
-  display: flex;
-  justify-content: center;
-}
-
-.ui.button:not(.icon) > .right.icon:not(.button):not(.dropdown) {
-  margin: auto;
-}
-
-.ui.button:not(.icon) > .left.icon:not(.button):not(.dropdown) {
-  margin: auto;
 }
