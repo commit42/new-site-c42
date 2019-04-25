@@ -1,8 +1,9 @@
 import React from "react"
 import "./CompanyPage.scss"
 import Swiper from "react-id-swiper"
+import Image from "gatsby-image"
 import { Pagination, Navigation } from "swiper/dist/js/swiper.esm"
-import { Container, Grid, Header, Image, Button, Icon } from "semantic-ui-react"
+import { Container, Grid, Header, Button, Icon } from "semantic-ui-react"
 
 const OfficeCarousel = ({ data }) => {
   const params = {
@@ -63,7 +64,7 @@ const OfficeCarousel = ({ data }) => {
               data.pictures.map((picture, index) => {
                 return (
                   <Grid.Column key={index}>
-                    <Image src={picture.picture} fluid />
+                    <Image fluid={picture.picture.childImageSharp.fluid} />
                   </Grid.Column>
                 )
               })}
