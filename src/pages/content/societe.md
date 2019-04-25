@@ -1,39 +1,47 @@
 ---
 pageName: societe
-imgHeader: /assets/huehuehue.jpg
+imgHeader: /assets/header-img-c42.png
 teamList:
   heading: L'équipe
   members:
-    - avatar: /assets/huehuehue.jpg
+    - avatar: /assets/avatar-phil.png
       name: Thomas Forest
       presentation: >-
         Elit nulla dolor aliqua esse minim commodo. Aute laboris laborum irure
         elit qui. Dolor deserunt mollit velit non nisi consectetur esse magna ut
         sunt ipsum. Enim pariatur sint velit labore consequat.
       socials:
-        - link: "https://www.gatsbyjs.org/"
-          name: twitter
-        - link: "https://www.gatsbyjs.org/"
+        - link: "https://github.com/philgoud"
           name: github
-    - avatar: /assets/huehuehue.jpg
+        - link: "https://www.twitter.com/phil_goud"
+          name: twitter
+        - link: "https://www.linkedin.com/in/thomas-forest/"
+          name: linkedin
+    - avatar: /assets/avatar-flavien.png
       name: Flavien Beninca
       presentation: >-
         Elit nulla dolor aliqua esse minim commodo. Aute laboris laborum irure
         elit qui. Dolor deserunt mollit velit non nisi consectetur esse magna ut
         sunt ipsum. Enim pariatur sint velit labore consequat.
       socials:
-        - link: "https://www.gatsbyjs.org/"
+        - link: "https://github.com/ozee31"
           name: github
-    - avatar: /assets/huehuehue.jpg
+        - link: "https://twitter.com/ozee_31"
+          name: twitter
+        - link: "https://www.linkedin.com/in/flavienbeninca/"
+          name: linkedin
+    - avatar: /assets/avatar-mathieu.png
       name: Mathieu Haage
       presentation: >-
         Elit nulla dolor aliqua esse minim commodo. Aute laboris laborum irure
         elit qui. Dolor deserunt mollit velit non nisi consectetur esse magna ut
         sunt ipsum. Enim pariatur sint velit labore consequat.
       socials:
-        - link: "https://www.gatsbyjs.org/"
+        - link: "https://github.com/imhaage"
           name: github
-    - avatar: /assets/huehuehue.jpg
+        - link: "https://twitter.com/imhaage"
+          name: twitter
+    - avatar: /assets/avatar-valentin.jpg
       name: Valentin Eutrope
       presentation: >-
         Elit nulla dolor aliqua esse minim commodo. Aute laboris laborum irure
@@ -79,7 +87,7 @@ contact:
     phoneNumber: 05 05 05 05 05
   headerContact:
     heading: "Ne soyez pas timides, contactez-nous !"
-    imgHeader: /assets/huehuehue.jpg
+    imgHeader: /assets/contact-c42.png
 gpsDatas:
   latitude: "43.584412"
   longitude: "1.441882"
