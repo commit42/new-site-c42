@@ -34,12 +34,14 @@ const ContactForm = ({ data }) => {
                 <Form.Group widths="equal">
                   <Form.Input
                     fluid
+                    name="nom"
                     label={contactForm.name.label}
                     placeholder={contactForm.name.placeholder}
                     required
                   />
                   <Form.Input
                     fluid
+                    name="prenom"
                     label="Prenom"
                     placeholder="Michel"
                     required
@@ -48,24 +50,28 @@ const ContactForm = ({ data }) => {
                 <Form.Group widths="equal">
                   <Form.Input
                     fluid
+                    name="email"
                     label="Email"
                     placeholder="michel@michel.michel"
                     required
                   />
                   <Form.Input
                     fluid
+                    name="telephone"
                     label="Numéro de téléphone"
                     placeholder="00 00 00 00 00"
                   />
                 </Form.Group>
                 <Form.Input
                   fluid
+                  name="sujet"
                   label="Une question ? Un projet ?"
                   placeholder="Où va la vie?"
                   required
                 />
                 <Form.Field
                   control={TextArea}
+                  name="text"
                   label="Parlez-nous !"
                   placeholder="Parlez-moi de votre enfance..."
                   rows="10"
