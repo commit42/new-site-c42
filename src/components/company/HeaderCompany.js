@@ -1,11 +1,15 @@
 import React from "react"
 import "./CompanyPage.scss"
-import { Container, Image } from "semantic-ui-react"
+import Image from "gatsby-image"
+import { Container } from "semantic-ui-react"
 
 const HeaderCompany = ({ data }) => {
   return (
     <Container fluid className="header-comapny-img">
-      <Image src={data} fluid style={{ maxHeight: "500px" }} />
+      <Image
+        fluid={data.childImageSHarp.fluid}
+        style={{ maxHeight: "500px" }}
+      />
     </Container>
   )
 }
