@@ -8,7 +8,7 @@ const HeaderCompany = ({ data }) => {
     <Container fluid className="header-comapny-img">
       <Image
         fluid={data.childImageSharp.fluid}
-        style={{ maxHeight: "500px" }}
+        style={{ maxHeight: "800px" }}
       />
     </Container>
   )

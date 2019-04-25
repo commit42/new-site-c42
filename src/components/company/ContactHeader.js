@@ -8,13 +8,17 @@ const ContactHeader = ({ data }) => {
     <Container className="contact-header">
       <Grid>
         <Grid.Row>
-          <Grid.Column>
-            <Image fluid={data.imgHeader.childImageSharp.fluid} />
-            <Header
-              as="h2"
-              textAlign="center"
-              className="contact-header--header"
-            >
+          <Grid.Column textAlign="center">
+            <Image
+              fluid={data.imgHeader.childImageSharp.fluid}
+              style={{
+                maxWidth: `${
+                  data.imgHeader.childImageSharp.fluid.presentationWidth
+                }px`,
+                margin: "auto",
+              }}
+            />
+            <Header as="h2" className="contact-header--header">
               {data.heading}
             </Header>
           </Grid.Column>

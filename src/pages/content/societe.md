@@ -1,6 +1,6 @@
 ---
 pageName: societe
-imgHeader: /assets/huehuehue.jpg
+imgHeader: /assets/header-img-c42.png
 teamList:
   heading: L'équipe
   members:
@@ -87,7 +87,7 @@ contact:
     phoneNumber: 05 05 05 05 05
   headerContact:
     heading: "Ne soyez pas timides, contactez-nous !"
-    imgHeader: /assets/huehuehue.jpg
+    imgHeader: /assets/contact-c42.png
 gpsDatas:
   latitude: "43.584412"
   longitude: "1.441882"

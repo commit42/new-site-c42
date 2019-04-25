@@ -80,8 +80,9 @@ export const companyPageQuery = graphql`
             heading
             imgHeader {
               childImageSharp {
-                fluid(maxWidth: 400) {
+                fluid(maxWidth: 800) {
                   ...GatsbyImageSharpFluid
+                  presentationWidth
                 }
               }
             }

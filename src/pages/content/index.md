@@ -19,7 +19,7 @@ services:
         En utilisant les dernières technologies, nous co-créons avec vous
         l’outil que vous attendez à partir de vos besoins, vos retours
         utilisateurs et tous les éléments qui interviendront en cours de
-        projet. 
+        projet.
       icon: ruler
       title: Applications web sur-mesure
     - description: >-
@@ -71,7 +71,7 @@ pitch:
       En séparant la partie métier (back) des écrans utilisateurs (front) le
       tout connecté par des API, nous répondons aux paradigmes modernes
       d’architectures évolutives.
-      
+
       Nous croyons qu’un projet informatique doit être fait en respectant un
       certain niveau de qualité pour qu’il reste stable et maintenable dans le
       temps. C’est pourquoi le code est versionné, systématiquement revu, et les
@@ -102,7 +102,7 @@ pitch:
 
       Bien appliquée, l’agilité est ainsi une source d’économie et amène à des
       solutions de meilleure qualité dans des délais plus courts, tout en
-      offrant une grande flexibilité selon les situations. 
+      offrant une grande flexibilité selon les situations.
     image: /assets/flexibilite-c42.png
     title: Une équipe agile
 testimonials:
