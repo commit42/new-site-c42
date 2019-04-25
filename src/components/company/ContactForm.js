@@ -21,7 +21,16 @@ const ContactForm = ({ data }) => {
         <Grid as={Container}>
           <Grid.Row className="contact-form">
             <Grid.Column>
-              <Form>
+              <Form
+                name="contact"
+                method="POST"
+                action="/success"
+                data-netlify="true"
+                data-netlify-honeypot="bot-field"
+              >
+                <input type="hidden" name="bot-field" />
+                <input type="hidden" name="form-name" value="contact" />
+
                 <Form.Group widths="equal">
                   <Form.Input
                     fluid
