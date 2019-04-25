@@ -41,7 +41,7 @@ teamList:
           name: github
         - link: "https://twitter.com/imhaage"
           name: twitter
-    - avatar: /assets/huehuehue.jpg
+    - avatar: /assets/avatar-valentin.jpg
       name: Valentin Eutrope
       presentation: >-
         Elit nulla dolor aliqua esse minim commodo. Aute laboris laborum irure
