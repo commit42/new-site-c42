@@ -3,7 +3,6 @@ import "./Pitch.scss"
 import Image from "gatsby-image"
 import Fade from "react-reveal/Fade"
 import { Container, Grid, Header } from "semantic-ui-react"
-
 import formatText from "../../helpers/formatText"
 
 const Pitch = ({ data }) => {

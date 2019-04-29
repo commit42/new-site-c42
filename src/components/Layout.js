@@ -10,6 +10,7 @@ import Sidebar from "./global/Sidebar"
 import Footer from "./global/Footer"
 import Drawer from "react-motion-drawer"
 import Logo from "../../static/assets/logo-c42.png"
+import Roll from "react-reveal/Roll"
 
 const Layout = ({ children, path }) => {
   const [isOpen, setIsOpen] = useState(false)
@@ -62,16 +63,20 @@ const Layout = ({ children, path }) => {
                 >
                   <div className="small-menu-sidebar--container">
                     <Link to="/blog">
-                      <Header as="h3" className="menu-item ">
-                        <Icon name="quote right" color="black" size="big" />
-                        Blog
-                      </Header>
+                      <Roll left>
+                        <Header as="h3" className="menu-item ">
+                          <Icon name="quote right" color="black" size="big" />
+                          Blog
+                        </Header>
+                      </Roll>
                     </Link>
                     <Link to="/la-societe">
-                      <Header as="h3" className="menu-item">
-                        <Icon name="users" color="black" size="big" />
-                        La Societe
-                      </Header>
+                      <Roll left>
+                        <Header as="h3" className="menu-item">
+                          <Icon name="users" color="black" size="big" />
+                          La Societe
+                        </Header>
+                      </Roll>
                     </Link>
                   </div>
                 </Drawer>
