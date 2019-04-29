@@ -9,6 +9,7 @@
 h1.ui.header{
   font-size: 3rem;
   font-family: 'Poppins Black';
+  color: @greyc42;
 }
 
 h2.ui.header {
@@ -19,21 +20,18 @@ h2.ui.header {
 
 h2.ui.header.secondary {
   font-size: 2.5rem;
-  color: black;;
+  color: @greyc42;
   font-family: 'Poppins Black';
 }
 
 h3.ui.header {
   font-size: 2rem;
-  font-family: 'Poppins ';
-}
-
-
-h3.ui.header.menu-item{
-  font-family: "Poppins Black";
+  font-family: 'Poppins';
+  color: @greyc42;
 }
 
 h4.ui.header {
   font-size: 1.2rem;
   font-family: 'Poppins';
+  color: @greyc42;
 }

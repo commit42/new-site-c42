@@ -3,7 +3,7 @@ import "semantic-ui-less/semantic.less"
 import "../../static/css/c42-theme.css"
 import "./global/Nav.scss"
 import { graphql, StaticQuery } from "gatsby"
-import { Icon, Header, Menu } from "semantic-ui-react"
+import { Icon, Header, Menu, Image } from "semantic-ui-react"
 import { Link } from "gatsby"
 import Nav from "./global/Nav"
 import Sidebar from "./global/Sidebar"
@@ -61,9 +61,6 @@ const Layout = ({ children, path }) => {
                   className="small-menu-sidebar"
                 >
                   <div className="small-menu-sidebar--container">
-                    <Link to="/">
-                      <img src={Logo} />
-                    </Link>
                     <Link to="/blog">
                       <Header as="h3" className="menu-item ">
                         <Icon name="quote right" color="black" size="big" />
@@ -78,14 +75,15 @@ const Layout = ({ children, path }) => {
                     </Link>
                   </div>
                 </Drawer>
-                <Menu fixed="top">
-                  <a
-                    style={{ padding: 15 }}
-                    className=""
-                    onClick={() => setIsOpen(!isOpen)}
-                  >
+                <Menu fixed="top" borderless>
+                  <Menu.Item onClick={() => setIsOpen(!isOpen)}>
                     <Icon name="bars" color="black" size="big" />
-                  </a>
+                  </Menu.Item>
+                  <Menu.Item textAlign="center" position="right">
+                    <Link to="/">
+                      <img src={Logo} />
+                    </Link>
+                  </Menu.Item>
                 </Menu>
               </>
             )}
