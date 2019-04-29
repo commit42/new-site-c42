@@ -1,6 +1,7 @@
 /*******************************
          Site Overrides
 *******************************/
+
 .ui.header.primary{
     color: @bluec42;
 }
@@ -24,8 +25,12 @@ h2.ui.header.secondary {
 
 h3.ui.header {
   font-size: 2rem;
-  font-family: 'Poppins';
-  
+  font-family: 'Poppins ';
+}
+
+
+h3.ui.header.menu-item{
+  font-family: "Poppins Black";
 }
 
 h4.ui.header {

@@ -1,19 +1,16 @@
-.large-menu-classname {
-  .nav-item {
-    display: inline;
-    justify-content: center;
+.ui.menu.borderless {
+  h3 {
+    font-size: 1.5rem;
   }
 }
 
-.small-menu-classname {
-  i.bars.large.icon {
-    float: left;
-    margin: 1rem 0 1rem 1rem;
-  }
-  .ui.borderless.top.fixed.menu {
-    display: block;
-    a {
-      justify-content: center;
+.small-menu-sidebar {
+  background: white;
+  &--container {
+    padding: 1.5rem;
+    h3.ui.header {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
     }
   }
 }
