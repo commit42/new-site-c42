@@ -13,15 +13,18 @@ import Logo from "../../static/assets/logo-c42.png"
 
 const Layout = ({ children, path }) => {
   const [isOpen, setIsOpen] = useState(false)
-  const [width, setWidth] = useState(window.innerWidth)
+  const [width, setWidth] = useState(
+    typeof window !== "undefined" && window.innerWidth
+  )
 
-  useEffect(() => {
-    const handleResize = () => setWidth(window.innerWidth)
-    window.addEventListener("resize", handleResize)
-    return () => {
-      window.removeEventListener("resize", handleResize)
-    }
-  }, [])
+  typeof window !== "undefined" &&
+    useEffect(() => {
+      const handleResize = () => setWidth(window.innerWidth)
+      window.addEventListener("resize", handleResize)
+      return () => {
+        window.removeEventListener("resize", handleResize)
+      }
+    }, [])
 
   return (
     <StaticQuery
@@ -58,18 +61,18 @@ const Layout = ({ children, path }) => {
                   className="small-menu-sidebar"
                 >
                   <div className="small-menu-sidebar--container">
-                    <Header as="h3">
-                      <Link to="/">
-                        <img src={Logo} />
-                      </Link>
-                    </Header>
+                    <Link to="/">
+                      <img src={Logo} />
+                    </Link>
                     <Link to="/blog">
-                      <Header as="h3" className="menu-item">
+                      <Header as="h3" className="menu-item ">
+                        <Icon name="quote right" color="black" size="big" />
                         Blog
                       </Header>
                     </Link>
                     <Link to="/la-societe">
                       <Header as="h3" className="menu-item">
+                        <Icon name="users" color="black" size="big" />
                         La Societe
                       </Header>
                     </Link>
@@ -81,7 +84,7 @@ const Layout = ({ children, path }) => {
                     className=""
                     onClick={() => setIsOpen(!isOpen)}
                   >
-                    <Icon name="bars" color="blue" size="big" />
+                    <Icon name="bars" color="black" size="big" />
                   </a>
                 </Menu>
               </>
