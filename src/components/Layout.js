@@ -2,10 +2,14 @@ import React from "react"
 import "semantic-ui-less/semantic.less"
 import "../../static/css/c42-theme.css"
 import Nav from "./global/Nav"
+import BurgerIcon from "./global/Burger"
 import Footer from "./global/Footer"
 import { graphql, StaticQuery } from "gatsby"
 
-const Layout = ({ children, isHome, path }) => {
+import { Modal, Button, Header, Image } from "semantic-ui-react"
+import Menu from "../components/global/Menu"
+
+const Layout = ({ children, path }) => {
   return (
     <StaticQuery
       query={graphql`
@@ -28,7 +32,17 @@ const Layout = ({ children, isHome, path }) => {
               flexDirection: "column",
             }}
           >
-            <Nav path={path} />
+            {/* <Nav path={path} /> */}
+            <Modal
+              basic
+              size="mini"
+              centered
+              closeIcon
+              trigger={<BurgerIcon />}
+            >
+              <Modal.Content>{<Menu close={true} />}</Modal.Content>
+            </Modal>
+
             <div style={{ flex: "1" }}>{children}</div>
             <Footer />
           </div>
