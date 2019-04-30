@@ -20,6 +20,7 @@ const OfficeCarousel = ({ data }) => {
         </Grid.Row>
         <Grid.Row style={{ minHeight: "700px" }}>
           <Carousel
+            renderBottomCenterControls={false}
             enableKeyboardControls={true}
             dragging={true}
             swiping={true}

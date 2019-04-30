@@ -39,7 +39,9 @@ const Testimonials = ({ data }) => {
         </Grid.Row>
         <Grid.Row textAlign="center" className="mt-5" centered>
           <Carousel
-            style={{ maxWidth: "90%" }}
+            renderBottomCenterControls={false}
+            style={{ maxWidth: "90%", height: "400px" }}
+            wrapAround={true}
             slidesToShow={getSlides(width)}
             cellSpacing={50}
             renderCenterLeftControls={({ previousSlide }) => (
@@ -57,9 +59,6 @@ const Testimonials = ({ data }) => {
               return (
                 <Grid.Column
                   style={{ marginBottom: "3rem" }}
-                  mobile={16}
-                  tablet={16}
-                  computer={5}
                   textAlign="center"
                   key={index}
                 >
