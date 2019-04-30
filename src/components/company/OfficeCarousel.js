@@ -18,8 +18,10 @@ const OfficeCarousel = ({ data }) => {
             <p>{data.description}</p>
           </Grid.Column>
         </Grid.Row>
-        <Grid.Row style={{ minHeight: "700px" }}>
+        <Grid.Row>
           <Carousel
+            className="office-carousel--carousel"
+            wrapAround={true}
             renderBottomCenterControls={false}
             enableKeyboardControls={true}
             dragging={true}

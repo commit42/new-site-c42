@@ -39,8 +39,8 @@ const Testimonials = ({ data }) => {
         </Grid.Row>
         <Grid.Row textAlign="center" className="mt-5" centered>
           <Carousel
-            renderBottomCenterControls={false}
             style={{ maxWidth: "90%", height: "400px" }}
+            renderBottomCenterControls={false}
             wrapAround={true}
             slidesToShow={getSlides(width)}
             cellSpacing={50}
