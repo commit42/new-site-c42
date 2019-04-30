@@ -1,49 +1,30 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import "./Testimonials.scss"
 import "../../globals.scss"
 import { Grid, Icon, Header, Card, Container, Button } from "semantic-ui-react"
-import { Navigation, Pagination, Autoplay } from "swiper/dist/js/swiper.esm"
 import Fade from "react-reveal/Fade"
-import Swiper from "react-id-swiper"
+import Carousel from "nuka-carousel"
 
 const Testimonials = ({ data }) => {
-  const [swiper, updateSwiper] = useState(null)
+  const [width, setWidth] = useState(
+    typeof window !== "undefined" && window.innerWidth
+  )
+  typeof window !== "undefined" &&
+    useEffect(() => {
+      const handleResize = () => setWidth(window.innerWidth)
+      window.addEventListener("resize", handleResize)
+      return () => {
+        window.removeEventListener("resize", handleResize)
+      }
+    }, [])
 
-  const goNext = () => {
-    if (swiper !== null) {
-      swiper.slideNext()
+  const getSlides = width => {
+    if (width >= 1200) {
+      return 3
+    } else if (width < 1200 && width > 768) {
+      return 2
     }
-  }
-
-  const goPrev = () => {
-    if (swiper !== null) {
-      swiper.slidePrev()
-    }
-  }
-
-  const params = {
-    modules: [Pagination, Navigation, Autoplay],
-    loop: true,
-    spaceBetween: 80,
-    slidesPerView: "3",
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 10,
-      },
-      480: {
-        slidesPerView: 1,
-        spaceBetween: 20,
-      },
-      640: {
-        slidesPerView: 2,
-        spaceBetween: 20,
-      },
-      1920: {
-        slidesPerView: 3,
-        spaceBetween: 20,
-      },
-    },
+    return 1
   }
 
   return (
@@ -57,7 +38,21 @@ const Testimonials = ({ data }) => {
           </Grid.Column>
         </Grid.Row>
         <Grid.Row textAlign="center" className="mt-5" centered>
-          <Swiper getSwiper={updateSwiper} modules={[Navigation]} {...params}>
+          <Carousel
+            style={{ maxWidth: "90%" }}
+            slidesToShow={getSlides(width)}
+            cellSpacing={50}
+            renderCenterLeftControls={({ previousSlide }) => (
+              <Button className="carousel-button-prev" onClick={previousSlide}>
+                <Icon name="arrow left" />
+              </Button>
+            )}
+            renderCenterRightControls={({ nextSlide }) => (
+              <Button className="carousel-button-next" onClick={nextSlide}>
+                <Icon name="arrow right" />
+              </Button>
+            )}
+          >
             {data.testimonialsList.map((testimonial, index) => {
               return (
                 <Grid.Column
@@ -94,21 +89,7 @@ const Testimonials = ({ data }) => {
                 </Grid.Column>
               )
             })}
-          </Swiper>
-          <div className="mt-2 btn">
-            <Button
-              onClick={goPrev}
-              primary
-              className="btn--prev"
-              icon="arrow left"
-            />
-            <Button
-              className="btn--next"
-              onClick={goNext}
-              primary
-              icon="arrow right"
-            />
-          </div>
+          </Carousel>
         </Grid.Row>
         <Grid.Row style={{ marginTop: "2rem" }}>
           <Grid.Column textAlign="center">

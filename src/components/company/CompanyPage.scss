@@ -43,11 +43,19 @@
 .ui.button.swiper-button-next {
   display: flex;
   justify-content: center;
+  opacity: 0.5;
+  &:hover {
+    opacity: 1;
+  }
 }
 
 .ui.button.swiper-button-prev {
   display: flex;
   justify-content: center;
+  opacity: 0.5;
+  &:hover {
+    opacity: 1;
+  }
 }
 
 .ui.button:not(.icon) > .right.icon:not(.button):not(.dropdown) {

@@ -6,19 +6,41 @@
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
-  .rating-container {
+
+  .ui.button.carousel-button-next {
     display: flex;
     justify-content: center;
-  }
-  .testimonial-card-description {
-    max-width: 90%;
-  }
-  .btn {
-    &--prev {
-      margin-right: 2rem;
+    opacity: 0.5;
+    &:hover {
+      opacity: 1;
     }
-    &--next {
-      margin-left: 2rem;
+  }
+
+  .ui.button.carousel-button-prev {
+    display: flex;
+    justify-content: center;
+    opacity: 0.5;
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .testimonial {
+    min-height: 300px;
+    .rating-container {
+      display: flex;
+      justify-content: center;
+    }
+    .testimonial-card-description {
+      max-width: 90%;
+    }
+    .btn {
+      &--prev {
+        margin-right: 2rem;
+      }
+      &--next {
+        margin-left: 2rem;
+      }
     }
   }
 }
