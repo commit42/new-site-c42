@@ -33,26 +33,35 @@
 
 //// Carousel locaux
 .ui.fluid.container.primary.office-carousel {
-  padding: 8rem 0 8rem 0;
+  padding: 6rem 0 6rem 0;
   @media only screen and (max-width: 1200px) {
-    padding: 5rem 0 5rem 0;
+    padding: 3rem 0 3rem 0;
   }
-}
-
-// Bullets
-.swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background: $bluec42;
+  .office-carousel--carousel {
+    min-height: 700px;
+    @media only screen and (max-width: 1200px) {
+      min-height: 200px;
+    }
+  }
 }
 
 // Center icon in button
 .ui.button.swiper-button-next {
   display: flex;
   justify-content: center;
+  opacity: 0.5;
+  &:hover {
+    opacity: 1;
+  }
 }
 
 .ui.button.swiper-button-prev {
   display: flex;
   justify-content: center;
+  opacity: 0.5;
+  &:hover {
+    opacity: 1;
+  }
 }
 
 .ui.button:not(.icon) > .right.icon:not(.button):not(.dropdown) {

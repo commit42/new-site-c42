@@ -48,8 +48,10 @@ teamList:
         elit qui. Dolor deserunt mollit velit non nisi consectetur esse magna ut
         sunt ipsum. Enim pariatur sint velit labore consequat.
       socials:
-        - link: "https://www.gatsbyjs.org/"
+        - link: "https://github.com/valentinEutrope"
           name: github
+        - link: "https://twitter.com/RedBiscuitJack"
+          name: twitter
 office:
   description: >-
     Quis dolor excepteur ex voluptate in elit. Reprehenderit reprehenderit non

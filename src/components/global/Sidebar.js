@@ -36,7 +36,7 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
         <Menu.Item onClick={() => setIsOpen(!isOpen)}>
           <Icon name="bars" color="grey" size="big" />
         </Menu.Item>
-        <Menu.Item textAlign="center" position="right">
+        <Menu.Item position="right">
           <Link to="/">
             <img src={Logo} />
           </Link>
