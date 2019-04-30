@@ -2,9 +2,16 @@
   padding-top: 8rem;
   padding-bottom: 8rem;
   background-color: #f9f9f9;
+  @media only screen and (max-width: 1200px) {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
   .rating-container {
     display: flex;
     justify-content: center;
+  }
+  .testimonial-card-description {
+    max-width: 90%;
   }
   .btn {
     &--prev {
