@@ -37,9 +37,11 @@
   @media only screen and (max-width: 1200px) {
     padding: 3rem 0 3rem 0;
   }
-  &--carousel {
-    min-height: 200px;
-    max-height: 700px;
+  .office-carousel--carousel {
+    min-height: 700px;
+    @media only screen and (max-width: 1200px) {
+      min-height: 200px;
+    }
   }
 }
 
