@@ -1,9 +1,16 @@
-.ui.massive.borderless.inverted.top.fixed.menu {
-  background-color: white;
-  border-radius: 0;
-  margin: 0;
-  z-index: 1;
-  .header {
-    font-family: "Poppins";
+.ui.menu.borderless {
+  h3 {
+    font-size: 1.5rem;
+  }
+}
+
+.small-menu-sidebar {
+  background: white;
+  &--container {
+    padding: 1.5rem;
+    h3.ui.header {
+      font-size: 1.5rem;
+      margin-top: 1rem;
+    }
   }
 }

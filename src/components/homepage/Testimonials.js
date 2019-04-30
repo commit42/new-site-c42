@@ -77,7 +77,10 @@ const Testimonials = ({ data }) => {
                           )
                         )}
                       </div>
-                      <Card.Description textAlign="left" className="mt-2">
+                      <Card.Description
+                        textAlign="left"
+                        className="mt-2 testimonial-card-description"
+                      >
                         {testimonial.text}
                       </Card.Description>
                     </Card.Content>
