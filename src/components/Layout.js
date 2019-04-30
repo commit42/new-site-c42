@@ -14,7 +14,9 @@ import Roll from "react-reveal/Roll"
 
 const Layout = ({ children, path }) => {
   const [isOpen, setIsOpen] = useState(false)
-  const [width, setWidth] = useState(0)
+  const [width, setWidth] = useState(
+    typeof window !== "undefined" && window.innerWidth
+  )
 
   typeof window !== "undefined" &&
     useEffect(() => {
