@@ -14,9 +14,7 @@ import Roll from "react-reveal/Roll"
 
 const Layout = ({ children, path }) => {
   const [isOpen, setIsOpen] = useState(false)
-  const [width, setWidth] = useState(
-    typeof window !== "undefined" && window.innerWidth
-  )
+  const [width, setWidth] = useState(0)
 
   typeof window !== "undefined" &&
     useEffect(() => {
@@ -62,27 +60,25 @@ const Layout = ({ children, path }) => {
                   className="small-menu-sidebar"
                 >
                   <div className="small-menu-sidebar--container">
-                    <Link to="/blog">
-                      <Roll left>
+                    <Roll left>
+                      <Link to="/blog">
                         <Header as="h3" className="menu-item ">
-                          <Icon name="quote right" color="black" size="big" />
+                          <Icon name="quote right" color="grey" size="big" />
                           Blog
                         </Header>
-                      </Roll>
-                    </Link>
-                    <Link to="/la-societe">
-                      <Roll left>
+                      </Link>
+                      <Link to="/la-societe">
                         <Header as="h3" className="menu-item">
-                          <Icon name="users" color="black" size="big" />
+                          <Icon name="users" color="grey" size="big" />
                           La Societe
                         </Header>
-                      </Roll>
-                    </Link>
+                      </Link>
+                    </Roll>
                   </div>
                 </Drawer>
                 <Menu fixed="top" borderless>
                   <Menu.Item onClick={() => setIsOpen(!isOpen)}>
-                    <Icon name="bars" color="black" size="big" />
+                    <Icon name="bars" color="grey" size="big" />
                   </Menu.Item>
                   <Menu.Item textAlign="center" position="right">
                     <Link to="/">
