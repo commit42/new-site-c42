@@ -10,7 +10,7 @@ const MapToCompany = ({ data }) => {
       <Map
         center={[latitude, longitude]}
         zoom={16}
-        height={600}
+        height={400}
         metaWheelZoom={true}
       >
         <Marker

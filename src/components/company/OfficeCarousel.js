@@ -1,26 +1,22 @@
 import React from "react"
 import "./CompanyPage.scss"
-import Swiper from "react-id-swiper"
 import Image from "gatsby-image"
-import { Pagination, Navigation } from "swiper/dist/js/swiper.esm"
 import { Container, Grid, Header, Button, Icon } from "semantic-ui-react"
 import Carousel from "nuka-carousel"
 
 const OfficeCarousel = ({ data }) => {
   return (
-    <Container className="primary office-carousel" fluid>
+    <Container className="secondary office-carousel" fluid>
       <Grid as={Container}>
         <Grid.Row>
           <Grid.Column>
-            <Header as="h2" className="secondary">
-              {data.heading}
-            </Header>
+            <Header as="h2">{data.heading}</Header>
             <p>{data.description}</p>
           </Grid.Column>
         </Grid.Row>
         <Grid.Row className="office-carousel--carousel">
           <Carousel
-            renderBottomCenterControls={false}
+            renderBottomCenterControls={() => false}
             enableKeyboardControls={true}
             dragging={true}
             swiping={true}

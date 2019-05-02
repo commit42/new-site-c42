@@ -1,6 +1,6 @@
 ---
 pageName: societe
-imgHeader: /assets/header-img-c42.png
+imgHeader: /assets/header-company.png
 teamList:
   heading: L'équipe
   members:

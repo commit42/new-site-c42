@@ -2,6 +2,10 @@
          Site Overrides
 *******************************/
 
+.ui.header.light{
+  color: white;
+}
+
 .ui.header.primary{
     color: @bluec42;
 }
@@ -28,6 +32,12 @@ h3.ui.header {
   font-size: 2rem;
   font-family: 'Poppins';
   color: @greyc42;
+}
+
+h3.ui.header.primary {
+  font-size: 1.2rem;
+  font-family: 'Poppins';
+  color: @bluec42;
 }
 
 h4.ui.header {
