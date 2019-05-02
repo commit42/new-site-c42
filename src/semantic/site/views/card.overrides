@@ -11,6 +11,11 @@
     box-shadow: none;
     transition: 0.2s ease;
     font-family: @pageFont;
+
+    .meta.employee-job{
+        font-family:"Poppins";
+        color: @bluec42;
+    }
     .content {
         border-top: none;
     }

@@ -7,9 +7,9 @@
 }
 
 //// Header
-// .header-comapny-img {
-//   margin-top: 65px;
-// }
+.header-company-container {
+  min-height: 100vh;
+}
 
 //// Members list
 .ui.container.ui.grid.members-list {
@@ -18,21 +18,33 @@
   @media only screen and (max-width: 1200px) {
     padding-bottom: 3rem;
   }
-  .center.aligned.row.members-list--container {
-    margin-top: 3rem;
+  .centered.row.members-list--container {
     .member-list--item {
-      @media only screen and (max-width: 1200px) {
-        margin-bottom: 6rem;
-      }
-      .gatsby-image-wrapper {
-        border-radius: 100%;
+      margin-bottom: 2rem;
+      .ui.fluid.card {
+        .content {
+          .gatsby-image-wrapper {
+            border-radius: 100%;
+          }
+          .meta.employee-job {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+          }
+          .socials {
+            a {
+              .icon {
+                margin: auto;
+              }
+            }
+          }
+        }
       }
     }
   }
 }
 
 //// Carousel locaux
-.ui.fluid.container.primary.office-carousel {
+.ui.fluid.container.secondary.office-carousel {
   padding: 6rem 0 6rem 0;
   @media only screen and (max-width: 1200px) {
     padding: 3rem 0 3rem 0;

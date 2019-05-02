@@ -9,7 +9,6 @@ import {
   TextArea,
   Icon,
 } from "semantic-ui-react"
-
 import ContactHeader from "./ContactHeader"
 
 const ContactForm = ({ data }) => {
@@ -17,7 +16,11 @@ const ContactForm = ({ data }) => {
   return (
     <>
       <ContactHeader data={headerContact} />
-      <Container fluid className="primary contact-form-container">
+      <Container
+        fluid
+        className="primary contact-form-container"
+        id="contactForm"
+      >
         <Grid as={Container}>
           <Grid.Row className="contact-form">
             <Grid.Column>

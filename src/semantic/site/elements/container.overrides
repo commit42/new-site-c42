@@ -5,3 +5,8 @@
 .ui.fluid.container.primary{
   background: #f9f9f9;
 }
+
+.ui.fluid.container.secondary{
+  background: @greyc42;
+  color: white;
+}
