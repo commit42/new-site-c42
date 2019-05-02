@@ -7,8 +7,21 @@
 }
 
 //// Header
-.header-company-container {
+.ui.container.ui.stackable.header-company-container {
   min-height: 100vh;
+  @media only screen and (max-width: 1200px) {
+    margin-top: 10rem;
+    padding-bottom: 6rem;
+  }
+  .header-company-text {
+    max-width: 90%;
+  }
+  .gatsby-image-wrapper {
+    margin: auto;
+    @media only screen and (max-width: 1200px) {
+      width: 70%;
+    }
+  }
 }
 
 //// Members list

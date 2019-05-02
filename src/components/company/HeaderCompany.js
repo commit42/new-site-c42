@@ -10,8 +10,11 @@ const HeaderCompany = ({ data }) => {
       as={Container}
       className="header-company-container"
       verticalAlign="middle"
+      stackable
+      columns={2}
+      reversed=" mobile"
     >
-      <Grid.Column width={8}>
+      <Grid.Column computer={8} mobile={16} className="header-company-text">
         <Header as="h2" className="secondary">
           Qui sommes-nous ?
         </Header>
@@ -25,7 +28,7 @@ const HeaderCompany = ({ data }) => {
           <Button>Nous contacter ?</Button>
         </AnchorLink>
       </Grid.Column>
-      <Grid.Column width={8}>
+      <Grid.Column computer={7} mobile={5}>
         <Image fluid={data.childImageSharp.fluid} />
       </Grid.Column>
     </Grid>
