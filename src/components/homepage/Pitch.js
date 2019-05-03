@@ -19,7 +19,7 @@ const Pitch = ({ data }) => {
           <Grid.Row key={index} style={{ backgroundColor: `${isDarkBg}` }}>
             <Grid.Column>
               <Container text>
-                <Fade bottom>
+                <Fade cascade>
                   <Header as="h3" className="primary">
                     {row.title}
                   </Header>

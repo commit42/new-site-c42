@@ -62,29 +62,31 @@ const Testimonials = ({ data }) => {
                   textAlign="center"
                   key={index}
                 >
-                  <Card fluid key={index} className="testimonial">
-                    <Card.Content>
-                      <div className="rating-container">
-                        {Array.apply(null, { length: testimonial.rating }).map(
-                          (e, i) => (
+                  <Fade>
+                    <Card fluid key={index} className="testimonial">
+                      <Card.Content>
+                        <div className="rating-container">
+                          {Array.apply(null, {
+                            length: testimonial.rating,
+                          }).map((e, i) => (
                             <Icon name="star" color="yellow" key={i} />
-                          )
-                        )}
-                      </div>
-                      <Card.Description
-                        textAlign="left"
-                        className="mt-2 testimonial-card-description"
-                      >
-                        {testimonial.text}
-                      </Card.Description>
-                    </Card.Content>
+                          ))}
+                        </div>
+                        <Card.Description
+                          textAlign="left"
+                          className="mt-2 testimonial-card-description"
+                        >
+                          {testimonial.text}
+                        </Card.Description>
+                      </Card.Content>
 
-                    <Card.Content extra>
-                      <Card.Header textAlign="center">
-                        {testimonial.author}
-                      </Card.Header>
-                    </Card.Content>
-                  </Card>
+                      <Card.Content extra>
+                        <Card.Header textAlign="center">
+                          {testimonial.author}
+                        </Card.Header>
+                      </Card.Content>
+                    </Card>
+                  </Fade>
                 </Grid.Column>
               )
             })}
