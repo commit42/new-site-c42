@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/Layout"
 import SEO from "../components/seo/SEO"
-import HeaderCompany from "../components/company/HeaderCompany"
+import HeroCompany from "../components/company/HeroCompany"
 import MembersList from "../components/company/MembersList"
 import OfficeCarousel from "../components/company/OfficeCarousel"
 import ContactForm from "../components/company/ContactForm"
@@ -14,7 +14,6 @@ class CompanyPage extends Component {
     const {
       markdownRemark: { frontmatter: companyData },
     } = this.props.data
-
     return (
       <Layout>
         <SEO
@@ -22,7 +21,7 @@ class CompanyPage extends Component {
           description="Découvrez l'équipe de commit42 !"
           pathname="/la-societe"
         />
-        <HeaderCompany data={companyData.imgHeader} />
+        <HeroCompany data={companyData.hero} />
         <MembersList data={companyData.teamList} />
         <OfficeCarousel data={companyData.office} />
         <ContactForm data={companyData.contact} />
@@ -39,10 +38,19 @@ export const companyPageQuery = graphql`
     markdownRemark(frontmatter: { pageName: { eq: "societe" } }) {
       frontmatter {
         pageName
-        imgHeader {
-          childImageSharp {
-            fluid(maxWidth: 800) {
-              ...GatsbyImageSharpFluid
+        hero {
+          imgHeader {
+            childImageSharp {
+              fluid(maxWidth: 800) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+          imgHeaderAnim {
+            childImageSharp {
+              fluid(maxWidth: 800) {
+                ...GatsbyImageSharpFluid
+              }
             }
           }
         }
@@ -56,6 +64,7 @@ export const companyPageQuery = graphql`
               }
             }
             name
+            job
             presentation
             socials {
               link

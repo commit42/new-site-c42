@@ -3,6 +3,7 @@ import "./CompanyPage.scss"
 import Image from "gatsby-image"
 import { Container, Grid, Header, Button, Icon } from "semantic-ui-react"
 import Carousel from "nuka-carousel"
+import Fade from "react-reveal/Fade"
 
 const OfficeCarousel = ({ data }) => {
   return (
@@ -10,8 +11,14 @@ const OfficeCarousel = ({ data }) => {
       <Grid as={Container}>
         <Grid.Row>
           <Grid.Column>
-            <Header as="h2">{data.heading}</Header>
-            <p>{data.description}</p>
+            <Header as="h2">
+              <Fade top cascade duration={800}>
+                {data.heading}
+              </Fade>
+            </Header>
+            <Fade cascade>
+              <p>{data.description}</p>
+            </Fade>
           </Grid.Column>
         </Grid.Row>
         <Grid.Row className="office-carousel--carousel">
@@ -35,7 +42,9 @@ const OfficeCarousel = ({ data }) => {
               data.pictures.map((picture, index) => {
                 return (
                   <Grid.Column key={index}>
-                    <Image fluid={picture.picture.childImageSharp.fluid} />
+                    <Fade>
+                      <Image fluid={picture.picture.childImageSharp.fluid} />
+                    </Fade>
                   </Grid.Column>
                 )
               })}

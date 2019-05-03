@@ -10,6 +10,7 @@ import {
   Card,
   Label,
 } from "semantic-ui-react"
+import Fade from "react-reveal/Fade"
 
 const MembersList = ({ data }) => {
   return (
@@ -17,14 +18,16 @@ const MembersList = ({ data }) => {
       <Grid as={Container} className="members-list">
         <Grid.Row>
           <Header as="h2" className="secondary">
-            L'équipe
+            <Fade top cascade duration={800}>
+              L'équipe
+            </Fade>
           </Header>
         </Grid.Row>
         <Grid.Row className="members-list--container" centered>
           {data.members &&
             data.members.length > 0 &&
             data.members.map(member => {
-              const { avatar, name, presentation, socials } = member
+              const { avatar, name, job, presentation, socials } = member
               const links = socials.map(social => {
                 return (
                   <Label as="a" href={social.link} key={social.name}>
@@ -41,17 +44,17 @@ const MembersList = ({ data }) => {
                   className="member-list--item"
                   key={name}
                 >
-                  <Card fluid>
-                    <Card.Content>
-                      <Image fluid={avatar.childImageSharp.fluid} />
-                      <Header as="h3">{name}</Header>
-                      <Card.Meta className="employee-job">
-                        Chef de projet
-                      </Card.Meta>
-                      <p>{presentation}</p>
-                      <div className="socials">{links}</div>
-                    </Card.Content>
-                  </Card>
+                  <Fade cascade>
+                    <Card fluid>
+                      <Card.Content>
+                        <Image fluid={avatar.childImageSharp.fluid} />
+                        <Header as="h3">{name}</Header>
+                        <Card.Meta className="employee-job">{job}</Card.Meta>
+                        <p>{presentation}</p>
+                        <div className="socials">{links}</div>
+                      </Card.Content>
+                    </Card>
+                  </Fade>
                 </Grid.Column>
               )
             })}

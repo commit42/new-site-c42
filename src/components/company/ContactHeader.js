@@ -2,6 +2,7 @@ import React from "react"
 import "./CompanyPage.scss"
 import Image from "gatsby-image"
 import { Grid, Container, Header } from "semantic-ui-react"
+import Fade from "react-reveal/Fade"
 
 const ContactHeader = ({ data }) => {
   return (
@@ -9,15 +10,17 @@ const ContactHeader = ({ data }) => {
       <Grid>
         <Grid.Row>
           <Grid.Column textAlign="center">
-            <Image
-              fluid={data.imgHeader.childImageSharp.fluid}
-              style={{
-                maxWidth: `${
-                  data.imgHeader.childImageSharp.fluid.presentationWidth
-                }px`,
-                margin: "auto",
-              }}
-            />
+            <Fade>
+              <Image
+                fluid={data.imgHeader.childImageSharp.fluid}
+                style={{
+                  maxWidth: `${
+                    data.imgHeader.childImageSharp.fluid.presentationWidth
+                  }px`,
+                  margin: "auto",
+                }}
+              />
+            </Fade>
             <Header as="h2" className="contact-header--header">
               {data.heading}
             </Header>
