@@ -16,9 +16,9 @@ const OfficeCarousel = ({ data }) => {
                 {data.heading}
               </Fade>
             </Header>
-            <p>
-              <Fade cascade>{data.description}</Fade>
-            </p>
+            <Fade cascade>
+              <p>{data.description}</p>
+            </Fade>
           </Grid.Column>
         </Grid.Row>
         <Grid.Row className="office-carousel--carousel">

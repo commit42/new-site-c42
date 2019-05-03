@@ -135,7 +135,20 @@ collections:
               label: Nom de la page (en minuscules),
               widget: string,
             }
-          - { name: imgHeader, label: Image d'en-tête, widget: image }
+          - {
+              name: hero,
+              label: Image(s) d'entête,
+              widget: object,
+              fields:
+                [
+                  { name: imgHeader, label: Image d'en-tête, widget: image },
+                  {
+                    name: imgHeaderAnim,
+                    label: Autre img pour animation,
+                    widget: image,
+                  },
+                ],
+            }
           - {
               name: teamList,
               label: La dream team,
