@@ -31,7 +31,7 @@ const HeaderCompany = ({ data }) => {
           </Fade>
         </p>
         <AnchorLink href="#contactForm">
-          <Fade bottom duration={time}>
+          <Fade bottom duration={time} delay={500}>
             <Button>Nous contacter ?</Button>
           </Fade>
         </AnchorLink>

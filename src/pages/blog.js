@@ -5,8 +5,10 @@ import { Container, Grid } from "semantic-ui-react"
 
 import SEO from "../components/seo/SEO"
 import Layout from "../components/Layout"
-import HeaderBlog from "../components/blog/HeaderBlog"
+import HeroBlog from "../components/blog/HeroBlog"
 import BlogCard from "../components/blog/BlogCard"
+import Fade from "react-reveal/Fade"
+
 class BlogPage extends React.Component {
   render() {
     const { edges: posts } = this.props.data.allMarkdownRemark
@@ -18,23 +20,23 @@ class BlogPage extends React.Component {
           description="Super blog trop cool de commit42"
           pathname="/blog"
         />
-
-        <HeaderBlog data={blogData} />
-
-        <Container
-          fluid
-          style={{ backgroundColor: "#F9F9F9", padding: "5rem 0 5rem 0" }}
-        >
-          <Grid as={Container}>
-            <Grid.Row>
-              {posts
-                .filter(post => post.node.frontmatter.title.length > 0)
-                .map(({ node: post }) => {
-                  return <BlogCard post={post} key={post.id} />
-                })}
-            </Grid.Row>
-          </Grid>
-        </Container>
+        <HeroBlog data={blogData} />
+        <Fade delay={800}>
+          <Container
+            fluid
+            style={{ backgroundColor: "#F9F9F9", padding: "5rem 0 5rem 0" }}
+          >
+            <Grid as={Container}>
+              <Grid.Row>
+                {posts
+                  .filter(post => post.node.frontmatter.title.length > 0)
+                  .map(({ node: post }) => {
+                    return <BlogCard post={post} key={post.id} />
+                  })}
+              </Grid.Row>
+            </Grid>
+          </Container>
+        </Fade>
       </Layout>
     )
   }

@@ -62,7 +62,7 @@ const Testimonials = ({ data }) => {
                   textAlign="center"
                   key={index}
                 >
-                  <Fade>
+                  <Fade delay={300}>
                     <Card fluid key={index} className="testimonial">
                       <Card.Content>
                         <div className="rating-container">
