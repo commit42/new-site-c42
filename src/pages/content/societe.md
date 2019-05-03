@@ -6,6 +6,7 @@ teamList:
   members:
     - avatar: /assets/avatar-phil.png
       name: Thomas Forest
+      job: Chef de projet
       presentation: >-
         Elit nulla dolor aliqua esse minim commodo. Aute laboris laborum irure
         elit qui. Dolor deserunt mollit velit non nisi consectetur esse magna ut
@@ -19,6 +20,7 @@ teamList:
           name: linkedin
     - avatar: /assets/avatar-flavien.png
       name: Flavien Beninca
+      job: Développeur full-stack
       presentation: >-
         Elit nulla dolor aliqua esse minim commodo. Aute laboris laborum irure
         elit qui. Dolor deserunt mollit velit non nisi consectetur esse magna ut
@@ -32,6 +34,7 @@ teamList:
           name: linkedin
     - avatar: /assets/avatar-mathieu.png
       name: Mathieu Haage
+      job: Développeur front-end
       presentation: >-
         Elit nulla dolor aliqua esse minim commodo. Aute laboris laborum irure
         elit qui. Dolor deserunt mollit velit non nisi consectetur esse magna ut
@@ -43,6 +46,7 @@ teamList:
           name: twitter
     - avatar: /assets/avatar-valentin.jpg
       name: Valentin Eutrope
+      job: Développeur front-end
       presentation: >-
         Elit nulla dolor aliqua esse minim commodo. Aute laboris laborum irure
         elit qui. Dolor deserunt mollit velit non nisi consectetur esse magna ut

@@ -27,7 +27,7 @@ const MembersList = ({ data }) => {
           {data.members &&
             data.members.length > 0 &&
             data.members.map(member => {
-              const { avatar, name, presentation, socials } = member
+              const { avatar, name, job, presentation, socials } = member
               const links = socials.map(social => {
                 return (
                   <Label as="a" href={social.link} key={social.name}>
@@ -49,9 +49,7 @@ const MembersList = ({ data }) => {
                       <Card.Content>
                         <Image fluid={avatar.childImageSharp.fluid} />
                         <Header as="h3">{name}</Header>
-                        <Card.Meta className="employee-job">
-                          Chef de projet
-                        </Card.Meta>
+                        <Card.Meta className="employee-job">{job}</Card.Meta>
                         <p>{presentation}</p>
                         <div className="socials">{links}</div>
                       </Card.Content>

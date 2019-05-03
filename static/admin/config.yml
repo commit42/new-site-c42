@@ -151,6 +151,7 @@ collections:
                       [
                         { name: avatar, label: Avatar, widget: image },
                         { name: name, label: Nom et/ou prénom, widget: string },
+                        { name: job, label: Métier, widget: string },
                         {
                           name: presentation,
                           label: Présentation,

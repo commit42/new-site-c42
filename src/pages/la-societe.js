@@ -56,6 +56,7 @@ export const companyPageQuery = graphql`
               }
             }
             name
+            job
             presentation
             socials {
               link
