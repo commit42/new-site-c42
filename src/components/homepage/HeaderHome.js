@@ -28,7 +28,9 @@ const HeaderHome = ({ data }) => {
         >
           <div className="header-text-container">
             <Header as="h1">
-              <Fade top>{data.heading}</Fade>
+              <Fade top cascade duration={800} delay={500}>
+                {data.heading}
+              </Fade>
             </Header>
             <Fade bottom>{formatText(data.description)}</Fade>
           </div>

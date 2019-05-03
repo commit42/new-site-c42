@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/Layout"
 import SEO from "../components/seo/SEO"
-import HeaderCompany from "../components/company/HeaderCompany"
+import HeroCompany from "../components/company/HeroCompany"
 import MembersList from "../components/company/MembersList"
 import OfficeCarousel from "../components/company/OfficeCarousel"
 import ContactForm from "../components/company/ContactForm"
@@ -22,7 +22,7 @@ class CompanyPage extends Component {
           description="Découvrez l'équipe de commit42 !"
           pathname="/la-societe"
         />
-        <HeaderCompany data={companyData.imgHeader} />
+        <HeroCompany data={companyData.imgHeader} />
         <MembersList data={companyData.teamList} />
         <OfficeCarousel data={companyData.office} />
         <ContactForm data={companyData.contact} />
