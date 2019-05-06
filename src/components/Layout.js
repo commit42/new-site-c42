@@ -50,7 +50,7 @@ const Layout = ({ children, path }) => {
               <Sidebar isOpen={isOpen} setIsOpen={setIsOpen} />
             )}
 
-            <div style={{ flex: "1" }}>{children}</div>
+            <div style={{ flex: "1", marginTop: "58px" }}>{children}</div>
             <Footer />
           </div>
         )
