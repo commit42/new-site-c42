@@ -1,4 +1,4 @@
-.ui.grid.header-blog {
+#hero-blog {
   margin-top: 10rem;
   margin-bottom: 5rem;
   @media only screen and (max-width: 1200px) {
@@ -7,13 +7,11 @@
   .header-blog--heading {
     margin-bottom: 2rem;
   }
-
   .header-blog--description {
     max-width: 40%;
-
     margin: auto;
     @media only screen and (max-width: 1200px) {
-      max-width: 90%;
+      min-width: 90%;
     }
   }
   .gatsby-image-wrapper {

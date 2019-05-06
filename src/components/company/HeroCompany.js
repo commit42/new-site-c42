@@ -15,21 +15,27 @@ const HeaderCompany = ({ data }) => {
   const srcImg = !newImg
     ? data.imgHeader.childImageSharp.fluid
     : data.imgHeaderAnim.childImageSharp.fluid
+  const altText = srcImg.originalName.slice(0, -4)
   return (
     <Grid
       as={Container}
-      className="header-company-container"
+      id="header-company-container"
       verticalAlign="middle"
       stackable
       columns={2}
       reversed="mobile"
     >
-      <Grid.Column computer={9} mobile={16} className="header-company-text">
-        <Header as="h2" className="secondary">
-          <Fade top cascade duration={1000} delay={500}>
+      <Grid.Column
+        computer={9}
+        tablet={8}
+        mobile={16}
+        className="header-company-text"
+      >
+        <Fade top cascade duration={1000} delay={500}>
+          <Header as="h2" className="secondary">
             Qui sommes-nous ?
-          </Fade>
-        </Header>
+          </Header>
+        </Fade>
         <Fade left duration={time}>
           <p>
             Elit fugiat eiusmod mollit sint proident sunt id sunt ut non sint
@@ -49,9 +55,9 @@ const HeaderCompany = ({ data }) => {
           </Fade>
         </AnchorLink>
       </Grid.Column>
-      <Grid.Column computer={6} mobile={5}>
+      <Grid.Column computer={6} tablet={8} mobile={5}>
         <Fade right duration={time}>
-          <Image fluid={srcImg} />
+          <Image fluid={srcImg} alt={altText} />
         </Fade>
       </Grid.Column>
     </Grid>

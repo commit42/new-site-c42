@@ -43,6 +43,7 @@ export const companyPageQuery = graphql`
             childImageSharp {
               fluid(maxWidth: 800) {
                 ...GatsbyImageSharpFluid
+                originalName
               }
             }
           }
@@ -50,6 +51,7 @@ export const companyPageQuery = graphql`
             childImageSharp {
               fluid(maxWidth: 800) {
                 ...GatsbyImageSharpFluid
+                originalName
               }
             }
           }
@@ -60,6 +62,7 @@ export const companyPageQuery = graphql`
               childImageSharp {
                 fluid(maxWidth: 800) {
                   ...GatsbyImageSharpFluid
+                  originalName
                 }
               }
             }
@@ -80,6 +83,7 @@ export const companyPageQuery = graphql`
               childImageSharp {
                 fluid(maxWidth: 800) {
                   ...GatsbyImageSharpFluid
+                  originalName
                 }
               }
             }
@@ -93,6 +97,7 @@ export const companyPageQuery = graphql`
                 fluid(maxWidth: 800) {
                   ...GatsbyImageSharpFluid
                   presentationWidth
+                  originalName
                 }
               }
             }

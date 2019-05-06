@@ -21,7 +21,12 @@ const Success = () => (
         <Icon name="check" color="blue" />
       </Icon.Group>
       <Header as="h1">Merci pour votre message !</Header>
-      <p>Nous vous répondrons dans les plus bref délais 😃</p>
+      <p>
+        Nous vous répondrons dans les plus bref délais{" "}
+        <span role="img" aria-label="Smiley sourire">
+          😃
+        </span>
+      </p>
     </Container>
   </Layout>
 )

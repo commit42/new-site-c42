@@ -1,0 +1,129 @@
+//// Hero
+.ui.grid.hero-home {
+  margin-top: 40px;
+  .two.column.row {
+    .img-hero {
+      min-height: 100vh;
+      @media only screen and (max-width: 768px) {
+        max-height: 100vh !important;
+        min-height: 100%;
+      }
+    }
+    .ui.text.container.middle.aligned.column {
+      .hero-text-container {
+        margin: auto;
+      }
+      @media only screen and (max-width: 1200px) {
+        margin: 3rem 0 3rem 0;
+      }
+    }
+  }
+}
+
+//// Services
+#services-container {
+  margin-top: 0;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  @media only screen and (max-width: 1200px) {
+    padding-bottom: 2rem;
+    padding-top: 5rem;
+  }
+  .row {
+    h2 {
+      margin-bottom: 8rem;
+      @media only screen and (max-width: 1200px) {
+        margin-bottom: 5rem;
+      }
+    }
+    .four.column {
+      @media only screen and (max-width: 1200px) {
+        margin-bottom: 5rem;
+      }
+    }
+  }
+}
+
+//// Pitch
+#pitch-container {
+  .row {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    @media only screen and (max-width: 1200px) {
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+    }
+
+    .ui.header.primary {
+      margin-bottom: 1rem;
+    }
+    .toulouse-c42 {
+      margin: auto;
+      @media only screen and (min-width: 723px) {
+        max-width: 90%;
+      }
+    }
+    .nouvelles-technologies-c42 {
+      margin: auto;
+
+      @media only screen and (min-width: 723px) {
+        max-width: 70%;
+      }
+    }
+    .flexibilite-c42 {
+      margin: auto;
+
+      @media only screen and (min-width: 723px) {
+        max-width: 60%;
+      }
+    }
+  }
+}
+
+//// Testimonials
+#testimonials-list {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background-color: #f9f9f9;
+  @media only screen and (max-width: 1200px) {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .carousel-button-next {
+    display: flex;
+    justify-content: center;
+    opacity: 0.5;
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .carousel-button-prev {
+    display: flex;
+    justify-content: center;
+    opacity: 0.5;
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .testimonial {
+    min-height: 350px;
+    .rating-container {
+      display: flex;
+      justify-content: center;
+    }
+    .testimonial-card-description {
+      max-width: 90%;
+    }
+    .btn {
+      &--prev {
+        margin-right: 2rem;
+      }
+      &--next {
+        margin-left: 2rem;
+      }
+    }
+  }
+}
