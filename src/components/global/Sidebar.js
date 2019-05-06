@@ -38,7 +38,7 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
         </Menu.Item>
         <Menu.Item position="right">
           <Link to="/">
-            <img src={Logo} />
+            <img src={Logo} alt="Logo commit42" />
           </Link>
         </Menu.Item>
       </Menu>

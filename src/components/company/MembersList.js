@@ -1,15 +1,7 @@
 import React from "react"
 import "./CompanyPage.scss"
 import Image from "gatsby-image"
-import {
-  Grid,
-  Header,
-  Container,
-  Button,
-  Icon,
-  Card,
-  Label,
-} from "semantic-ui-react"
+import { Grid, Header, Container, Icon, Card, Label } from "semantic-ui-react"
 import Fade from "react-reveal/Fade"
 
 const MembersList = ({ data }) => {
@@ -28,6 +20,10 @@ const MembersList = ({ data }) => {
             data.members.length > 0 &&
             data.members.map(member => {
               const { avatar, name, job, presentation, socials } = member
+              const altText = avatar.childImageSharp.fluid.originalName.slice(
+                0,
+                -4
+              )
               const links = socials.map(social => {
                 return (
                   <Label as="a" href={social.link} key={social.name}>
@@ -47,7 +43,10 @@ const MembersList = ({ data }) => {
                   <Fade cascade>
                     <Card fluid>
                       <Card.Content>
-                        <Image fluid={avatar.childImageSharp.fluid} />
+                        <Image
+                          fluid={avatar.childImageSharp.fluid}
+                          alt={altText}
+                        />
                         <Header as="h3">{name}</Header>
                         <Card.Meta className="employee-job">{job}</Card.Meta>
                         <p>{presentation}</p>

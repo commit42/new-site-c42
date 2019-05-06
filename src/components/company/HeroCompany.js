@@ -15,6 +15,7 @@ const HeaderCompany = ({ data }) => {
   const srcImg = !newImg
     ? data.imgHeader.childImageSharp.fluid
     : data.imgHeaderAnim.childImageSharp.fluid
+  const altText = srcImg.originalName.slice(0, -4)
   return (
     <Grid
       as={Container}
@@ -51,7 +52,7 @@ const HeaderCompany = ({ data }) => {
       </Grid.Column>
       <Grid.Column computer={6} mobile={5}>
         <Fade right duration={time}>
-          <Image fluid={srcImg} />
+          <Image fluid={srcImg} alt={altText} />
         </Fade>
       </Grid.Column>
     </Grid>

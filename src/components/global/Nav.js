@@ -1,6 +1,6 @@
 import React from "react"
 import "./Nav.scss"
-import { Menu, Image, Container, Header, Icon } from "semantic-ui-react"
+import { Menu, Image, Container, Header } from "semantic-ui-react"
 import { Link } from "gatsby"
 import Logo from "../../../static/assets/logo-c42.png"
 

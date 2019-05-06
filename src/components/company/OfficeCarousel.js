@@ -40,10 +40,17 @@ const OfficeCarousel = ({ data }) => {
           >
             {data.pictures &&
               data.pictures.map((picture, index) => {
+                const altText = picture.picture.childImageSharp.fluid.originalName.slice(
+                  0,
+                  -4
+                )
                 return (
                   <Grid.Column key={index}>
                     <Fade>
-                      <Image fluid={picture.picture.childImageSharp.fluid} />
+                      <Image
+                        fluid={picture.picture.childImageSharp.fluid}
+                        alt={altText}
+                      />
                     </Fade>
                   </Grid.Column>
                 )
