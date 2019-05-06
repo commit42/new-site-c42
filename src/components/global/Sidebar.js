@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import { Header, Menu, Icon } from "semantic-ui-react"
 import Drawer from "react-motion-drawer"
 import Logo from "../../../static/assets/logo-c42.png"
-import Roll from "react-reveal/Roll"
+import Bounce from "react-reveal/Bounce"
 
 const Sidebar = ({ isOpen, setIsOpen }) => {
   return (
@@ -16,7 +16,7 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
         className="small-menu-sidebar"
       >
         <div className="small-menu-sidebar--container">
-          <Roll left>
+          <Bounce left>
             <Link to="/blog">
               <Header as="h3" className="menu-item ">
                 <Icon name="quote right" color="grey" size="big" />
@@ -29,7 +29,7 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
                 La Societe
               </Header>
             </Link>
-          </Roll>
+          </Bounce>
         </div>
       </Drawer>
       <Menu fixed="top" borderless>
