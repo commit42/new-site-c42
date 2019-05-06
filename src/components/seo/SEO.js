@@ -46,20 +46,6 @@ const SEO = ({ title, description, image, pathname, article }) => {
                 name="google-site-verification"
                 content="LF-7NXdTmuJR-Tb6JKkD7Zs0uXN-YcIIxjeSNZs7YYg"
               />
-
-              {/* fontawesome */}
-              <link
-                rel="stylesheet"
-                href="https://pro.fontawesome.com/releases/v5.8.1/css/regular.css"
-                integrity="sha384-ELBQxbOyxSZRtZPNO1mVgYkEzMOXFNmQY6CLV1nw+4IZoiHWeuwYTnABxPxxsuBE"
-                crossorigin="anonymous"
-              />
-              <link
-                rel="stylesheet"
-                href="https://pro.fontawesome.com/releases/v5.8.1/css/fontawesome.css"
-                integrity="sha384-4HqGlagEHMyfaDQVabl1wx7GCtGw6hDl3sKJEhqQjOCrXrvizhaA2j4hK8Piewtr"
-                crossorigin="anonymous"
-              />
             </Helmet>
             <Facebook
               desc={seo.description}
