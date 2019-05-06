@@ -1,11 +1,13 @@
-.ui.fluid.container.notfound--container {
-  padding: 10rem;
-  background: #f9f9f9;
-  .notfound--header {
+#notfound-container {
+  min-height: 100vh;
+  margin-top: 57px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .notfound-header {
     font-size: 10rem;
   }
-  .notfound--text {
-    max-width: 90%;
-    text-align: center;
+  .notfound-text {
+    margin-bottom: 3rem;
   }
 }

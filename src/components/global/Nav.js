@@ -6,7 +6,7 @@ import Logo from "../../../static/assets/logo-c42.png"
 
 const Nav = props => {
   return (
-    <Menu fixed="top" borderless size="massive">
+    <Menu fixed="top" borderless size="massive" id="navbar">
       <Container>
         <Menu.Item as={Link} to="/" className="p-0">
           <Image src={Logo} alt="Logo commit42" />
