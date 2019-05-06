@@ -21,22 +21,21 @@ class BlogPage extends React.Component {
           pathname="/blog"
         />
         <HeroBlog data={blogData} />
-        <Fade delay={800}>
-          <Container
-            fluid
-            style={{ backgroundColor: "#F9F9F9", padding: "5rem 0 5rem 0" }}
-          >
-            <Grid as={Container}>
-              <Grid.Row>
-                {posts
-                  .filter(post => post.node.frontmatter.title.length > 0)
-                  .map(({ node: post }) => {
-                    return <BlogCard post={post} key={post.id} />
-                  })}
-              </Grid.Row>
-            </Grid>
-          </Container>
-        </Fade>
+        <Container
+          fluid
+          style={{ padding: "5rem 0 5rem 0" }}
+          className="primary"
+        >
+          <Grid as={Container}>
+            <Grid.Row>
+              {posts
+                .filter(post => post.node.frontmatter.title.length > 0)
+                .map(({ node: post }) => {
+                  return <BlogCard post={post} key={post.id} />
+                })}
+            </Grid.Row>
+          </Grid>
+        </Container>
       </Layout>
     )
   }
