@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react"
-import "./Testimonials.scss"
+import "./HomePage.scss"
 import "../../globals.scss"
 import { Grid, Icon, Header, Card, Container, Button } from "semantic-ui-react"
 import Fade from "react-reveal/Fade"
@@ -28,7 +28,7 @@ const Testimonials = ({ data }) => {
   }
 
   return (
-    <Container fluid className="testimonials-list">
+    <Container fluid id="testimonials-list">
       <Grid as={Container}>
         <Grid.Row textAlign="center">
           <Grid.Column>

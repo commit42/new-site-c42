@@ -6,7 +6,7 @@ import { Message, Container, Button, Grid, Icon } from "semantic-ui-react"
 const CallToAction = () => {
   return (
     <Grid>
-      <Grid.Row style={{ backgroundColor: "#F9F9F9" }} only="large screen ">
+      <Grid.Row style={{ backgroundColor: "#F9F9F9" }} only="large screen">
         <Grid.Column>
           <Container className="mb-5">
             <Message size="massive" as={Grid}>

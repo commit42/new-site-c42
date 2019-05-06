@@ -1,5 +1,5 @@
 import React from "react"
-import "./Pitch.scss"
+import "./HomePage.scss"
 import Image from "gatsby-image"
 import Fade from "react-reveal/Fade"
 import { Container, Grid, Header } from "semantic-ui-react"

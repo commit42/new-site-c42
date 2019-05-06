@@ -1,11 +1,11 @@
 import React from "react"
-import "./Services.scss"
+import "./HomePage.scss"
 import { Grid, Header, Container } from "semantic-ui-react"
 import Fade from "react-reveal/Fade"
 
 const Services = ({ data }) => {
   return (
-    <Container fluid className="primary">
+    <Container fluid className="primary" id="services-container">
       <Grid textAlign="center" className="services-container">
         <Grid.Row style={{ maxWidth: "80%" }}>
           <Header as="h2" textAlign="center">
