@@ -1,11 +1,11 @@
 import React from "react"
-import "./HeaderHome.scss"
+import "./HeroHome.scss"
 import Image from "gatsby-image"
 import formatText from "../../helpers/formatText"
 import { Container, Grid, Header } from "semantic-ui-react"
 import Fade from "react-reveal/Fade"
 
-const HeaderHome = ({ data }) => {
+const HeroHome = ({ data }) => {
   return (
     <Grid>
       <Grid.Row columns={2}>
@@ -40,4 +40,4 @@ const HeaderHome = ({ data }) => {
   )
 }
 
-export default HeaderHome
+export default HeroHome

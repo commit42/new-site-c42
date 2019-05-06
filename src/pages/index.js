@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/Layout"
 import SEO from "../components/seo/SEO"
-import HeaderHome from "../components/homepage/HeaderHome"
+import HeroHome from "../components/homepage/HeroHome"
 import Services from "../components/homepage/Services"
 import Pitch from "../components/homepage/Pitch"
 import Testimonials from "../components/homepage/Testimonials"
@@ -18,7 +18,7 @@ class IndexPage extends React.Component {
       <div>
         <Layout>
           <SEO />
-          <HeaderHome data={indexData.head} />
+          <HeroHome data={indexData.head} />
           <Services data={indexData.services} />
           <Pitch data={indexData.pitch} />
           <Testimonials data={indexData.testimonials} />

@@ -37,7 +37,7 @@ const Testimonials = ({ data }) => {
             </Fade>
           </Grid.Column>
         </Grid.Row>
-        <Grid.Row textAlign="center" className="mt-5" centered>
+        <Grid.Row textAlign="center" className="mt-3" centered>
           <Carousel
             style={{ maxWidth: "90%", height: "400px" }}
             renderBottomCenterControls={false}
@@ -92,7 +92,7 @@ const Testimonials = ({ data }) => {
             })}
           </Carousel>
         </Grid.Row>
-        <Grid.Row style={{ marginTop: "2rem" }}>
+        <Grid.Row>
           <Grid.Column textAlign="center">
             <Header as="h4">
               <a href="https://www.google.com/search?q=commit42+avis&oq=commit42+avis&aqs=chrome..69i57.2474j0j7&sourceid=chrome&ie=UTF-8#lrd=0x12aebb873c60e57b:0x2ca3be697d36200,1,,,">
