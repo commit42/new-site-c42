@@ -22,7 +22,7 @@ const CharactPwa = () => {
         >
           <Fade>
             <Segment>
-              <Icon name="hourglass end" size="massive" />
+              <Icon name="hourglass end" size="massive" color="grey" />
             </Segment>
             <Header as="h3">Rapide</Header>
             <p>
@@ -39,7 +39,7 @@ const CharactPwa = () => {
         >
           <Fade>
             <Segment className="primary">
-              <Icon name="lock" size="massive" />
+              <Icon name="lock" size="massive" color="grey" />
             </Segment>
             <Header as="h3">Sécurisé</Header>
             <p>
@@ -56,7 +56,7 @@ const CharactPwa = () => {
         >
           <Fade>
             <Segment>
-              <Icon name="dont" size="massive" />
+              <Icon name="dont" size="massive" color="grey" />
             </Segment>
             <Header as="h3">Hors-ligne</Header>
             <p>
@@ -73,7 +73,7 @@ const CharactPwa = () => {
         >
           <Fade>
             <Segment className="primary">
-              <Icon size="massive" name="cogs" />
+              <Icon size="massive" name="cogs" color="grey" />
             </Segment>
             <Header as="h3">Intégré</Header>
             <p>

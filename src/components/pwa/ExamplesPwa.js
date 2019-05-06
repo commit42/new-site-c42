@@ -33,7 +33,7 @@ const ExamplesPwa = () => {
         >
           <Fade>
             <Segment>
-              <Icon name="talk" size="massive" />
+              <Icon name="talk" size="massive" color="grey" />
             </Segment>
             <Header as="h3">Messagerie</Header>
           </Fade>
@@ -46,7 +46,7 @@ const ExamplesPwa = () => {
           textAlign="center"
         >
           <Segment className="primary">
-            <Icon name="camera" size="massive" />
+            <Icon name="camera" size="massive" color="grey" />
           </Segment>
           <Header as="h3">Photo</Header>
         </Grid.Column>
@@ -58,7 +58,7 @@ const ExamplesPwa = () => {
           textAlign="center"
         >
           <Segment>
-            <Icon name="map" size="massive" />
+            <Icon name="map" size="massive" color="grey" />
           </Segment>
           <Header as="h3">Carte</Header>
         </Grid.Column>
@@ -70,7 +70,7 @@ const ExamplesPwa = () => {
           textAlign="center"
         >
           <Segment className="primary">
-            <Icon name="list" size="massive" />
+            <Icon name="list" size="massive" color="grey" />
           </Segment>
           <Header as="h3">Pense-bête</Header>
         </Grid.Column>
