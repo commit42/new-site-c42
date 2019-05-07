@@ -79,7 +79,9 @@ exports.createPages = ({ actions, graphql }) => {
       return Promise.reject(result.errors)
     }
 
-    const posts = result.data.allMarkdownRemark.edges
+    const posts = result.data.allMarkdownRemark.edges.filter(
+      item => !item.node.fields.slug.startsWith("/content")
+    )
 
     // Permet de générer les pages pour les tags
     createTagPages(createPage, posts)
@@ -100,7 +102,7 @@ exports.createPages = ({ actions, graphql }) => {
     createPaginatedPages({
       edges: posts,
       createPage: createPage,
-      pageTemplate: "src/templates/postsListTemplate.js",
+      pageTemplate: "src/templates/PostsListTemplate.js",
       pageLength: 9,
       pathPrefix: "blog",
       buildPath: (index, pathPrefix) =>
