@@ -1,16 +1,18 @@
 import React from "react"
 import "./Pwa.scss"
-import { Container, Grid, Header, Image, Message } from "semantic-ui-react"
+import Image from "gatsby-image"
+import { Container, Grid, Header, Message } from "semantic-ui-react"
 import Fade from "react-reveal/Fade"
 
-const HeroPwa = () => {
+const HeroPwa = ({ data }) => {
+  const altText = data.image.childImageSharp.fluid.originalName.slice(0, -4)
   return (
     <Container>
       <Grid id="hero-pwa">
         <Grid.Row verticalAlign="middle">
           <Grid.Column computer={8} tablet={16} mobile={16}>
             <Fade left>
-              <Image src="http://via.placeholder.com/640" centered alt="" />
+              <Image fluid={data.image.childImageSharp.fluid} alt={altText} />
             </Fade>
           </Grid.Column>
           <Grid.Column
@@ -20,25 +22,14 @@ const HeroPwa = () => {
             className="hero-pwa-text"
           >
             <Fade top>
-              <Header as="h1">Web App PWA</Header>
+              <Header as="h1">{data.heading}</Header>
             </Fade>
             <Fade right>
-              <p>
-                Tempor est incididunt culpa enim incididunt deserunt duis minim
-                deserunt dolor enim exercitation esse magna. Ex cillum aute
-                deserunt adipisicing nulla irure pariatur magna veniam do
-                ullamco esse laborum. Tempor cillum laborum et enim Lorem
-                ullamco consectetur nisi labore aute sunt adipisicing. Veniam
-                elit consequat nostrud cillum ipsum irure velit sint voluptate
-                dolor voluptate irure aliqua.
-              </p>
+              <p>{data.text}</p>
             </Fade>
             <Fade bottom>
               <Message>
-                <Header as="h5">
-                  Do elit ea non duis do ex reprehenderit.Do elit ea non duis do
-                  ex reprehenderit.
-                </Header>
+                <Header as="h5">{data.message}</Header>
               </Message>
             </Fade>
           </Grid.Column>

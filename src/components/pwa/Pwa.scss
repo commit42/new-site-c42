@@ -39,17 +39,19 @@
         }
       }
     }
-    #pwa-characteristic-schema {
-      margin-top: 15rem;
-      @media only screen and (max-width: 1200px) {
-        margin-top: 3rem;
-      }
-      h2.ui.header {
-        margin-bottom: 1rem;
-      }
-      .pwa-schema {
-        margin: auto;
-      }
+  }
+
+  //// Schema
+  #pwa-characteristic-schema {
+    margin-top: 15rem;
+    @media only screen and (max-width: 1200px) {
+      margin-top: 3rem;
+    }
+    h2.ui.header {
+      margin-bottom: 1rem;
+    }
+    .pwa-schema {
+      margin: auto;
     }
   }
 

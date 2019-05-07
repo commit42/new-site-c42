@@ -411,11 +411,20 @@ collections:
           - {
               name: references,
               label: Références PWA,
-              widget: list,
+              widget: object,
               fields:
                 [
-                  { name: image, label: Image, widget: image },
                   { name: heading, label: Titre, widget: string },
-                  { name: description, label: description, widget: text },
+                  {
+                    name: referencesList,
+                    label: Liste des références,
+                    widget: list,
+                    fields:
+                      [
+                        { name: image, label: Image, widget: image },
+                        { name: heading, label: Titre, widget: string },
+                        { name: description, label: description, widget: text },
+                      ],
+                  },
                 ],
             }

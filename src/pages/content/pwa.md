@@ -1,7 +1,7 @@
 ---
 pageName: pwa
 hero:
-  image: /assets/heroimg-company.png
+  image: /assets/pwa.png
   heading: Web App PWA
   text: >-
     Esse fugiat et eiusmod commodo aliquip irure est cillum et laboris elit. Sit eu adipisicing officia in nisi ex anim. Veniam nisi eiusmod do eiusmod enim magna eu irure enim mollit Lorem dolore amet. Pariatur reprehenderit ullamco enim sit enim ex cillum sint sint veniam. Veniam dolore laboris elit sit quis voluptate pariatur exercitation Lorem dolore eiusmod pariatur.
@@ -17,7 +17,7 @@ characteristics:
     description: >-
       Eiusmod aliqua sunt exercitation id fugiat esse non tempor enim cillum.
     bgColor: true
-  - icon: dont't
+  - icon: dont
     title: Hors-ligne
     description: >-
       Eiusmod aliqua sunt exercitation id fugiat esse non tempor enim cillum.
@@ -31,7 +31,7 @@ schema:
   heading: Une seule version pour tout les appareils
   description: >-
     Dolor exercitation Lorem excepteur cupidatat culpa nostrud cupidatat id adipisicing occaecat do ut. Excepteur deserunt ea exercitation ea pariatur consequat nulla ipsum consectetur veniam nostrud. Minim esse dolor nisi aute irure aliqua ex proident qui enim. Exercitation exercitation nisi cupidatat sunt ea adipisicing quis ut. Commodo dolor deserunt laboris eiusmod aute.
-  image: /assets/heroimg-company.png
+  image: /assets/pwa-schema.png
 examples:
   heading: Examples d'usage
   description: >-
@@ -51,9 +51,8 @@ examples:
       bgColor: true
 references:
   heading: Nos références Web App PWA
-  description: >-
-    Laboris magna duis et et Lorem amet velit proident do sit adipisicing magna ipsum. Velit nisi occaecat anim in quis voluptate commodo sunt sunt. Ullamco tempor adipisicing mollit magna sit elit. Occaecat ex culpa esse ut. Occaecat exercitation veniam dolor duis consectetur. Nisi occaecat cillum ad consequat non eu cillum amet nulla anim reprehenderit. Officia magna ipsum sit fugiat laborum commodo ut proident fugiat.
-    - image: /assets/heroimg-company.png
+  referencesList:
+    - image: /assets/pwa.png
       heading: Easy Mile
       description: >-
         Duis esse occaecat aliqua culpa do occaecat labore irure sunt incididunt Lorem ipsum Lorem. Magna Lorem do elit dolor veniam culpa in velit irure. Deserunt do cillum mollit proident labore. Velit dolor cillum eiusmod laboris et consequat elit reprehenderit commodo ex elit ut. Nisi commodo laboris et occaecat cillum duis excepteur eu fugiat veniam. Mollit nostrud deserunt nisi et fugiat nostrud cillum cupidatat.
