@@ -6,7 +6,6 @@ import Fade from "react-reveal/Fade"
 
 const SchemaPwa = ({ data }) => {
   const altText = data.image.childImageSharp.fluid.originalName.slice(0, -4)
-  console.log(data)
   return (
     <Grid as={Container} id="pwa-characteristic-schema">
       <Grid.Row>
