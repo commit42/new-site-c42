@@ -16,7 +16,11 @@ class CompanyPage extends Component {
     } = this.props.data
     return (
       <Layout>
-        <SEO title="E-commerce | commit42" pathname="/ecommerce" />
+        <SEO
+          title="La sociéte | commit42"
+          description="Découvrez l'équipe de commit42 !"
+          pathname="/la-societe"
+        />
         <HeroCompany data={companyData.hero} />
         <MembersList data={companyData.teamList} />
         <OfficeCarousel data={companyData.office} />
