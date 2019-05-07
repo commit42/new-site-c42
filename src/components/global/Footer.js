@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <Grid as={Container} id="footer" stackable>
       <Grid.Row divided>
-        <Grid.Column computer={7} tablet={16} mobile={16}>
+        <Grid.Column computer={8} tablet={16} mobile={16}>
           <Image src={Logo} as={Link} to="/" alt="Logo commit42" />
           <List className="contact-list">
             <List.Item
