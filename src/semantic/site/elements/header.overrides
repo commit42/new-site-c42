@@ -47,3 +47,9 @@ h4.ui.header {
   font-family: 'Poppins';
   color: @greyc42;
 }
+
+h5.ui.header {
+  font-size: 1rem;
+  font-family: @subheaderFont;
+  color: @greyc42;
+}

@@ -335,3 +335,96 @@ collections:
                   { name: longitude, label: Longitude, widget: string },
                 ],
             }
+      - file: src/pages/content/pwa.md
+        label: Page PWA
+        name: PWA
+        fields:
+          - {
+              name: pageName,
+              label: Nom de la page (en minuscules),
+              widget: string,
+            }
+          - {
+              name: hero,
+              label: hero,
+              widget: object,
+              fields:
+                [
+                  { name: image, label: Image, widget: image },
+                  { name: heading, label: Titre, widget: string },
+                  { name: text, label: Texte, widget: text },
+                  { name: message, label: Info, widget: text },
+                ],
+            }
+          - {
+              name: characteristics,
+              label: Caractéristiques,
+              widget: list,
+              fields:
+                [
+                  {
+                    name: icon,
+                    label: Icone (https://react.semantic-ui.com/elements/icon/),
+                    widget: string,
+                  },
+                  { name: title, label: Titre, widget: string },
+                  { name: description, label: Description, widget: string },
+                  { name: bgColor, label: Bg primaire ?, widget: boolean },
+                ],
+            }
+          - {
+              name: schema,
+              label: Schéma,
+              widget: object,
+              fields:
+                [
+                  { name: heading, label: Titre, widget: string },
+                  { name: description, label: Description, widget: text },
+                  { name: image, label: Image, widget, image },
+                ],
+            }
+          - {
+              name: examples,
+              label: Exemples PWA,
+              widget: object,
+              fields:
+                [
+                  { name: heading, label: Titre, widget: string },
+                  { name: description, label: Description, widget: string },
+                  {
+                    name: examplesList,
+                    label: Liste d'exemples,
+                    widget: list,
+                    fields:
+                      [
+                        { name: icon, label: Icone, widget: string },
+                        { name: title, label: Titre, widget: string },
+                        {
+                          name: bgColor,
+                          label: Bg primaire ?,
+                          widget: boolean,
+                        },
+                      ],
+                  },
+                ],
+            }
+          - {
+              name: references,
+              label: Références PWA,
+              widget: object,
+              fields:
+                [
+                  { name: heading, label: Titre, widget: string },
+                  {
+                    name: referencesList,
+                    label: Liste des références,
+                    widget: list,
+                    fields:
+                      [
+                        { name: image, label: Image, widget: image },
+                        { name: heading, label: Titre, widget: string },
+                        { name: description, label: description, widget: text },
+                      ],
+                  },
+                ],
+            }

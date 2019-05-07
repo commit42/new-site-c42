@@ -17,6 +17,12 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
       >
         <div className="small-menu-sidebar--container">
           <Bounce left>
+            <Link to="/pwa">
+              <Header as="h3" className="menu-item ">
+                <Icon name="mobile alternate" color="grey" size="big" />
+                PWA
+              </Header>
+            </Link>
             <Link to="/blog">
               <Header as="h3" className="menu-item ">
                 <Icon name="quote right" color="grey" size="big" />

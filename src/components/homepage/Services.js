@@ -1,6 +1,6 @@
 import React from "react"
 import "./HomePage.scss"
-import { Grid, Header, Container } from "semantic-ui-react"
+import { Grid, Header, Container, Icon } from "semantic-ui-react"
 import Fade from "react-reveal/Fade"
 
 const Services = ({ data }) => {
@@ -14,6 +14,7 @@ const Services = ({ data }) => {
         </Grid.Row>
         <Grid.Row>
           {data.servicesList.map((service, key) => {
+            console.log(service.icon)
             return (
               <Grid.Column mobile={14} tablet={14} computer={4} key={key}>
                 <Grid textAlign="left">
@@ -21,6 +22,7 @@ const Services = ({ data }) => {
                     <Grid.Column mobile={2} tablet={1} computer={2}>
                       <Fade bottom>
                         <Header as="h3">
+                          <Icon name={`${service.icon}`} />
                           <i className={`far fa-${service.icon}`} />
                         </Header>
                       </Fade>

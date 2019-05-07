@@ -1,0 +1,104 @@
+//// Hero
+#hero-pwa {
+  min-height: 100vh;
+  @media only screen and (max-width: 1200px) {
+    margin-top: 3rem;
+  }
+  .hero-pwa-text {
+    margin-left: 8rem;
+    @media only screen and (max-width: 1200px) {
+      margin-top: 3rem;
+      margin-left: 0;
+    }
+    h1.ui.header {
+      margin-bottom: 1rem;
+    }
+  }
+  @media only screen and (max-width: 1200px) {
+    padding-bottom: 5rem;
+  }
+}
+
+#pwa-container {
+  padding: 10rem 0 8rem 0;
+  @media only screen and (max-width: 1200px) {
+    padding: 8rem 0 5rem 0;
+  }
+  //// Characteristics
+  #pwa-characteristic-container {
+    .charact-item {
+      margin: auto;
+      @media only screen and (max-width: 1200px) {
+        max-width: 90%;
+        margin-bottom: 3rem;
+      }
+      .ui.segment {
+        padding: 3rem 0 3rem 0;
+        margin-bottom: 2rem;
+        @media only screen and (max-width: 768px) {
+          max-width: 70%;
+          margin: auto auto 2rem auto;
+        }
+      }
+    }
+  }
+
+  //// Schema
+  #pwa-characteristic-schema {
+    margin-top: 15rem;
+    @media only screen and (max-width: 1200px) {
+      margin-top: 3rem;
+    }
+    h2.ui.header {
+      margin-bottom: 1rem;
+    }
+    .pwa-schema {
+      margin: 5rem auto 0 auto;
+      @media only screen and (min-width: 1000px) {
+        max-width: 70%;
+      }
+    }
+  }
+
+  //// Examples
+  #pwa-examples {
+    margin-top: 12rem;
+    @media only screen and (max-width: 1200px) {
+      margin-top: 8rem;
+    }
+    .pwa-examples-header {
+      margin-bottom: 1rem;
+    }
+    .example-item {
+      margin: auto;
+      @media only screen and (max-width: 1200px) {
+        max-width: 90%;
+        margin-bottom: 3rem;
+      }
+      .ui.segment {
+        padding: 3rem 0 3rem 0;
+        margin-bottom: 2rem;
+        @media only screen and (max-width: 768px) {
+          max-width: 70%;
+          margin: auto auto 1rem auto;
+        }
+      }
+    }
+  }
+
+  //// References
+  #references-pwa-container {
+    margin-top: 10rem;
+    @media only screen and (max-width: 768px) {
+      margin-top: 5rem;
+    }
+    .reference-pwa-item {
+      margin-top: 3rem;
+      .ui.header {
+        @media only screen and (max-width: 768px) {
+          margin-top: 2rem;
+        }
+      }
+    }
+  }
+}

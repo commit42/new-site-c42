@@ -11,7 +11,12 @@ const Nav = props => {
         <Menu.Item as={Link} to="/" className="p-0">
           <Image src={Logo} alt="Logo commit42" />
         </Menu.Item>
-        <Menu.Item as={Link} to="/blog" position="right">
+        <Menu.Item as={Link} to="/pwa" position="right">
+          <Header as="h3" className="menu-item">
+            PWA
+          </Header>
+        </Menu.Item>
+        <Menu.Item as={Link} to="/blog">
           <Header as="h3" className="menu-item">
             Blog
           </Header>

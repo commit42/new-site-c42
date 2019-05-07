@@ -20,12 +20,12 @@ services:
         l’outil que vous attendez à partir de vos besoins, vos retours
         utilisateurs et tous les éléments qui interviendront en cours de
         projet.
-      icon: ruler
+      icon: arrows alternate horizontal
       title: Applications web sur-mesure
     - description: >-
         Nous vous accompagnons pour créer ou améliorer votre boutique, pour vous
         aider non seulement à vendre plus, mais surtout, mieux !
-      icon: shopping-cart
+      icon: cart
       title: E-commerce
     - description: >
         L'avenir du web ! 
