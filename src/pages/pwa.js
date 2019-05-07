@@ -3,17 +3,19 @@ import { Container } from "semantic-ui-react"
 import { graphql } from "gatsby"
 
 import Layout from "../components/Layout"
+import SEO from "../components/seo/SEO"
 import HeroPwa from "../components/pwa/HeroPwa"
 import CharactPwa from "../components/pwa/CharactPwa"
 import SchemaPwa from "../components/pwa/SchemaPwa"
 import ExamplesPwa from "../components/pwa/ExamplesPwa"
 import ReferencesPwa from "../components/pwa/ReferencesPwa"
 
-class Pwa extends React.Component {
+class PwaPage extends React.Component {
   render() {
     const pwaData = this.props.data.markdownRemark.frontmatter
     return (
       <Layout>
+        <SEO title="PWA | commit42" pathname="/pwa" />
         <HeroPwa data={pwaData.hero} />
         <Container fluid className="primary" id="pwa-container">
           <CharactPwa data={pwaData.characteristics} />
@@ -26,7 +28,7 @@ class Pwa extends React.Component {
   }
 }
 
-export default Pwa
+export default PwaPage
 
 export const pwaPageQuery = graphql`
   query pwaPageQuery {

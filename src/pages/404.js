@@ -4,10 +4,15 @@ import "./404.scss"
 import { Link } from "gatsby"
 import { Container, Grid, Header, Button } from "semantic-ui-react"
 import Layout from "../components/Layout"
+import SEO from "../components/seo/SEO"
 
 const PageNotFound = () => {
   return (
     <Layout>
+      <SEO
+        title="404 | commit42"
+        description="Oups ! Désolée cette page n'existe pas..."
+      />
       <Container fluid id="notfound-container" className="primary">
         <Grid textAlign="center">
           <Grid.Row>
