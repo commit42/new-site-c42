@@ -1,0 +1,23 @@
+@import "../../globals.scss";
+
+#footer {
+  margin-top: 2rem;
+
+  .contact-list {
+    .item {
+      margin-top: 1rem;
+      color: inherit;
+      &:hover {
+        color: $bluec42;
+      }
+    }
+  }
+  .page-links {
+    margin-left: 2rem;
+    .ui.list {
+      .item {
+        margin-top: 1rem;
+      }
+    }
+  }
+}

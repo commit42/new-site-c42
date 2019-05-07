@@ -2,6 +2,7 @@ const path = require("path")
 const _ = require("lodash")
 const { createFilePath } = require("gatsby-source-filesystem")
 const { fmImagesToRelative } = require("gatsby-remark-relative-images")
+const createPaginatedPages = require("gatsby-paginate")
 
 const createTagPages = (createPage, posts) => {
   const tagTemplate = path.resolve("src/templates/TagTemplate.js")
@@ -42,7 +43,7 @@ exports.createPages = ({ actions, graphql }) => {
   return graphql(`
     {
       allMarkdownRemark(
-        sort: { order: ASC, fields: [frontmatter___date] }
+        sort: { order: DESC, fields: [frontmatter___date] }
         limit: 1000
       ) {
         edges {
@@ -78,7 +79,9 @@ exports.createPages = ({ actions, graphql }) => {
       return Promise.reject(result.errors)
     }
 
-    const posts = result.data.allMarkdownRemark.edges
+    const posts = result.data.allMarkdownRemark.edges.filter(
+      item => !item.node.fields.slug.startsWith("/content")
+    )
 
     // Permet de générer les pages pour les tags
     createTagPages(createPage, posts)
@@ -93,6 +96,17 @@ exports.createPages = ({ actions, graphql }) => {
           next: index === posts.length - 1 ? null : posts[index + 1].node,
         },
       })
+    })
+
+    // Posts list
+    createPaginatedPages({
+      edges: posts,
+      createPage: createPage,
+      pageTemplate: "src/templates/PostsListTemplate.js",
+      pageLength: 9,
+      pathPrefix: "blog",
+      buildPath: (index, pathPrefix) =>
+        index > 1 ? `${pathPrefix}/${index}` : `${pathPrefix}`,
     })
   })
 }

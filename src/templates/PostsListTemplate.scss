@@ -1,0 +1,17 @@
+#posts-list-container {
+  padding: 8rem 0 8rem 0;
+  .blogcard {
+    z-index: 0;
+    margin-bottom: 3rem;
+  }
+  .react-reveal {
+    height: 100%;
+  }
+  .posts-list-pagination {
+    margin-top: 2rem;
+    .pagecount {
+      display: inline;
+      margin: 0 2rem 0 2rem;
+    }
+  }
+}

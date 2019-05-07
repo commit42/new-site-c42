@@ -15,8 +15,6 @@ export default function BlogPostTemplate({ data, pageContext }) {
   const { markdownRemark: post } = data
   const date = post.frontmatter.date
 
-  console.log(pageContext)
-
   return (
     <Layout>
       <SEO
