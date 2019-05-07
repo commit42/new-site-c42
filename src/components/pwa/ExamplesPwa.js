@@ -27,6 +27,7 @@ const ExamplesPwa = ({ data }) => {
                 mobile={16}
                 className="example-item"
                 textAlign="center"
+                key={item.title}
               >
                 <Fade>
                   <Segment className={`${item.bgColor ? `primary` : ""}`}>

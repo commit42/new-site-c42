@@ -16,7 +16,7 @@ const HeroPwa = ({ data }) => {
             </Fade>
           </Grid.Column>
           <Grid.Column
-            computer={8}
+            computer={6}
             tablet={16}
             mobile={16}
             className="hero-pwa-text"

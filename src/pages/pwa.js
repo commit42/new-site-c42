@@ -39,7 +39,7 @@ export const pwaPageQuery = graphql`
           message
           image {
             childImageSharp {
-              fluid {
+              fluid(maxWidth: 800) {
                 ...GatsbyImageSharpFluid
                 originalName
               }
@@ -57,7 +57,7 @@ export const pwaPageQuery = graphql`
           description
           image {
             childImageSharp {
-              fluid {
+              fluid(maxWidth: 800) {
                 ...GatsbyImageSharpFluid
                 originalName
               }
@@ -81,7 +81,7 @@ export const pwaPageQuery = graphql`
             image {
               id
               childImageSharp {
-                fluid {
+                fluid(maxWidth: 800) {
                   ...GatsbyImageSharpFluid
                   originalName
                 }

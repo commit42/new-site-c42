@@ -5,8 +5,10 @@
     margin-top: 3rem;
   }
   .hero-pwa-text {
+    margin-left: 8rem;
     @media only screen and (max-width: 1200px) {
       margin-top: 3rem;
+      margin-left: 0;
     }
     h1.ui.header {
       margin-bottom: 1rem;
@@ -18,7 +20,7 @@
 }
 
 #pwa-container {
-  padding: 8rem 0 8rem 0;
+  padding: 10rem 0 8rem 0;
   @media only screen and (max-width: 1200px) {
     padding: 8rem 0 5rem 0;
   }
@@ -51,13 +53,16 @@
       margin-bottom: 1rem;
     }
     .pwa-schema {
-      margin: auto;
+      margin: 5rem auto 0 auto;
+      @media only screen and (min-width: 1000px) {
+        max-width: 70%;
+      }
     }
   }
 
   //// Examples
   #pwa-examples {
-    margin-top: 15rem;
+    margin-top: 12rem;
     @media only screen and (max-width: 1200px) {
       margin-top: 8rem;
     }
@@ -75,7 +80,7 @@
         margin-bottom: 2rem;
         @media only screen and (max-width: 768px) {
           max-width: 70%;
-          margin: auto;
+          margin: auto auto 1rem auto;
         }
       }
     }
