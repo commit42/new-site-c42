@@ -67,8 +67,8 @@ office:
     reprehenderit.
   heading: Nos locaux
   pictures:
-    - picture: /assets/locaux.png
-    - picture: /assets/locaux.png
+    - picture: /assets/placeholder.png
+    - picture: /assets/placeholder.png
 contact:
   contactForm:
     email:

@@ -52,7 +52,7 @@ examples:
 references:
   heading: Nos références Web App PWA
   referencesList:
-    - image: /assets/pwa.png
+    - image: /assets/placeholder.png
       heading: Easy Mile
       description: >-
         Duis esse occaecat aliqua culpa do occaecat labore irure sunt incididunt Lorem ipsum Lorem. Magna Lorem do elit dolor veniam culpa in velit irure. Deserunt do cillum mollit proident labore. Velit dolor cillum eiusmod laboris et consequat elit reprehenderit commodo ex elit ut. Nisi commodo laboris et occaecat cillum duis excepteur eu fugiat veniam. Mollit nostrud deserunt nisi et fugiat nostrud cillum cupidatat.

@@ -428,3 +428,43 @@ collections:
                   },
                 ],
             }
+      - file: src/pages/content/ecommerce.md
+        label: Page E-commerce
+        name: ecommerce
+        fields:
+          - {
+              name: pageName,
+              label: Nom de la page (en minuscules),
+              widget: string,
+            }
+          - {
+              name: hero,
+              label: En-tête,
+              widget: object,
+              fields:
+                [
+                  { name: heading, label: Titre, widget: string },
+                  { name: text, label: Texte, widget: text },
+                  { name: image, label: Image, widget: image },
+                ],
+            }
+          - {
+              name: references,
+              label: Références,
+              widget: object,
+              fields:
+                [
+                  { name: title, label: Titre, widget: text },
+                  {
+                    name: referencesList,
+                    label: Liste des références,
+                    widget: list,
+                    fields:
+                      [
+                        { name: title, label: Titre, widget: string },
+                        { name: description, label: description, widget: text },
+                        { name: image, label: Image, widget: image },
+                      ],
+                  },
+                ],
+            }

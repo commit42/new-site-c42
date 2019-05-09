@@ -27,6 +27,7 @@ const OfficeCarousel = ({ data }) => {
             enableKeyboardControls={true}
             dragging={true}
             swiping={true}
+            cellSpacing={100}
             renderCenterLeftControls={({ previousSlide }) => (
               <Button className="swiper-button-prev" onClick={previousSlide}>
                 <Icon name="arrow left" />
