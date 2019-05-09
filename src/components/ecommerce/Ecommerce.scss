@@ -24,10 +24,13 @@
   .references-ecommerce-heading {
     margin-bottom: 2rem;
   }
-  .reference-item-heading {
-    margin-bottom: 1rem;
-    @media only screen and (max-width: 1200px) {
-      margin-top: 2rem;
+  .reference-item {
+    margin-bottom: 3rem;
+    .reference-item-heading {
+      margin-bottom: 1rem;
+      @media only screen and (max-width: 1200px) {
+        margin-top: 2rem;
+      }
     }
   }
 }
