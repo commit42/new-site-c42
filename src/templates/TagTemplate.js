@@ -37,7 +37,7 @@ const TagTemplate = ({ data, pageContext }) => {
         }}
       >
         <Grid as={Container}>
-          <Grid.Row>
+          <Grid.Row centered>
             {posts.map(post => {
               return <BlogCard post={post} key={post.id} />
             })}
