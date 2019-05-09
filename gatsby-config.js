@@ -3,7 +3,7 @@ module.exports = {
     title: "commit42 | Studio de développement Web",
     description:
       "Studio de développement Web à Toulouse - React - Progressive Web Apps - CakePHP",
-    siteUrl: "https://www.commit42.com/",
+    siteUrl: "https://www.commit42.com",
     image: "assets/favicon.png",
     twitterUsername: "@commit42",
   },

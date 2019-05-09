@@ -9,11 +9,14 @@ import { graphql } from "gatsby"
 import SEO from "../components/seo/SEO"
 import Layout from "../components/Layout"
 import BlogCard from "../components/blog/BlogCard"
+import Share from "../components/blog/Share"
 
 export default function BlogPostTemplate({ data, pageContext }) {
   const { prev, next } = pageContext
   const { markdownRemark: post } = data
   const date = post.frontmatter.date
+  const url = data.site.siteMetadata.siteUrl
+  console.log(url)
 
   return (
     <Layout>
@@ -64,6 +67,11 @@ export default function BlogPostTemplate({ data, pageContext }) {
                 id="blog-post-content"
                 dangerouslySetInnerHTML={{ __html: post.html }}
               />
+              <Share
+                title={post.frontmatter.title}
+                url={url}
+                pathname={post.fields.slug}
+              />
             </Grid.Column>
           </Grid.Row>
         </Grid>
@@ -95,6 +103,11 @@ export default function BlogPostTemplate({ data, pageContext }) {
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
+    site {
+      siteMetadata {
+        siteUrl
+      }
+    }
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       excerpt
