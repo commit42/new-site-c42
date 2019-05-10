@@ -2,20 +2,20 @@ import React from "react"
 import { Link } from "gatsby"
 import { Header, Menu, Icon } from "semantic-ui-react"
 import Drawer from "react-motion-drawer"
-import Logo from "../../../static/assets/logo-c42.png"
 import Bounce from "react-reveal/Bounce"
+import Logo from "../../../static/assets/logo-c42.png"
 
 const Sidebar = ({ isOpen, setIsOpen }) => {
   return (
-    <>
+    <div id="sidebar-container">
       <Drawer
         width={250}
         fadeOut
         open={isOpen}
         onChange={() => setIsOpen(!isOpen)}
-        className="small-menu-sidebar"
+        className="sidebar"
       >
-        <div className="small-menu-sidebar--container">
+        <div className="sidebar--container">
           <Bounce left>
             <Link to="/pwa">
               <Header as="h3" className="menu-item ">
@@ -54,7 +54,7 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
           </Link>
         </Menu.Item>
       </Menu>
-    </>
+    </div>
   )
 }
 

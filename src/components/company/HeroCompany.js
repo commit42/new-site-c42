@@ -32,7 +32,7 @@ const HeaderCompany = ({ data }) => {
         className="header-company-text"
       >
         <Fade top cascade duration={1000} delay={500}>
-          <Header as="h2" className="secondary">
+          <Header as="h1" className="secondary">
             Qui sommes-nous ?
           </Header>
         </Fade>
