@@ -44,11 +44,12 @@ const Layout = ({ children, path }) => {
               flexDirection: "column",
             }}
           >
-            {width >= 768 ? (
+            {/* {width >= 768 ? (
               <Nav />
             ) : (
               <Sidebar isOpen={isOpen} setIsOpen={setIsOpen} />
-            )}
+            )} */}
+            <Nav />
 
             <div style={{ flex: "1", marginTop: "58px" }}>{children}</div>
             <Footer />
