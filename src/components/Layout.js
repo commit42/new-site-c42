@@ -48,8 +48,8 @@ const Layout = ({ children, path }) => {
               flexDirection: "column",
             }}
           >
-            <Nav />
-            <Sidebar isOpen={isOpen} setIsOpen={setIsOpen} />
+            <Nav aria-hidden="true" />
+            <Sidebar isOpen={isOpen} setIsOpen={setIsOpen} aria-hidden="true" />
 
             <div style={{ flex: "1", marginTop: "58px" }}>{children}</div>
             <Footer />

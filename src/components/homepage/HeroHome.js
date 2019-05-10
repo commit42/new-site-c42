@@ -28,7 +28,7 @@ const HeroHome = ({ data }) => {
         >
           <div className="hero-text-container">
             <Header as="h1">
-              <Fade top cascade duration={800} delay={500}>
+              <Fade top duration={800} delay={500}>
                 {data.heading}
               </Fade>
             </Header>
