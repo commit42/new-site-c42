@@ -10,6 +10,7 @@ import Footer from "./global/Footer"
 
 const Layout = ({ children, path }) => {
   const [isOpen, setIsOpen] = useState(false)
+
   const [width, setWidth] = useState(
     typeof window !== "undefined" && window.innerWidth
   )
@@ -47,9 +48,8 @@ const Layout = ({ children, path }) => {
               flexDirection: "column",
             }}
           >
-            {width >= 768 ? (
-              <Nav />
-            ) : (
+            {width > 768 && <Nav />}
+            {width <= 768 && (
               // <Sidebar isOpen={isOpen} setIsOpen={setIsOpen} />
               <div>Hello</div>
             )}
