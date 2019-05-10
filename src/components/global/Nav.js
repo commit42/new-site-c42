@@ -16,7 +16,7 @@ const Nav = props => {
             PWA
           </Header>
         </Menu.Item>
-        <Menu.Item as={Link} to="/ecommerce">
+        <Menu.Item as={Link} to="/e-commerce">
           <Header as="h3" className="menu-item">
             E-commerce
           </Header>

@@ -468,3 +468,55 @@ collections:
                   },
                 ],
             }
+      - file: src/pages/content/footer.md
+        label: Footer
+        name: footer
+        fields:
+          - {
+              name: pageName,
+              label: Nom de la page (en minuscules),
+              widget: string,
+            }
+          - { name: bottomText, label: Phrase en bas de page, widget: string }
+          - {
+              name: contacts,
+              label: Contacts,
+              widget: object,
+              fields:
+                [
+                  { name: logo, label: Logo, widget: image },
+                  {
+                    name: contactsList,
+                    label: Liste des contacts,
+                    widget: list,
+                    fields:
+                      [
+                        { name: icon, label: Icone, widget: string },
+                        {
+                          name: name,
+                          label: Nom (adresse,
+                          tel...),
+                          widget: string,
+                        },
+                        { name: text, label: Text, widget: string },
+                        { name: link, label: Lien, widget: string },
+                      ],
+                  },
+                ],
+            }
+          - {
+              name: pagesList,
+              label: Liste des pages du site,
+              widget: list,
+              fields: [{ name: name, label: Nom, widget: string }],
+            }
+          - {
+              name: socialsList,
+              label: Liste des réseaux sociaux,
+              widget: list,
+              fields:
+                [
+                  { name: name, label: Nom, widget: string },
+                  { name: link, label: Lien, widget: string },
+                ],
+            }

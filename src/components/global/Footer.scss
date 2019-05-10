@@ -13,11 +13,13 @@
     }
   }
   .page-links {
-    margin-left: 2rem;
-    .ui.list {
-      .item {
-        margin-top: 1rem;
-      }
+    padding-left: 10rem;
+    .page-links-item {
+      margin-top: 0.7rem;
     }
+  }
+
+  .socials-list {
+    margin-top: 3rem;
   }
 }
