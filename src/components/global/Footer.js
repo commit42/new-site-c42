@@ -97,7 +97,13 @@ const Footer = () => {
                       rel="noopener noreferrer"
                       key={social.name}
                     >
-                      <Icon name={social.name} size="big" link color="blue" />
+                      <Icon
+                        name={social.name}
+                        size="big"
+                        link
+                        color="blue"
+                        className="social-item"
+                      />
                     </a>
                   )
                 })}
