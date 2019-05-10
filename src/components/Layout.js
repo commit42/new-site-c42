@@ -11,20 +11,20 @@ import Footer from "./global/Footer"
 const Layout = ({ children, path }) => {
   const [isOpen, setIsOpen] = useState(false)
 
-  const [width, setWidth] = useState(
-    typeof window !== "undefined" && window.innerWidth
-  )
+  // const [isResponsive, setIsResponsive] = useState(false)
 
-  typeof window !== "undefined" &&
-    useEffect(() => {
-      const handleResize = () => setWidth(window.innerWidth)
-      window.addEventListener("resize", handleResize)
-      return () => {
-        window.removeEventListener("resize", handleResize)
-      }
-    }, [])
+  // if (window) {
+  //   useEffect(() => {
+  //     // const handleResize = () => setWidth(window.innerWidth)
+  //     // window.addEventListener("resize", handleResize)
 
-  console.log(width)
+  //     if (window.innerWidth <= 768) {
+  //       setIsResponsive(true)
+  //     } else {
+  //       setIsResponsive(false)
+  //     }
+  //   }, [])
+  // }
 
   return (
     <StaticQuery
@@ -48,11 +48,8 @@ const Layout = ({ children, path }) => {
               flexDirection: "column",
             }}
           >
-            {width > 768 && <Nav />}
-            {width <= 768 && (
-              // <Sidebar isOpen={isOpen} setIsOpen={setIsOpen} />
-              <div>Hello</div>
-            )}
+            <Nav />
+            <Sidebar isOpen={isOpen} setIsOpen={setIsOpen} />
 
             <div style={{ flex: "1", marginTop: "58px" }}>{children}</div>
             <Footer />

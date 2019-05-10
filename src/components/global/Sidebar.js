@@ -3,10 +3,11 @@ import { Link } from "gatsby"
 import { Header, Menu, Icon } from "semantic-ui-react"
 import Drawer from "react-motion-drawer"
 import Bounce from "react-reveal/Bounce"
+import Logo from "../../../static/assets/logo-c42.png"
 
 const Sidebar = ({ isOpen, setIsOpen }) => {
   return (
-    <>
+    <div id="sidebar-container">
       <Drawer
         width={250}
         fadeOut
@@ -43,7 +44,17 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
           </Bounce>
         </div>
       </Drawer>
-    </>
+      <Menu fixed="top" borderless>
+        <Menu.Item onClick={() => setIsOpen(!isOpen)}>
+          <Icon name="bars" color="grey" size="big" />
+        </Menu.Item>
+        <Menu.Item position="right">
+          <Link to="/">
+            <img src={Logo} alt="Logo commit42" />
+          </Link>
+        </Menu.Item>
+      </Menu>
+    </div>
   )
 }
 
