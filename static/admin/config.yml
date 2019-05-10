@@ -520,3 +520,24 @@ collections:
                   { name: link, label: Lien, widget: string },
                 ],
             }
+      - file: src/pages/content/navbar.md
+        label: Navbar
+        name: navbar
+        fields:
+          - {
+              name: pageName,
+              label: Nom de la page (en minuscules),
+              widget: string,
+            }
+          - { name: logo, label: Logo, widget: image }
+          - {
+              name: pageList,
+              label: Pages,
+              widget: list,
+              allow_add: true,
+              fields:
+                [
+                  { name: name, label: Nom, widget: string },
+                  { name: icon, label: Icone, widget: string },
+                ],
+            }
