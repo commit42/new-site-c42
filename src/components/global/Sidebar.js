@@ -23,7 +23,7 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
                 PWA
               </Header>
             </Link>
-            <Link to="/ecommerce">
+            <Link to="/e-commerce">
               <Header as="h3" className="menu-item">
                 <Icon name="cart" color="grey" size="big" />
                 E-commerce
