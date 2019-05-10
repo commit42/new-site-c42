@@ -3,6 +3,7 @@ import "semantic-ui-less/semantic.less"
 import "../../static/css/c42-theme.css"
 import "./global/Nav.scss"
 import { graphql, StaticQuery } from "gatsby"
+
 import Nav from "./global/Nav"
 import Sidebar from "./global/Sidebar"
 import Footer from "./global/Footer"
@@ -21,6 +22,8 @@ const Layout = ({ children, path }) => {
         window.removeEventListener("resize", handleResize)
       }
     }, [])
+
+  console.log(width)
 
   return (
     <StaticQuery
@@ -44,12 +47,12 @@ const Layout = ({ children, path }) => {
               flexDirection: "column",
             }}
           >
-            {/* {width >= 768 ? (
+            {width >= 768 ? (
               <Nav />
             ) : (
-              <Sidebar isOpen={isOpen} setIsOpen={setIsOpen} />
-            )} */}
-            <Nav />
+              // <Sidebar isOpen={isOpen} setIsOpen={setIsOpen} />
+              <div>Hello</div>
+            )}
 
             <div style={{ flex: "1", marginTop: "58px" }}>{children}</div>
             <Footer />

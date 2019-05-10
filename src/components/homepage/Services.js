@@ -14,7 +14,6 @@ const Services = ({ data }) => {
         </Grid.Row>
         <Grid.Row>
           {data.servicesList.map((service, key) => {
-            console.log(service.icon)
             return (
               <Grid.Column mobile={14} tablet={14} computer={4} key={key}>
                 <Grid textAlign="left">
