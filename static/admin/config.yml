@@ -26,7 +26,15 @@ collections:
     fields:
       - { name: title, label: Titre }
       - { name: date, label: Date, widget: date }
-      - { name: author, label: Auteur }
+      - {
+          name: author,
+          label: Auteur,
+          widget: relation,
+          collection: authors,
+          searchFields: ["name", "avatar"],
+          valueField: name,
+          multiple: true,
+        }
       - { name: thumbnail, label: Vignette, widget: image }
       - {
           name: tags,
@@ -42,7 +50,7 @@ collections:
     create: true
     fields:
       - { name: name, label: Nom, widget: string }
-
+      - { name: avatar, label: Avatar, widget: image }
   - name: pages
     label: Pages
     files:
