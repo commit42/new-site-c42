@@ -46,7 +46,7 @@ collections:
   - name: authors
     label: Auteurs
     identifier_field: name
-    folder: src/authors
+    folder: src/pages/authors
     create: true
     fields:
       - { name: name, label: Nom, widget: string }
@@ -54,7 +54,7 @@ collections:
   - name: pages
     label: Pages
     files:
-      - file: src/pages/content/index.md
+      - file: src/content/index.md
         label: Page d'accueil
         name: index
         fields:
