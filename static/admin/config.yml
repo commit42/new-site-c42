@@ -31,7 +31,7 @@ collections:
           label: Auteur,
           widget: relation,
           collection: authors,
-          searchFields: ["name"],
+          searchFields: ["name", "avatar"],
           valueField: name,
           multiple: true,
         }
@@ -50,7 +50,7 @@ collections:
     create: true
     fields:
       - { name: name, label: Nom, widget: string }
-
+      - { name: avatar, label: Avatar, widget: image }
   - name: pages
     label: Pages
     files:
