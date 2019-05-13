@@ -46,7 +46,7 @@ collections:
   - name: authors
     label: Auteurs
     identifier_field: name
-    folder: src/contenu/authors
+    folder: src/authors
     create: true
     fields:
       - { name: name, label: Nom, widget: string }
