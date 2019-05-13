@@ -46,7 +46,7 @@ collections:
   - name: authors
     label: Auteurs
     identifier_field: name
-    folder: src/contenu/authors
+    folder: src/authors
     create: true
     fields:
       - { name: name, label: Nom, widget: string }
@@ -484,7 +484,7 @@ collections:
                   },
                 ],
             }
-      - file: src/pages/global/footer.md
+      - file: src/pages/content/footer.md
         label: Footer
         name: footer
         fields:
@@ -536,7 +536,7 @@ collections:
                   { name: link, label: Lien, widget: string },
                 ],
             }
-      - file: src/pages/global/navbar.md
+      - file: src/pages/content/navbar.md
         label: Navbar
         name: navbar
         fields:
