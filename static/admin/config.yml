@@ -484,7 +484,7 @@ collections:
                   },
                 ],
             }
-      - file: src/pages/content/footer.md
+      - file: src/pages/global/footer.md
         label: Footer
         name: footer
         fields:
@@ -536,7 +536,7 @@ collections:
                   { name: link, label: Lien, widget: string },
                 ],
             }
-      - file: src/pages/content/navbar.md
+      - file: src/pages/global/navbar.md
         label: Navbar
         name: navbar
         fields:

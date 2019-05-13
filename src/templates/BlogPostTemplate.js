@@ -16,8 +16,6 @@ export default function BlogPostTemplate({ data, pageContext }) {
   const { markdownRemark: post } = data
   const date = post.frontmatter.date
   const url = data.site.siteMetadata.siteUrl
-  console.log(url)
-
   return (
     <Layout>
       <SEO
