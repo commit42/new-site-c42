@@ -35,6 +35,13 @@ collections:
         }
       - { name: body, label: Texte, widget: markdown }
 
+  - name: authors
+    label: Auteurs
+    folder: src/contenu/authors
+    create: true
+    fields:
+      - { name: name, label: Nom, widget: string }
+
   - name: pages
     label: Pages
     files:
