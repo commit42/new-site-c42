@@ -2,7 +2,7 @@ import React from "react"
 import "./HomePage.scss"
 import Image from "gatsby-image"
 import formatText from "../../helpers/formatText"
-import { Container, Grid, Header, Icon } from "semantic-ui-react"
+import { Container, Grid, Header } from "semantic-ui-react"
 import Fade from "react-reveal/Fade"
 
 const HeroHome = ({ data }) => {

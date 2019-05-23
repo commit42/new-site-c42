@@ -3,7 +3,6 @@ import "./Nav.scss"
 import { Menu, Image, Container, Header } from "semantic-ui-react"
 import { Link, graphql, StaticQuery } from "gatsby"
 import kebabCase from "lodash/kebabCase"
-import Logo from "../../../static/assets/logo-c42.png"
 
 const Nav = props => {
   return (
@@ -28,7 +27,7 @@ const Nav = props => {
           <Menu fixed="top" borderless size="massive" id="navbar">
             <Container>
               <Menu.Item as={Link} to="/" className="p-0">
-                <Image src={Logo} alt="Logo commit42" />
+                <Image src={navDatas.logo} alt="Logo commit42" />
               </Menu.Item>
               {navDatas.pageList.map((item, index) => {
                 const isFirst = index => {

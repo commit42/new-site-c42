@@ -1,13 +1,6 @@
 import React from "react"
 import "./Pwa.scss"
-import {
-  Container,
-  Grid,
-  Header,
-  Icon,
-  Segment,
-  Image,
-} from "semantic-ui-react"
+import { Container, Grid, Header, Icon, Segment } from "semantic-ui-react"
 import Fade from "react-reveal/Fade"
 
 const CharactPwa = ({ data }) => {

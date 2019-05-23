@@ -4,7 +4,6 @@ import { Header, Menu, Icon } from "semantic-ui-react"
 import kebabCase from "lodash/kebabCase"
 import Drawer from "react-motion-drawer"
 import Bounce from "react-reveal/Bounce"
-import Logo from "../../../static/assets/logo-c42.png"
 
 const Sidebar = ({ isOpen, setIsOpen }) => {
   return (
