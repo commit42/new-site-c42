@@ -4,9 +4,9 @@ const { createFilePath } = require("gatsby-source-filesystem")
 const { fmImagesToRelative } = require("gatsby-remark-relative-images")
 const createPaginatedPages = require("gatsby-paginate")
 
+// Méthode pour générer les pages de tags
 const createTagPages = (createPage, posts) => {
   const tagTemplate = path.resolve("src/templates/TagTemplate.js")
-
   const postsByTag = {}
 
   posts.forEach(({ node }) => {
@@ -37,6 +37,7 @@ const createTagPages = (createPage, posts) => {
   })
 }
 
+// Méthode pour générer les pages de tous les articles
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
   const blogPostTemplate = path.resolve(`src/templates/BlogPostTemplate.js`)
@@ -83,22 +84,24 @@ exports.createPages = ({ actions, graphql }) => {
       return item.node.fields.slug.startsWith("/blog/")
     })
 
-    // Permet de générer les pages pour les tags
+    // Appelle la méthode pour les tags
     createTagPages(createPage, posts)
 
+    // Génère les posts
     posts.forEach(({ node }, index) => {
       createPage({
         path: node.fields.slug,
         component: blogPostTemplate,
         context: {
           slug: node.fields.slug,
+          // Pour afficher les articles prec/suiv en fin d'article
           prev: index === 0 ? null : posts[index - 1].node,
           next: index === posts.length - 1 ? null : posts[index + 1].node,
         },
       })
     })
 
-    // Posts list
+    // Génère la liste des posts pour la page /blog/ avec la pagination
     createPaginatedPages({
       edges: posts,
       createPage: createPage,
@@ -127,6 +130,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   }
 }
 
+// Sert pour utiliser le theming de Semantic UI
 exports.onCreateWebpackConfig = ({ actions }) => {
   actions.setWebpackConfig({
     resolve: {
