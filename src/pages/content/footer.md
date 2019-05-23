@@ -2,7 +2,7 @@
 pageName: footer
 bottomText: Tous droits réservés
 contacts:
-  logo: assets/logo-c42.png
+  logo: /assets/logo-noir-baseline-200.png
   contactsList:
     - icon: marker map alternate
       name: Adresse
