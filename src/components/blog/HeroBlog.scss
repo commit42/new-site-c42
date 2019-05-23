@@ -1,20 +1,23 @@
 #hero-blog {
   margin-top: 8rem;
   margin-bottom: 5rem;
-  @media only screen and (max-width: 1200px) {
-    margin-bottom: 5rem;
-  }
   .header-blog--heading {
     margin-bottom: 2rem;
   }
   .header-blog--description {
     max-width: 40%;
     margin: auto;
-    @media only screen and (max-width: 1200px) {
-      min-width: 90%;
-    }
   }
   .gatsby-image-wrapper {
     max-width: 90%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  #hero-blog {
+    margin-bottom: 5rem;
+  }
+  .header-blog--description {
+    min-width: 90%;
   }
 }

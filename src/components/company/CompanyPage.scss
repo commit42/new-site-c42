@@ -9,27 +9,14 @@
 //// Header
 #header-company-container {
   min-height: 100vh;
-  @media only screen and (max-width: 1200px) {
-    margin-top: 10rem;
-    padding-bottom: 6rem;
-  }
   .header-company-text {
     max-width: 90%;
-    @media only screen and (min-width: 1200px) {
-      margin-right: 5rem;
-    }
     h1 {
       margin-bottom: 1rem;
     }
   }
   .gatsby-image-wrapper {
     margin: auto;
-    @media only screen and (min-width: 1200px) and (max-width: 1800px) {
-      width: 80%;
-    }
-    @media only screen and (max-width: 1200px) {
-      width: 70%;
-    }
   }
 }
 
@@ -37,9 +24,6 @@
 .ui.container.ui.grid.members-list {
   padding-top: 8rem;
   padding-bottom: 10rem;
-  @media only screen and (max-width: 1200px) {
-    padding-bottom: 3rem;
-  }
   .centered.row.members-list--container {
     .member-list--item {
       .ui.fluid.card {
@@ -73,18 +57,12 @@
 //// Carousel locaux
 .ui.fluid.container.secondary.office-carousel {
   padding: 6rem 0 6rem 0;
-  @media only screen and (max-width: 1200px) {
-    padding: 3rem 0 3rem 0;
-  }
   .office-carousel--carousel {
     min-height: 700px;
-    @media only screen and (max-width: 1200px) {
-      min-height: 200px;
-    }
   }
 }
 
-// Center icon in button
+// Center icon in button for carousel
 .ui.button.swiper-button-next {
   display: flex;
   justify-content: center;
@@ -114,9 +92,6 @@
 //// Header contact form
 .ui.container.contact-header {
   padding: 8rem 0 6rem 0;
-  @media only screen and (max-width: 1200px) {
-    padding: 5rem 0 4rem 0;
-  }
   .contact-header--header {
     margin-top: 4rem;
   }
@@ -125,18 +100,11 @@
 //// Contact form
 .ui.fluid.container.primary.contact-form-container {
   padding: 8rem 3rem 8rem 3rem;
-  @media only screen and (max-width: 1200px) {
-    padding: 5rem 1rem 5rem 1rem;
-  }
   .row.contact-form {
     padding: 3rem;
     background: white;
     border-radius: 10px;
     margin: auto;
-    @media only screen and (max-width: 1200px) {
-      padding: 1rem;
-    }
-
     .ui.form .fields .field .ui.input input,
     .ui.form .field .ui.input input,
     textarea {
@@ -147,20 +115,72 @@
     .submit-btn {
       margin: 3rem auto auto auto;
       display: flex;
-      @media only screen and (max-width: 1200px) {
-        margin: 3rem auto 2rem auto;
-      }
     }
   }
   .contact-links--container {
     margin-top: 3rem;
-    .contact-links--item {
-      @media only screen and (max-width: 1200px) {
-        margin: 2rem 0 2rem 0;
-      }
-    }
     .icon {
       margin-right: 1rem;
+    }
+  }
+}
+
+//// Responsive ////
+@media only screen and (max-width: 1200px) {
+  // Header
+  #header-company-container {
+    margin-top: 10rem;
+    padding-bottom: 6rem;
+    .header-company-text {
+      margin-right: 5rem;
+    }
+    .gatsby-image-wrapper {
+      width: 70%;
+    }
+  }
+
+  // MembersList
+  .ui.container.ui.grid.members-list {
+    padding-bottom: 3rem;
+  }
+
+  // Carousel
+  .ui.fluid.container.secondary.office-carousel {
+    padding: 3rem 0 3rem 0;
+    .office-carousel--carousel {
+      min-height: 200px;
+    }
+  }
+
+  // Header contact form
+  .ui.container.contact-header {
+    padding: 5rem 0 4rem 0;
+  }
+
+  // Contact form
+  .ui.fluid.container.primary.contact-form-container {
+    padding: 5rem 1rem 5rem 1rem;
+    .row.contact-form {
+      padding: 1rem;
+      .submit-btn {
+        margin: 3rem auto 2rem auto;
+      }
+    }
+    .contact-links--container {
+      .contact-links--item {
+        @media only screen and (max-width: 1200px) {
+          margin: 2rem 0 2rem 0;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1800px) {
+  // Header
+  #header-company-container {
+    .gatsby-image-wrapper {
+      width: 80%;
     }
   }
 }
