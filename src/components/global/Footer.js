@@ -17,7 +17,7 @@ const Footer = () => {
               contacts {
                 logo {
                   childImageSharp {
-                    fixed(width: 300) {
+                    fixed(width: 200) {
                       ...GatsbyImageSharpFixed
                     }
                   }

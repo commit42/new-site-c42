@@ -1,6 +1,7 @@
 import React from "react"
 import "./Nav.scss"
-import { Menu, Image, Container, Header } from "semantic-ui-react"
+import Image from "gatsby-image"
+import { Menu, Container, Header } from "semantic-ui-react"
 import { Link, graphql, StaticQuery } from "gatsby"
 import kebabCase from "lodash/kebabCase"
 
@@ -12,7 +13,13 @@ const Nav = props => {
           markdownRemark(frontmatter: { pageName: { eq: "navbar" } }) {
             frontmatter {
               pageName
-              logo
+              image {
+                childImageSharp {
+                  fixed(width: 200) {
+                    ...GatsbyImageSharpFixed
+                  }
+                }
+              }
               pageList {
                 name
                 icon
@@ -27,7 +34,10 @@ const Nav = props => {
           <Menu fixed="top" borderless size="massive" id="navbar">
             <Container>
               <Menu.Item as={Link} to="/" className="p-0">
-                <Image src={navDatas.logo} alt="Logo commit42" />
+                <Image
+                  fixed={navDatas.image.childImageSharp.fixed}
+                  alt="Logo commit42"
+                />
               </Menu.Item>
               {navDatas.pageList.map((item, index) => {
                 const isFirst = index => {

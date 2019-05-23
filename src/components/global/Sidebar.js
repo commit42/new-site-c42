@@ -1,4 +1,5 @@
 import React from "react"
+import Image from "gatsby-image"
 import { Link, graphql, StaticQuery } from "gatsby"
 import { Header, Menu, Icon } from "semantic-ui-react"
 import kebabCase from "lodash/kebabCase"
@@ -13,7 +14,13 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
           markdownRemark(frontmatter: { pageName: { eq: "navbar" } }) {
             frontmatter {
               pageName
-              logo
+              image {
+                childImageSharp {
+                  fixed(width: 200) {
+                    ...GatsbyImageSharpFixed
+                  }
+                }
+              }
               pageList {
                 name
                 icon
@@ -54,7 +61,10 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
               </Menu.Item>
               <Menu.Item position="right">
                 <Link to="/">
-                  <img src={sidebarDatas.logo} alt="Logo commit42" />
+                  <Image
+                    fixed={sidebarDatas.image.childImageSharp.fixed}
+                    alt="Logo commit42"
+                  />
                 </Link>
               </Menu.Item>
             </Menu>
