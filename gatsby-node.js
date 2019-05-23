@@ -79,9 +79,9 @@ exports.createPages = ({ actions, graphql }) => {
       return Promise.reject(result.errors)
     }
 
-    const posts = result.data.allMarkdownRemark.edges.filter(
-      item => !item.node.fields.slug.startsWith("/content")
-    )
+    const posts = result.data.allMarkdownRemark.edges.filter(item => {
+      return item.node.fields.slug.startsWith("/blog/")
+    })
 
     // Permet de générer les pages pour les tags
     createTagPages(createPage, posts)
