@@ -35,7 +35,7 @@ const MembersList = ({ data }) => {
                 <Grid.Column
                   mobile={16}
                   tablet={8}
-                  computer={5}
+                  computer={4}
                   textAlign="center"
                   className="member-list--item"
                   key={name}
@@ -50,6 +50,8 @@ const MembersList = ({ data }) => {
                         <Header as="h3">{name}</Header>
                         <Card.Meta className="employee-job">{job}</Card.Meta>
                         <p>{presentation}</p>
+                      </Card.Content>
+                      <Card.Content extra>
                         <div className="socials">{links}</div>
                       </Card.Content>
                     </Card>
