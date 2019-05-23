@@ -3,17 +3,10 @@
   .two.column.row {
     .img-hero {
       min-height: 100vh;
-      @media only screen and (max-width: 768px) {
-        max-height: 100vh !important;
-        min-height: 100%;
-      }
     }
     .ui.text.container.middle.aligned.column {
       .hero-text-container {
         margin: auto;
-      }
-      @media only screen and (max-width: 1200px) {
-        margin: 3rem 0 3rem 0;
       }
     }
   }
@@ -24,21 +17,9 @@
   margin-top: 0;
   padding-top: 8rem;
   padding-bottom: 8rem;
-  @media only screen and (max-width: 1200px) {
-    padding-bottom: 2rem;
-    padding-top: 5rem;
-  }
   .row {
     h2 {
       margin-bottom: 8rem;
-      @media only screen and (max-width: 1200px) {
-        margin-bottom: 5rem;
-      }
-    }
-    .four.column {
-      @media only screen and (max-width: 1200px) {
-        margin-bottom: 5rem;
-      }
     }
   }
 }
@@ -48,33 +29,17 @@
   .row {
     padding-top: 8rem;
     padding-bottom: 8rem;
-    @media only screen and (max-width: 1200px) {
-      padding-top: 5rem;
-      padding-bottom: 5rem;
-    }
-
     .ui.header.primary {
       margin-bottom: 1rem;
     }
     .toulouse-c42 {
       margin: auto;
-      @media only screen and (min-width: 723px) {
-        max-width: 90%;
-      }
     }
     .nouvelles-technologies-c42 {
       margin: auto;
-
-      @media only screen and (min-width: 723px) {
-        max-width: 70%;
-      }
     }
     .flexibilite-c42 {
       margin: auto;
-
-      @media only screen and (min-width: 723px) {
-        max-width: 60%;
-      }
     }
   }
 }
@@ -84,10 +49,6 @@
   padding-top: 8rem;
   padding-bottom: 8rem;
   background-color: #f9f9f9;
-  @media only screen and (max-width: 1200px) {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-  }
 
   .carousel-button-next {
     display: flex;
@@ -124,5 +85,74 @@
         margin-left: 2rem;
       }
     }
+  }
+}
+
+//// Responsive ////
+@media only screen and (min-width: 723px) {
+  // Pitch
+  #pitch-container {
+    .row {
+      .toulouse-c42 {
+        max-width: 90%;
+      }
+      .nouvelles-technologies-c42 {
+        max-width: 70%;
+      }
+      .flexibilite-c42 {
+        max-width: 60%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  // Hero
+  .ui.grid.hero-home {
+    .two.column.row {
+      .img-hero {
+        max-height: 100vh !important;
+        min-height: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  // Hero
+  .ui.grid.hero-home {
+    .two.column.row {
+      .ui.text.container.middle.aligned.column {
+        margin: 3rem 0 3rem 0;
+      }
+    }
+  }
+
+  // Services
+  #services-container {
+    padding-bottom: 2rem;
+    padding-top: 5rem;
+    .row {
+      h2 {
+        margin-bottom: 5rem;
+      }
+      .four.column {
+        margin-bottom: 5rem;
+      }
+    }
+  }
+
+  // Pitch
+  #pitch-container {
+    .row {
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+    }
+  }
+
+  // Testimonials
+  #testimonials-list {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
 }

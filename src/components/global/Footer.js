@@ -1,7 +1,8 @@
 import React from "react"
 import "./Footer.scss"
+import Image from "gatsby-image"
 import { Link, StaticQuery, graphql } from "gatsby"
-import { Grid, Container, Header, Icon, Image, List } from "semantic-ui-react"
+import { Grid, Container, Icon, List } from "semantic-ui-react"
 import kebabCase from "lodash/kebabCase"
 
 const Footer = () => {
@@ -14,7 +15,13 @@ const Footer = () => {
               pageName
               bottomText
               contacts {
-                logo
+                logo {
+                  childImageSharp {
+                    fixed(width: 200) {
+                      ...GatsbyImageSharpFixed
+                    }
+                  }
+                }
                 contactsList {
                   icon
                   name
@@ -40,7 +47,7 @@ const Footer = () => {
             <Grid.Row divided>
               <Grid.Column computer={8} tablet={16} mobile={16}>
                 <Image
-                  src={footerDatas.contacts.logo}
+                  fixed={footerDatas.contacts.logo.childImageSharp.fixed}
                   as={Link}
                   to="/"
                   alt="Logo commit42"

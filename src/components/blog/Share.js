@@ -1,6 +1,6 @@
 import React from "react"
 import "./Share.scss"
-import { Icon, Grid, Button, Label, Header } from "semantic-ui-react"
+import { Icon, Grid, Button, Header } from "semantic-ui-react"
 
 const Share = props => {
   const twitter = `https://twitter.com/intent/tweet?url=${props.url +

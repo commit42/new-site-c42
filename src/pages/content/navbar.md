@@ -1,6 +1,6 @@
 ---
 pageName: navbar
-logo: assets/logo-c42.png
+image: /assets/logo-c42.png
 pageList:
   - name: Blog
     icon: quote left

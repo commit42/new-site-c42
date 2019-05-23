@@ -4,18 +4,23 @@ img {
 
 #blog-post {
   padding-top: 15rem;
-  @media only screen and (max-width: 1200px) {
-    padding-top: 10rem;
-  }
   #blog-post-content {
     margin-top: 5rem;
-    @media only screen and (max-width: 1200px) {
-      margin-top: 3rem;
-    }
   }
 }
 
 .prev-next-posts-container {
   padding-top: 3rem;
   padding-bottom: 3rem;
+}
+
+//// Responsive ////
+
+@media only screen and (max-width: 1200px) {
+  #blog-post {
+    padding-top: 10rem;
+    #blog-post-content {
+      margin-top: 3rem;
+    }
+  }
 }

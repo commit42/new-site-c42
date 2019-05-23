@@ -545,7 +545,7 @@ collections:
               label: Nom de la page (en minuscules),
               widget: string,
             }
-          - { name: logo, label: Logo, widget: image }
+          - { name: image, label: Logo, widget: image }
           - {
               name: pageList,
               label: Pages,

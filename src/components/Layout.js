@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
 import "semantic-ui-less/semantic.less"
 import "../../static/css/c42-theme.css"
 import "./global/Nav.scss"
