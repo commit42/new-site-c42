@@ -54,7 +54,7 @@ Pour rajouter une page il faut ajouter le code suivant:
     fields:
 ```
 
-Ensuite dans fields il faut rajouter les champs dont on va avoir besoin, ce sont des objets composés de la façon suivante:
+Ensuite dans `fields` il faut rajouter les champs dont on va avoir besoin, ce sont des objets composés de la façon suivante:
 
 ```yml
 fields:
