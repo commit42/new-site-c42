@@ -39,7 +39,7 @@ Il y a 3 collections: une pour les articles, une pour les auteurs, une pour les 
 
 Lorsqu'une nouvelle personne souhaite rédiger un article, il faut qu'il s'ajoute à la collection `auhtors` afin qu'il soit disponible dans la liste des auteurs:
 
-![Collection authors dans l'admin](/assets/authors-collection.gif "Collection authors dans l'admin")
+![Collection authors dans l'admin](/static/assets/authors-collection.gif "Collection authors dans l'admin")
 
 - Pages
 
@@ -70,4 +70,4 @@ Lorsqu'un nouvel article est créé il est automatiquement enregistré comme bro
 
 (le gif ne bug pas, il est juste un peu long...)
 
-![Workflow de l'admin](/assets/publish-post.gif "Collection authors dans l'admin")
+![Workflow de l'admin](/static/assets/publish-post.gif "Collection authors dans l'admin")
