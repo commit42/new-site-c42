@@ -28,20 +28,20 @@ Stack:
 
 ## A propos de l'admin
 
-### Les collections
-
 Pour se connecter à l'admin il faut utiliser ses identifiants github.
 
 L'admin est disposible à l'adresse `https://www.commit42.com/admin/`.
 Il y a 3 collections: une pour les articles, une pour les auteurs, une pour les pages.
 
-- Les auteurs
+### Les collections
+
+- Auteurs
 
 Lorsqu'une nouvelle personne souhaite rédiger un article, il faut qu'il s'ajoute à la collection `auhtors` afin qu'il soit disponible dans la liste des auteurs:
 
-![Collection authors dans l'admin](/assets/authors-collection.gif "Collection authors dans l'admin](/assets/authors-dropdown.png "Schema MVP")
+![Collection authors dans l'admin](/assets/authors-collection.gif "Collection authors dans l'admin")
 
-- Les pages
+- Pages
 
 Il n'est pas possible de rajouter une page depuis l'admin, il faut forcémement passer par le fichier `static/admin/config.yml` car chaque page à sa propre structure.
 
@@ -68,6 +68,6 @@ Pour savoir quel widget il faut ajouter, rendez-vous sur [la doc de Netlify CMS]
 Le workflow est dit "éditorial" c'est à dire qu'il gère le cyle de vie d'un article (brouillon, à relire, à publier).
 Lorsqu'un nouvel article est créé il est automatiquement enregistré comme brouillon. Pour le publier il faut se rendre sur l'onglet "workflow" et déplacer son article dans la colonne correspondante.
 
-(non non le gif ne bug pas, il est juste un peu long...)
+(le gif ne bug pas, il est juste un peu long...)
 
-![Workflow de l'admin](/assets/publish-post.gif "Collection authors dans l'admin](/assets/authors-dropdown.png "Schema MVP")
+![Workflow de l'admin](/assets/publish-post.gif "Collection authors dans l'admin")
