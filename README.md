@@ -1,4 +1,4 @@
-![Logo commit42](https://github.com/commit42/new-site-c42/blob/mvp/static/assets/logo-c42.png)
+![Logo commit42](https://github.com/commit42/new-site-c42/blob/master/static/assets/logo-c42.png)
 
 
 #  Nouveau Site de commit42 [![Netlify Status](https://api.netlify.com/api/v1/badges/2decf125-e9f2-4863-bfa5-917f7d4bd8d3/deploy-status)](https://app.netlify.com/sites/new-site-c42/deploys)
