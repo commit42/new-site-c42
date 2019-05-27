@@ -1,5 +1,3 @@
-![Logo commit42](https://github.com/commit42/new-site-c42/blob/master/static/assets/logo-c42.png)
-
 # Site de [commit42](https://www.commit42.com/) [![Netlify Status](https://api.netlify.com/api/v1/badges/2decf125-e9f2-4863-bfa5-917f7d4bd8d3/deploy-status)](https://app.netlify.com/sites/new-site-c42/deploys)
 
 Stack:
