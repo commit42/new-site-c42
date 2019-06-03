@@ -2,12 +2,12 @@
 pageName: navbar
 image: /assets/logo-c42.png
 pageList:
-  - name: Blog
-    icon: quote left
-  - name: La société
-    icon: users
   - name: PWA
     icon: mobile alternate
   - name: E-commerce
     icon: cart
+  - name: La société
+    icon: users
+  - name: Blog
+    icon: quote left
 ---

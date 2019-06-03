@@ -9,7 +9,12 @@ const HeroHome = ({ data }) => {
   return (
     <Grid className="hero-home">
       <Grid.Row columns={2}>
-        <Grid.Column mobile={16} tablet={8} computer={8}>
+        <Grid.Column
+          mobile={16}
+          tablet={8}
+          computer={8}
+          className="hero-img-container"
+        >
           <Fade top>
             <Image
               fluid={data.image.childImageSharp.fluid}

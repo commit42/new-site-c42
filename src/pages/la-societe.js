@@ -4,7 +4,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/Layout"
 import SEO from "../components/seo/SEO"
 import HeroCompany from "../components/company/HeroCompany"
-import MembersList from "../components/company/MembersList"
+import TeamList from "../components/company/TeamList"
 import OfficeCarousel from "../components/company/OfficeCarousel"
 import ContactForm from "../components/company/ContactForm"
 import MapToCompany from "../components/company/MapToCompany"
@@ -22,7 +22,7 @@ class CompanyPage extends Component {
           pathname="/la-societe"
         />
         <HeroCompany data={companyData.hero} />
-        <MembersList data={companyData.teamList} />
+        <TeamList data={companyData.teamList} />
         <OfficeCarousel data={companyData.office} />
         <ContactForm data={companyData.contact} />
         <MapToCompany data={companyData.gpsDatas} />
