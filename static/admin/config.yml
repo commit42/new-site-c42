@@ -4,11 +4,9 @@ backend:
 
 media_folder: static/assets
 public_folder: assets
-
 publish_mode: editorial_workflow
 
 logo_url: https://www.commit42.com/assets/favicon.png
-
 site_url: https://www.commit42.com
 
 slug:
@@ -34,12 +32,14 @@ collections:
           searchFields: ["name", "avatar"],
           valueField: name,
           multiple: true,
+          required: false,
         }
-      - { name: thumbnail, label: Vignette, widget: image }
+      - { name: thumbnail, label: Vignette, widget: image, required: false }
       - {
           name: tags,
           label: Tags (séparer par une virgule et un espace),
           widget: list,
+          required: false,
         }
       - { name: body, label: Texte, widget: markdown }
 
@@ -50,7 +50,7 @@ collections:
     create: true
     fields:
       - { name: name, label: Nom, widget: string }
-      - { name: avatar, label: Avatar, widget: image }
+      - { name: avatar, label: Avatar, widget: image, required: false }
   - name: pages
     label: Pages
     files:

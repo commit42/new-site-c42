@@ -1,13 +1,11 @@
 //// Hero
-.ui.grid.hero-home {
-  .two.column.row {
+.hero-home {
+  .hero-img-container {
     .img-hero {
       min-height: 100vh;
     }
-    .ui.text.container.middle.aligned.column {
-      .hero-text-container {
-        margin: auto;
-      }
+    .hero-text-container {
+      margin: auto;
     }
   }
 }
@@ -108,8 +106,8 @@
 
 @media only screen and (max-width: 768px) {
   // Hero
-  .ui.grid.hero-home {
-    .two.column.row {
+  .hero-home {
+    .hero-img-container {
       .img-hero {
         max-height: 100vh !important;
         min-height: 100%;
@@ -120,11 +118,9 @@
 
 @media only screen and (max-width: 1200px) {
   // Hero
-  .ui.grid.hero-home {
-    .two.column.row {
-      .ui.text.container.middle.aligned.column {
-        margin: 3rem 0 3rem 0;
-      }
+  .hero-home {
+    .hero-text-container {
+      margin: 3rem 0 3rem 0;
     }
   }
 
