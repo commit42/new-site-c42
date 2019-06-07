@@ -1,7 +1,7 @@
 ---
 pageName: index
 head:
-  description: >+
+  description: >-
     commit42 est spécialisé dans les technologies React, PHP, NodeJS, Vuejs,
     Magento et PWA.
 
@@ -9,17 +9,16 @@ head:
     réalisation d’applications métiers spécifiques dont des Web App PWA.
 
     Les locaux sont partagés avec une autre entreprise, Occitech (dont on est la
-    spin-off) avec qui on partage la fibre, les conseils, les repas…
+    spin-off) Ethersys avec qui on partage la fibre, les conseils, les repas…
   heading: Studio  d'innovation web
   image: /assets/header-img-c42.png
-services:
+servicesList:
   heading: Découvrez tous nos services
-  servicesList:
+  services:
     - description: >-
         En utilisant les dernières technologies, nous co-créons avec vous
         l’outil que vous attendez à partir de vos besoins, vos retours
-        utilisateurs et tous les éléments qui interviendront en cours de
-        projet. 
+        utilisateurs et tous les éléments qui interviendront en cours de projet.
       icon: ruler
       title: Applications web sur-mesure
     - description: >-
@@ -27,12 +26,11 @@ services:
         aider non seulement à vendre plus, mais surtout, mieux !
       icon: shopping-cart
       title: E-commerce
-    - description: >
-        L'avenir du web ! 
-
-        Rapide, disponible hors ligne et idéal pour le taux de transformation,
-        retrouvez les avantages d'une application mobile dans votre site web.
-      icon: mobile
+    - description: >-
+        L'avenir du web ! Rapide, disponible hors ligne et idéal pour le taux de
+        transformation, retrouvez les avantages d'une application mobile dans
+        votre site web.
+      icon: mobile-alt
       title: Web App PWA
 pitch:
   - darkBg: true
@@ -71,7 +69,7 @@ pitch:
       En séparant la partie métier (back) des écrans utilisateurs (front) le
       tout connecté par des API, nous répondons aux paradigmes modernes
       d’architectures évolutives.
-      
+
       Nous croyons qu’un projet informatique doit être fait en respectant un
       certain niveau de qualité pour qu’il reste stable et maintenable dans le
       temps. C’est pourquoi le code est versionné, systématiquement revu, et les
@@ -105,28 +103,9 @@ pitch:
       offrant une grande flexibilité selon les situations. 
     image: /assets/flexibilite-c42.png
     title: Une équipe agile
-testimonials:
-  heading: Ce qu'en pensent nos clients
-  testimonialsList:
-    - author: Guillaume R.
-      rating: 5
-      text: >-
-        L'équipe est centrée sur le service et la satisfaction du client.
-        Excellente implication de tous dans le projet. Un vrai plaisir de
-        travailler avec Commit42
-    - author: Nicolas G.
-      rating: 5
-      text: >
-        Les résultats sont à la hauteur des engagements, merci à l'équipe pro et
-        sympathique de Commit42
-    - author: Ghislaine C.
-      rating: 5
-      text: |
-        Equipe très à l'écoute des besoins du client et réactive
-    - author: Samuel G.
-      rating: 5
-      text: |
-        Très bonne agence de développement, équipe professionnelle
+testimonialsList:
+  heading: Ce que nos clients en pensent
+  testimonials:
     - author: Patrice R.
       rating: 5
       text: >-
@@ -134,4 +113,18 @@ testimonials:
         l'esprit pour cette équipe jeune et dynamique. Notre site e-commerce n'a
         plus connu d'arrêt depuis que nous avons choisi l'hébergement et
         l'ingénierie chez Commit 42.
+    - author: Samuel G.
+      rating: 5
+      text: |
+        très bonne agence de développement, équipe professionnelle
+    - author: Ghislaine C.
+      rating: 5
+      text: Equipe très à l'écoute des besoins du client et réactive.
+    - author: Guillaume R.
+      rating: 5
+      text: >
+        L'équipe est centrée sur le service et la satisfaction du client.
+        Excellente implication de tous dans le projet. Un vrai plaisir de
+        travailler avec Commit42
 ---
+
