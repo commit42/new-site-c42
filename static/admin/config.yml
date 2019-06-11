@@ -59,14 +59,14 @@ collections:
                 ],
             }
           - {
-              name: servicesList,
+              name: services,
               label: Liste des services,
               widget: object,
               fields:
                 [
                   { name: heading, label: Titre, widget: string },
                   {
-                    name: services,
+                    name: servicesList,
                     label: Services,
                     widget: list,
                     fields:
@@ -95,14 +95,14 @@ collections:
                 ],
             }
           - {
-              name: testimonialsList,
+              name: testimonials,
               label: Liste des temoignages,
               widget: object,
               fields:
                 [
                   { name: heading, label: Titre, widget: string },
                   {
-                    name: testimonials,
+                    name: testimonialsList,
                     label: Témoignages,
                     widget: list,
                     fields:
