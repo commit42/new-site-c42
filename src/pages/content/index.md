@@ -12,9 +12,9 @@ head:
     spin-off) Ethersys avec qui on partage la fibre, les conseils, les repas…
   heading: Studio  d'innovation web
   image: /assets/header-img-c42.png
-servicesList:
+services:
   heading: Découvrez tous nos services
-  services:
+  servicesList:
     - description: >-
         En utilisant les dernières technologies, nous co-créons avec vous
         l’outil que vous attendez à partir de vos besoins, vos retours
