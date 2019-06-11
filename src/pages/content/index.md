@@ -103,9 +103,9 @@ pitch:
       offrant une grande flexibilité selon les situations. 
     image: /assets/flexibilite-c42.png
     title: Une équipe agile
-testimonialsList:
+testimonials:
   heading: Ce que nos clients en pensent
-  testimonials:
+  testimonialsList:
     - author: Patrice R.
       rating: 5
       text: >-
