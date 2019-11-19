@@ -32,12 +32,11 @@ Ce fut l’occasion d’un premier échange avec les membres d’Opengento et un
 
 Au réveil nous attaquons le “hackathon”.
 
-
 Les sujets ont été trouvées avant mon réveil (un peu tardif, grosse soirée.) mais lors de la sélection, chaque idée était notée et toutes les personnes présentes se groupaient autour d’une poignée d’entre elles.
 
-![liste de sujets](/assets/img_20191117_144043-1-.jpg "liste de sujets")
+![liste des sujets hackathon](/assets/img_20191117_144043-1.jpg "liste des sujets hackathon")
 
-Parmis les idées il y avait donc : 
+Parmi les idées il y avait donc : 
 
 * Un POC Sylius Gatsby : Gatsby est un générateur de site statique basé sur React et GraphQL et Sylius est une plaforme e-comerce qui semble être l’avenir de Magento. Ce POC a été très justement nommé [Gatsbylius](https://github.com/opengento/gatsbylius) 
 * Des tests sur le fonctionnement des Ubikeys avec l’administration Magento 2
@@ -56,6 +55,8 @@ Et quoi de mieux pour bien finir cette journée qu’une méga raclette pour le 
 <blockquote class="twitter-tweet"><p lang="fr" dir="ltr">La nuit tombe sur Béthune , les esprits s&#39;éveillent...<br>La nuit va être longue et bien remplie !<br>Au fait... ce soir on mange léger : <a href="https://twitter.com/hashtag/teamRaclette?src=hash&amp;ref_src=twsrc%5Etfw">#teamRaclette</a> <a href="https://t.co/P1VrNrKIl8">pic.twitter.com/P1VrNrKIl8</a></p>&mdash; OpenGento (@opengento) <a href="https://twitter.com/opengento/status/1195738109578743810?ref_src=twsrc%5Etfw">November 16, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## Dimanche c’est le jour du retour.
+
+![Présentation des POCs](/assets/presentation_gatsby-1.jpg "Présentation des POCs")
 
 Après une présentation de chacun des projets durant la matinée, le groupe s’est graduellement réduit au fur et à mesure des départs.
 Chacun s’en est retourner chez lui avec de la fatigue, certes, mais surtout des bons souvenirs, de nouvelles connaissances et des nouvelles compétences !
