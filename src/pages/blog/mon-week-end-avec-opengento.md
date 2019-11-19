@@ -19,7 +19,11 @@ Mais je vais donc vous expliquer ce qu’on a fait ce weekend… et étonnamment
 
 ## Vendredi : Départ pour Lille !
 
-Cette année il se déroulait dans le grand Nord (Le lieu change régulièrement) c’est donc Adexos qui nous ont accueillis sur place… ainsi que la neige, évidemment.
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Direction le weekend <a href="https://twitter.com/opengento?ref_src=twsrc%5Etfw">@opengento</a> ! :) <a href="https://t.co/PTjlfYwcuI">pic.twitter.com/PTjlfYwcuI</a></p>&mdash; commit42 (@commit42) <a href="https://twitter.com/commit42/status/1195335106526896128?ref_src=twsrc%5Etfw">November 15, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+Cette année il se déroulait dans le grand Nord (Le lieu change régulièrement) c’est donc Adexos qui nous ont accueillis sur place… ainsi que la pluie, évidemment.
+
+<blockquote class="twitter-tweet"><p lang="fr" dir="ltr">Super temps merci Lille ! On continue l&#39;aventure :) <a href="https://t.co/6YhjYLPegY">pic.twitter.com/6YhjYLPegY</a></p>&mdash; commit42 (@commit42) <a href="https://twitter.com/commit42/status/1195365487682691073?ref_src=twsrc%5Etfw">November 15, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Après être venus nous récupérer à l’aéroport nous sommes allés à l'inauguration de leurs nouveau locaux. Une soirée super sympa avec du champagne, de la bière et surtout un escape game dans une partie des locaux.
 Ce fut l’occasion d’un premier échange avec les membres d’Opengento et une soirée qui a bien contribué à nous rapprocher !
@@ -27,7 +31,11 @@ Ce fut l’occasion d’un premier échange avec les membres d’Opengento et un
 ## Samedi les choses sérieuses commencent !
 
 Au réveil nous attaquons le “hackathon”.
+
+
 Les sujets ont été trouvées avant mon réveil (un peu tardif, grosse soirée.) mais lors de la sélection, chaque idée était notée et toutes les personnes présentes se groupaient autour d’une poignée d’entre elles.
+
+![liste de sujets](/assets/img_20191117_144043-1-.jpg "liste de sujets")
 
 Parmis les idées il y avait donc : 
 
@@ -44,6 +52,8 @@ En parallèle, dans la journée des activités se sont organisées entre la luge
 Bien entendu, une tireuse à bière et autres boissons étais disponible pour se... ressourcer.
 
 Et quoi de mieux pour bien finir cette journée qu’une méga raclette pour le dîner ! 
+
+<blockquote class="twitter-tweet"><p lang="fr" dir="ltr">La nuit tombe sur Béthune , les esprits s&#39;éveillent...<br>La nuit va être longue et bien remplie !<br>Au fait... ce soir on mange léger : <a href="https://twitter.com/hashtag/teamRaclette?src=hash&amp;ref_src=twsrc%5Etfw">#teamRaclette</a> <a href="https://t.co/P1VrNrKIl8">pic.twitter.com/P1VrNrKIl8</a></p>&mdash; OpenGento (@opengento) <a href="https://twitter.com/opengento/status/1195738109578743810?ref_src=twsrc%5Etfw">November 16, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## Dimanche c’est le jour du retour.
 
