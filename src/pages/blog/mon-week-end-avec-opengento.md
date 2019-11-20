@@ -48,7 +48,7 @@ Parmi les idées il y avait donc :
 Le POC sur un Gatsby + Sylius m’a personnellement séduit et je vous le présenterai sous peu.
 
 En parallèle, dans la journée des activités se sont organisées entre la luge d’été, le babyfoot et le ping pong. 
-Bien entendu, une tireuse à bière et autres boissons étais disponibles pour se... ressourcer.
+Bien entendu, une tireuse à bière et autres boissons étaient disponibles pour se... ressourcer.
 
 Et quoi de mieux pour bien finir cette journée qu’une méga raclette pour le dîner ! 
 
@@ -73,4 +73,4 @@ Encore merci à tous pour ce weekend, vivement le prochain !
 
 Maher
 
-PS : Bien entendu, comme promis dans cet article, une présentation détaillée de ce POC Gatsby + Silius arrivera bientôt ! ;)
+PS : Bien entendu, comme promis dans cet article, une présentation détaillée de ce POC Gatsby + Sylius arrivera bientôt ! ;)
