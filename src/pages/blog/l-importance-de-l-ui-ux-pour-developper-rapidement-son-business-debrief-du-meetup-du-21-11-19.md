@@ -12,6 +12,8 @@ tags:
 ---
 Hier soir, Pierre et moi avons assisté à une présentation sur le thème de l’UX et l’UI, animée par [Dev-id](https://twitter.com/DevidCompany) lors d’un meetup organisé par [Entrepreneurs Toulousains](https://www.meetup.com/fr-FR/entrepreneurs-toulousains) à la [Nova Mêlée](https://lacantine-toulouse.org/nova-melee).
 
+![image meetup](/assets/ej6gefyxyaauboc.jpeg "image meetup")
+
 Nous ne sommes pas étranger à l’UX et l’UI mais cela nous a permis de rafraîchir les bases de l’UX, de l’UI, réapprendre à bien l’expliquer et d’avoir des nouveaux exemples à citer pour mieux accompagner nos clients.
 
 J’ai fais un livetweet de la présentation, [disponible ici](https://twitter.com/commit42/status/1197542525260763136?s=20), mais je vais en profiter ici pour développer les notions abordées concernant l’UX.
