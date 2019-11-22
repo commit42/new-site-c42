@@ -125,4 +125,8 @@ Mesurez votre UX grâce aux outils d’analyse du marché : Que ce soit Google A
 
 Réunissez le plus possible d’informations sur vos utilisateurs. Plus ces informations seront nombreuses, mieux vous pourrez identifier des tendances et des priorités dans vos évolutions futures.
 
-Optimiser dès que possible son UX, c’est le moyen de tirer de meilleur retour sur l’investissement humain et technique que vous déployez.
+**Optimiser dès que possible son UX, c’est le moyen de tirer de meilleur retour sur l’investissement humain et technique que vous déployez.**
+
+J'espère que vous aussi avez revu vos bases ou même appris quelques informations supplémentaire avec ce débrief de cette présentation !
+
+Thomas
