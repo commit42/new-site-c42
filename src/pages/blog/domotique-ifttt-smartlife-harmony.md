@@ -12,7 +12,7 @@ tags:
 ---
 Bonjour à toutes, à tous ainsi qu’aux autres, aujourd’hui c'est Thomas qui vous écrit et je vais vous présenter la solution domotique mise en place par mes soins dans les locaux du groupe Occitech afin d’améliorer notre confort (et aussi "_parce que c'est possible_").
 
-Déjà : **la domotique, qu’est-ce que c’est ?** 
+### La domotique, qu’est-ce que c’est ? 
 
 C’est un mot-valise qui désigne tout ce qui permet de centraliser les solutions automatiques son domicile en contrôlant, chauffage, volets, portes… et allumer/éteindre la tireuse à bière et l’arbre de Noël (oui, en Mars !) dans le cas de certains.
 
