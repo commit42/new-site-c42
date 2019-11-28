@@ -22,7 +22,7 @@ Le cahier des charges initial était énoncé simplement :
 
 > ## **“_On aimerait ne pas avoir froid le matin en arrivant_**
 >
-> _**cdt.**_”
+> **_cdt._**”
 
 Une des solutions est de pouvoir allumer les clims réversibles et les chauffages de nos locaux en partant de chez soi par exemple, donc depuis l’extérieur de notre réseau.
 
@@ -88,7 +88,7 @@ Bref, c’est une lutte, en plus c’est lent, ça plante… mais on y est arriv
 
 Le principe derrière Harmony est de fonctionner par “Activité”. 
 
-**Qu’est-ce qu’une activité ?** 
+### Qu’est-ce qu’une activité ? 
 
 Le bon exemple serait une activité type “Regarder un film” : Lancer cette activité déclenche une série de commande qui allume la télévision, met la clim en mode silencieux, éteint la lumière du plafond pour passer aux lampes de chevets de part et d’autre de la télévision. Lorsque l’activité est stoppée, le lumières s’inversent, la télé s’éteint, la climatisation revient en mode de ventilation normal.
 
