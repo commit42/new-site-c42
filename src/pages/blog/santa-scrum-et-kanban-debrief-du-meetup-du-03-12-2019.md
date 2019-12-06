@@ -35,7 +35,7 @@ C’est ici le premier point mis en lumière : l’humain.
 
 Et puis cela a permis de découvrir qui avait un talent naturel pour le pliage d’origami et qui était fait… pour autre chose.
 
-On est donc passés au serious game : **_Les lutins sont tous malades et il faut les remplacer au pied levé._** 
+On est donc passés au serious game : _**Les lutins sont tous malades et il faut les remplacer au pied levé.**_ 
 
 ## 1er sprint
 
@@ -91,7 +91,7 @@ Améliorations techniques :
 
 Les règles étaient les mêmes, nous donc sommes partis sur un engagement à livrer 9 boîtes.
 
-Autant vous dire qu’avec les mêmes personnes, les mêmes contraintes, ces petits ajustements vu précédemment ont fait en sorte que nous avons eu une augmentation de la productivité de 50%... et avons fini avec 1 min 20 s d’avance (donc +60% de productivité potentielle), temps que nous avons utilisé à faire le point sur les nouvelles améliorations à apporter.
+Autant vous dire qu’avec les mêmes personnes, les mêmes contraintes, ces petits ajustements vu précédemment nous a permis une augmentation de la productivité de 50%... et avons fini avec 1 min 20 s d’avance (donc +60% de productivité potentielle), temps que nous avons utilisé à faire le point sur les nouvelles améliorations à apporter.
 
 ![](/assets/santaproductivity.png)
 
