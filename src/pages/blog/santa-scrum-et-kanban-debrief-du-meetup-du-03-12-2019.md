@@ -75,12 +75,14 @@ Après avoir mis en lumière des améliorations, elles paraissent assez évident
 
 Mais elles n’ont pu être repérées et mises en place UNIQUEMENT parce que du temps a été pris pour faire le point.
 
-Il y a eu des améliorations organisationnelles :
+Nous avons proposé 2 types d'amélioration : organisationnelles et techniques.
+
+Améliorations organisationnelles :
 
 * affecter moins de personnes aux tâches les plus rapides, 
 * mieux communiquer sur ce qui est fait/à faire pour éviter des fabrications non terminées ou en surplus.
 
-Mais aussi des améliorations techniques :
+Améliorations techniques :
 
 * couper plusieurs patrons de boites en même temps (en empilant les feuilles), 
 * y mettre le nombre nécessaire de “retours” (pour coller le cube) et pas plus, 
@@ -89,7 +91,7 @@ Mais aussi des améliorations techniques :
 
 Les règles étaient les mêmes, nous donc sommes partis sur un engagement à livrer 9 boîtes.
 
-Autant vous dire qu’avec les mêmes personnes, les mêmes contraintes, ces petits ajustements vu précédemment ont fait en sorte que nous avons eu une augmentation de la productivité de 50%... et avons fini avec 1 min 20 s d’avance (donc +60% de productivité potentielle), temps que nous avons utilisé à faire le point sur les nouvelles améliorations à apporter.
+Autant vous dire qu’avec les mêmes personnes, les mêmes contraintes, ces petits ajustements vu précédemment nous a permis une augmentation de la productivité de 50%... et avons fini avec 1 min 20 s d’avance (donc +60% de productivité potentielle), temps que nous avons utilisé à faire le point sur les nouvelles améliorations à apporter.
 
 ![](/assets/santaproductivity.png)
 
