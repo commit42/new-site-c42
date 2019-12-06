@@ -10,7 +10,7 @@ tags:
   - atelier
   - meetup
 ---
-Mardi dernier, Pierre et moi (désormais inséparables quand il s’agit de sortir) sommes allés au Meetup intitulé “SANTA SCRUM ... et Kanban” animé par [Conserto](https://conserto.pro/), dans leurs locaux.
+Mardi dernier, Pierre et moi sommes allés au Meetup intitulé “SANTA SCRUM ... et Kanban” animé par [Conserto](https://conserto.pro/), dans leurs locaux.
 
 Alors que l’on connaît bien l’Agile, pourquoi y être allés ? 
 
