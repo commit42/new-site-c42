@@ -3,6 +3,12 @@ title: '"SANTA SCRUM ... et Kanban" - Debrief du Meetup du 03/12/2019'
 date: 2019-12-06T09:54:48.145Z
 author: Thomas
 thumbnail: /assets/tracksanta.png
+tags:
+  - scrum
+  - kanban
+  - agile
+  - atelier
+  - meetup
 ---
 Mardi dernier, Pierre et moi (désormais inséparables quand il s’agit de sortir) sommes allés au Meetup intitulé “SANTA SCRUM ... et Kanban” animé par [Conserto](https://conserto.pro/), dans leurs locaux.
 
