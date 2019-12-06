@@ -22,7 +22,7 @@ Je vais vous raconter ça pour que vous aussi, vous partagiez avec nous cette so
 
 ## 
 
-## Échauffement / Team building
+## Échauffement / Ice breaking
 
 ![Ceci est censé être un pingouin…](/assets/origamipingouin.png "(Ceci est censé être un pingouin…)")
 
@@ -35,7 +35,7 @@ C’est ici le premier point mis en lumière : l’humain.
 
 Et puis cela a permis de découvrir qui avait un talent naturel pour le pliage d’origami et qui était fait… pour autre chose.
 
-On est donc passés au serious game : _**Les lutins sont tous malades et il faut les remplacer au pied levé.**_ 
+On est donc passés au serious game : **_Les lutins sont tous malades et il faut les remplacer au pied levé._** 
 
 ## 1er sprint
 
