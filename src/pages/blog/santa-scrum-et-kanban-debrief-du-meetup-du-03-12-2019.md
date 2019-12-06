@@ -10,7 +10,7 @@ tags:
   - atelier
   - meetup
 ---
-Mardi dernier, Pierre et moi sommes allés au Meetup intitulé “SANTA SCRUM ... et Kanban” animé par [Conserto](https://conserto.pro/), dans leurs locaux.
+Mardi dernier, Pierre et moi sommes allés au [Meetup intitulé “SANTA SCRUM ... et Kanban”](https://www.meetup.com/fr-FR/AGILE-BY-CONSERTO/events/266315622/) animé par [Conserto](https://conserto.pro/), dans leurs locaux.
 
 Alors que l’on connaît bien l’Agile, pourquoi y être allés ? 
 
@@ -35,7 +35,7 @@ C’est ici le premier point mis en lumière : l’humain.
 
 Et puis cela a permis de découvrir qui avait un talent naturel pour le pliage d’origami et qui était fait… pour autre chose.
 
-On est donc passés au serious game : **_Les lutins sont tous malades et il faut les remplacer au pied levé._** 
+On est donc passés au serious game : _**Les lutins sont tous malades et il faut les remplacer au pied levé.**_ 
 
 ## 1er sprint
 
