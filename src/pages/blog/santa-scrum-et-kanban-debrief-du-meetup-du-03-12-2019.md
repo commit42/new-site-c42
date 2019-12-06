@@ -35,7 +35,7 @@ C’est ici le premier point mis en lumière : l’humain.
 
 Et puis cela a permis de découvrir qui avait un talent naturel pour le pliage d’origami et qui était fait… pour autre chose.
 
-On est donc passés au serious game : _**Les lutins sont tous malades et il faut les remplacer au pied levé.**_ 
+On est donc passés au serious game : **_Les lutins sont tous malades et il faut les remplacer au pied levé._** 
 
 ## 1er sprint
 
@@ -86,7 +86,7 @@ Mais aussi des améliorations techniques :
 
 Les règles étaient les mêmes, nous donc sommes partis sur un engagement à livrer 9 boîtes.
 
-Autant vous dire qu’avec les mêmes personnes, les mêmes contraintes, ces petits ajustements vu précédemment ont fait en sorte que nous avons eu une augmentation de la productivité de 50%... et avons fini avec 1m20s d’avance (donc +60% de productivité potentielle), temps que nous avons utilisé à faire le point sur les nouvelles améliorations à apporter.
+Autant vous dire qu’avec les mêmes personnes, les mêmes contraintes, ces petits ajustements vu précédemment ont fait en sorte que nous avons eu une augmentation de la productivité de 50%... et avons fini avec 1 min 20 s d’avance (donc +60% de productivité potentielle), temps que nous avons utilisé à faire le point sur les nouvelles améliorations à apporter.
 
 ![](/assets/santaproductivity.png)
 
@@ -102,7 +102,7 @@ Tout cela peut paraître n’être qu’un détail mineur qui ajoute un tout pet
 
 Si nous sommes arrivés à livrer nos 9 cadeaux, la dernière livraison a eu lieu lors du coup de sifflet final. Ouf !
 
-Pourquoi tant de difficulté quand nous avions 1min 20s d’avance la dernière fois ? 
+Pourquoi tant de difficulté quand nous avions plus d'une minute d’avance la dernière fois ? 
 Parce que ce changement impliquait un ordre de réalisation qui n’était pas présent préalablement. 
 Nous avons mis en lumière (grâce à la personne en charge de la livraison) lors de la rétrospective que, pendant la majorité du sprint, des commandes étaient entamées mais non complétées. Vers la fin, nous avions 2 objets sur 3 prêts sur les 3 commandes !
 Il a donc fallu TOUT livrer en catastrophe à la fin au lieu de faire une commande après l’autre.
