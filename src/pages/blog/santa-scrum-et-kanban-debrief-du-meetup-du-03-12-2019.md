@@ -35,7 +35,7 @@ C’est ici le premier point mis en lumière : l’humain.
 
 Et puis cela a permis de découvrir qui avait un talent naturel pour le pliage d’origami et qui était fait… pour autre chose.
 
-On est donc passés au serious game : **_Les lutins sont tous malades et il faut les remplacer au pied levé._** 
+On est donc passés au serious game : _**Les lutins sont tous malades et il faut les remplacer au pied levé.**_ 
 
 ## 1er sprint
 
@@ -71,8 +71,11 @@ Quelques points positifs ont été mis en lumière par cette rétrospective :
 * la mutualisation du train entre les deux équipes pourtant en compétition
 * une bonne cohésion de l’équipe, prête à aider celui en difficulté
 
-Après avoir mis en lumière des améliorations évidentes, rétrospectivement, mais qui n’ont pu être faites QUE parce que du temps a été pris pour faire un point nécessaire : 
-Des améliorations organisationnelles :
+Après avoir mis en lumière des améliorations, elles paraissent assez évidentes, rétrospectivement. 
+
+Mais elles n’ont pu être repérées et mises en place UNIQUEMENT parce que du temps a été pris pour faire le point.
+
+Il y a eu des améliorations organisationnelles :
 
 * affecter moins de personnes aux tâches les plus rapides, 
 * mieux communiquer sur ce qui est fait/à faire pour éviter des fabrications non terminées ou en surplus.
