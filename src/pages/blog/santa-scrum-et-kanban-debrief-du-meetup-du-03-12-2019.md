@@ -21,14 +21,12 @@ Evidemment, certaines affirmations vont vous paraître évidentes. Le but de ce 
 Je vais vous raconter ça pour que vous aussi, vous partagiez avec nous cette soirée forte en (re)enseignements. 
 
 ## 
-Echauffement / team building
 
-
+## Échauffement / Team building
 
 ![Ceci est censé être un pingouin…](/assets/origamipingouin.png "(Ceci est censé être un pingouin…)")
 
 _(Ceci est censé être un pingouin…)_
-
 
 Tout d’abord nous avons commencé par une séance d’échauffement… de pliage d’origamis.
 
@@ -37,7 +35,7 @@ C’est ici le premier point mis en lumière : l’humain.
 
 Et puis cela a permis de découvrir qui avait un talent naturel pour le pliage d’origami et qui était fait… pour autre chose.
 
-On est donc passés au serious game : **_Les lutins sont tous malades et il faut les remplacer au pied levé._** 
+On est donc passés au serious game : _**Les lutins sont tous malades et il faut les remplacer au pied levé.**_ 
 
 ## 1er sprint
 
@@ -46,9 +44,10 @@ La tâche est en apparence simple : faire des origamis et les mettre dans des bo
 ![](/assets/tracksanta.png)
 
 Des contraintes sont ajoutées à ces instructions : 
-- au moins 3 modèles différents d’origami (au choix parmi 6 modèles proposés), 
-- pas plus de 3 colis sur le train, 
-- un coloriage à faire sur une des faces du cube-cadeau.
+
+* au moins 3 modèles différents d’origami (au choix parmi 6 modèles proposés), 
+* pas plus de 3 colis sur le train, 
+* un coloriage à faire sur une des faces du cube-cadeau.
 
 A partir de ces instructions, il a fallu nous engager sur un nombre de cadeaux que nous pensions pouvoir faire en 10 minutes. Nous l’avons estimé à 9 cadeaux, soit 3 trains.
 
@@ -68,17 +67,20 @@ Ce qui montre que ce n’est pas qu’une question de motivation, mais ici d’o
 Nous avons pris quelques minutes pour faire un débrief, une rétrospective de ce sprint. 
 
 Quelques points positifs ont été mis en lumière par cette rétrospective :
-- la mutualisation du train entre les deux équipes pourtant en compétition
-- une bonne cohésion de l’équipe, prête à aider celui en difficulté
+
+* la mutualisation du train entre les deux équipes pourtant en compétition
+* une bonne cohésion de l’équipe, prête à aider celui en difficulté
 
 Après avoir mis en lumière des améliorations évidentes, rétrospectivement, mais qui n’ont pu être faites QUE parce que du temps a été pris pour faire un point nécessaire : 
 Des améliorations organisationnelles :
-- affecter moins de personnes aux tâches les plus rapides, 
-- mieux communiquer sur ce qui est fait/à faire pour éviter des fabrications non terminées ou en surplus.
+
+* affecter moins de personnes aux tâches les plus rapides, 
+* mieux communiquer sur ce qui est fait/à faire pour éviter des fabrications non terminées ou en surplus.
 
 Mais aussi des améliorations techniques :
-- couper plusieurs patrons de boites en même temps (en empilant les feuilles), 
-- y mettre le nombre nécessaire de “retours” (pour coller le cube) et pas plus, 
+
+* couper plusieurs patrons de boites en même temps (en empilant les feuilles), 
+* y mettre le nombre nécessaire de “retours” (pour coller le cube) et pas plus, 
 
 ## 2e sprint
 
