@@ -48,20 +48,29 @@ Le lendemain Max et Glen se retrouvèrent pour commencer à travailler ensemble 
 
 ### Avantages
 
-* **nom de classe unique autogénéré** : les styled-components génèrent un nom de classe unique (ex: `class="sc-1qhv3lv-0"`), ainsi il n'y a plus de conflits de classe à redouter. Un plugin babel permet en plus d'intégrer automatiquement le nom du composant dans le nom de classe auto-généré (ex: `class="MyComponent-sc-1qhv3lv-0"`). Il est ainsi facile de repérer son composant dans l'inspecteur sans utiliser les React Dev Tools.
-* **syntaxe CSS (& SCSS)** : il est très facile de débuter avec les styled-components car il s'agit purement et simplement d'écrire du CSS. Certaines fonctionnalités très appréciées dans SASS (SCSS) sont également implémentées, notamment l'imbrication d’éléments et de classes, et l'utilisation du symbole `&` pour cibler l'élément parent.
-* **les pseudo-classes, pseudo-éléments & les media queries peuvent être utilisés** : la prop style des composants React et certaines librairies CSS-in-JS injectent le style en tant qu'attribut style d'une balise HTML. Styled-components au contraire injecte le style dans des balises `<style></style>` dans la balise `<head></head>` de chaque page, ce qui permet d'utiliser toutes les bonnes choses que CSS met à notre disposition.
-* **l'implémentation interne du composant peut changer sans en modifier l'utilisation** : par exemple des composants `<Grid />`, `<Row />` et `<Column />` créés pour définir une grille peuvent utiliser CSS Flexbox dans un premier temps, puis dès que la compatibilité des navigateurs est jugée suffisante Flexbox peut être remplacé par CSS Grid. L'utilisation des composants ne change pas, ils sont toujours appelés en tant que `<Grid />`, `<Row />` et `<Column />`.
-* **CSS optimisé** : le bundle CSS de chaque page est plus léger car seul le CSS utilisé dans la page est chargé, le chargement de la page est ainsi plus rapide.
-* **préfixes vendeurs automatiques** : les préfixes vendeurs (aussi appelés préfixes navigateurs) sont automatiquement ajoutés selon les derniers standards. Plus besoin d'utiliser autoprefixer dans ses outils de build ou, plus embêtant encore (pourvu que ce ne soit pas votre cas...), d'ajouter ces préfixes manuellement!
-* **thème(s)** : l'utilisation d'un ou plusieurs thèmes est très simple. Un composant `<ThemeProvider />` permet d'injecter un thème dans les props de tous ces enfants grâce au Context API de React. Le thème peut ensuite être utilisé dans les règles CSS du composant.
-* **accès aux props du composant** : grâce à l'utilisation des [tagged template literals](https://wesbos.com/tagged-template-literals/) il est possible d'utiliser des fonctions pour définir le style selon certaines conditions: des props comme `props.disabled`, `props.primary` ou les valeurs définies dans un thème comme `props.theme.boxShadow`.
-* **maintenance facilitée** : les styles et le composant sont localisés au même endroit, il est très facile de trouver le fichier à modifier et lorsque l'on supprime le composant on supprime également le style ce qui évite de polluer le code avec du CSS inutilisé.
+**nom de classe unique autogénéré** : les styled-components génèrent un nom de classe unique (ex: `class="sc-1qhv3lv-0"`), ainsi il n'y a plus de conflits de classe à redouter. Un plugin babel permet en plus d'intégrer automatiquement le nom du composant dans le nom de classe auto-généré (ex: `class="MyComponent-sc-1qhv3lv-0"`). Il est ainsi facile de repérer son composant dans l'inspecteur sans utiliser les React Dev Tools.
+
+**syntaxe CSS (& SCSS)** : il est très facile de débuter avec les styled-components car il s'agit purement et simplement d'écrire du CSS. Certaines fonctionnalités très appréciées dans SASS (SCSS) sont également implémentées, notamment l'imbrication d’éléments et de classes, et l'utilisation du symbole `&` pour cibler l'élément parent.
+
+**les pseudo-classes, pseudo-éléments & les media queries peuvent être utilisés** : la prop style des composants React et certaines librairies CSS-in-JS injectent le style en tant qu'attribut style d'une balise HTML. Styled-components au contraire injecte le style dans des balises `<style></style>` dans la balise `<head></head>` de chaque page, ce qui permet d'utiliser toutes les bonnes choses que CSS met à notre disposition.
+
+**l'implémentation interne du composant peut changer sans en modifier l'utilisation** : par exemple des composants `<Grid />`, `<Row />` et `<Column />` créés pour définir une grille peuvent utiliser CSS Flexbox dans un premier temps, puis dès que la compatibilité des navigateurs est jugée suffisante Flexbox peut être remplacé par CSS Grid. L'utilisation des composants ne change pas, ils sont toujours appelés en tant que `<Grid />`, `<Row />` et `<Column />`.
+
+**CSS optimisé** : le bundle CSS de chaque page est plus léger car seul le CSS utilisé dans la page est chargé, le chargement de la page est ainsi plus rapide.
+
+**préfixes vendeurs automatiques** : les préfixes vendeurs (aussi appelés préfixes navigateurs) sont automatiquement ajoutés selon les derniers standards. Plus besoin d'utiliser autoprefixer dans ses outils de build ou, plus embêtant encore (pourvu que ce ne soit pas votre cas...), d'ajouter ces préfixes manuellement!
+
+**thème(s)** : l'utilisation d'un ou plusieurs thèmes est très simple. Un composant `<ThemeProvider />` permet d'injecter un thème dans les props de tous ces enfants grâce au Context API de React. Le thème peut ensuite être utilisé dans les règles CSS du composant.
+
+**accès aux props du composant** : grâce à l'utilisation des [tagged template literals](https://wesbos.com/tagged-template-literals/) il est possible d'utiliser des fonctions pour définir le style selon certaines conditions: des props comme `props.disabled`, `props.primary` ou les valeurs définies dans un thème comme `props.theme.boxShadow`.
+
+**maintenance facilitée** : les styles et le composant sont localisés au même endroit, il est très facile de trouver le fichier à modifier et lorsque l'on supprime le composant on supprime également le style ce qui évite de polluer le code avec du CSS inutilisé.
 
 ### Inconvénients
 
-* il n'est plus possible de mettre le CSS en cache car au lieu de charger des fichiers CSS et de les mettre en cache le CSS est injecté dans des balises `<style></style>` à chaque chargement de page. Heureusement seul le CSS de la page courante est chargé ce qui limite l'impact de l'absence de cache
-* la librairie Styled-components a été créée pour fonctionner avec React et ne peut pas être utilisée en dehors de ce framework. Une autre librairie, [Emotion](https://emotion.sh/docs/introduction), permet également l'utilisation des styled-components. La syntaxe est similaire bien qu'il existe quelques différences entre les 2 librairies. Emotion par contre n'est pas liée à React et peut être utilisée dans toute application Javascript.
+Il n'est plus possible de mettre le CSS en cache car au lieu de charger des fichiers CSS et de les mettre en cache le CSS est injecté dans des balises `<style></style>` à chaque chargement de page. Heureusement seul le CSS de la page courante est chargé ce qui limite l'impact de l'absence de cache
+
+La librairie Styled-components a été créée pour fonctionner avec React et ne peut pas être utilisée en dehors de ce framework. Une autre librairie, [Emotion](https://emotion.sh/docs/introduction), permet également l'utilisation des styled-components. La syntaxe est similaire bien qu'il existe quelques différences entre les 2 librairies. Emotion par contre n'est pas liée à React et peut être utilisée dans toute application Javascript.
 
 # Débuter avec les styled-components
 
@@ -74,7 +83,7 @@ Dans le but de ne pas écrire un article trop long je ne m'étendrai pas sur l'e
 Pour créer un nouveau projet React vous pouvez utiliser `create-react-app`. Grâce à `npx` il est inutile de l'installer globalement, `npx` télécharge et lance un package temporaire sans polluer le namespace global (voir la [doc de React](https://fr.reactjs.org/docs/create-a-new-react-app.html#create-react-app))
 
 ```sh
-// "mon-projet" correspond ici au nom de votre projet et va créer ce répertoire\
+// "mon-projet" correspond ici au nom de votre projet et va créer ce répertoire
 npx create-react-app mon-projet
 
 // aller dans le répertoire du projet
@@ -88,7 +97,7 @@ Si tout s'est bien passé en vous rendant à l'adresse http://localhost:3000 vou
 
 ![React starter page](/assets/untitled-1.jpg)
 
-Vous pouvez aussi utiliser l'éditeur en ligne Codesandbox qui vous permet de créer une application React en 1 click: <https://codesandbox.io>
+Vous pouvez aussi utiliser l'éditeur en ligne Codesandbox qui vous permet de créer une application React en 1 click: `https://codesandbox.io`
 
 C'est une très bonne solution pour tester des petits bouts de code ou des packages npm (les dépendances s'installent aussi en 1 click!).
 
@@ -107,19 +116,19 @@ Au moment de l'écriture de cette article le fichier `package.json` indique les 
 * React v16.12
 * styled-components v4.4.1
 
-L'installation est terminée, _let the fun begin_!
+L'installation est terminée, "let the fun begin"!
 
 Le but étant de présenter les styled-components le code sera volontairement simplifié. Certaines balises HTML pourraient être remplacées par des éléments plus sémantiques et certaines répétitions devraient être évitées. Dans le prochain article nous verrons justement comment réorganiser le code afin de rendre le projet plus clair et d'éviter les répétitions.
 
 ## Comparaison avec CSS/SASS
 
-Afin d'éviter les conflits de noms de classe des méthodologies comme BEM (_Block - Element - Modifier_) ont été inventées.
+Afin d'éviter les conflits de noms de classes des méthodologies comme BEM (_Block - Element - Modifier_) ont été inventées.
 
-J'adore BEM mais il faut avouer que dans certains cas on se retrouve avec des balises HTML inondées de noms de classes. Par exemple une vignette contenant une image et un label pourrait être définie ainsi avec BEM en utilisant la syntaxe `class="block__element"`.
+J'adore BEM mais il faut avouer que dans certains cas on se retrouve avec des balises HTML inondées de classes CSS. Par exemple une vignette contenant une image et un label pourrait être définie ainsi avec BEM en utilisant la syntaxe `class="block__element"`.
 
 ```html
 <div class="card__container">
-    <img class="card\_\\\\_image" src="tesla\\\\_\_cybertruck.jpg" alt="Photo du pickup tesla avec une vitre cassée par Elon Musk lui-même" />
+    <img class="card__image" src="tesla__cybertruck.jpg" alt="Photo du pickup tesla avec une vitre cassée par Elon Musk lui-même" />
     <p class="card__label">Pickup Tesla Cybertruck</p>
   <a class="card__link" href="/testa-cybertruck">Découvrir le Tesla Cybertruck</a>
 </div>
@@ -129,12 +138,13 @@ Pour modifier le style on peut utiliser des classes _Modifier_ : `class="block**
 
 ```html
 <div class="card card--outline card--primary">
-    <img class="card\_\\\\_image card\\\\_\_image--framed" src="tesla__cybertruck.jpg" alt="Photo du pickup Tesla avec une vitre cassée par Elon Musk lui-même" />
+    <img class="card__image card__image--framed" src="tesla__cybertruck.jpg" alt="Photo du pickup Tesla avec une vitre cassée par Elon Musk lui-même" />
     <p class="card__label card__label--large">Pickup Tesla Cybertruck</p>
     <a class="card__link card__link--button" href="/testa-cybertruck">Découvrir le Tesla Cybertruck</a>
 </div>
-SASS (SCSS) permet d'imbriquer les classes et d'utiliser le symbole & pour faire référence à la classe parente, ce qui fait gagner beaucoup de temps et permet une meilleure lisibilité.
 ```
+
+SASS (SCSS) permet d'imbriquer les classes et d'utiliser le symbole & pour faire référence à la classe parente, ce qui fait gagner beaucoup de temps et permet une meilleure lisibilité.
 
 ```scss
 .card {
