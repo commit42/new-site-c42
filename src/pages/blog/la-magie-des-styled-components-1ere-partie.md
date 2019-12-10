@@ -11,8 +11,6 @@ tags:
 ---
 # Intro
 
-Test emoji :tada:
-
 Vendredi dernier nous nous sommes réunis afin d'organiser notre travail sur notre side-project open-source [Gatsbylius](https://github.com/opengento/gatsbylius), une boutique e-commerce qui tourne avec [Sylius](https://sylius.com/) en back et [Gatsby](https://www.gatsbyjs.org/) en front.
 
 Gatsby est un générateur de site statique basé sur React, et dès qu'il s'agit de gérer le style sur React notre solution préférée est d'utiliser la librairie [styled-components](https://www.styled-components.com/). Il s'agit d'une librairie CSS-in-JS que Valentin et moi utilisons depuis plus d'un an avec toujours autant de plaisir. Et plus nous l'utilisons plus nous découvrons de nouvelles façons d'organiser notre code et d'améliorer l'expérience développeur (DX).
@@ -26,7 +24,7 @@ Comme nous l’utilisons sur Gatsbylius cette réunion fut l'occasion de présen
 
 ## Il y a bien longtemps, dans une ~~galaxie~~ ville lointaine, très lointaine...
 
-Grâce à la conférence donnée par Max Stoiber au _WeAreDevelopers World Congress 2018_ j'ai pu découvrir la belle et fun histoire de la création des styled-components. Je vais tenter d'en faire un résumé rapide mais vous pouvez visionner la conférence ci-dessous (25mn + 20mn de Q&A) pour bénéficier de toutes les anecdotes et infos. Je recommande!
+Grâce à la conférence donnée par Max Stoiber au _WeAreDevelopers World Congress 2018_ j'ai pu découvrir la belle et fun histoire de la création des styled-components. Je vais tenter d'en faire un résumé rapide mais vous pouvez visionner la conférence ci-dessous (25mn + 20mn de Q&A) pour bénéficier de toutes les anecdotes et infos. Je recommande! :+1:
 
 [The Road to Styled-Components: Styling Component Based Systems](https://www.youtube.com/watch?v=BkgU_-KGK9w)
 
@@ -34,7 +32,7 @@ En 2015 Max Stoiber retrouve un de ses amis, Craig Sharkie, dans un bar à Sydne
 
 Max et ses collègues travaillaient alors à l'élaboration d'une librairie UI, Elemental UI, qui utilisait LESS et Max cherchait à l'époque un moyen d'éviter de devoir utiliser un outil de build LESS à la chaîne de compilation en plus de l'outil de build JS (webpack) utilisé par React. Ce soir-là il découvre grâce à Glen le concept de CSS-in-JS. Sa première pensée a été "What ?! What is he talking about ?!" mais heureusement pour la communauté il n'est pas resté bloqué sur cette pensée.
 
-De nombreux projets exploraient déjà cette solution mais ils nécessitaient d'écrire le CSS en tant qu'objet JavaScript, ce qui est assez agaçant. Écrire les propriétés CSS en camelCase, les valeurs entre guillemets et terminer chaque instruction par une virgule comme ci-dessous nous on est vraiment pas fans. :(
+De nombreux projets exploraient déjà cette solution mais ils nécessitaient d'écrire le CSS en tant qu'objet JavaScript, ce qui est assez agaçant. Écrire les propriétés CSS en camelCase, les valeurs entre guillemets et terminer chaque instruction par une virgule comme ci-dessous nous on est vraiment pas fans. :cry:
 
 ```html
 <AwesomeComponent style={{backgroundColor: "rgb(0,200,200)", paddingTop: "5rem"}} />
@@ -44,7 +42,7 @@ Après de nombreux whiskies la soirée fut riche en idées folles (Max insiste v
 
 Le lendemain Max et Glen se retrouvèrent pour commencer à travailler ensemble sur ces "crazy ideas" qui allaient devenir la librairie qu'on connaît aujourd'hui sous le nom de styled-components.
 
-![The end](https://media.giphy.com/media/KINAUcarXNxWE/giphy.gif)
+![The end](/assets/giphy.webp)
 
 ## Avantages & inconvénients
 
@@ -385,176 +383,176 @@ N'hésitez pas à faire appel à votre potentiel créatif et à tout modifier en
 
 Une fois le contenu définit il est temps de créer les composants de la galerie et d'ajouter un bouton pour recharger la page. La règle `@media` et la pseudo-classe `:hover` sont imbriquées dans les composants concernés.
 
-```JSX
-const Button = styled.button`
-  padding: 0.5rem 1rem;
-  margin-bottom: 4rem;
-  font-size: 1.2rem;
-  background-color: #37b2cb;
-  color: #fff;
-  border: none;
-  border-radius: 0.25rem;
-  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
-`;
+````JSX
+    const Button = styled.button`
+      padding: 0.5rem 1rem;
+      margin-bottom: 4rem;
+      font-size: 1.2rem;
+      background-color: #37b2cb;
+      color: #fff;
+      border: none;
+      border-radius: 0.25rem;
+      box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
+    `;
 
-const Gallery = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+    const Gallery = styled.div`
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
 
-  @media screen and (min-width: 769px) {
-    flex-direction: row;
-  }
-`;
+      @media screen and (min-width: 769px) {
+        flex-direction: row;
+      }
+    `;
 
-const GalleryItem = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-basis: 32%;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  background-color: #fff;
-  border: 1px solid #efefef;
-  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s;
+    const GalleryItem = styled.div`
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-basis: 32%;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      background-color: #fff;
+      border: 1px solid #efefef;
+      box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
 
-  :hover {
-      transform: scale(1.05);
-  }
-`;
+      :hover {
+          transform: scale(1.05);
+      }
+    `;
 
-const Img = styled.img`
-  max-width: 100%;
-  display: block;
-`;
+    const Img = styled.img`
+      max-width: 100%;
+      display: block;
+    `;
 
-const ImgLabel = styled.p`
-  font-style: italic;
-  margin-bottom: 0;
-`;
+    const ImgLabel = styled.p`
+      font-style: italic;
+      margin-bottom: 0;
+    `;
 
-Et voilà enfin notre mini-application terminée:
+    Et voilà enfin notre mini-application terminée:
 
-```JSX
-import React from "react";
-import styled, { createGlobalStyle } from "styled-components";
+    ```JSX
+    import React from "react";
+    import styled, { createGlobalStyle } from "styled-components";
 
-const GlobalStyle = createGlobalStyle`
-  html {
-    box-sizing: border-box;
-    *,
-    *:before,
-    *:after {
-      box-sizing: inherit;
-    }
-  }
+    const GlobalStyle = createGlobalStyle`
+      html {
+        box-sizing: border-box;
+        *,
+        *:before,
+        *:after {
+          box-sizing: inherit;
+        }
+      }
 
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  }
-`;
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+        Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      }
+    `;
 
-const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem;
-  margin: 0 auto;
-  max-width: 1400px;
-`;
+    const Container = styled.div`
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem;
+      margin: 0 auto;
+      max-width: 1400px;
+    `;
 
-const Title = styled.h1`
-  display: block;
-  width: 18rem;
-  margin: 4rem auto;
-  padding: 1rem;
-  font-size: 1.4rem;
-  text-align: center;
-  text-transform: uppercase;
-  color: #65c3ba;
-  border: 1px solid #65c3ba;
-`;
+    const Title = styled.h1`
+      display: block;
+      width: 18rem;
+      margin: 4rem auto;
+      padding: 1rem;
+      font-size: 1.4rem;
+      text-align: center;
+      text-transform: uppercase;
+      color: #65c3ba;
+      border: 1px solid #65c3ba;
+    `;
 
-const Button = styled.button`
-  padding: 0.5rem 1rem;
-  margin-bottom: 4rem;
-  font-size: 1.2rem;
-  background-color: #37b2cb;
-  color: #fff;
-  border: none;
-  border-radius: 0.25rem;
-  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
-`;
+    const Button = styled.button`
+      padding: 0.5rem 1rem;
+      margin-bottom: 4rem;
+      font-size: 1.2rem;
+      background-color: #37b2cb;
+      color: #fff;
+      border: none;
+      border-radius: 0.25rem;
+      box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
+    `;
 
-const Gallery = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+    const Gallery = styled.div`
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
 
-  @media screen and (min-width: 769px) {
-    flex-direction: row;
-  }
-`;
+      @media screen and (min-width: 769px) {
+        flex-direction: row;
+      }
+    `;
 
-const GalleryItem = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-basis: 32%;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  background-color: #fff;
-  border: 1px solid #efefef;
-  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s;
+    const GalleryItem = styled.div`
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-basis: 32%;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      background-color: #fff;
+      border: 1px solid #efefef;
+      box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
 
-  :hover {
-    transform: scale(1.05);
-  }
-`;
+      :hover {
+        transform: scale(1.05);
+      }
+    `;
 
-const Img = styled.img`
-  max-width: 100%;
-  display: block;
-`;
+    const Img = styled.img`
+      max-width: 100%;
+      display: block;
+    `;
 
-const ImgLabel = styled.p`
-  font-style: italic;
-  margin-bottom: 0;
-`;
+    const ImgLabel = styled.p`
+      font-style: italic;
+      margin-bottom: 0;
+    `;
 
-const App = () => (
-  <div>
-    <GlobalStyle />
-    <Container>
-      <Title>European towns</Title>
-      <Button onClick={() => window.location.reload(true)}>
-        Recharger la page
-      </Button>
-      <Gallery>
-        <GalleryItem>
-          <Img src="https://source.unsplash.com/1600x900/?london" alt="" />
-          <ImgLabel>London</ImgLabel>
-        </GalleryItem>
+    const App = () => (
+      <div>
+        <GlobalStyle />
+        <Container>
+          <Title>European towns</Title>
+          <Button onClick={() => window.location.reload(true)}>
+            Recharger la page
+          </Button>
+          <Gallery>
+            <GalleryItem>
+              <Img src="https://source.unsplash.com/1600x900/?london" alt="" />
+              <ImgLabel>London</ImgLabel>
+            </GalleryItem>
 
-        <GalleryItem>
-          <Img src="https://source.unsplash.com/1600x900/?paris" alt="" />
-          <ImgLabel>Paris</ImgLabel>
-        </GalleryItem>
+            <GalleryItem>
+              <Img src="https://source.unsplash.com/1600x900/?paris" alt="" />
+              <ImgLabel>Paris</ImgLabel>
+            </GalleryItem>
 
-        <GalleryItem>
-          <Img src="https://source.unsplash.com/1600x900/?amsterdam" alt="" />
-          <ImgLabel>Amsterdam</ImgLabel>
-        </GalleryItem>
-      </Gallery>
-    </Container>
-  </div>
-);
+            <GalleryItem>
+              <Img src="https://source.unsplash.com/1600x900/?amsterdam" alt="" />
+              <ImgLabel>Amsterdam</ImgLabel>
+            </GalleryItem>
+          </Gallery>
+        </Container>
+      </div>
+    );
 
-export default App;
-```
+    export default App;
+````
 
 Votre navigateur devrait maintenant afficher ceci en vue mobile et desktop. _Just for fun_ j'ai ajouté une petite animation `transform: scale()` au survol des images, histoire d'utiliser une pseudo-classe.
 
