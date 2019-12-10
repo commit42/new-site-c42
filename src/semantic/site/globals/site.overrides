@@ -80,11 +80,11 @@ body{
 
 h2 {
   color: @bluec42;
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 
 h3 {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 
 h4 {
