@@ -48,23 +48,23 @@ Le lendemain Max et Glen se retrouvèrent pour commencer à travailler ensemble 
 
 ### Avantages
 
-**nom de classe unique autogénéré** : les styled-components génèrent un nom de classe unique (ex: `class="sc-1qhv3lv-0"`), ainsi il n'y a plus de conflits de classe à redouter. Un plugin babel permet en plus d'intégrer automatiquement le nom du composant dans le nom de classe auto-généré (ex: `class="MyComponent-sc-1qhv3lv-0"`). Il est ainsi facile de repérer son composant dans l'inspecteur sans utiliser les React Dev Tools.
+**Nom de classe unique autogénéré** : les styled-components génèrent un nom de classe unique (ex: `class="sc-1qhv3lv-0"`), ainsi il n'y a plus de conflits de classe à redouter. Un plugin babel permet en plus d'intégrer automatiquement le nom du composant dans le nom de classe auto-généré (ex: `class="MyComponent-sc-1qhv3lv-0"`). Il est ainsi facile de repérer son composant dans l'inspecteur sans utiliser les React Dev Tools.
 
-**syntaxe CSS (& SCSS)** : il est très facile de débuter avec les styled-components car il s'agit purement et simplement d'écrire du CSS. Certaines fonctionnalités très appréciées dans SASS (SCSS) sont également implémentées, notamment l'imbrication d’éléments et de classes, et l'utilisation du symbole `&` pour cibler l'élément parent.
+**Syntaxe CSS (& SCSS)** : il est très facile de débuter avec les styled-components car il s'agit purement et simplement d'écrire du CSS. Certaines fonctionnalités très appréciées dans SASS (SCSS) sont également implémentées, notamment l'imbrication d’éléments et de classes, et l'utilisation du symbole `&` pour cibler l'élément parent.
 
-**les pseudo-classes, pseudo-éléments & les media queries peuvent être utilisés** : la prop style des composants React et certaines librairies CSS-in-JS injectent le style en tant qu'attribut style d'une balise HTML. Styled-components au contraire injecte le style dans des balises `<style></style>` dans la balise `<head></head>` de chaque page, ce qui permet d'utiliser toutes les bonnes choses que CSS met à notre disposition.
+**Les pseudo-classes, pseudo-éléments & les media queries peuvent être utilisés** : la prop style des composants React et certaines librairies CSS-in-JS injectent le style en tant qu'attribut style d'une balise HTML. Styled-components au contraire injecte le style dans des balises `<style></style>` dans la balise `<head></head>` de chaque page, ce qui permet d'utiliser toutes les bonnes choses que CSS met à notre disposition.
 
-**l'implémentation interne du composant peut changer sans en modifier l'utilisation** : par exemple des composants `<Grid />`, `<Row />` et `<Column />` créés pour définir une grille peuvent utiliser CSS Flexbox dans un premier temps, puis dès que la compatibilité des navigateurs est jugée suffisante Flexbox peut être remplacé par CSS Grid. L'utilisation des composants ne change pas, ils sont toujours appelés en tant que `<Grid />`, `<Row />` et `<Column />`.
+**L'implémentation interne du composant peut changer sans en modifier l'utilisation** : par exemple des composants `<Grid />`, `<Row />` et `<Column />` créés pour définir une grille peuvent utiliser CSS Flexbox dans un premier temps, puis dès que la compatibilité des navigateurs est jugée suffisante Flexbox peut être remplacé par CSS Grid. L'utilisation des composants ne change pas, ils sont toujours appelés en tant que `<Grid />`, `<Row />` et `<Column />`.
 
 **CSS optimisé** : le bundle CSS de chaque page est plus léger car seul le CSS utilisé dans la page est chargé, le chargement de la page est ainsi plus rapide.
 
-**préfixes vendeurs automatiques** : les préfixes vendeurs (aussi appelés préfixes navigateurs) sont automatiquement ajoutés selon les derniers standards. Plus besoin d'utiliser autoprefixer dans ses outils de build ou, plus embêtant encore (pourvu que ce ne soit pas votre cas...), d'ajouter ces préfixes manuellement!
+**Préfixes vendeurs automatiques** : les préfixes vendeurs (aussi appelés préfixes navigateurs) sont automatiquement ajoutés selon les derniers standards. Plus besoin d'utiliser autoprefixer dans ses outils de build ou, plus embêtant encore (pourvu que ce ne soit pas votre cas...), d'ajouter ces préfixes manuellement!
 
-**thème(s)** : l'utilisation d'un ou plusieurs thèmes est très simple. Un composant `<ThemeProvider />` permet d'injecter un thème dans les props de tous ces enfants grâce au Context API de React. Le thème peut ensuite être utilisé dans les règles CSS du composant.
+**Thème(s)** : l'utilisation d'un ou plusieurs thèmes est très simple. Un composant `<ThemeProvider />` permet d'injecter un thème dans les props de tous ces enfants grâce au Context API de React. Le thème peut ensuite être utilisé dans les règles CSS du composant.
 
-**accès aux props du composant** : grâce à l'utilisation des [tagged template literals](https://wesbos.com/tagged-template-literals/) il est possible d'utiliser des fonctions pour définir le style selon certaines conditions: des props comme `props.disabled`, `props.primary` ou les valeurs définies dans un thème comme `props.theme.boxShadow`.
+**Accès aux props du composant** : grâce à l'utilisation des [tagged template literals](https://wesbos.com/tagged-template-literals/) il est possible d'utiliser des fonctions pour définir le style selon certaines conditions: des props comme `props.disabled`, `props.primary` ou les valeurs définies dans un thème comme `props.theme.boxShadow`.
 
-**maintenance facilitée** : les styles et le composant sont localisés au même endroit, il est très facile de trouver le fichier à modifier et lorsque l'on supprime le composant on supprime également le style ce qui évite de polluer le code avec du CSS inutilisé.
+**Maintenance facilitée** : les styles et le composant sont localisés au même endroit, il est très facile de trouver le fichier à modifier et lorsque l'on supprime le composant on supprime également le style ce qui évite de polluer le code avec du CSS inutilisé.
 
 ### Inconvénients
 
@@ -95,11 +95,11 @@ yarn start
 
 Si tout s'est bien passé en vous rendant à l'adresse http://localhost:3000 vous devriez voir cette page:
 
-![React starter page](/assets/untitled-1.jpg)
+![React starter page](/assets/untitled.png)
 
-Vous pouvez aussi utiliser l'éditeur en ligne Codesandbox qui vous permet de créer une application React en 1 click: `https://codesandbox.io`
+Vous pouvez aussi utiliser l'éditeur en ligne Codesandbox qui vous permet de créer une application React en 1 clic: `https://codesandbox.io`
 
-C'est une très bonne solution pour tester des petits bouts de code ou des packages npm (les dépendances s'installent aussi en 1 click!).
+C'est une très bonne solution pour tester des petits bouts de code ou des packages npm (les dépendances s'installent aussi en 1 clic!).
 
 Il nous reste juste à installer les styled-components. React utilise par défaut le gestionnaire de paquets yarn (créé par Facebook, comme React) mais il est tout à fait possible d'utiliser npm.
 
