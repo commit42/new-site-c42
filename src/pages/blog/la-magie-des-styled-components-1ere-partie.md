@@ -26,9 +26,9 @@ Comme nous l’utilisons sur Gatsbylius cette réunion fut l'occasion de présen
 
 Grâce à la conférence donnée par Max Stoiber au _WeAreDevelopers World Congress 2018_ j'ai pu découvrir la belle et fun histoire de la création des styled-components. Je vais tenter d'en faire un résumé rapide mais vous pouvez visionner la conférence ci-dessous (25mn + 20mn de Q&A) pour bénéficier de toutes les anecdotes et infos. Je recommande!
 
-[https://www.youtube.com/watch?v=BkgU_-KGK9w](https://www.youtube.com/watch?v=BkgU_-KGK9w)
+[The Road to Styled-Components: Styling Component Based Systems](https://www.youtube.com/watch?v=BkgU_-KGK9w)
 
-En 2015 Max Stoiber retrouve un de ses amis, Craig Sharkie, dans un bar à Sydney (Uncle Mings https://goo.gl/maps/mLyucbqzxVKUf5vp6). Un autre ami de Craig, qui vit à Melbourne, les rejoint. Il s'agit de Glen Maddern, co-créateur des css-modules (https://github.com/css-modules/css-modules), une autre solution très utilisée pour gérer le CSS dans React.
+En 2015 Max Stoiber retrouve un de ses amis, Craig Sharkie, dans un bar à Sydney ([Uncle Mings](https://goo.gl/maps/mLyucbqzxVKUf5vp6)). Un autre ami de Craig, qui vit à Melbourne, les rejoint. Il s'agit de Glen Maddern, co-créateur des [css-modules](https://github.com/css-modules/css-modules), une autre solution très utilisée pour gérer le CSS dans React.
 
 Max et ses collègues travaillaient alors à l'élaboration d'une librairie UI, Elemental UI, qui utilisait LESS et Max cherchait à l'époque un moyen d'éviter de devoir utiliser un outil de build LESS à la chaîne de compilation en plus de l'outil de build JS (webpack) utilisé par React. Ce soir-là il découvre grâce à Glen le concept de CSS-in-JS. Sa première pensée a été "What ?! What is he talking about ?!" (?traduction moisie just for fun? "Quelle idée saugrenue") mais heureusement pour la communauté il n'est pas resté bloqué sur cette pensée.
 
@@ -39,7 +39,7 @@ Après de nombreux whiskies la soirée fut riche en idées folles. Il insiste vr
 
 Le lendemain Max et Glen se retrouvèrent pour commencer à travailler ensemble sur ces "crazy ideas" qui deviendraient la librairie qu'on connaît aujourd'hui sous le nom de styled-components.
 
-https://gph.is/1GmQmQ2
+!\[Alt Text](https://gph.is/1GmQmQ2)
 
 Avantages & inconvénients
 
@@ -106,7 +106,7 @@ Afin d'éviter les conflits de noms de classe des méthodologies comme BEM (Bloc
 J'adore BEM mais il faut avouer que dans certains cas on se retrouve avec des balises HTML inondées de noms de classes. Par exemple une vignette contenant une image et un label pourrait être définie ainsi avec BEM en utilisant la syntaxe class="block__element" .
 
 <div class="card__container">
-    <img class="card\_\\_image" src="tesla\\_\_cybertruck.jpg" alt="Photo du pickup tesla avec une vitre cassée par Elon Musk lui-même" />
+    <img class="card\_\\\_image" src="tesla\\\_\_cybertruck.jpg" alt="Photo du pickup tesla avec une vitre cassée par Elon Musk lui-même" />
     <p class="card__label">Pickup Tesla Cybertruck</p>
   <a class="card__link" href="/testa-cybertruck">Découvrir le Tesla Cybertruck</a>
 </div>
@@ -115,7 +115,7 @@ Pour modifier le style on peut utiliser des classes Modifier :
 class="block**element block**element--modifier"
 
 <div class="card card--outline card--primary">
-    <img class="card\_\\_image card\\_\_image--framed" src="tesla__cybertruck.jpg" alt="Photo du pickup Tesla avec une vitre cassée par Elon Musk lui-même" />
+    <img class="card\_\\\_image card\\\_\_image--framed" src="tesla__cybertruck.jpg" alt="Photo du pickup Tesla avec une vitre cassée par Elon Musk lui-même" />
     <p class="card__label card__label--large">Pickup Tesla Cybertruck</p>
     <a class="card__link card__link--button" href="/testa-cybertruck">Découvrir le Tesla Cybertruck</a>
 </div>
