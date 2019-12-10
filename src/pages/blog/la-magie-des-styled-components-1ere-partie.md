@@ -83,7 +83,7 @@ Dans le but de ne pas écrire un article trop long je ne m'étendrai pas sur l'e
 Pour créer un nouveau projet React vous pouvez utiliser `create-react-app`. Grâce à `npx` il est inutile de l'installer globalement, `npx` télécharge et lance un package temporaire sans polluer le namespace global (voir la [doc de React](https://fr.reactjs.org/docs/create-a-new-react-app.html#create-react-app))
 
 ```sh
-// "mon-projet" correspond ici au nom de votre projet et va créer ce répertoire
+// "mon-projet" correspond ici au nom de votre projet et create-react-app va créer ce répertoire
 npx create-react-app mon-projet
 
 // aller dans le répertoire du projet
@@ -144,7 +144,7 @@ Pour modifier le style on peut utiliser des classes _Modifier_ : `class="block**
 </div>
 ```
 
-SASS (SCSS) permet d'imbriquer les classes et d'utiliser le symbole & pour faire référence à la classe parente, ce qui fait gagner beaucoup de temps et permet une meilleure lisibilité.
+SASS (SCSS) permet d'imbriquer les classes et d'utiliser le symbole `&` pour faire référence à la classe parente, ce qui fait gagner beaucoup de temps et permet une meilleure lisibilité.
 
 ```scss
 .card {
@@ -170,9 +170,9 @@ SASS (SCSS) permet d'imbriquer les classes et d'utiliser le symbole & pour faire
 
 Première bonne nouvelle, si vous désirez migrer une application qui utilise SASS vers les styled-components cette syntaxe est prise en charge. Styled-components implémente certaines fonctionnalités de SASS ce qui permet une transition douce.
 
-Attention quand même, toutes les fonctionnalités de SASS n'ont pas été implémentées!
+**Attention quand même, toutes les fonctionnalités de SASS n'ont pas été implémentées!**
 
-Voyons maintenant comment faire disparaître les nombreuses classes sur les balises HTML grâce aux styled-components. Notre code sera ainsi plus lisible.
+Voyons maintenant comment faire disparaître les nombreuses classes sur les balises HTML. Notre code sera ainsi plus lisible.
 
 ### Premiers composants
 
@@ -194,11 +194,11 @@ const App = () => (
 export default App;
 ```
 
-Cette application React minimaliste affiche "Hello world". Lançons `npm start` à la racine du projet, l'adresse http://localhost:3000 devrait afficher :
+Cette application React minimaliste devrait afficher "Hello world". Lançons `npm start` à la racine du projet, l'adresse http://localhost:3000 devrait afficher :
 
 ![Hello world](/assets/untitled-1.png)
 
-Maintenant nous allons utiliser les styled-components pour tranformer ce titre `h1` en un composant React `<Title />`.
+Maintenant nous allons utiliser les styled-components pour transformer ce titre `<h1>` en un composant `<Title />`.
 
 ```JSX
 import React from "react";
@@ -219,7 +219,7 @@ Cette étrange syntaxe, introduite dans JavaScript ES6, se nomme _tagged templat
 
 Il est aussi possible d'étendre le style d'un composant existant en utilisant les parenthèses à la place de la notation pointée : `styled(Component)`. C'est essentiel pour éviter la répétition de code.
 
-Notre `<h1>` est maintenant un composant React `<Title/>` mais pour le moment aucun changement n'apparaît dans le navigateur, il est temps d'ajouter un peu de CSS. Au lieu d'utiliser un attribut `class` les styled-components permettent de définir le style directement dans la déclaration du composant.
+Notre composant `<Title/>` a bien été créé mais aucun changement n'apparaît dans le navigateur pour le moment, il est temps d'ajouter un peu de CSS. Au lieu d'utiliser un attribut `class` les styled-components permettent de définir le style directement dans la déclaration du composant, entre les \``.
 
 ```JSX
 import React from "react";
@@ -252,9 +252,9 @@ Notre composant `<Title />` est toujours utilisé de la même façon, aucune cla
 
 ![classe auto-généré par les styled-components](/assets/untitled-3.png)
 
-Comme dit précédemment, par défaut nous n'avons aucun risque d'avoir un conflit de classe. Et ça fait plaisir. :)
+Comme dit précédemment, par défaut nous n'avons aucun risque d'avoir un conflit de classe. Et ça fait plaisir! :tada:
 
-_Au nom de la science_ ajoutons une balise `<span>` dans la balise `<h1>` et observons le résultat dans l'inspecteur. On imbrique le style dans celui du composant `<Title/>`, comme dans un fichier SCSS. On peut imbriquer les classes de la même façon.
+Au nom de la science ajoutons une balise `<span>` dans la balise `<h1>` et observons le résultat dans l'inspecteur. On imbrique le style dans celui du composant `<Title/>`, comme dans un fichier SCSS. On peut imbriquer les classes de la même façon.
 
 ```JSX
 import React from "react";
@@ -279,7 +279,7 @@ const Title = styled.h1`
 const App = () => (
   <div>
     <Title>
-      Hello world <span className="test">Test</span>
+      Hello world <span>Test</span>
     </Title>
   </div>
 );
