@@ -9,7 +9,7 @@ tags:
   - css
   - sass
 ---
-# Intro
+## Intro
 
 Vendredi dernier nous nous sommes réunis afin d'organiser notre travail sur notre side-project open-source [Gatsbylius](https://github.com/Gatsbylius/Gatsbylius), une boutique e-commerce qui tourne avec [Sylius](https://sylius.com/) en back et [Gatsby](https://www.gatsbyjs.org/) en front.
 
@@ -20,9 +20,9 @@ Comme nous l’utilisons sur Gatsbylius cette réunion fut l'occasion de présen
 * Partie 1: dans ce premier article nous verrons comment a été créée cette librairie. Nous mettrons ensuite en place une application React très simple qui nous permettra de tester cette merveilleuse librairie.
 * Partie 2: dans l'article suivant nous verrons des utilisations plus avancées ainsi que quelques idées concernant l'organisation du code. 
 
-# Styled-components: qui, pourquoi et comment ?
+## Styled-components: qui, pourquoi et comment ?
 
-## Il y a bien longtemps, dans une ~~galaxie~~ ville lointaine, très lointaine...
+### Il y a bien longtemps, dans une ~~galaxie~~ ville lointaine, très lointaine...
 
 Grâce à la conférence donnée par Max Stoiber au _WeAreDevelopers World Congress 2018_ j'ai pu découvrir la belle et fun histoire de la création des styled-components. Je vais tenter d'en faire un résumé rapide mais vous pouvez visionner la conférence ci-dessous (25mn + 20mn de Q&A) pour bénéficier de toutes les anecdotes et infos. Je recommande! :+1:
 
@@ -44,11 +44,11 @@ Le lendemain Max et Glen se retrouvèrent pour commencer à travailler ensemble 
 
 ![The end](/assets/giphy.gif)
 
-## Avantages & inconvénients
+### Avantages & inconvénients
 
-### Avantages
+#### Avantages
 
-**Nom de classe unique autogénéré** : les styled-components génèrent un nom de classe unique (ex: `class="sc-1qhv3lv-0"`), ainsi il n'y a plus de conflits de classe à redouter. Un plugin babel permet en plus d'intégrer automatiquement le nom du composant dans le nom de classe auto-généré (ex: `class="MyComponent-sc-1qhv3lv-0"`). Il est ainsi facile de repérer son composant dans l'inspecteur sans utiliser les React Dev Tools.
+**Nom de classe unique autogénéré** : les styled-components génèrent un nom de classe unique (ex: `class="sc-1qhv3lv-0"`), ainsi il n'y a plus de conflits de classes à redouter. Un plugin babel permet en plus d'intégrer automatiquement le nom du composant dans le nom de classe auto-généré (ex: `class="MyComponent-sc-1qhv3lv-0"`). Il est ainsi facile de repérer son composant dans l'inspecteur sans utiliser les React Dev Tools.
 
 **Syntaxe CSS (& SCSS)** : il est très facile de débuter avec les styled-components car il s'agit purement et simplement d'écrire du CSS. Certaines fonctionnalités très appréciées dans SASS (SCSS) sont également implémentées, notamment l'imbrication d’éléments et de classes, et l'utilisation du symbole `&` pour cibler l'élément parent.
 
@@ -66,15 +66,15 @@ Le lendemain Max et Glen se retrouvèrent pour commencer à travailler ensemble 
 
 **Maintenance facilitée** : les styles et le composant sont localisés au même endroit, il est très facile de trouver le fichier à modifier et lorsque l'on supprime le composant on supprime également le style ce qui évite de polluer le code avec du CSS inutilisé.
 
-### Inconvénients
+#### Inconvénients
 
 Il n'est plus possible de mettre le CSS en cache car au lieu de charger des fichiers CSS et de les mettre en cache le CSS est injecté dans des balises `<style></style>` à chaque chargement de page. Heureusement seul le CSS de la page courante est chargé ce qui limite l'impact de l'absence de cache
 
 La librairie Styled-components a été créée pour fonctionner avec React et ne peut pas être utilisée en dehors de ce framework. Une autre librairie, [Emotion](https://emotion.sh/docs/introduction), permet également l'utilisation des styled-components. La syntaxe est similaire bien qu'il existe quelques différences entre les 2 librairies. Emotion par contre n'est pas liée à React et peut être utilisée dans toute application Javascript.
 
-# Débuter avec les styled-components
+## Débuter avec les styled-components
 
-## Installation et pré-requis
+### Installation et pré-requis
 
 Pour suivre ce tuto il est préférable de connaître React et d'être familier avec la syntaxe ES6 de Javascript. Avoir un peu d'expérience en CSS vous permettra de mieux apprécier les avantages des styled-components.
 
@@ -120,7 +120,7 @@ L'installation est terminée, "let the fun begin"!
 
 Le but étant de présenter les styled-components le code sera volontairement simplifié. Certaines balises HTML pourraient être remplacées par des éléments plus sémantiques et certaines répétitions devraient être évitées. Dans le prochain article nous verrons justement comment réorganiser le code afin de rendre le projet plus clair et d'éviter les répétitions.
 
-## Comparaison avec CSS/SASS
+### Comparaison avec CSS/SASS
 
 Afin d'éviter les conflits de noms de classes des méthodologies comme BEM (_Block - Element - Modifier_) ont été inventées.
 
@@ -174,7 +174,7 @@ Attention quand même, toutes les fonctionnalités de SASS n'ont pas été impl�
 
 Voyons maintenant comment faire disparaître les nombreuses classes sur les balises HTML grâce aux styled-components. Notre code sera ainsi plus lisible.
 
-## Premier composant
+### Premiers composants
 
 Nous allons créer une toute petite application qui va afficher un titre, un bouton et une galerie composée de 3 photos. Comme promis, on va rester dans la simplicité.
 
@@ -300,8 +300,6 @@ Donc même si 2 éléments dans l'application ont la même classe, tant que leur
 Mais dans l'idéal il est préférable de déclarer notre interface en composants bien séparés et éviter les classes.
 
 Fin de l'expérience, on peut maintenant retirer le `<span>` et le style correspondant.
-
-## Style global
 
 Il y a souvent des règles CSS globales à définir (reset, normalisation, typographie, etc.). Styled-components fournit à cet usage un helper : `createGlobalStyle`.
 
@@ -578,7 +576,7 @@ Dans le prochain article nous verrons comment utiliser les props pour modifier l
 
 Si cet article vous a plu n'hésitez pas à le partager. ;)
 
-## Sources
+### Sources
 
 [Styled-components: Documentation](https://www.notion.so/commit42/La-magie-des-styled-components-d80ccc17818c41f59de70b38e32af056#07ca36016c534eab9a8386f5343a0d44)
 
