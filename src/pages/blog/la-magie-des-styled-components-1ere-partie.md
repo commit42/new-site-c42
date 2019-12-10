@@ -42,7 +42,7 @@ Après de nombreux whiskies la soirée fut riche en idées folles (Max insiste v
 
 Le lendemain Max et Glen se retrouvèrent pour commencer à travailler ensemble sur ces "crazy ideas" qui allaient devenir la librairie qu'on connaît aujourd'hui sous le nom de styled-components.
 
-![The end](/assets/giphy.webp)
+![The end](/assets/giphy.gif)
 
 ## Avantages & inconvénients
 
@@ -384,174 +384,174 @@ N'hésitez pas à faire appel à votre potentiel créatif et à tout modifier en
 Une fois le contenu définit il est temps de créer les composants de la galerie et d'ajouter un bouton pour recharger la page. La règle `@media` et la pseudo-classe `:hover` sont imbriquées dans les composants concernés.
 
 ````JSX
-    const Button = styled.button`
-      padding: 0.5rem 1rem;
-      margin-bottom: 4rem;
-      font-size: 1.2rem;
-      background-color: #37b2cb;
-      color: #fff;
-      border: none;
-      border-radius: 0.25rem;
-      box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
-    `;
+        const Button = styled.button`
+          padding: 0.5rem 1rem;
+          margin-bottom: 4rem;
+          font-size: 1.2rem;
+          background-color: #37b2cb;
+          color: #fff;
+          border: none;
+          border-radius: 0.25rem;
+          box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
+        `;
 
-    const Gallery = styled.div`
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+        const Gallery = styled.div`
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
 
-      @media screen and (min-width: 769px) {
-        flex-direction: row;
-      }
-    `;
+          @media screen and (min-width: 769px) {
+            flex-direction: row;
+          }
+        `;
 
-    const GalleryItem = styled.div`
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      flex-basis: 32%;
-      padding: 1rem;
-      margin-bottom: 1rem;
-      background-color: #fff;
-      border: 1px solid #efefef;
-      box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s;
+        const GalleryItem = styled.div`
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          flex-basis: 32%;
+          padding: 1rem;
+          margin-bottom: 1rem;
+          background-color: #fff;
+          border: 1px solid #efefef;
+          box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
+          transition: transform 0.3s;
 
-      :hover {
-          transform: scale(1.05);
-      }
-    `;
+          :hover {
+              transform: scale(1.05);
+          }
+        `;
 
-    const Img = styled.img`
-      max-width: 100%;
-      display: block;
-    `;
+        const Img = styled.img`
+          max-width: 100%;
+          display: block;
+        `;
 
-    const ImgLabel = styled.p`
-      font-style: italic;
-      margin-bottom: 0;
-    `;
+        const ImgLabel = styled.p`
+          font-style: italic;
+          margin-bottom: 0;
+        `;
 
-    Et voilà enfin notre mini-application terminée:
+        Et voilà enfin notre mini-application terminée:
 
-    ```JSX
-    import React from "react";
-    import styled, { createGlobalStyle } from "styled-components";
+        ```JSX
+        import React from "react";
+        import styled, { createGlobalStyle } from "styled-components";
 
-    const GlobalStyle = createGlobalStyle`
-      html {
-        box-sizing: border-box;
-        *,
-        *:before,
-        *:after {
-          box-sizing: inherit;
-        }
-      }
+        const GlobalStyle = createGlobalStyle`
+          html {
+            box-sizing: border-box;
+            *,
+            *:before,
+            *:after {
+              box-sizing: inherit;
+            }
+          }
 
-      body {
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-        Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-      }
-    `;
+          body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+            Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+          }
+        `;
 
-    const Container = styled.div`
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 1rem;
-      margin: 0 auto;
-      max-width: 1400px;
-    `;
+        const Container = styled.div`
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 1rem;
+          margin: 0 auto;
+          max-width: 1400px;
+        `;
 
-    const Title = styled.h1`
-      display: block;
-      width: 18rem;
-      margin: 4rem auto;
-      padding: 1rem;
-      font-size: 1.4rem;
-      text-align: center;
-      text-transform: uppercase;
-      color: #65c3ba;
-      border: 1px solid #65c3ba;
-    `;
+        const Title = styled.h1`
+          display: block;
+          width: 18rem;
+          margin: 4rem auto;
+          padding: 1rem;
+          font-size: 1.4rem;
+          text-align: center;
+          text-transform: uppercase;
+          color: #65c3ba;
+          border: 1px solid #65c3ba;
+        `;
 
-    const Button = styled.button`
-      padding: 0.5rem 1rem;
-      margin-bottom: 4rem;
-      font-size: 1.2rem;
-      background-color: #37b2cb;
-      color: #fff;
-      border: none;
-      border-radius: 0.25rem;
-      box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
-    `;
+        const Button = styled.button`
+          padding: 0.5rem 1rem;
+          margin-bottom: 4rem;
+          font-size: 1.2rem;
+          background-color: #37b2cb;
+          color: #fff;
+          border: none;
+          border-radius: 0.25rem;
+          box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
+        `;
 
-    const Gallery = styled.div`
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+        const Gallery = styled.div`
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
 
-      @media screen and (min-width: 769px) {
-        flex-direction: row;
-      }
-    `;
+          @media screen and (min-width: 769px) {
+            flex-direction: row;
+          }
+        `;
 
-    const GalleryItem = styled.div`
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      flex-basis: 32%;
-      padding: 1rem;
-      margin-bottom: 1rem;
-      background-color: #fff;
-      border: 1px solid #efefef;
-      box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s;
+        const GalleryItem = styled.div`
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          flex-basis: 32%;
+          padding: 1rem;
+          margin-bottom: 1rem;
+          background-color: #fff;
+          border: 1px solid #efefef;
+          box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
+          transition: transform 0.3s;
 
-      :hover {
-        transform: scale(1.05);
-      }
-    `;
+          :hover {
+            transform: scale(1.05);
+          }
+        `;
 
-    const Img = styled.img`
-      max-width: 100%;
-      display: block;
-    `;
+        const Img = styled.img`
+          max-width: 100%;
+          display: block;
+        `;
 
-    const ImgLabel = styled.p`
-      font-style: italic;
-      margin-bottom: 0;
-    `;
+        const ImgLabel = styled.p`
+          font-style: italic;
+          margin-bottom: 0;
+        `;
 
-    const App = () => (
-      <div>
-        <GlobalStyle />
-        <Container>
-          <Title>European towns</Title>
-          <Button onClick={() => window.location.reload(true)}>
-            Recharger la page
-          </Button>
-          <Gallery>
-            <GalleryItem>
-              <Img src="https://source.unsplash.com/1600x900/?london" alt="" />
-              <ImgLabel>London</ImgLabel>
-            </GalleryItem>
+        const App = () => (
+          <div>
+            <GlobalStyle />
+            <Container>
+              <Title>European towns</Title>
+              <Button onClick={() => window.location.reload(true)}>
+                Recharger la page
+              </Button>
+              <Gallery>
+                <GalleryItem>
+                  <Img src="https://source.unsplash.com/1600x900/?london" alt="" />
+                  <ImgLabel>London</ImgLabel>
+                </GalleryItem>
 
-            <GalleryItem>
-              <Img src="https://source.unsplash.com/1600x900/?paris" alt="" />
-              <ImgLabel>Paris</ImgLabel>
-            </GalleryItem>
+                <GalleryItem>
+                  <Img src="https://source.unsplash.com/1600x900/?paris" alt="" />
+                  <ImgLabel>Paris</ImgLabel>
+                </GalleryItem>
 
-            <GalleryItem>
-              <Img src="https://source.unsplash.com/1600x900/?amsterdam" alt="" />
-              <ImgLabel>Amsterdam</ImgLabel>
-            </GalleryItem>
-          </Gallery>
-        </Container>
-      </div>
-    );
+                <GalleryItem>
+                  <Img src="https://source.unsplash.com/1600x900/?amsterdam" alt="" />
+                  <ImgLabel>Amsterdam</ImgLabel>
+                </GalleryItem>
+              </Gallery>
+            </Container>
+          </div>
+        );
 
-    export default App;
+        export default App;
 ````
 
 Votre navigateur devrait maintenant afficher ceci en vue mobile et desktop. _Just for fun_ j'ai ajouté une petite animation `transform: scale()` au survol des images, histoire d'utiliser une pseudo-classe.
