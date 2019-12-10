@@ -295,15 +295,15 @@ Si on observe nos éléments dans l'inspecteur on voit que le namespace est bien
 
 ![Classe CSS dans l'inspecteur](/assets/untitled-5.png)
 
-Donc même si 2 éléments dans l'application ont la même classe, tant que leur style est déclaré à l'intérieur d'un styled-component il n'y aura pas de conflit.
+Donc même si 2 éléments dans l'application ont la même classe, tant que leur style est déclaré à l'intérieur d'un styled-component il n'y aura pas de conflit. :tada:
 
-Mais dans l'idéal il est préférable de déclarer notre interface en composants bien séparés et éviter les classes.
+Mais dans l'idéal il est préférable de déclarer notre interface en composants bien séparés et d'éviter les classes.
 
 Fin de l'expérience, on peut maintenant retirer le `<span>` et le style correspondant.
 
 Il y a souvent des règles CSS globales à définir (reset, normalisation, typographie, etc.). Styled-components fournit à cet usage un helper : `createGlobalStyle`.
 
-Ici je définis simplement une valeur `box-sizing: border-box` pour tous les élements, un reset des marges et paddings du `<body>`, et j'utilise la règle `font-family` afin que les polices système soient utilisées.
+Ici je définis simplement une valeur `box-sizing: border-box` pour tous les élements, un reset des marges et paddings du `<body>`, et j'utilise une règle `font-family` qui permet d'utiliser les polices système.
 
 ```JSX
 import React from "react";
@@ -329,7 +329,7 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 const Title = styled.h1`
-    ...
+    /*...*/
 `;
 
 const App = () => (
@@ -349,7 +349,7 @@ import React from "react";
 import styled, { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
-    ...
+    /*...*/
 `;
 
 const Container = styled.div`
@@ -362,7 +362,7 @@ const Container = styled.div`
 `;
 
 const Title = styled.h1`
-    ...
+    /*...*/
 `;
 
 const App = () => (
@@ -377,7 +377,7 @@ const App = () => (
 export default App;
 ```
 
-J'utiliserai une URL très pratique (merci unsplash.com) qui permet d'afficher une photo aléatoire en choisissant la taille et le sujet! :)
+J'utiliserai une URL très pratique (merci unsplash.com) qui permet d'afficher une photo aléatoire en choisissant la taille et le sujet.
 
 Pour afficher une photo de Londres:
 
@@ -387,180 +387,181 @@ Pour afficher une photo de Londres:
 
 Il est temps de changer notre titre. Notre mini-application affichera des photos de 3 villes européennes différentes: Londres, Paris, Amsterdam. Dans l'espoir de faire connaître cette application dans le monde entier (ou pas...) j'utilise ce magnifique titre : "European towns".
 
-N'hésitez pas à faire appel à votre potentiel créatif et à tout modifier en modifiant le titre et les sujets des photos : ".../?poney", ".../?chocolatine", ".../?michel"
+N'hésitez pas à faire appel à votre potentiel créatif et utilisez d'autres paramètres de recherche pour les photos : ".../?space", ".../?forest", ".../?chocolatine" (ne cherchez pas, aucun résultat :disappointed:), ".../?michel"
 
 Une fois le contenu définit il est temps de créer les composants de la galerie et d'ajouter un bouton pour recharger la page. La règle `@media` et la pseudo-classe `:hover` sont imbriquées dans les composants concernés.
 
-````JSX
-        const Button = styled.button`
-          padding: 0.5rem 1rem;
-          margin-bottom: 4rem;
-          font-size: 1.2rem;
-          background-color: #37b2cb;
-          color: #fff;
-          border: none;
-          border-radius: 0.25rem;
-          box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
-        `;
+```JSX
+const Button = styled.button`
+  padding: 0.5rem 1rem;
+  margin-bottom: 4rem;
+  font-size: 1.2rem;
+  background-color: #37b2cb;
+  color: #fff;
+  border: none;
+  border-radius: 0.25rem;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
+`;
 
-        const Gallery = styled.div`
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
+const Gallery = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
-          @media screen and (min-width: 769px) {
-            flex-direction: row;
-          }
-        `;
+  @media screen and (min-width: 769px) {
+    flex-direction: row;
+  }
+`;
 
-        const GalleryItem = styled.div`
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          flex-basis: 32%;
-          padding: 1rem;
-          margin-bottom: 1rem;
-          background-color: #fff;
-          border: 1px solid #efefef;
-          box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
-          transition: transform 0.3s;
+const GalleryItem = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 32%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: #fff;
+  border: 1px solid #efefef;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
 
-          :hover {
-              transform: scale(1.05);
-          }
-        `;
+  :hover {
+    transform: scale(1.05);
+  }
+`;
 
-        const Img = styled.img`
-          max-width: 100%;
-          display: block;
-        `;
+const Img = styled.img`
+  max-width: 100%;
+  display: block;
+`;
 
-        const ImgLabel = styled.p`
-          font-style: italic;
-          margin-bottom: 0;
-        `;
+const ImgLabel = styled.p`
+  font-style: italic;
+  margin-bottom: 0;
+`;
+```
 
-        Et voilà enfin notre mini-application terminée:
+Et voilà enfin notre mini-application terminée:
 
-        ```JSX
-        import React from "react";
-        import styled, { createGlobalStyle } from "styled-components";
+```JSX
+import React from "react";
+import styled, { createGlobalStyle } from "styled-components";
 
-        const GlobalStyle = createGlobalStyle`
-          html {
-            box-sizing: border-box;
-            *,
-            *:before,
-            *:after {
-              box-sizing: inherit;
-            }
-          }
+const GlobalStyle = createGlobalStyle`
+  html {
+    box-sizing: border-box;
+    *,
+    *:before,
+    *:after {
+      box-sizing: inherit;
+    }
+  }
 
-          body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-            Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-          }
-        `;
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  }
+`;
 
-        const Container = styled.div`
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          padding: 1rem;
-          margin: 0 auto;
-          max-width: 1400px;
-        `;
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  margin: 0 auto;
+  max-width: 1400px;
+`;
 
-        const Title = styled.h1`
-          display: block;
-          width: 18rem;
-          margin: 4rem auto;
-          padding: 1rem;
-          font-size: 1.4rem;
-          text-align: center;
-          text-transform: uppercase;
-          color: #65c3ba;
-          border: 1px solid #65c3ba;
-        `;
+const Title = styled.h1`
+  display: block;
+  width: 18rem;
+  margin: 4rem auto;
+  padding: 1rem;
+  font-size: 1.4rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #65c3ba;
+  border: 1px solid #65c3ba;
+`;
 
-        const Button = styled.button`
-          padding: 0.5rem 1rem;
-          margin-bottom: 4rem;
-          font-size: 1.2rem;
-          background-color: #37b2cb;
-          color: #fff;
-          border: none;
-          border-radius: 0.25rem;
-          box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
-        `;
+const Button = styled.button`
+  padding: 0.5rem 1rem;
+  margin-bottom: 4rem;
+  font-size: 1.2rem;
+  background-color: #37b2cb;
+  color: #fff;
+  border: none;
+  border-radius: 0.25rem;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
+`;
 
-        const Gallery = styled.div`
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
+const Gallery = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
-          @media screen and (min-width: 769px) {
-            flex-direction: row;
-          }
-        `;
+  @media screen and (min-width: 769px) {
+    flex-direction: row;
+  }
+`;
 
-        const GalleryItem = styled.div`
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          flex-basis: 32%;
-          padding: 1rem;
-          margin-bottom: 1rem;
-          background-color: #fff;
-          border: 1px solid #efefef;
-          box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
-          transition: transform 0.3s;
+const GalleryItem = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 32%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: #fff;
+  border: 1px solid #efefef;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
 
-          :hover {
-            transform: scale(1.05);
-          }
-        `;
+  :hover {
+    transform: scale(1.05);
+  }
+`;
 
-        const Img = styled.img`
-          max-width: 100%;
-          display: block;
-        `;
+const Img = styled.img`
+  max-width: 100%;
+  display: block;
+`;
 
-        const ImgLabel = styled.p`
-          font-style: italic;
-          margin-bottom: 0;
-        `;
+const ImgLabel = styled.p`
+  font-style: italic;
+  margin-bottom: 0;
+`;
 
-        const App = () => (
-          <div>
-            <GlobalStyle />
-            <Container>
-              <Title>European towns</Title>
-              <Button onClick={() => window.location.reload(true)}>
-                Recharger la page
-              </Button>
-              <Gallery>
-                <GalleryItem>
-                  <Img src="https://source.unsplash.com/1600x900/?london" alt="" />
-                  <ImgLabel>London</ImgLabel>
-                </GalleryItem>
+const App = () => (
+  <div>
+    <GlobalStyle />
+    <Container>
+      <Title>European towns</Title>
+      <Button onClick={() => window.location.reload(true)}>
+        Recharger la page
+      </Button>
+      <Gallery>
+        <GalleryItem>
+          <Img src="https://source.unsplash.com/1600x900/?london" alt="" />
+          <ImgLabel>London</ImgLabel>
+        </GalleryItem>
 
-                <GalleryItem>
-                  <Img src="https://source.unsplash.com/1600x900/?paris" alt="" />
-                  <ImgLabel>Paris</ImgLabel>
-                </GalleryItem>
+        <GalleryItem>
+          <Img src="https://source.unsplash.com/1600x900/?paris" alt="" />
+          <ImgLabel>Paris</ImgLabel>
+        </GalleryItem>
 
-                <GalleryItem>
-                  <Img src="https://source.unsplash.com/1600x900/?amsterdam" alt="" />
-                  <ImgLabel>Amsterdam</ImgLabel>
-                </GalleryItem>
-              </Gallery>
-            </Container>
-          </div>
-        );
+        <GalleryItem>
+          <Img src="https://source.unsplash.com/1600x900/?amsterdam" alt="" />
+          <ImgLabel>Amsterdam</ImgLabel>
+        </GalleryItem>
+      </Gallery>
+    </Container>
+  </div>
+);
 
-        export default App;
-````
+export default App;       
+```
 
 Votre navigateur devrait maintenant afficher ceci en vue mobile et desktop. _Just for fun_ j'ai ajouté une petite animation `transform: scale()` au survol des images, histoire d'utiliser une pseudo-classe.
 
@@ -574,7 +575,7 @@ Vous pouvez retrouver ce code dans codesandbox :
 
 Dans le prochain article nous verrons comment utiliser les props pour modifier le style d'un styled-component, comment mettre en place un `<ThemeProvider />`, comment définir des styles conditionnels, et comment éviter la duplication de code. Nous présenterons quelques pistes de réflexion que nous avons eues sur l'organisation de nos projets avec les styled-components.
 
-Si cet article vous a plu n'hésitez pas à le partager. ;)
+Si cet article vous a plu n'hésitez pas à le partager. :wink:
 
 ### Sources
 
