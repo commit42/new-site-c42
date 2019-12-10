@@ -24,7 +24,7 @@ Comme nous l’utilisons sur Gatsbylius cette réunion fut l'occasion de présen
 
 ### Il y a bien longtemps, dans une ~~galaxie~~ ville lointaine, très lointaine...
 
-Grâce à la conférence donnée par Max Stoiber au _WeAreDevelopers World Congress 2018_ j'ai pu découvrir la belle et fun histoire de la création des styled-components. Je vais tenter d'en faire un résumé rapide mais vous pouvez visionner la conférence ci-dessous (25mn + 20mn de Q&A) pour bénéficier de toutes les anecdotes et infos. Je recommande! :+1:
+Grâce à la conférence donnée par Max Stoiber au _WeAreDevelopers World Congress 2018_ j'ai pu découvrir la belle et fun histoire de la création des styled-components. Je vais tenter d'en faire un résumé rapide mais vous pouvez visionner la conférence ci-dessous (25mn + 20mn de Q&A) pour bénéficier de toutes les anecdotes et infos. Je recommande!
 
 [The Road to Styled-Components: Styling Component Based Systems](https://www.youtube.com/watch?v=BkgU_-KGK9w)
 
@@ -32,7 +32,7 @@ En 2015 Max Stoiber retrouve un de ses amis, Craig Sharkie, dans un bar à Sydne
 
 Max et ses collègues travaillaient alors à l'élaboration d'une librairie UI, Elemental UI, qui utilisait LESS et Max cherchait à l'époque un moyen d'éviter de devoir utiliser un outil de build LESS à la chaîne de compilation en plus de l'outil de build JS (webpack) utilisé par React. Ce soir-là il découvre grâce à Glen le concept de CSS-in-JS. Sa première pensée a été "What ?! What is he talking about ?!" mais heureusement pour la communauté il n'est pas resté bloqué sur cette pensée.
 
-De nombreux projets exploraient déjà cette solution mais ils nécessitaient d'écrire le CSS en tant qu'objet JavaScript, ce qui est assez agaçant. Écrire les propriétés CSS en camelCase, les valeurs entre guillemets et terminer chaque instruction par une virgule comme ci-dessous nous on est vraiment pas fans. :cry:
+De nombreux projets exploraient déjà cette solution mais ils nécessitaient d'écrire le CSS en tant qu'objet JavaScript, ce qui est assez agaçant. Écrire les propriétés CSS en camelCase, les valeurs entre guillemets et terminer chaque instruction par une virgule comme ci-dessous nous on est vraiment pas fans.
 
 ```html
 <AwesomeComponent style={{backgroundColor: "rgb(0,200,200)", paddingTop: "5rem"}} />
@@ -93,11 +93,11 @@ cd mon-projet
 yarn start
 ```
 
-Si tout s'est bien passé en vous rendant à l'adresse http://localhost:3000 vous devriez voir cette page:
+Si tout s'est bien passé en vous rendant à l'adresse http://localhost:3000 vous devriez voir cette page :
 
 ![React starter page](/assets/untitled.png)
 
-Vous pouvez aussi utiliser l'éditeur en ligne Codesandbox qui vous permet de créer une application React en 1 clic: `https://codesandbox.io`
+Vous pouvez aussi utiliser l'éditeur en ligne Codesandbox qui vous permet de créer une application React en 1 clic : `https://codesandbox.io`
 
 C'est une très bonne solution pour tester des petits bouts de code ou des packages npm (les dépendances s'installent aussi en 1 clic!).
 
@@ -252,7 +252,7 @@ Notre composant `<Title />` est toujours utilisé de la même façon, aucune cla
 
 ![classe auto-généré par les styled-components](/assets/untitled-3.png)
 
-Comme dit précédemment, par défaut nous n'avons aucun risque d'avoir un conflit de classe. Et ça fait plaisir! :tada:
+Comme dit précédemment, par défaut nous n'avons aucun risque d'avoir un conflit de classe. Et ça fait plaisir!
 
 Au nom de la science ajoutons une balise `<span>` dans la balise `<h1>` et observons le résultat dans l'inspecteur. On imbrique le style dans celui du composant `<Title/>`, comme dans un fichier SCSS. On peut imbriquer les classes de la même façon.
 
@@ -287,7 +287,7 @@ const App = () => (
 export default App;
 ```
 
-On obtient ce magnifique titre:
+On obtient ce magnifique titre :
 
 ![Titre Hello world Test](/assets/untitled-4.png)
 
@@ -295,7 +295,7 @@ Si on observe nos éléments dans l'inspecteur on voit que le namespace est bien
 
 ![Classe CSS dans l'inspecteur](/assets/untitled-5.png)
 
-Donc même si 2 éléments dans l'application ont la même classe, tant que leur style est déclaré à l'intérieur d'un styled-component il n'y aura pas de conflit. :tada:
+Donc même si 2 éléments dans l'application ont la même classe, tant que leur style est déclaré à l'intérieur d'un styled-component il n'y aura pas de conflit.
 
 Mais dans l'idéal il est préférable de déclarer notre interface en composants bien séparés et d'éviter les classes.
 
@@ -379,15 +379,15 @@ export default App;
 
 J'utiliserai une URL très pratique (merci unsplash.com) qui permet d'afficher une photo aléatoire en choisissant la taille et le sujet.
 
-Pour afficher une photo de Londres:
+Pour afficher une photo de Londres :
 
 ```html
 <img src="https://source.unsplash.com/800x600/?london" alt="Photo de Londres" />
 ```
 
-Il est temps de changer notre titre. Notre mini-application affichera des photos de 3 villes européennes différentes: Londres, Paris, Amsterdam. Dans l'espoir de faire connaître cette application dans le monde entier (ou pas...) j'utilise ce magnifique titre : "European towns".
+Il est temps de changer notre titre. Notre mini-application affichera des photos de 3 villes européennes différentes : Londres, Paris, Amsterdam. Dans l'espoir de faire connaître cette application dans le monde entier (ou pas...) j'utilise ce magnifique titre : "European towns".
 
-N'hésitez pas à faire appel à votre potentiel créatif et utilisez d'autres paramètres de recherche pour les photos : ".../?space", ".../?forest", ".../?chocolatine" (ne cherchez pas, aucun résultat :disappointed:), ".../?michel"
+N'hésitez pas à faire appel à votre potentiel créatif et utilisez d'autres paramètres de recherche pour les photos : ".../?space", ".../?forest", ".../?chocolatine" (ne cherchez pas, aucun résultat...), ".../?michel"
 
 Une fois le contenu définit il est temps de créer les composants de la galerie et d'ajouter un bouton pour recharger la page. La règle `@media` et la pseudo-classe `:hover` sont imbriquées dans les composants concernés.
 
@@ -575,7 +575,7 @@ Vous pouvez retrouver ce code dans codesandbox :
 
 Dans le prochain article nous verrons comment utiliser les props pour modifier le style d'un styled-component, comment mettre en place un `<ThemeProvider />`, comment définir des styles conditionnels, et comment éviter la duplication de code. Nous présenterons quelques pistes de réflexion que nous avons eues sur l'organisation de nos projets avec les styled-components.
 
-Si cet article vous a plu n'hésitez pas à le partager. :wink:
+Si cet article vous a plu n'hésitez pas à le partager.
 
 ### Sources
 
