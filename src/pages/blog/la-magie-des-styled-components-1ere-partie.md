@@ -236,7 +236,7 @@ const App = () => (
 export default App;
 ```
 
-![Hello world avec CSS](/assets/untitled-2.png)
+![Titre Hello world avec CSS](/assets/untitled-2.png)
 
 Notre composant `<Title />` est toujours utilisé de la même façon, aucune classe n'a été ajoutée et pourtant notre style a bien été appliqué. En inspectant notre titre nous allons découvrir un nom de classe auto-généré, dans mon navigateur je peux lire `"sc-bdVaJa hMJzYd"`.
 
@@ -279,11 +279,11 @@ export default App;
 
 On obtient ce magnifique titre:
 
-![Hello world](/assets/untitled-4.png)
+![Titre Hello world Test](/assets/untitled-4.png)
 
 Si on observe nos éléments dans l'inspecteur on voit que le namespace est bien ajouté à notre élément imbriqué (on peut voir que le nom de classe a changé sur notre `<h1>`).
 
-![Hello world](/assets/untitled-5.png)
+![Classe CSS dans l'inspecteur](/assets/untitled-5.png)
 
 Donc même si 2 éléments dans l'application ont la même classe, tant que leur style est déclaré à l'intérieur d'un styled-component il n'y aura pas de conflit.
 
@@ -562,40 +562,18 @@ Votre navigateur devrait maintenant afficher ceci en vue mobile et desktop. _Jus
 
 Vous pouvez retrouver ce code dans codesandbox :
 
-Styled-components basics
+[Styled-components basics](https://www.notion.so/commit42/La-magie-des-styled-components-d80ccc17818c41f59de70b38e32af056#245050c70836409a8b57f7fe558b2bec)
 
-Dans le prochain article nous verrons comment utiliser les props pour modifier le style d'un styled-component, comment mettre en place un <ThemeProvider />, comment définir des styles conditionnels, et comment éviter la duplication de code. Nous présenterons quelques pistes de réflexion que nous avons eues sur l'organisation d'un projet avec les styled-components.
+Dans le prochain article nous verrons comment utiliser les props pour modifier le style d'un styled-component, comment mettre en place un `<ThemeProvider />`, comment définir des styles conditionnels, et comment éviter la duplication de code. Nous présenterons quelques pistes de réflexion que nous avons eues sur l'organisation de nos projets avec les styled-components.
 
-Si cet article vous a plu n'hésitez pas à le partager.
+Si cet article vous a plu n'hésitez pas à le partager. ;)
 
-Sources
+## Sources
 
-styled-components: Documentation
+[Styled-components: Documentation](https://www.notion.so/commit42/La-magie-des-styled-components-d80ccc17818c41f59de70b38e32af056#07ca36016c534eab9a8386f5343a0d44)
 
-The Road to Styled-Components: Styling Component Based Systems
+[The Road to Styled-Components: Styling Component Based Systems](https://www.notion.so/commit42/La-magie-des-styled-components-d80ccc17818c41f59de70b38e32af056#1c1ccd2213154950a51ed917d5de5d0f)
 
-How to Redesign Unsplash Using Styled Components - SitePoint
+[How to Redesign Unsplash Using Styled Components - SitePoint](https://www.notion.so/commit42/La-magie-des-styled-components-d80ccc17818c41f59de70b38e32af056#f4058a77443b409ea4bbcfe0f2d2d57f)
 
-The magic behind 💅 styled-components
-
-TODO
-
-??? Sondage twitter pour avoir une idée de l'utilisation en France ? "Utilisez-vous les styled components ? Oui / Non / Pourquoi pas / Never!" et pourquoi ?
-
-Partie 2
-
-\[ ] props ⇒ props
-\[ ] function css : variables et style conditionnel
-\[ ] extend avec styled(Component)
-\[ ] extraire les fonctions ? (point-less free style, tacit programming)
-\[ ] organisation des fichiers
-\[ ] override &&&
-\[ ] ex: spectrum
-Partie 3
-
-\[ ] ??? styled system - rebass
-Sources supplémentaires
-
-The magic behind 💅 styled-components
-
-Styled Components: Enforcing Best Practices In Component-Based Systems - Smashing Magazine
+[The magic behind styled-components](https://www.notion.so/commit42/La-magie-des-styled-components-d80ccc17818c41f59de70b38e32af056#cee93e635b45429e8b6b2a38b5f74457)
