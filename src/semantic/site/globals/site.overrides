@@ -3,41 +3,63 @@
 *******************************/
 
 @font-face {
-  font-family: 'Poppins Black';
-  font-style: BlackItalic;
-  font-display: swap;
-  src: local('Poppins Black'),local('PoppinsBlack'), url('fonts/Poppins-BlackItalic.ttf');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+    font-family: 'Poppins Black';
+    src: url('fonts/Poppins-BlackItalic.eot');
+    src: url('fonts/Poppins-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Poppins-BlackItalic.woff2') format('woff2'),
+        url('fonts/Poppins-BlackItalic.woff') format('woff'),
+        url('fonts/Poppins-BlackItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: bold;
 }
 
 @font-face {
-  font-family: 'Poppins';
-  font-style: Bold;
-  font-display: swap;
-  src: local('Poppins'),url('fonts/Poppins-Bold.ttf');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+    font-family: 'Poppins';
+    src: url('fonts/Poppins-Bold.eot');
+    src: url('fonts/Poppins-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Poppins-Bold.woff2') format('woff2'),
+        url('fonts/Poppins-Bold.woff') format('woff'),
+        url('fonts/Poppins-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: bold;
 }
 
 @font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Roboto'), url('fonts/Roboto-Light.ttf');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Medium.eot');
+    src: url('fonts/Roboto-Medium.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Roboto-Medium.woff2') format('woff2'),
+        url('fonts/Roboto-Medium.woff') format('woff'),
+        url('fonts/Roboto-Medium.ttf') format('truetype');
+    font-weight: 700;
+    font-style: bold;
 }
 
 @font-face {
-  font-family: 'Roboto Italic';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Poppins Italic'), url('fonts/Roboto-LightItalic.ttf');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-LightItalic.eot');
+    src: url('fonts/Roboto-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Roboto-LightItalic.woff2') format('woff2'),
+        url('fonts/Roboto-LightItalic.woff') format('woff'),
+        url('fonts/Roboto-LightItalic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Light.eot');
+    src: url('fonts/Roboto-Light.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Roboto-Light.woff2') format('woff2'),
+        url('fonts/Roboto-Light.woff') format('woff'),
+        url('fonts/Roboto-Light.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
 }
 
 a {
-  font-family: 'Roboto Italic';
+  font-family: 'Roboto';
+  font-style: italic;
   &:not(.item){
     color: @bluec42;
     transition: 0.2s ease-in-out;
