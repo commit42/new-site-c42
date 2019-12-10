@@ -1,7 +1,6 @@
 import React from "react"
 import moment from "moment"
 import kebabCase from "lodash/kebabCase"
-import { Link } from "gatsby"
 import { Container, Header, Label, Grid } from "semantic-ui-react"
 import { graphql } from "gatsby"
 

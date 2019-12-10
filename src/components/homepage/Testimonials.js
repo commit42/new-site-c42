@@ -2,7 +2,6 @@ import React, { useState } from "react"
 import "./testimonials.scss"
 import { Grid, Icon, Header, Card, Container, Button } from "semantic-ui-react"
 import Fade from "react-reveal/Fade"
-import Carousel from "nuka-carousel"
 import Swiper from "react-id-swiper"
 import { Navigation, Pagination, Autoplay } from "swiper/dist/js/swiper.esm"
 

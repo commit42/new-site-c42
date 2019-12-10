@@ -1,6 +1,5 @@
 import React from "react"
 import { Menu, Image, Container, Header } from "semantic-ui-react"
-import Headroom from "react-headroom"
 import { Link } from "gatsby"
 import Logo from "../../../static/assets/logo-c42.png"
 
