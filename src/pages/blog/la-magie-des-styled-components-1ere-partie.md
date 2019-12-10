@@ -11,7 +11,7 @@ tags:
 ---
 # Intro
 
-Vendredi dernier nous nous sommes réunis afin d'organiser notre travail sur notre side-project open-source [Gatsbylius](https://github.com/opengento/gatsbylius), une boutique e-commerce qui tourne avec [Sylius](https://sylius.com/) en back et [Gatsby](https://www.gatsbyjs.org/) en front.
+Vendredi dernier nous nous sommes réunis afin d'organiser notre travail sur notre side-project open-source [Gatsbylius](https://github.com/Gatsbylius/Gatsbylius), une boutique e-commerce qui tourne avec [Sylius](https://sylius.com/) en back et [Gatsby](https://www.gatsbyjs.org/) en front.
 
 Gatsby est un générateur de site statique basé sur React, et dès qu'il s'agit de gérer le style sur React notre solution préférée est d'utiliser la librairie [styled-components](https://www.styled-components.com/). Il s'agit d'une librairie CSS-in-JS que Valentin et moi utilisons depuis plus d'un an avec toujours autant de plaisir. Et plus nous l'utilisons plus nous découvrons de nouvelles façons d'organiser notre code et d'améliorer l'expérience développeur (DX).
 
@@ -148,21 +148,21 @@ SASS (SCSS) permet d'imbriquer les classes et d'utiliser le symbole & pour faire
 
 ```scss
 .card {
-    ...
+    /*...*/
 
     &--outline {
-        ...
+        /*...*/
     }
 
     &--primary {
-        ...
+        /*...*/
     }
 
     &__image {
-        ...
+        /*...*/
 
         &--framed {
-            ...
+            /*...*/
         }
     }
 }
