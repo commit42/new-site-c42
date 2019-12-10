@@ -39,11 +39,11 @@
 a {
   font-family: 'Roboto Italic';
   &:not(.item){
-    color: @greyc42;
+    color: @bluec42;
     transition: 0.2s ease-in-out;
     font-weight: bold;
       &:hover {
-        color: @bluec42;
+        color: @darkbluec42;
         transition: 0.2s ease-in-out;
       }
       &.content{

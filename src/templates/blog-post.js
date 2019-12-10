@@ -1,5 +1,4 @@
 import React from "react"
-import "./blog-post.scss"
 import moment from "moment"
 import kebabCase from "lodash/kebabCase"
 import { Link } from "gatsby"
@@ -8,6 +7,9 @@ import { graphql } from "gatsby"
 
 import SEO from "../components/SEO/SEO"
 import Layout from "../components/layout"
+
+import "./blog-post.scss"
+import "./prism-material-dark.css"
 
 export default function Template({ data }) {
   const { markdownRemark: post } = data
@@ -52,15 +54,16 @@ export default function Template({ data }) {
               <span>{moment(date).format("Do MMM YYYY")}</span>
               <span> • {post.timeToRead}min à perdre</span>
               <div style={{ marginTop: "2rem" }}>
-                {post.frontmatter.tags && post.frontmatter.tags.map((tag, index) => (
-                  <Label
-                    key={index}
-                    style={{ marginBottom: "0.5rem" }}
-                    href={`/tags/${kebabCase(tag)}`}
-                  >
-                    {tag}
-                  </Label>
-                ))}
+                {post.frontmatter.tags &&
+                  post.frontmatter.tags.map((tag, index) => (
+                    <Label
+                      key={index}
+                      style={{ marginBottom: "0.5rem" }}
+                      href={`/tags/${kebabCase(tag)}`}
+                    >
+                      {tag}
+                    </Label>
+                  ))}
               </div>
             </div>
             <div

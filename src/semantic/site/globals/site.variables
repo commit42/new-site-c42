@@ -14,8 +14,10 @@
 
 /* Colors */
 @bluec42: #6BA3D6;
+@darkbluec42: #3C79B2;
 @yellowc42: #FFE800;
 @greyc42: #424242;
+
 
 @primary: @bluec42
 
