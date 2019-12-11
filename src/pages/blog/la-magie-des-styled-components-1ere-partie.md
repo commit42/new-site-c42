@@ -99,7 +99,7 @@ Si tout s'est bien passé en vous rendant à l'adresse http://localhost:3000 vou
 
 ![React starter page](/assets/untitled.png)
 
-Vous pouvez aussi utiliser l'éditeur en ligne Codesandbox qui vous permet de créer une application React en 1 clic : `https://codesandbox.io`
+Vous pouvez aussi utiliser l'éditeur en ligne Codesandbox qui vous permet de créer une application React en 1 clic : [Codesandbox.io](https://codesandbox.io)
 
 C'est une très bonne solution pour tester des petits bouts de code ou des packages npm (les dépendances s'installent aussi en 1 clic!).
 
