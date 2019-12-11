@@ -570,7 +570,7 @@ Votre navigateur devrait maintenant afficher ceci en vue mobile et desktop. _Jus
 
 Vous pouvez retrouver ce code dans codesandbox :
 
-[Styled-components basics](https://www.notion.so/commit42/La-magie-des-styled-components-d80ccc17818c41f59de70b38e32af056#245050c70836409a8b57f7fe558b2bec)
+[Codesandbox.io - Styled-components basics](https://codesandbox.io/s/styled-components-basics-7no9x)
 
 Dans le prochain article nous verrons comment utiliser les props pour modifier le style d'un styled-component, comment mettre en place un `<ThemeProvider />`, comment définir des styles conditionnels, et comment éviter la duplication de code. Nous présenterons quelques pistes de réflexion que nous avons eues sur l'organisation de nos projets avec les styled-components.
 
