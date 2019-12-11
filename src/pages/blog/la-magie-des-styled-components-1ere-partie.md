@@ -578,10 +578,10 @@ Si cet article vous a plu n'hésitez pas à le partager.
 
 ### Sources
 
-[Styled-components: Documentation](https://www.notion.so/commit42/La-magie-des-styled-components-d80ccc17818c41f59de70b38e32af056#07ca36016c534eab9a8386f5343a0d44)
+[Styled-components: Documentation](https://www.styled-components.com/docs)
 
-[The Road to Styled-Components: Styling Component Based Systems](https://www.notion.so/commit42/La-magie-des-styled-components-d80ccc17818c41f59de70b38e32af056#1c1ccd2213154950a51ed917d5de5d0f)
+[The Road to Styled-Components: Styling Component Based Systems](https://www.youtube.com/watch?v=BkgU_-KGK9w)
 
-[How to Redesign Unsplash Using Styled Components - SitePoint](https://www.notion.so/commit42/La-magie-des-styled-components-d80ccc17818c41f59de70b38e32af056#f4058a77443b409ea4bbcfe0f2d2d57f)
+[How to Redesign Unsplash Using Styled Components - SitePoint](https://www.sitepoint.com/using-styled-components/)
 
-[The magic behind styled-components](https://www.notion.so/commit42/La-magie-des-styled-components-d80ccc17818c41f59de70b38e32af056#cee93e635b45429e8b6b2a38b5f74457)
+[The magic behind styled-components](https://mxstbr.blog/2016/11/styled-components-magic-explained/)
