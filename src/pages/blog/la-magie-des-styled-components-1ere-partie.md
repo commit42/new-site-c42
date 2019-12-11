@@ -80,7 +80,9 @@ Pour suivre ce tuto il est préférable de connaître React et d'être familier 
 
 Dans le but de ne pas écrire un article trop long je ne m'étendrai pas sur l'explication du code CSS utilisé.
 
-Pour créer un nouveau projet React vous pouvez utiliser `create-react-app`. Grâce à `npx` il est inutile de l'installer globalement, `npx` télécharge et lance un package temporaire sans polluer le namespace global (voir la [doc de React](https://fr.reactjs.org/docs/create-a-new-react-app.html#create-react-app))
+J'utiliserai `npm` mais vous pouvez utiliser `yarn` si vous préférez. Attention de ne pas conserver un `yarn.lock` et un `package-lock.json` pour éviter de possibles conflits.
+
+Pour créer un nouveau projet React on va utiliser `create-react-app`. Grâce à `npx` il est inutile de l'installer globalement, `npx` télécharge et lance un package temporaire sans polluer le namespace global (voir la [doc de React](https://fr.reactjs.org/docs/create-a-new-react-app.html#create-react-app))
 
 ```sh
 // "mon-projet" correspond ici au nom de votre projet et create-react-app va créer ce répertoire
@@ -90,7 +92,7 @@ npx create-react-app mon-projet
 cd mon-projet
 
 // lancer le projet pour vérifier que React est bien installé
-yarn start
+npm start
 ```
 
 Si tout s'est bien passé en vous rendant à l'adresse http://localhost:3000 vous devriez voir cette page :
@@ -101,12 +103,9 @@ Vous pouvez aussi utiliser l'éditeur en ligne Codesandbox qui vous permet de cr
 
 C'est une très bonne solution pour tester des petits bouts de code ou des packages npm (les dépendances s'installent aussi en 1 clic!).
 
-Il nous reste juste à installer les styled-components. React utilise par défaut le gestionnaire de paquets yarn (créé par Facebook, comme React) mais il est tout à fait possible d'utiliser npm.
+Il nous reste juste à installer les styled-components.
 
 ```sh
-// yarn
-yarn add styled-components
-
 // npm
 npm install styled-components
 ```
@@ -118,7 +117,7 @@ Au moment de l'écriture de cette article le fichier `package.json` indique les 
 
 L'installation est terminée, "let the fun begin"!
 
-Le but étant de présenter les styled-components le code sera volontairement simplifié. Certaines balises HTML pourraient être remplacées par des éléments plus sémantiques et certaines répétitions devraient être évitées. Dans le prochain article nous verrons justement comment réorganiser le code afin de rendre le projet plus clair et d'éviter les répétitions.
+Le but étant de présenter les styled-components le code sera volontairement simplifié. Certaines balises HTML pourraient être remplacées par des éléments plus sémantiques et certaines répétitions devraient être évitées. Dans le prochain article nous verrons justement comment réorganiser le code afin de rendre le projet plus clair et éviter les répétitions.
 
 ### Comparaison avec CSS/SASS
 
@@ -127,7 +126,7 @@ Afin d'éviter les conflits de noms de classes des méthodologies comme BEM (_Bl
 J'adore BEM mais il faut avouer que dans certains cas on se retrouve avec des balises HTML inondées de classes CSS. Par exemple une vignette contenant une image et un label pourrait être définie ainsi avec BEM en utilisant la syntaxe `class="block__element"`.
 
 ```html
-<div class="card__container">
+<div class="card">
     <img class="card__image" src="tesla__cybertruck.jpg" alt="Photo du pickup tesla avec une vitre cassée par Elon Musk lui-même" />
     <p class="card__label">Pickup Tesla Cybertruck</p>
   <a class="card__link" href="/testa-cybertruck">Découvrir le Tesla Cybertruck</a>
