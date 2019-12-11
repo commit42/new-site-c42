@@ -34,7 +34,7 @@ Max et ses collègues travaillaient alors à l'élaboration d'une librairie UI, 
 
 De nombreux projets exploraient déjà cette solution mais ils nécessitaient d'écrire le CSS en tant qu'objet JavaScript, ce qui est assez agaçant. Écrire les propriétés CSS en camelCase, les valeurs entre guillemets et terminer chaque instruction par une virgule comme ci-dessous nous on est vraiment pas fans.
 
-```html
+```JSX
 <AwesomeComponent style={{backgroundColor: "rgb(0,200,200)", paddingTop: "5rem"}} />
 ```
 
