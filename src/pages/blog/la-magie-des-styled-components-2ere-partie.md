@@ -116,6 +116,8 @@ On limite ainsi le nombre de props utilisées sur le composant `<Message>` (le c
 
 ## Le helper css\``
 
+/!\ https://github.com/styled-components/styled-components/issues/1178
+
 Parfois notre code peut devenir répétitif et difficile à lire. Par exemple si il y a trop de logique au milieu du style (comme les opérateurs ternaires imbriqués utilisés ci-dessus) lorsque de nombreuses règles CSS sont définies selon les props. Afin de palier à ces problèmes (et à d'autres) la librairie styled-components fournit un helper `css` très pratique. On peut ainsi définir un bloc de règles CSS dans une variable afin de la réutiliser ou d'alléger la logique présente dans le CSS du composant.
 
 ```JSX
@@ -156,7 +158,7 @@ export default App;
 
 On pourrait aussi utiliser le helper `css` dans la fonction `styled`.
 
-
+// exemple ? fullWidth
 
 
 
