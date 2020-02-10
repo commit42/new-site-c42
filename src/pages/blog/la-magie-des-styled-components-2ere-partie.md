@@ -116,7 +116,7 @@ On limite ainsi le nombre de props utilisées sur le composant `<Message>` (le c
 
 ## Le helper css\``
 
-Notre code peut parfois devenir répétitif et difficile à lire. Par exemple les opérateurs ternaires imbriqués utilisés ci-dessus ne plaisent pas à tout le monde, ou parfois lorsque de nombreuses règles CSS sont définies selon les props la lecture du code est plus difficile. Afin de palier à ces problèmes (et à d'autres) la librairie styled-components fournit un helper `css` très pratique. On peut ainsi définir un bloc de règles CSS dans une variable afin de la réutiliser ou d'alléger la logique présente dans le CSS du composant.
+Parfois notre code peut devenir répétitif et difficile à lire. Par exemple si il y a trop de logique au milieu du style (comme les opérateurs ternaires imbriqués utilisés ci-dessus) lorsque de nombreuses règles CSS sont définies selon les props. Afin de palier à ces problèmes (et à d'autres) la librairie styled-components fournit un helper `css` très pratique. On peut ainsi définir un bloc de règles CSS dans une variable afin de la réutiliser ou d'alléger la logique présente dans le CSS du composant.
 
 ```JSX
 import React from "react";
@@ -155,6 +155,8 @@ export default App;
 ```
 
 On pourrait aussi utiliser le helper `css` dans la fonction `styled`.
+
+
 
 
 
