@@ -77,8 +77,7 @@ const App = () => (
 export default App;
 ```
 
-Le but n'étant pas de redéfinir chaque propriété CSS grâce aux props du composants, il devient plus intéressant d'utiliser une propriété "fonctionnelle" que l'on peut utiliser pour définir plusieurs règles CSS.
-Par exemple on pourrait créer un composant `<Message>` qui est en charge des notifications et qui aurait 3 états: default, success, error. 
+Afin d'éviter de redéfinir chaque propriété CSS grâce aux props du composants il est plus intéressant d'utiliser une propriété définissant un état ou une fonction. Par exemple on pourrait créer un composant `<Message>` qui est en charge des notifications et qui aurait 3 états: défaut, succès, erreur. 
 
 ```JSX
 import React from "react";
@@ -90,13 +89,13 @@ const Container = styled.div`
 `;
 
 const Message = styled.p`
+  color: ${({ success, error }) =>
+    (success && "green") || (error && "red") || "#333"};
+  background: ${({ success, error }) =>
+    (success && "#c8e6c9") || (error && "#ffcdd2") || "#efefef"};
   padding: 1rem;
   font-weight: bold;
   text-align: center;
-  color: ${({ success, error }) =>
-    success || error ? (success ? "green" : "red") : "#333"};
-  background: ${({ success, error }) =>
-    success || error ? (success ? "#c8e6c9" : "#ffcdd2") : "#fef9e7"};
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 `;
 
@@ -110,55 +109,52 @@ const App = () => (
   </Container>
 );
 export default App;
+
 ```
 
-On limite ainsi le nombre de props utilisées sur le composant `<Message>` (le code JSX est donc plus lisible). Autre point essentiel, la prop utilisée nous informe de la fonction ou de l'état du composant. Ici "success" ou "error".
+On limite ainsi le nombre de props utilisées sur le composant `<Message>`, le code du composant <App /> est plus lisible.
 
 ## Le helper css\``
 
-/!\ https://github.com/styled-components/styled-components/issues/1178
-
-Parfois notre code peut devenir répétitif et difficile à lire. Par exemple si il y a trop de logique au milieu du style (comme les opérateurs ternaires imbriqués utilisés ci-dessus) lorsque de nombreuses règles CSS sont définies selon les props. Afin de palier à ces problèmes (et à d'autres) la librairie styled-components fournit un helper `css` très pratique. On peut ainsi définir un bloc de règles CSS dans une variable afin de la réutiliser ou d'alléger la logique présente dans le CSS du composant.
+Parfois on se retrouve dans une situation où la même prop va définir plusieurs règles et il serait dommage de répéter la même fonction. Il est tout à fait possible d'insérer une seule fonction qui retourne plusieurs règles CSS.
 
 ```JSX
-import React from "react";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
-const Container = styled.div`
-  max-width: 38em;
-  margin: 0 auto;
+const Box = styled.p`
+  ${({ centerXY }) =>
+    centerXY &&
+    `
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    `}
+
+  height: 200px;
+  background: #efefef;
 `;
-
-const MessageColors = css`
-  color: ${({ success, error }) =>
-    success || error ? (success ? "green" : "red") : "#333"};
-  background: ${({ success, error }) =>
-    success || error ? (success ? "#c8e6c9" : "#ffcdd2") : "#fef9e7"};
-`;
-
-const Message = styled.p`
-  padding: 1rem;
-  font-weight: bold;
-  text-align: center;
-  ${MessageColors};
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-`;
-
-const App = () => (
-  <Container>
-    <Message>Vous avez 126 mails non lus dans votre boîte de réception</Message>
-    <Message success>Votre message a bien été envoyé.</Message>
-    <Message error>
-      Une erreur est survenue, votre message n'a pas été envoyé.
-    </Message>
-  </Container>
-);
-export default App;
 ```
 
-On pourrait aussi utiliser le helper `css` dans la fonction `styled`.
+Mais il est recommandé d'utiliser le helper css\`` fournit par la librairie.
 
-// exemple ? fullWidth
+```JSX
+import styled, { css } from "styled-components;
+
+const Box = styled.p`
+  ${({ centerXY }) =>
+    centerXY &&
+    css`
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    `}
+
+  height: 200px;
+  background: #efefef;
+`;
+```
+
+Presque identique mais... blabla
 
 
 
