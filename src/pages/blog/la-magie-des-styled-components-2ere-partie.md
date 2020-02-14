@@ -132,17 +132,18 @@ const App = () => (
     </Message>
   </Container>
 );
-export default App;
 
+export default App;
 ```
 
-On limite ainsi le nombre de props utilisées sur le composant `<Message>`, le code du composant <App /> est plus lisible.
+On limite ainsi le nombre de props utilisées sur le composant `<Message>`, le code du composant `<App /> est ainsi plus lisible.
 
 ## Le helper css\``
 
 Parfois on se retrouve dans une situation où la même prop va définir plusieurs règles et il serait dommage de répéter la même fonction. Il suffit d'insérer une seule fonction qui retourne plusieurs règles CSS.
 
 ```JSX
+import React from "react";
 import styled from "styled-components";
 
 const Box = styled.div`
@@ -159,9 +160,10 @@ const Box = styled.div`
 `;
 ```
 
-Mais il est recommandé d'utiliser le helper css\`` fournit par la librairie, ça permet de bénéficier de la coloration syntaxique (si on utilise une extension comme vsocde-styled-components) et a priori ça aide la librairie à gérer certaines optimisations.
+Mais il est recommandé d'utiliser le helper css\`` fournit par la librairie. Avec une extension adaptée (comme vscode-styled-components pour Visual Studio Code) on bénéficie  de la coloration syntaxique et la librairie gère mieux certaines optimisations.
 
 ```JSX
+import React from "react";
 import styled, { css } from "styled-components;
 
 const Box = styled.div`
@@ -178,25 +180,59 @@ const Box = styled.div`
 `;
 ```
 
-C'est presque identique mais mieux, autant l'utiliser.
-
 ## Étendre un composant
 
-Il est toujours préférable d'éviter les répétitions de code, il y a mêle une philosophie pour ça: DRY, pour **D**on't **R**epeat **Y**ourself.
+Il est toujours préférable d'éviter la répétition de code, il y a même une philosophie pour ça: DRY, pour **D**on't **R**epeat **Y**ourself.
 
 Pour nos composants cela présente plusieurs avantages:
 - réécrire le même code plusieurs fois serait une perte de temps
-- apporter une modification à des composants similaires se fait très simplement
+- apporter une modification à des composants similaires se fait simplement et rapidement
 - le déboggage et les tests sont facilités
 
-Prenons l'exemple d'un bouton:
+La syntaxe est très proche mais on remplace la notation pointée `styled.elementHtml`\`\` par `styled(Composant)`\`\`
+
+Par exemple on peut créer un composant Button puis étendre ce composant pour créer des styles différents en surchargeant juste quelques règles CSS.
 
 ```JSX
-import styled from "styled-components;
-
 const Button = styled.button`
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+  font-size: 1rem;
   color: #333;
-  background: #efefef;
+  background: #dedede;
+  border-radius: 0.25rem;
+  border: 1px solid #dedede;
+  transition: color 0.2s, background 0.2s;
+  cursor: pointer;
+
+  &:hover {
+    background: #fff;
+  }
+`;
+
+const LargeButton = styled(Button)`
+  padding: 1rem 2rem;
+`;
+
+const SendButton = styled(Button)`
+  color: white;
+  background: #229dff;
+  border: 1px solid #229dff;
+
+  &:hover {
+    color: #229dff;
+  }
+`;
+
+const StopButton = styled(Button)`
+  text-transform: uppercase;
+  color: white;
+  background: red;
+  border: 1px solid red;
+
+  &:hover {
+    color: red;
+  }
 `;
 ```
 
