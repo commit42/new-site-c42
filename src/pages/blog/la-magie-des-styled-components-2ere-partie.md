@@ -11,7 +11,7 @@ tags:
 - ~~V5 perfs~~
 - ~~props ⇒ props~~
 - ~~css\`` function from styled-components~~
-- extend avec styled(Component)
+- ~~extend avec styled(Component)~~
 - nested, parent:hover &, override &&
 - theme
 - extraire les fonctions
@@ -31,9 +31,9 @@ Avec de tels arguments il n'y a pas à hésiter, nous avons testé cette nouvell
 
 ## Adapter le style en fonction des props
 
-Il est très facile (et très utile!) de définir un style en fonction d'une prop. Il suffit d'insérer une fonction entre les backticks \`...\` de la fonction `styled` pour récupérer les props du composant.
+Il est très simple de définir un style en fonction d'une prop, et c'est très utile. Il suffit d'insérer une fonction entre les backticks \`...\` de la fonction `styled` pour récupérer les props du composant.
 
-Commençons par un `console.log()` des props.
+Commençons par un `console.log()` des props pour mieux comprendre ce qu'il se passe.
 
 ```JSX
 import React from "react";
@@ -56,7 +56,7 @@ Object {color: "red", children: "Red text", theme: {}}
 */
 ```
 
-On trouve bien notre prop `color` dont la valeur est "red", la prop `children` contenant le _text node_ "Red text" et un objet vide `theme` que nous utiliserons un peu plus tard.
+On trouve bien notre prop `color` dont la valeur est "red", la prop `children` contenant la chaîne de caractère "Red text" et un objet vide `theme` que nous verrons en détail un peu plus tard.
 On peut donc définir maintenant la couleur de notre texte en fonction de nos props.
 
 ```JSX
@@ -78,9 +78,9 @@ const App = () => (
 export default App;
 ```
 
-Aucune prop `color` n'est définie sur le dernier composant `<Text>` donc le texte de celui-ci est noir par défaut.
+Aucune prop `color` n'est définie sur le dernier composant `<Text>` donc le texte de celui-ci est noir, couleur par défaut.
 
-Nous pouvons aussi utiliser JavaScript pour définir la valeur par défaut. Ci-dessous la valeur `"green"` est utilisée si aucune prop `color` n'est définie. Afin de rendre le code plus court et plus lisible il est préférable d'utiliser la déstructuration des props.
+Nous pouvons aussi utiliser JavaScript pour définir cette valeur par défaut. Ci-dessous la valeur `"green"` est utilisée si aucune prop `color` n'est définie. Afin de rendre le code plus court et plus lisible il est préférable d'utiliser la déstructuration des props.
 
 ```JSX
 import React from "react";
@@ -101,7 +101,7 @@ const App = () => (
 export default App;
 ```
 
-Afin d'éviter de redéfinir chaque propriété CSS grâce aux props du composants il est plus intéressant d'utiliser une propriété définissant un état ou une fonction. Par exemple on pourrait créer un composant `<Message>` qui est en charge des notifications et qui aurait 3 états: défaut, succès, erreur. 
+Afin d'éviter de redéfinir chaque propriété CSS grâce aux props il est plus intéressant d'utiliser une propriété définissant un état ou une fonction. Par exemple on pourrait créer un composant `<Message>` qui est en charge des notifications et qui aurait 3 états: défaut, succès, erreur. 
 
 ```JSX
 import React from "react";
@@ -193,7 +193,7 @@ Pour nos composants cela présente plusieurs avantages:
 
 La syntaxe est très proche, on remplace juste la notation pointée `styled.elementHtml`\`\` par `styled(Composant)`\`\`.
 
-Par exemple on peut créer un composant `<Button/>` puis _étendre_ ce composant en surchargeant juste quelques règles CSS.
+Par exemple on peut créer un composant `<Button/>` puis étendre ce composant en surchargeant juste quelques règles CSS.
 
 ```JSX
 const Button = styled.button`
@@ -227,6 +227,7 @@ const SendButton = styled(Button)`
 `;
 
 const StopButton = styled(Button)`
+  font-weight: bold;
   text-transform: uppercase;
   color: white;
   background: red;
