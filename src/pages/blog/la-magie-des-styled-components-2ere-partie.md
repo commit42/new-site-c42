@@ -182,14 +182,14 @@ C'est presque identique mais mieux, autant l'utiliser.
 
 ## Étendre un composant
 
-Il est toujours préférable d'éviter les répétitions de code, ce principe porte même un nom: DRY, pour **D**on't **R**epeat **Y**ourself).
+Il est toujours préférable d'éviter les répétitions de code, il y a mêle une philosophie pour ça: DRY, pour **D**on't **R**epeat **Y**ourself.
 
-Pour des composants cela présente plusieurs avantages:
+Pour nos composants cela présente plusieurs avantages:
 - réécrire le même code est une perte de temps
 - apporter une modification à des composants similaires se fait très simplement
 - le déboggage et les tests sont facilités
 
-Prenons l'exmple d'un bouton:
+Prenons l'exemple d'un bouton:
 
 ```JSX
 import styled from "styled-components;
