@@ -185,7 +185,7 @@ C'est presque identique mais mieux, autant l'utiliser.
 Il est toujours préférable d'éviter les répétitions de code, il y a mêle une philosophie pour ça: DRY, pour **D**on't **R**epeat **Y**ourself.
 
 Pour nos composants cela présente plusieurs avantages:
-- réécrire le même code est une perte de temps
+- réécrire le même code serait une perte de temps
 - apporter une modification à des composants similaires se fait très simplement
 - le déboggage et les tests sont facilités
 
