@@ -8,16 +8,15 @@ tags:
   - react
   - css
 ---
-- V5 perfs
-- props ⇒ props
-- ressources
-- css\`` function from styled-components
+- ~~V5 perfs~~
+- ~~props ⇒ props~~
+- ~~css\`` function from styled-components~~
 - extend avec styled(Component)
-- nested, parent:hover &
+- nested, parent:hover &, override &&
 - theme
 - extraire les fonctions
 - organisation des fichiers
-- override &&
+- ressources
 
 Cet article est le 2e d'une série consacrée à l'utilisation des styled-components avec React, pour lire la première partie c'est ici: [La magie des styled-components - 2ère partie](https://www.commit42.com/blog/la-magie-des-styled-components-1ere-partie/).
 
@@ -32,8 +31,33 @@ Avec de tels arguments il n'y a pas à hésiter, nous avons testé cette nouvell
 
 ## Adapter le style en fonction des props
 
-Il est très facile (et très utile) de définir un style en fonction d'une prop.
-Il suffit d'insérer une fonction entre les\`\` de la fonction `styled`.
+Il est très facile (et très utile!) de définir un style en fonction d'une prop. Il suffit d'insérer une fonction entre les backticks \`...\` de la fonction `styled` pour récupérer les props du composant.
+
+Commençons par un `console.log()` des props.
+
+```JSX
+import React from "react";
+import styled from "styled-components";
+
+const Text = styled.p`
+  color: ${props => { console.log(props) }};
+`;
+
+const App = () => (
+  <div>
+    <Text color="red">Red text</Text>
+  </div>
+);
+
+export default App;
+
+/* Console
+Object {color: "red", children: "Red text", theme: {}}
+*/
+```
+
+On trouve bien notre prop `color` dont la valeur est "red", la prop `children` contenant le _text node_ "Red text" et un objet vide `theme` que nous utiliserons un peu plus tard.
+On peut donc définir maintenant la couleur de notre texte en fonction de nos props.
 
 ```JSX
 import React from "react";
@@ -54,9 +78,9 @@ const App = () => (
 export default App;
 ```
 
-Aucune prop `color` n'est définie sur le dernier composant `<Text>` donc le texte de celui-ci est noir (couleur par défaut).
+Aucune prop `color` n'est définie sur le dernier composant `<Text>` donc le texte de celui-ci est noir par défaut.
 
-Mais nous pouvons aussi utiliser JavaScript pour définir une valeur par défaut. Ci-dessous la valeur `"green"` est utilisée si aucune prop `color` n'est définie. Afin de rendre le code plus court et plus lisible il est préférable d'utiliser la déstructuration des props.
+Nous pouvons aussi utiliser JavaScript pour définir la valeur par défaut. Ci-dessous la valeur `"green"` est utilisée si aucune prop `color` n'est définie. Afin de rendre le code plus court et plus lisible il est préférable d'utiliser la déstructuration des props.
 
 ```JSX
 import React from "react";
@@ -68,9 +92,9 @@ const Text = styled.p`
 
 const App = () => (
   <div>
-    <Text color="red">I should be red</Text>
-    <Text color="blue">I should be blue</Text>
-    <Text>I should be green</Text>
+    <Text color="red">I'm red</Text>
+    <Text color="blue">I'm blue</Text>
+    <Text>I'm green</Text>
   </div>
 );
 
@@ -116,12 +140,12 @@ On limite ainsi le nombre de props utilisées sur le composant `<Message>`, le c
 
 ## Le helper css\``
 
-Parfois on se retrouve dans une situation où la même prop va définir plusieurs règles et il serait dommage de répéter la même fonction. Il est tout à fait possible d'insérer une seule fonction qui retourne plusieurs règles CSS.
+Parfois on se retrouve dans une situation où la même prop va définir plusieurs règles et il serait dommage de répéter la même fonction. Il suffit d'insérer une seule fonction qui retourne plusieurs règles CSS.
 
 ```JSX
 import styled from "styled-components";
 
-const Box = styled.p`
+const Box = styled.div`
   ${({ centerXY }) =>
     centerXY &&
     `
@@ -135,12 +159,12 @@ const Box = styled.p`
 `;
 ```
 
-Mais il est recommandé d'utiliser le helper css\`` fournit par la librairie.
+Mais il est recommandé d'utiliser le helper css\`` fournit par la librairie, ça permet de bénéficier de la coloration syntaxique (si on utilise une extension comme vsocde-styled-components) et a priori ça aide la librairie à gérer certaines optimisations.
 
 ```JSX
 import styled, { css } from "styled-components;
 
-const Box = styled.p`
+const Box = styled.div`
   ${({ centerXY }) =>
     centerXY &&
     css`
@@ -154,7 +178,18 @@ const Box = styled.p`
 `;
 ```
 
-Presque identique mais... blabla
+C'est presque identique mais mieux, autant l'utiliser.
+
+## Étendre un composant
+
+```JSX
+import styled from "styled-components;
+
+const Button = styled.button`
+  color: #333;
+  background: #efefef;
+`;
+```
 
 
 
