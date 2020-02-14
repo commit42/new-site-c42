@@ -136,11 +136,13 @@ const App = () => (
 export default App;
 ```
 
-On limite ainsi le nombre de props utilisées sur le composant `<Message>`, le code du composant `<App /> est ainsi plus lisible.
+[![Edit styled-components - notif](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/styled-components-notif-5ir3b?fontsize=14&hidenavigation=1&theme=dark)
+
+On limite ainsi le nombre de props utilisées sur le composant `<Message>`, le code du composant `<App /> est plus lisible.
 
 ## Le helper css\``
 
-Parfois on se retrouve dans une situation où la même prop va définir plusieurs règles et il serait dommage de répéter la même fonction. Il suffit d'insérer une seule fonction qui retourne plusieurs règles CSS.
+Parfois on se retrouve dans une situation où la même prop va définir plusieurs règles. Inutile de répéter la même fonction, il suffit d'insérer une seule fonction qui retourne plusieurs règles CSS dans une chaîne de caractères.
 
 ```JSX
 import React from "react";
@@ -189,9 +191,9 @@ Pour nos composants cela présente plusieurs avantages:
 - apporter une modification à des composants similaires se fait simplement et rapidement
 - le déboggage et les tests sont facilités
 
-La syntaxe est très proche mais on remplace la notation pointée `styled.elementHtml`\`\` par `styled(Composant)`\`\`
+La syntaxe est très proche, on remplace juste la notation pointée `styled.elementHtml`\`\` par `styled(Composant)`\`\`.
 
-Par exemple on peut créer un composant Button puis étendre ce composant pour créer des styles différents en surchargeant juste quelques règles CSS.
+Par exemple on peut créer un composant `<Button/>` puis _étendre_ ce composant en surchargeant juste quelques règles CSS.
 
 ```JSX
 const Button = styled.button`
@@ -235,6 +237,8 @@ const StopButton = styled(Button)`
   }
 `;
 ```
+
+[![Edit styled-components - extend](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/wonderful-williams-ke65f?fontsize=14&hidenavigation=1&theme=dark)
 
 
 
