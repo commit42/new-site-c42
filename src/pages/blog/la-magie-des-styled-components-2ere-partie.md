@@ -239,7 +239,46 @@ const StopButton = styled(Button)`
 `;
 ```
 
-[![Edit styled-components - extend](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/wonderful-williams-ke65f?fontsize=14&hidenavigation=1&theme=dark)
+[![Edit styled-components - extend](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/styled-components-extend-zudvd?fontsize=14&hidenavigation=1&theme=dark)
 
+## Faire référence à d'autres composants
+
+Si un composant a été créé grâce à la fonction `styled` il possède alors une classe auto-générée et peut être utilisé dans un sélecteur CSS particulier appelé _sélecteur de composant_ 
+
+Voici la syntaxe:
+
+```JSX
+const Box1 = styled.div`
+  /* ... */
+`;
+
+const Box2 = styled.div`
+  /* ... */
+
+  ${Box1} & {
+    background-color: #FF5E5B;
+  }
+`;
+```
+
+Pour utiliser un composant qui n'a pas été créé grâce à la fonction `styled` il suffit de l'étendre:
+
+```JSX
+const Box = () => <div />;
+
+const Box1 = styled(Box)`
+  /* ... */
+`;
+
+const Box2 = styled.div`
+  /* ... */
+
+  ${Box1} & {
+    background-color: #FF5E5B;
+  }
+`;
+```
+
+[![Edit styled-components - selector](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/styled-components-selector-ke65f?fontsize=14&hidenavigation=1&theme=dark)
 
 
