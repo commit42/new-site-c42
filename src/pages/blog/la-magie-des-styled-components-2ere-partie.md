@@ -12,7 +12,7 @@ tags:
 - ~~props ⇒ props~~
 - ~~css\`` function from styled-components~~
 - ~~extend avec styled(Component)~~
-- nested, parent:hover &, override &&
+- ~~nested, parent:hover &, override &&~~
 - theme
 - extraire les fonctions
 - organisation des fichiers
@@ -307,5 +307,7 @@ const Box2 = styled.div`
   }
 `;
 ```
+
+## Utiliser un thème
 
 
