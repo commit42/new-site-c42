@@ -309,5 +309,3 @@ const Box2 = styled.div`
 ```
 
 ## Utiliser un thème
-
-
