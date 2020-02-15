@@ -138,7 +138,7 @@ export default App;
 
 [![Edit styled-components - notif](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/styled-components-notif-5ir3b?fontsize=14&hidenavigation=1&theme=dark)
 
-On limite ainsi le nombre de props utilisées sur le composant `<Message>`, le code du composant `<App /> est plus lisible.
+On limite ainsi le nombre de props utilisées sur le composant `<Message>`, le code du composant `<App />` est plus lisible.
 
 ## Le helper css\``
 
@@ -241,7 +241,36 @@ const StopButton = styled(Button)`
 
 [![Edit styled-components - extend](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/styled-components-extend-zudvd?fontsize=14&hidenavigation=1&theme=dark)
 
-## Faire référence à d'autres composants
+## Faire référence à un composant
+
+Un composant peut faire référence à lui-même grâce ay symbole `&`. Il est particulièrement utilise pour définir des pseudo-éléments et pseudo-sélecteurs:
+
+```JSX
+const Link = styled.a`
+  /* ... */
+  
+  &:hover {/*...*/}
+
+  &::before {/*...*/}
+
+  &::after {/*...*/}
+`;
+```
+
+Le `&` peut aussi être utilisé pour augmenter la spécificité:
+
+```JSX
+const Link = styled.div`
+  && {
+    color: red;
+  }
+`;
+
+// règle CSS générée
+.ecUByo.ecUByo {
+  color: red;
+}
+```
 
 Si un composant a été créé grâce à la fonction `styled` il possède alors une classe auto-générée et peut être utilisé dans un sélecteur CSS particulier appelé _sélecteur de composant_ 
 
@@ -261,14 +290,14 @@ const Box2 = styled.div`
 `;
 ```
 
-Pour utiliser un composant qui n'a pas été créé grâce à la fonction `styled` il suffit de l'étendre:
+[![Edit styled-components - selector](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/styled-components-selector-ke65f?fontsize=14&hidenavigation=1&theme=dark)
+
+Pour utiliser de la même façon un composant qui n'a pas été créé grâce à la fonction `styled` il suffit de l'étendre:
 
 ```JSX
 const Box = () => <div />;
 
-const Box1 = styled(Box)`
-  /* ... */
-`;
+const Box1 = styled(Box)``;
 
 const Box2 = styled.div`
   /* ... */
@@ -278,7 +307,5 @@ const Box2 = styled.div`
   }
 `;
 ```
-
-[![Edit styled-components - selector](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/styled-components-selector-ke65f?fontsize=14&hidenavigation=1&theme=dark)
 
 
