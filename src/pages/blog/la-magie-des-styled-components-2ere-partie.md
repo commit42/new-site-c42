@@ -162,7 +162,7 @@ const Box = styled.div`
 `;
 ```
 
-Mais il est recommandé d'utiliser le helper css\`` fournit par la librairie. Avec une extension adaptée (comme vscode-styled-components pour Visual Studio Code) on bénéficie  de la coloration syntaxique et la librairie gère mieux certaines optimisations.
+Mais il est recommandé d'utiliser le helper css\`` fournit par la librairie. Avec une extension adaptée (comme _vscode-styled-components_ pour Visual Studio Code) on bénéficie  de la coloration syntaxique et la librairie gère mieux certaines optimisations.
 
 ```JSX
 import React from "react";
@@ -184,7 +184,7 @@ const Box = styled.div`
 
 ## Étendre un composant
 
-Il est toujours préférable d'éviter la répétition de code, il y a même une philosophie pour ça: DRY, pour **D**on't **R**epeat **Y**ourself.
+Il est toujours préférable d'éviter la répétition de code, il y a même un principe pour ça en programmation: DRY, pour **D**on't **R**epeat **Y**ourself.
 
 Pour nos composants cela présente plusieurs avantages:
 - réécrire le même code plusieurs fois serait une perte de temps
@@ -308,4 +308,4 @@ const Box2 = styled.div`
 `;
 ```
 
-## Utiliser un thème
+## Utiliser un thème grâce au <ThemeProvider />
