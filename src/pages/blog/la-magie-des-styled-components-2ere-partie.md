@@ -308,4 +308,7 @@ const Box2 = styled.div`
 `;
 ```
 
-## Utiliser un thème grâce au <ThemeProvider />
+## Utiliser un thème grâce au \<ThemeProvider />
+
+
+
