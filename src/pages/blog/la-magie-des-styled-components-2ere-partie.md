@@ -310,6 +310,43 @@ const Box2 = styled.div`
 
 ## Utiliser un thème grâce au \<ThemeProvider />
 
+styled-components fournit un composant `<ThemeProvider />`. Il permet à tous les composants enfant d'accéder aux valeurs d'un thème. Le thème est un objet JS passé au `<ThemeProvider />` grâce à la prop `theme`, et il est généralement défini dans un fichier `theme.js`. 
+Une prop `theme` contenant les valeurs de notre thème est ainsi disponible dans chaque composant enfant.
 
+Une application utilisant un thème est définie ainsi:
+
+```JSX
+import React from "react";
+import { ThemeProvider } from "styled-components";
+
+const theme = {
+  red: "#D63230",
+  lightBlue: "#40BCD8",
+  blue: "#1C77C3"
+}
+
+const App = () => (
+  <ThemeProvider theme={theme}>
+    <ChildComponent>
+  </ThemeProvider>
+);
+
+export default App;
+```
+
+Les composants enfant accèdent ensuite aux valeurs du thème comme ils accèdent aux autres props du composant:
+
+```JSX
+import React from "react";
+import styled from "styled-components";
+
+const Text = styled.p`
+  color: ${props => { props.theme.red }};
+`;
+
+const ChildComponent = () => <Text>Red text</Text>;
+
+export default ChildComponent;
+```
 
 
