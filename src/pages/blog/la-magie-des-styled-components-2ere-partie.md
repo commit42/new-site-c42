@@ -247,7 +247,7 @@ const StopButton = styled(Button)`
 
 ## Faire référence à un composant
 
-Un composant peut faire référence à lui-même grâce ay symbole `&`. Il est particulièrement utilise pour définir des pseudo-éléments et pseudo-sélecteurs:
+Un composant peut faire référence à lui-même grâce au symbole `&`. Il est particulièrement utilise pour définir des pseudo-éléments et pseudo-sélecteurs:
 
 ```JSX
 const Link = styled.a`
@@ -293,6 +293,8 @@ const Box2 = styled.div`
   }
 `;
 ```
+
+![Capture d'écran: faire référence à un styled-component avec les styled-components](/assets/sc-box.png)
 
 [![Edit styled-components - selector](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/styled-components-selector-ke65f?fontsize=14&hidenavigation=1&theme=dark)
 
