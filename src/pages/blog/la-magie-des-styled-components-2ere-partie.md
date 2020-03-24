@@ -31,7 +31,7 @@ Avec de tels arguments il n'y a pas à hésiter, nous avons testé cette nouvell
 
 ## Adapter le style en fonction des props
 
-Il est très simple de définir un style en fonction d'une prop, et c'est très utile. Il suffit d'insérer une fonction entre les ``` backticks  de la fonction `styled` pour récupérer les props du composant.
+Il est très simple de définir un style en fonction d'une prop, et c'est très utile. Il suffit d'insérer une fonction entre les ``` \` (guillemets obliques)  de la fonction `styled` pour récupérer les props du composant.
 
 Commençons par un `console.log()` des props pour mieux comprendre ce qu'il se passe.
 
@@ -56,7 +56,7 @@ Object {color: "red", children: "Red text", theme: {}}
 */
 ```
 
-On peut voir notre prop `color` dont la valeur est `"red", la prop `children` contenant "Red text" et un objet vide `theme` que nous verrons en détail un peu plus tard.
+On peut voir notre prop `color` dont la valeur est "red", la prop `children` contenant "Red text" et un objet vide `theme` que nous verrons en détail un peu plus tard.
 On peut donc définir maintenant la couleur de notre texte en fonction de notre prop `color`.
 
 ```JSX
