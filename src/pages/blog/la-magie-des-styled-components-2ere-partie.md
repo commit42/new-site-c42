@@ -101,7 +101,9 @@ const App = () => (
 export default App;
 ```
 
-Afin d'éviter de redéfinir chaque propriété CSS grâce aux props il est plus intéressant d'utiliser une propriété définissant un état ou une fonction. Par exemple on pourrait créer un composant `<Message>` qui est en charge des notifications et qui aurait 3 états: défaut, succès, erreur. 
+Afin d'éviter de redéfinir chaque propriété CSS grâce aux props il est plus intéressant d'utiliser une propriété définissant un état ou une fonction. Par exemple on pourrait créer un composant `<Message>` qui est en charge des notifications et qui aurait 3 états: défaut, succès, erreur.
+
+![The end](/assets/messages.png)
 
 ```JSX
 import React from "react";
