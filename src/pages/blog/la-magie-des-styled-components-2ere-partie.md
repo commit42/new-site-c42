@@ -241,6 +241,8 @@ const StopButton = styled(Button)`
 `;
 ```
 
+![The end](/assets/sc-button.png)
+
 [![Edit styled-components - extend](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/styled-components-extend-zudvd?fontsize=14&hidenavigation=1&theme=dark)
 
 ## Faire référence à un composant
