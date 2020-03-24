@@ -8,6 +8,7 @@ tags:
   - react
   - css
 ---
+
 - ~~V5 perfs~~
 - ~~props ⇒ props~~
 - ~~css\`` function from styled-components~~
@@ -31,7 +32,7 @@ Avec de tels arguments il n'y a pas à hésiter, nous avons testé cette nouvell
 
 ## Adapter le style en fonction des props
 
-Il est très simple de définir un style en fonction d'une prop, et c'est très utile. Il suffit d'insérer une fonction entre les ``` \` (guillemets obliques)  de la fonction `styled` pour récupérer les props du composant.
+Il est très simple de définir un style en fonction d'une prop, et c'est très utile. Il suffit d'insérer une fonction entre les ``` \` (guillemets obliques) de la fonction `styled` pour récupérer les props du composant.
 
 Commençons par un `console.log()` des props pour mieux comprendre ce qu'il se passe.
 
@@ -164,7 +165,7 @@ const Box = styled.div`
 `;
 ```
 
-Mais il est recommandé d'utiliser le helper css\`` fournit par la librairie. Avec une extension adaptée (comme _vscode-styled-components_ pour Visual Studio Code) on bénéficie  de la coloration syntaxique et la librairie gère mieux certaines optimisations.
+Mais il est recommandé d'utiliser le helper css\`` fournit par la librairie. Avec une extension adaptée (comme _vscode-styled-components_ pour Visual Studio Code) on bénéficie de la coloration syntaxique et la librairie gère mieux certaines optimisations.
 
 ```JSX
 import React from "react";
@@ -189,6 +190,7 @@ const Box = styled.div`
 Il est toujours préférable d'éviter la répétition de code, il y a même un principe pour ça en programmation: DRY, pour **D**on't **R**epeat **Y**ourself.
 
 Pour nos composants cela présente plusieurs avantages:
+
 - réécrire le même code plusieurs fois serait une perte de temps
 - apporter une modification à des composants similaires se fait simplement et rapidement
 - le déboggage et les tests sont facilités
@@ -252,7 +254,7 @@ Un composant peut faire référence à lui-même grâce au symbole `&`. Il est p
 ```JSX
 const Link = styled.a`
   /* ... */
-  
+
   &:hover {/*...*/}
 
   &::before {/*...*/}
@@ -276,20 +278,22 @@ const Link = styled.div`
 }
 ```
 
-Si un composant a été créé grâce à la fonction `styled` il possède alors une classe auto-générée et peut être utilisé dans un sélecteur CSS particulier appelé _sélecteur de composant_ 
+Si un composant a été créé grâce à la fonction `styled` il possède alors une classe auto-générée et peut être utilisé dans un sélecteur CSS particulier appelé _sélecteur de composant_
 
 Voici la syntaxe:
 
 ```JSX
 const Box1 = styled.div`
   /* ... */
+  background-color: blue;
 `;
 
 const Box2 = styled.div`
   /* ... */
+  background-color: red;
 
   ${Box1} & {
-    background-color: #FF5E5B;
+    background-color: yellow;
   }
 `;
 ```
@@ -316,7 +320,7 @@ const Box2 = styled.div`
 
 ## Utiliser un thème grâce au \<ThemeProvider />
 
-styled-components fournit un composant `<ThemeProvider />`. Il permet à tous les composants enfant d'accéder aux valeurs d'un thème. Le thème est un objet JS passé au `<ThemeProvider />` grâce à la prop `theme`, et il est souvent défini dans un fichier `theme.js`. 
+styled-components fournit un composant `<ThemeProvider />`. Il permet à tous les composants enfant d'accéder aux valeurs d'un thème. Le thème est un objet JS passé au `<ThemeProvider />` grâce à la prop `theme`, et il est souvent défini dans un fichier `theme.js`.
 Chaque composant enfant prop peut ainsi accéder à une prop `theme` contenant les valeurs de notre thème.
 
 Une application utilisant un thème est définie ainsi:
@@ -356,6 +360,3 @@ export default ChildComponent;
 ```
 
 ## Mini-projet
-
-
-
