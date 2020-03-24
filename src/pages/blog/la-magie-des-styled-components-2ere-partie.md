@@ -103,8 +103,6 @@ export default App;
 
 Afin d'éviter de redéfinir chaque propriété CSS grâce aux props il est plus intéressant d'utiliser une propriété définissant un état ou une fonction. Par exemple on pourrait créer un composant `<Message>` qui est en charge des notifications et qui aurait 3 états: défaut, succès, erreur.
 
-![The end](/assets/messages.png)
-
 ```JSX
 import React from "react";
 import styled from "styled-components";
@@ -137,6 +135,8 @@ const App = () => (
 
 export default App;
 ```
+
+![Capture d'écran: notifications avec les styled-components](/assets/messages.png)
 
 [![Edit styled-components - notif](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/styled-components-notif-5ir3b?fontsize=14&hidenavigation=1&theme=dark)
 
@@ -241,7 +241,7 @@ const StopButton = styled(Button)`
 `;
 ```
 
-![The end](/assets/sc-button.png)
+![Styled-components buttons](/assets/sc-button.png)
 
 [![Edit styled-components - extend](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/styled-components-extend-zudvd?fontsize=14&hidenavigation=1&theme=dark)
 
