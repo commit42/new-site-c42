@@ -56,7 +56,7 @@ Object {color: "red", children: "Red text", theme: {}}
 */
 ```
 
-On peut voir notre prop `color` dont la valeur est "red", la prop `children` contenant "Red text" et un objet vide `theme` que nous verrons en détail un peu plus tard.
+On peut voir notre prop `color` dont la valeur est `"red"`, la prop `children` contenant `"Red text"` et un objet vide `theme` que nous verrons en détail un peu plus tard.
 On peut donc définir maintenant la couleur de notre texte en fonction de notre prop `color`.
 
 ```JSX
@@ -348,5 +348,8 @@ const ChildComponent = () => <Text>Red text</Text>;
 
 export default ChildComponent;
 ```
+
+## Mini-projet
+
 
 
