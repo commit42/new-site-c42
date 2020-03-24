@@ -31,7 +31,7 @@ Avec de tels arguments il n'y a pas à hésiter, nous avons testé cette nouvell
 
 ## Adapter le style en fonction des props
 
-Il est très simple de définir un style en fonction d'une prop, et c'est très utile. Il suffit d'insérer une fonction entre les backticks  de la fonction `styled` pour récupérer les props du composant.
+Il est très simple de définir un style en fonction d'une prop, et c'est très utile. Il suffit d'insérer une fonction entre les ``` backticks  de la fonction `styled` pour récupérer les props du composant.
 
 Commençons par un `console.log()` des props pour mieux comprendre ce qu'il se passe.
 
@@ -310,8 +310,8 @@ const Box2 = styled.div`
 
 ## Utiliser un thème grâce au \<ThemeProvider />
 
-styled-components fournit un composant `<ThemeProvider />`. Il permet à tous les composants enfant d'accéder aux valeurs d'un thème. Le thème est un objet JS passé au `<ThemeProvider />` grâce à la prop `theme`, et il est généralement défini dans un fichier `theme.js`. 
-Une prop `theme` contenant les valeurs de notre thème est ainsi disponible dans chaque composant enfant.
+styled-components fournit un composant `<ThemeProvider />`. Il permet à tous les composants enfant d'accéder aux valeurs d'un thème. Le thème est un objet JS passé au `<ThemeProvider />` grâce à la prop `theme`, et il est souvent défini dans un fichier `theme.js`. 
+Chaque composant enfant prop peut ainsi accéder à une prop `theme` contenant les valeurs de notre thème.
 
 Une application utilisant un thème est définie ainsi:
 
@@ -334,7 +334,7 @@ const App = () => (
 export default App;
 ```
 
-Les composants enfant accèdent ensuite aux valeurs du thème comme ils accèdent aux autres props du composant:
+Les composants enfant accèdent aux valeurs du thème comme ils accèdent aux autres props:
 
 ```JSX
 import React from "react";
