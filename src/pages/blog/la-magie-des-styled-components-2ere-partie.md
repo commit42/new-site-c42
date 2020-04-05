@@ -13,16 +13,15 @@ Cet article est le 2e d'une série consacrée à l'utilisation des styled-compon
 
 ## Nouvelle version de la librairie!
 
-Avant de rentrer dans le vif du sujet un bonne nouvelle, depuis la publication du premier article la v5 est sortie. Au programme des performances accrues et un bundle plus léger.
+Avant de rentrer dans le vif du sujet une bonne nouvelle, depuis la publication du premier article la v5 est sortie. Au programme des performances accrues et un bundle plus léger.
 
-> 50% faster server-side rendering, 22% faster client-side rendering, 31% smaller bundle size, RTL support and no breaking changes!
-> -- <cite>Evan Jacobs, [Announcing styled-components v5: Beast Mode](https://medium.com/styled-components/announcing-styled-components-v5-beast-mode-389747abd987)</cite>
+> 50% faster server-side rendering, 22% faster client-side rendering, 31% smaller bundle size, RTL support and no breaking changes! -- <cite>Evan Jacobs, [Announcing styled-components v5: Beast Mode](https://medium.com/styled-components/announcing-styled-components-v5-beast-mode-389747abd987)</cite>
 
 Avec de tels arguments il n'y a pas à hésiter, nous avons testé cette nouvelle version sur un de nos projets et nous n'avons rencontré aucun problème.
 
 ## Adapter le style en fonction des props
 
-Il est très simple de définir un style en fonction d'une prop, et c'est très utile. Il suffit d'insérer une fonction entre les ``` \` (guillemets obliques) de la fonction `styled` pour récupérer les props du composant.
+Il est très simple de définir un style en fonction d'une prop, et c'est très utile. Il suffit d'insérer une fonction entre les guillemets obliques (backticks) de la fonction `styled` pour récupérer les props du composant.
 
 Commençons par un `console.log()` des props pour mieux comprendre ce qu'il se passe.
 
@@ -245,7 +244,7 @@ const StopButton = styled(Button)`
 
 ## Faire référence à un composant
 
-Un composant peut faire référence à lui-même grâce au symbole `&`. Il est particulièrement utilise pour définir des pseudo-éléments et pseudo-sélecteurs:
+Un composant peut faire référence à lui-même grâce au symbole `&`. Il est particulièrement utilise pour définir des pseudo-éléments et pseudo-classes:
 
 ```JSX
 const Link = styled.a`
@@ -301,7 +300,7 @@ const Box2 = styled.div`
      sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
    ></iframe>
 
-Pour utiliser de la même façon un composant qui n'a pas été créé grâce avec la fonction `styled` il suffit de l'étendre avec la même fonction:
+Pour utiliser de la même façon un composant qui n'a pas été créé grâce à la fonction `styled` il suffit de l'étendre avec la même fonction:
 
 ```JSX
 const Box = ({children}) => <div>{children}</div>;
@@ -320,7 +319,7 @@ const Box2 = styled.div`
 ## Utiliser un thème grâce au \<ThemeProvider />
 
 styled-components fournit un composant `<ThemeProvider />`. Il permet à tous les composants enfants d'accéder aux valeurs d'un thème. Le thème est un objet JS passé au `<ThemeProvider />` grâce à la prop `theme`, et il est souvent défini dans un fichier `theme.js`.
-Chaque composant enfants prop peut ainsi accéder à une prop `theme` contenant les valeurs.
+Chaque composant enfant peut ainsi accéder à une prop `theme` contenant les valeurs.
 
 Une application utilisant un thème est définie ainsi:
 
@@ -362,7 +361,10 @@ export default ChildComponent;
 
 J'ai préparé un mini-projet qui utilise les styled-components avec un thème.
 A partir du jeu de données fournit par [Rolling Stone Magazine's Top 500 Albums](https://data.world/notgibs/rolling-stones-top-500-albums) l'application affiche (seulement) le Top 50.
-De belles sessions d'écoute ou de ré-écoute à prévoir! A noter, le classement de 2012.
+
+De belles sessions d'écoute ou de ré-écoute à prévoir! A noter, le classement date de 2012.
+
+Je vous conseille d'ouvrir ce projet dans Codesandbox, contrairement aux exemples précedents celui-là mérite une surface d'écran un peu plus grande.
 
 <iframe
      src="https://codesandbox.io/embed/styled-components-theme-f5lie?fontsize=14&hidenavigation=1&theme=dark"
@@ -371,7 +373,7 @@ De belles sessions d'écoute ou de ré-écoute à prévoir! A noter, le classeme
      sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
    ></iframe>
 
-Voici la définition du thème dans le fichier `theme.js`. On va pouvoir définir toutes les valeurs et règles CSS réutilisables dans le projet: couleurs, typographie, espaces, ombres, etc. Travailler avec un thème présente plusieurs avantages, cela apporte de la cohérence au design et cela permet également un gain de productivité. Au lieu de passer des heures à ajuster par petites touches de 0.05rem (ça vous rappelle des souvenirs...?) le choix va se faire à travers une échelle prédéfinie, par exemple en utilisant les tailles popularisées par bootstrap: xs, sm, md, xl, lg.
+Voici la définition du thème dans le fichier `theme.js`. On va pouvoir définir toutes les valeurs et règles CSS réutilisables dans le projet: couleurs, typographie, espaces, ombres, etc. Travailler avec un thème présente plusieurs avantages, cela apporte de la cohérence au design et cela permet également un gain de productivité. Au lieu de passer des heures à ajuster par petites touches de 0.05rem (ça vous rappelle des souvenirs...?) le choix va se faire à travers une échelle prédéfinie, par exemple en utilisant les tailles popularisées par bootstrap: xs, sm, md, xl, lg. Un choix limité implique une prise de décision plus rapide. ;)
 
 ```JSX
 // theme.js
