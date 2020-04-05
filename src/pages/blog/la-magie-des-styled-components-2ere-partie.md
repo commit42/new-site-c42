@@ -9,16 +9,6 @@ tags:
   - css
 ---
 
-- ~~V5 perfs~~
-- ~~props ⇒ props~~
-- ~~css\`` function from styled-components~~
-- ~~extend avec styled(Component)~~
-- ~~nested, parent:hover &, override &&~~
-- theme
-- extraire les fonctions
-- organisation des fichiers
-- ressources
-
 Cet article est le 2e d'une série consacrée à l'utilisation des styled-components avec React, pour lire la première partie c'est ici: [La magie des styled-components - 1ère partie](https://www.commit42.com/blog/la-magie-des-styled-components-1ere-partie/).
 
 ## Nouvelle version de la librairie!
