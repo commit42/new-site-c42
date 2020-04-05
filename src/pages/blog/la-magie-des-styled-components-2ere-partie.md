@@ -419,8 +419,9 @@ export default {
 };
 ```
 
-Lorsque l'on découpe son projet en composants, nous pouvons alors définir pour chacun nos styled-components dans un fichier séparé. J'ai souvent vu ces fichiers nommés `styles.js` mais je préfère les appeler `styled.js`, comme ça pas de surprise.
-Dans ce mini-projet, très basique, il n'y a qu'un fichier.
+Lorsque l'on découpe son projet en composants, nous pouvons alors créer pour chaque composant un fichier séparé contenant nos styled-components. On voit souvent des fichiers nommées `styles.js` ou `styled.js`. Je préfère la 2e solution, difficile de faire plus clair.
+
+Dans ce mini-projet, très basique, il n'y a qu'un fichier `styled.js`.
 
 ```JSX
 //styled.js
@@ -555,7 +556,7 @@ On retrouve ici l'usage du helper `css` qui permet ici de créer des ensembles d
 
 A ce stade je serais de mauvaise fois si je disais qu'en l'état l'utilisation du thème est parfaite. Lorsqu'on y fait souvent référence l'utilisation de la fonction permettant de récupérer les valeurs vient perturber la lisibilité du code. Heureusement nous sommes dans un fichier JavaScript, il suffit donc de se créer un ou plusieurs helpers qui viennent remplacer cette fonction. Par exemple: `${theme("colors.white")}` ou `${th("colors.white")}` au lieu de `${({ theme }) => theme.colors.white};`. Cela fera probablement l'objet d'un petit article supplémentaire.
 
-Pour finir nous avons voir ensemble le fichier `App.js` qui contient notre application.
+Pour finir nous allons voir ensemble le fichier `App.js` qui contient notre application.
 
 ```JSX
 import React from "react";
