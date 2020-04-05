@@ -192,8 +192,8 @@ Il est toujours préférable d'éviter la répétition de code, il y a même un 
 Pour nos composants cela présente plusieurs avantages:
 
 - réécrire le même code plusieurs fois serait une perte de temps
-- apporter une modification à des composants similaires se fait simplement et rapidement
-- le déboggage et les tests sont facilités
+- apporter une modification à des composants similaires se fait simplement et rapidement, la maintenance et l'évolution de l'application sont ainsi facilitées
+- le déboggage et les tests sont eux aussi plus simples à effectuer
 
 La syntaxe est très proche, on remplace juste la notation pointée `styled.elementHtml`\`\` par `styled(Composant)`\`\`.
 
@@ -302,7 +302,7 @@ const Box2 = styled.div`
 
 [![Edit styled-components - selector](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/styled-components-selector-ke65f?fontsize=14&hidenavigation=1&theme=dark)
 
-Pour utiliser de la même façon un composant qui n'a pas été créé grâce avec la fonction `styled` il suffit de l'étendre:
+Pour utiliser de la même façon un composant qui n'a pas été créé grâce avec la fonction `styled` il suffit de l'étendre avec la même fonction:
 
 ```JSX
 const Box = ({children}) => <div>{children}</div>;
