@@ -1,8 +1,13 @@
-img{
+img {
   max-width: 100%;
 }
 
-.ui.fluid.container.header-post{
+.codesandbox-button {
+  display: flex;
+  justify-content: center;
+}
+
+.ui.fluid.container.header-post {
   padding-top: 15rem;
   @media only screen and (max-width: 1200px) {
     padding-top: 5rem;

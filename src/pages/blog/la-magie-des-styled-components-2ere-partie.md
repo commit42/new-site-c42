@@ -137,7 +137,7 @@ const App = () => (
 export default App;
 ```
 
-![Capture d'écran: notifications avec les styled-components](/assets/messages.png)
+![Capture d'écran: notifications avec les styled-components](/assets/sc-messages.jpg)
 
 [![Edit styled-components - notif](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/styled-components-notif-5ir3b?fontsize=14&hidenavigation=1&theme=dark)
 
@@ -243,7 +243,7 @@ const StopButton = styled(Button)`
 `;
 ```
 
-![Capture d'écran: boutons avec les styled-components](/assets/sc-button.png)
+![Capture d'écran: boutons avec les styled-components](/assets/sc-button.jpg)
 
 [![Edit styled-components - extend](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/styled-components-extend-zudvd?fontsize=14&hidenavigation=1&theme=dark)
 
@@ -298,7 +298,7 @@ const Box2 = styled.div`
 `;
 ```
 
-![Capture d'écran: faire référence à un styled-component avec les styled-components](/assets/sc-box.png)
+![Capture d'écran: faire référence à un styled-component avec les styled-components](/assets/sc-box.jpg)
 
 [![Edit styled-components - selector](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/styled-components-selector-ke65f?fontsize=14&hidenavigation=1&theme=dark)
 
@@ -320,8 +320,8 @@ const Box2 = styled.div`
 
 ## Utiliser un thème grâce au \<ThemeProvider />
 
-styled-components fournit un composant `<ThemeProvider />`. Il permet à tous les composants enfant d'accéder aux valeurs d'un thème. Le thème est un objet JS passé au `<ThemeProvider />` grâce à la prop `theme`, et il est souvent défini dans un fichier `theme.js`.
-Chaque composant enfant prop peut ainsi accéder à une prop `theme` contenant les valeurs de notre thème.
+styled-components fournit un composant `<ThemeProvider />`. Il permet à tous les composants enfants d'accéder aux valeurs d'un thème. Le thème est un objet JS passé au `<ThemeProvider />` grâce à la prop `theme`, et il est souvent défini dans un fichier `theme.js`.
+Chaque composant enfants prop peut ainsi accéder à une prop `theme` contenant les valeurs.
 
 Une application utilisant un thème est définie ainsi:
 
@@ -344,7 +344,7 @@ const App = () => (
 export default App;
 ```
 
-Les composants enfant accèdent aux valeurs du thème comme ils accèdent aux autres props:
+Les composants enfants accèdent aux valeurs du thème comme ils accèdent aux autres props:
 
 ```JSX
 import React from "react";
@@ -360,3 +360,13 @@ export default ChildComponent;
 ```
 
 ## Mini-projet
+
+J'ai préparé un mini-projet sur Codesandbox afin de voir les styled-components avec un thème dans un vrai projet. A partir du jeu de données fournit par [Rolling Stone Magazine's Top 500 Albums](https://data.world/notgibs/rolling-stones-top-500-albums) l'apllication affiche (seulement) le Top 50. De belles sessions d'écoute ou de ré-écoute à prévoir! Le classement date de 2012, ne soyez pas triste si votre album favori n'apparaît pas, il est peut-être sorti après...
+
+![Capture d'écran: application Rolling Stone Top50 avec les styled-components](/assets/sc-rollingstone-top50.jpg)
+
+<p class="codesandbox-button">
+  <a href="https://codesandbox.io/s/styled-components-theme-f5lie?fontsize=14&hidenavigation=1&theme=dark">
+    <img alt="Edit styled-components - theme" src="https://codesandbox.io/static/img/play-codesandbox.svg">
+  </a>
+</p>
