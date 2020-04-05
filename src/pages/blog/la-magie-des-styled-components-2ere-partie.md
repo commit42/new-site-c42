@@ -137,9 +137,12 @@ const App = () => (
 export default App;
 ```
 
-![Capture d'écran: notifications avec les styled-components](/assets/sc-messages.jpg)
-
-[![Edit styled-components - notif](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/styled-components-notif-5ir3b?fontsize=14&hidenavigation=1&theme=dark)
+<iframe
+     src="https://codesandbox.io/embed/styled-components-notif-5ir3b?fontsize=14&hidenavigation=1&theme=dark"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="styled-components - notif"
+     sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
+   ></iframe>
 
 On limite ainsi le nombre de props utilisées sur le composant `<Message>`, le code du composant `<App />` est plus lisible.
 
@@ -301,9 +304,12 @@ const Box2 = styled.div`
 `;
 ```
 
-![Capture d'écran: faire référence à un styled-component avec les styled-components](/assets/sc-box.jpg)
-
-[![Edit styled-components - selector](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/styled-components-selector-ke65f?fontsize=14&hidenavigation=1&theme=dark)
+<iframe
+     src="https://codesandbox.io/embed/styled-components-selector-ke65f?fontsize=14&hidenavigation=1&theme=dark"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="styled-components - selector"
+     sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
+   ></iframe>
 
 Pour utiliser de la même façon un composant qui n'a pas été créé grâce avec la fonction `styled` il suffit de l'étendre avec la même fonction:
 
@@ -364,12 +370,279 @@ export default ChildComponent;
 
 ## Mini-projet
 
-J'ai préparé un mini-projet sur Codesandbox afin de voir les styled-components avec un thème dans un vrai projet. A partir du jeu de données fournit par [Rolling Stone Magazine's Top 500 Albums](https://data.world/notgibs/rolling-stones-top-500-albums) l'apllication affiche (seulement) le Top 50. De belles sessions d'écoute ou de ré-écoute à prévoir! Le classement date de 2012, ne soyez pas triste si votre album favori n'apparaît pas, il est peut-être sorti après...
+J'ai préparé un mini-projet qui utilise les styled-components avec un thème.
+A partir du jeu de données fournit par [Rolling Stone Magazine's Top 500 Albums](https://data.world/notgibs/rolling-stones-top-500-albums) l'application affiche (seulement) le Top 50.
+De belles sessions d'écoute ou de ré-écoute à prévoir! A noter, le classement de 2012.
 
-![Capture d'écran: application Rolling Stone Top50 avec les styled-components](/assets/sc-rollingstone-top50.jpg)
+<iframe
+     src="https://codesandbox.io/embed/styled-components-theme-f5lie?fontsize=14&hidenavigation=1&theme=dark"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="styled-components - theme"
+     sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
+   ></iframe>
 
-<p class="codesandbox-button">
-  <a href="https://codesandbox.io/s/styled-components-theme-f5lie?fontsize=14&hidenavigation=1&theme=dark">
-    <img alt="Edit styled-components - theme" src="https://codesandbox.io/static/img/play-codesandbox.svg">
-  </a>
-</p>
+Voici la définition du thème dans le fichier `theme.js`. On va pouvoir définir toutes les valeurs et règles CSS réutilisables dans le projet: couleurs, typographie, espaces, ombres, etc. Travailler avec un thème présente plusieurs avantages, cela apporte de la cohérence au design et cela permet également un gain de productivité. Au lieu de passer des heures à ajuster par petites touches de 0.05rem (ça vous rappelle des souvenirs...?) le choix va se faire à travers une échelle prédéfinie, par exemple en utilisant les tailles popularisées par bootstrap: xs, sm, md, xl, lg.
+
+```JSX
+// theme.js
+
+export default {
+  colors: {
+    red: "#F24738",
+    green: "#55C6B3",
+    yellow: "#F9D274",
+    brown: "#A56F5D",
+    white: "#fff",
+    whiteTranslucid: "rgba(255,255,255,.9)",
+    black: "#222"
+  },
+  fonts: {
+    families: {
+      font1: "Vidaloka, sans-serif",
+      font2: "Lobster, sans-serif"
+    },
+    sizes: {
+      body: "1rem",
+      mainTitle: "calc(2rem + 3vw)",
+      size1: "1.953rem",
+      size2: "1.563rem",
+      size3: "1.25rem"
+    }
+  },
+  spaces: {
+    xs: "0.25rem",
+    sm: "0.5rem",
+    md: "1rem",
+    lg: "2rem",
+    xl: "4rem"
+  },
+  borders: {
+    radius: "0.3rem"
+  },
+  shadows: {
+    text: "3px 3px 0 rgba(0, 0, 0)",
+    box: "2px 2px 8px rgba(0, 0, 0, 0.6)",
+    inset: "inset 2px 2px 4px rgba(0, 0, 0, 0.6)"
+  }
+};
+```
+
+Lorsque l'on découpe son projet en composants, nous pouvons alors définir pour chacun nos styled-components dans un fichier séparé. J'ai souvent vu ces fichiers nommés `styles.js` mais je préfère les appeler `styled.js`, comme ça pas de surprise.
+Dans ce mini-projet, très basique, il n'y a qu'un fichier.
+
+```JSX
+//styled.js
+
+import styled, { css } from "styled-components";
+
+const centerXY = css`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+const titleStyle = css`
+  margin: ${({ theme }) => `${theme.spaces.md} 0`};
+  font-family: ${({ theme }) => theme.fonts.families.font2};
+  text-align: center;
+  text-shadow: ${({ theme }) => theme.shadows.text};
+`;
+
+const Chip = styled.div`
+  padding: ${({ theme }) => `${theme.spaces.xs} ${theme.spaces.sm}`};
+  border-radius: ${({ theme }) => theme.borders.radius};
+`;
+
+export const Container = styled.div`
+  padding: ${({ theme }) => theme.spaces.sm};
+  /* background-image overlay */
+  background: rgba(0, 0, 0, 0.5);
+`;
+
+export const Title = styled.h1`
+  ${titleStyle};
+  font-size: ${({ theme }) => theme.fonts.sizes.mainTitle};
+  color: ${({ theme }) => theme.colors.red};
+`;
+
+export const SubTitle = styled.p`
+  ${titleStyle};
+  font-size: ${({ theme }) => theme.fonts.sizes.size1};
+  color: ${({ theme }) => theme.colors.white};
+`;
+
+export const List = styled.ul`
+  width: 600px;
+  max-width: 100%;
+  padding: 0;
+  margin: 0 auto;
+  list-style: none;
+`;
+
+export const Album = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: ${({ theme }) => `${theme.spaces.md} ${theme.spaces.lg}`};
+  margin-bottom: ${({ theme }) => theme.spaces.md};
+  background: ${({ theme }) => theme.colors.whiteTranslucid};
+  box-shadow: ${({ theme }) => theme.shadows.box};
+  border-radius: ${({ theme }) => theme.borders.radius};
+
+  @media (min-width: 500px) {
+    flex-direction: row;
+  }
+`;
+
+export const Number = styled.div`
+  ${centerXY};
+  flex-shrink: 0;
+  width: 4rem;
+  height: 4rem;
+  margin-bottom: ${({ theme }) => theme.spaces.md};
+  font-family: ${({ theme }) => theme.fonts.families.font2};
+  font-size: ${({ theme }) => theme.fonts.sizes.size1};
+  color: ${({ theme }) => theme.colors.white};
+  background: ${({ theme }) => theme.colors.red};
+  border-radius: 50%;
+  box-shadow: ${({ theme }) => theme.shadows.inset};
+
+  @media (min-width: 500px) {
+    margin-bottom: 0;
+    margin-right: ${({ theme }) => theme.spaces.lg};
+  }
+`;
+
+export const AlbumData = styled.div`
+  width: 100%;
+`;
+
+export const Artist = styled.div`
+  margin-bottom: ${({ theme }) => theme.spaces.sm};
+  font-size: ${({ theme }) => theme.fonts.sizes.size3};
+  text-align: center;
+
+  @media (min-width: 500px) {
+    font-size: ${({ theme }) => theme.fonts.sizes.size2};
+    text-align: left;
+  }
+`;
+
+export const AlbumTitle = styled.h2`
+  margin-top: 0;
+  margin-bottom: ${({ theme }) => theme.spaces.md};
+  font-size: ${({ theme }) => theme.fonts.sizes.size2};
+  text-align: left;
+  color: ${({ theme }) => theme.colors.red};
+
+  @media (min-width: 500px) {
+    font-size: ${({ theme }) => theme.fonts.sizes.size1};
+    text-align: left;
+  }
+`;
+
+export const Infos = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+`;
+
+export const Year = styled(Chip)`
+  color: ${({ theme }) => theme.colors.black};
+  background: ${({ theme }) => theme.colors.yellow};
+`;
+
+export const Genre = styled(Chip)`
+  color: ${({ theme }) => theme.colors.white};
+  background: ${({ theme }) => theme.colors.green};
+`;
+```
+
+On retrouve ici l'usage du helper `css` qui permet ici de créer des ensembles de règles réutilisables, équivalent des placeholders en SASS. Le composant `<Chip/>` sert de de base commune aux composants `<Year />` et `<Genre />`, si nous souhaitons modifier le padding ou l'arrondi de la bordure il suffit de le faire une fois au niveau du composant `<Chip/>`. Et on voit surtout l'usage intense de la fonction permettant de récupérer les valeurs du thème.
+
+A ce stade je serais de mauvaise fois si je disais qu'en l'état l'utilisation du thème est parfaite. Lorsqu'on y fait souvent référence l'utilisation de la fonction permettant de récupérer les valeurs vient perturber la lisibilité du code. Heureusement nous sommes dans un fichier JavaScript, il suffit donc de se créer un ou plusieurs helpers qui viennent remplacer cette fonction. Par exemple: `${theme("colors.white")}` ou `${th("colors.white")}` au lieu de `${({ theme }) => theme.colors.white};`. Cela fera probablement l'objet d'un petit article supplémentaire.
+
+Pour finir nous avons voir ensemble le fichier `App.js` qui contient notre application.
+
+```JSX
+import React from "react";
+import { createGlobalStyle, ThemeProvider } from "styled-components";
+
+import theme from "./theme";
+import {
+  Container,
+  Title,
+  SubTitle,
+  List,
+  Album,
+  Number,
+  Year,
+  Infos,
+  Genre,
+  Artist,
+  AlbumTitle,
+  AlbumData
+} from "./styled";
+import data from "./rolling-stones-top-50.json";
+import bgImage from "./bg.jpg";
+
+const GlobalStyle = createGlobalStyle`
+  html {
+    height: 100%;
+    box-sizing: border-box;
+  }
+
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  body {
+    height: 100%;
+    font-family: ${({ theme }) => theme.fonts.families.font1};
+    font-family: ${({ theme }) => theme.fonts.sizes.body};
+    margin: 0;
+    padding: 0;
+    background: #5a5b5d url(${bgImage}) no-repeat fixed center;
+    background-size: cover;
+  }
+`;
+
+const App = () => (
+  <ThemeProvider theme={theme}>
+    <GlobalStyle />
+    <Container>
+      <Title>Rolling Stone Magazine</Title>
+      <SubTitle>Top 50 of all time</SubTitle>
+      <List>
+        {data.map(({ number, year, album, artist, genre }) => (
+          <Album key={`${artist}-${album}`}>
+            <Number>{number}</Number>
+            <AlbumData>
+              <Artist>{artist}</Artist>
+              <AlbumTitle>{album}</AlbumTitle>
+              <Infos>
+                <Year>{year}</Year>
+                <Genre>{genre}</Genre>
+              </Infos>
+            </AlbumData>
+          </Album>
+        ))}
+      </List>
+    </Container>
+  </ThemeProvider>
+);
+export default App;
+
+```
+
+On voit ici comment est utilisé le `<ThemeProvider />`, il vient entourer l'ensemble de l'application afin que tous les composants enfants puissent accéder au thème grâce au [Contexte React](https://fr.reactjs.org/docs/context.html).
+On retrouve ici notre helper `createGlobalStyle` qui nous permet de créer un composant contenant le style global, `<GlobalStyle/>` (mais vous pouvez l'appeler `<Michel/>` si vous le souhaitez, cela fonctionnera aussi bien). Ce composant est généralement inséré juste après le `<ThemeProvider />`, et il est plus propre de le définir dans un fichier séparé, comme le thème.
+
+A l'arrivée le code de l'applicaiton est très lisible car il n'y a aucune classe, seulement des composants dont la fonction est bien définie.
+
+## Conclusion
+
+J'espère que cette présentation des styled-components vous aura donné envie d'essayer cette merveilleuse librairie, ou peut-être de découvrir certains aspets peu connus.
+
+Chez Commit42 on est fans!
