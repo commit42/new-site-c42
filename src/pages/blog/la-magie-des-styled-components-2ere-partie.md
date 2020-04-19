@@ -11,13 +11,13 @@ tags:
 
 Cet article est le 2e d'une série consacrée à l'utilisation des styled-components avec React, pour lire la première partie c'est ici: [La magie des styled-components - 1ère partie](https://www.commit42.com/blog/la-magie-des-styled-components-1ere-partie/).
 
-## Nouvelle version de la librairie!
-
 Avant de rentrer dans le vif du sujet une bonne nouvelle, depuis la publication du premier article la v5 est sortie. Au programme des performances accrues et un bundle plus léger.
 
 > 50% faster server-side rendering, 22% faster client-side rendering, 31% smaller bundle size, RTL support and no breaking changes! -- <cite>Evan Jacobs, [Announcing styled-components v5: Beast Mode](https://medium.com/styled-components/announcing-styled-components-v5-beast-mode-389747abd987)</cite>
 
 Avec de tels arguments il n'y a pas à hésiter, nous avons testé cette nouvelle version sur un de nos projets et nous n'avons rencontré aucun problème.
+
+Après cette bonne nouvelle nous pouvons maintenant continuer notre découverte de la librairie et des avantages qu'elle nous procure.
 
 ## Adapter le style en fonction des props
 
@@ -244,7 +244,7 @@ const StopButton = styled(Button)`
 
 ## Faire référence à un composant
 
-Un composant peut faire référence à lui-même grâce au symbole `&`. Il est particulièrement utilise pour définir des pseudo-éléments et pseudo-classes:
+Un composant peut faire référence à lui-même grâce au symbole `&`. Il est particulièrement utile pour définir des pseudo-éléments et pseudo-classes:
 
 ```JSX
 const Link = styled.a`
@@ -552,7 +552,7 @@ export const Genre = styled(Chip)`
 `;
 ```
 
-On retrouve ici l'usage du helper `css` qui permet ici de créer des ensembles de règles réutilisables, équivalent des placeholders en SASS. Le composant `<Chip/>` sert de de base commune aux composants `<Year />` et `<Genre />`, si nous souhaitons modifier le padding ou l'arrondi de la bordure il suffit de le faire une fois au niveau du composant `<Chip/>`. Et on voit surtout l'usage intense de la fonction permettant de récupérer les valeurs du thème.
+On retrouve ici l'usage du helper `css` qui permet de créer des ensembles de règles réutilisables, équivalent des placeholders en SASS. Le composant `<Chip/>` sert de de base commune aux composants `<Year />` et `<Genre />`, si nous souhaitons modifier le padding ou l'arrondi de la bordure il suffit de le faire une fois au niveau du composant `<Chip/>`. Et on voit surtout l'usage intense de la fonction permettant de récupérer les valeurs du thème.
 
 A ce stade je serais de mauvaise fois si je disais qu'en l'état l'utilisation du thème est parfaite. Lorsqu'on y fait souvent référence l'utilisation de la fonction permettant de récupérer les valeurs vient perturber la lisibilité du code. Heureusement nous sommes dans un fichier JavaScript, il suffit donc de se créer un ou plusieurs helpers qui viennent remplacer cette fonction. Par exemple: `${theme("colors.white")}` ou `${th("colors.white")}` au lieu de `${({ theme }) => theme.colors.white};`. Cela fera probablement l'objet d'un petit article supplémentaire.
 
