@@ -360,7 +360,7 @@ export default ChildComponent;
 ## Mini-projet
 
 J'ai préparé un mini-projet qui utilise les styled-components avec un thème.
-A partir du jeu de données fournit par [Rolling Stone Magazine's Top 500 Albums](https://data.world/notgibs/rolling-stones-top-500-albums) l'application affiche (seulement) le Top 50.
+A partir du jeu de données [Rolling Stone Magazine's Top 500 Albums](https://data.world/notgibs/rolling-stones-top-500-albums) l'application affiche (seulement) le Top 50.
 
 De belles sessions d'écoute ou de ré-écoute à prévoir! A noter, le classement date de 2012.
 
