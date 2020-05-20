@@ -58,17 +58,13 @@ Si tu sais faire un peu de front et notamment React ce sera un sacré bonus.
 
 Evidemment il ne s'agirait pas d'oublier le plus important : le café ! On a un des meilleurs cafés de Toulouse, [Hayuco](https://www.hayuco.coffee/), et une machine à café Jura pour aller avec.
 
-![equipement](/assets/dessin-sans-titre.png "equipement")
+![Equipement](/assets/dessin-sans-titre.png "Equipement")
 
 On travaille entourés de deux autres entreprises : Occitech (dont on est la spin-off) ainsi qu’Ethersys qui fait de l’hébergement et administration système Web et du DevOps. On partage avec elles la fibre, les conseils, les repas, les conférences et même les verres en terrasse.
 
 ![](/assets/locaux.png)
 
-
 Nous disposons d'une cuisine équipée au centre de nos locaux (lave-vaisselle, cuisinière, frigo), et en bas tu trouveras des boissons fraîches à disposition, un espace détente avec canapés et même… une salle de musique insonorisée !
-
-
-
 
 # Emploi proposé
 
