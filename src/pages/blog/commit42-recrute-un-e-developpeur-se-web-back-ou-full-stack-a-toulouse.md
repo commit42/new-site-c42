@@ -9,7 +9,7 @@ tags:
   - php
   - nodejs
 ---
-# Profil recherché
+## Profil recherché
 
 On attend un⋅e candidat⋅e ayant 2 ans d’expérience minimum, avec une soif d’apprendre et l’envie de faire de beaux commits et de belles PR.
 
@@ -17,7 +17,7 @@ On recherche quelqu’un à l’aise en back, mais qui n’a pas peur de faire u
 
 Les diplômes ? C’est du papier. On jugera l’expérience et la passion.
 
-# Activités de commit42
+## Activités de commit42
 
 Nous sommes une entreprise de prestation avec des profils clients très variés. 
 Une partie de notre activité consiste en du e-commerce basé sur Magento mais nous regardons aussi vers Sylius.
@@ -26,7 +26,7 @@ La majorité de notre activité (et la volonté de l’équipe) consiste à réa
 
 Et parfois entre eux : interfacer du e-commerce avec des données d’entrée provenant de plusieurs sources…. ou réaliser un PoC de boutique réunissant Sylius avec Gatsby : [Gatsbylius](https://gatsbylius.com/)
 
-# Technos attendues
+## Technos attendues
 
 **PHP** (on a beaucoup de projets utilisant ce langage : Magento, cakePHP, Symfony)
 
@@ -34,15 +34,15 @@ Et parfois entre eux : interfacer du e-commerce avec des données d’entrée pr
 
 Si tu sais faire un peu de front et notamment React ce sera un sacré bonus.
 
-# Environnement
+## Environnement
 
-## Les collègues :
+### Les collègues :
 
 * 2 dev Front
 * 1 dev Full Stack
 * 1 facilitateur de projets (pour que les devs se concentrent sur leur travail)
 
-## Fonctionnement interne
+### Fonctionnement interne
 
   Les décisions sont prises par l’équipe : Stratégie, estimations, projets, salaires…
 
@@ -52,7 +52,7 @@ Si tu sais faire un peu de front et notamment React ce sera un sacré bonus.
 
   On ne lésine jamais sur ce qui peut améliorer les compétences, les conditions de travail et les rencontres avec d’autres acteurs du milieu (Conférences, formations, certifications, sponsoring de meetups… )
 
-## Locaux
+### Locaux
 
   Le bon travail se fait avec les bons outils : on a des PC puissants et des postes de travail très modulaires et ergonomiques : assis, debout, sur une fitness ball …
 
@@ -64,7 +64,7 @@ Nous disposons d'une cuisine équipée au centre de nos locaux (lave-vaisselle, 
 
 Evidemment il ne s'agirait pas d'oublier le plus important : le café ! On a un des meilleurs cafés de Toulouse, [Hayuco](https://www.hayuco.coffee/), et une machine à café Jura pour aller avec.
 
-# Emploi proposé
+## Emploi proposé
 
 CDI **cadre** avec convention Syntec
 
@@ -79,12 +79,12 @@ On préfère parler en net, mais pour aider à comparer avec des offres moins cl
 
 Les salaires sont augmentés régulièrement pour être en adéquation avec l’activité.
 
-## Conditions
+### Conditions
 
 * Télétravail possible dès la période d’essai terminée. Pas de full remote, les interactions d’équipes sont trop importantes pour nous.
 * Temps partiel négociable dès la fin de la période d’essai (4/5e minimum)
 
-## Valeurs humaines
+### Valeurs humaines
 
 * Nous visons autant que possible un équilibre sain entre travail et vie personnelle
 * Les salaires ne sont pas liés aux diplômes mais aux compétences réelles
