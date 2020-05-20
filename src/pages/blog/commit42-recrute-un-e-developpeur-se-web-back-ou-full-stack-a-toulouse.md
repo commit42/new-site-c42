@@ -21,7 +21,7 @@ Les salaires sont augmentés régulièrement pour être en adéquation avec l’
 
 ## Profil recherché
 
-On attend un⋅e candidat⋅e ayant entre 2 et 4 ans d’expérience, avec une soif d’apprendre et l’envie de faire des beaux commits et des belles PR. 
+On attend un⋅e candidat⋅e ayant entre 2 et 4 ans d’expérience, avec une soif d’apprendre et l’envie de faire de beaux commits et de belles PR. 
 
 On recherche quelqu’un à l’aise en back, mais qui n’a pas peur de faire un peu de front de temps à autres, notamment du React… ou encore mieux, un⋅e Full Stack !
 
