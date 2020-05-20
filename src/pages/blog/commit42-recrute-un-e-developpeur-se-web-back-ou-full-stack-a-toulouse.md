@@ -57,7 +57,9 @@ On ne lésine jamais sur ce qui peut améliorer les compétences, les conditions
 
 Le bon travail se fait avec les bons outils : on a des PC puissants et des postes de travail très modulaires et ergonomiques : assis, debout, sur une fitness ball …
 
-On travaille dans les locaux d’Occitech (dont on est la spin-off) ainsi qu’Ethersys qui fait de l’hébergement et administration système Web et du DevOps, avec qui on partage la fibre, les conseils, les repas, les conférences et même les verres en terrasse.
+![](/assets/locaux.png)
+
+On travaille entourés de deux autres entreprises : Occitech (dont on est la spin-off) ainsi qu’Ethersys qui fait de l’hébergement et administration système Web et du DevOps, avec qui on partage la fibre, les conseils, les repas, les conférences et même les verres en terrasse.
 
 Nous disposons d'une cuisine équipée au centre de nos locaux (lave-vaisselle, cuisinière, frigo), et en bas tu trouveras des boissons fraîches à disposition, un espace détente avec canapés et même… une salle de musique insonorisée !
 
