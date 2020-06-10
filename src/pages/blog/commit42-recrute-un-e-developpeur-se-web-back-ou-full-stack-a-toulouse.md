@@ -72,12 +72,12 @@ CDI **cadre** avec convention Syntec
 
 Salaire entre 1950 euros et 2250€ nets + d’autres avantages :
 
-* Intéressement de **33%** sur le bénéfice (équivalent d’un 13e mois ces 2 dernières années ! )
+* Intéressement de **20%** sur le bénéfice (équivalent d’un 13e mois ces 2 dernières années ! )
 * Prime de dépassement d’objectif (**en moyenne ~320€/mois net** depuis l’été dernier, dont prime Macron)
 
 Sans compter d’autres avantages tels que les tickets resto, les chèques vacances, les chèques cadeaux à Noël et une bonne mutuelle à 100% parce que la santé c’est important.
 
-On préfère parler en net, mais pour aider à comparer avec des offres moins claires, ça donne environ 2500 à 3000 brut/mois ou **entre 31K€ et 36K€ brut annuel.** (hors autres avantages et primes)
+On préfère parler en net, mais pour aider à comparer avec des offres moins claires, ça donne environ 2500 à 3000 brut/mois ou **entre 30K€ et 36K€ brut annuel.** (hors autres avantages et primes)
 
 Les salaires sont augmentés régulièrement pour être en adéquation avec l’activité.
 
