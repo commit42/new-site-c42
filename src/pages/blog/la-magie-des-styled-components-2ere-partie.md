@@ -1,5 +1,5 @@
 ---
-title: La magie des styled-components - 2ère partie
+title: La magie des styled-components - 2ème partie
 date: 2020-06-11T20:43:16.685Z
 author: Mathieu
 thumbnail: /assets/johannes-plenio-1vzlw-ihjam-unsplash-1-.jpg
