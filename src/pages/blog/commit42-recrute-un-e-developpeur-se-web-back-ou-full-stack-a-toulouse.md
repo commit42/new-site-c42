@@ -1,6 +1,6 @@
 ---
 title: commit42 recrute un⋅e développeur⋅se web back ou Full Stack à Toulouse
-date: 2020-05-20T12:24:53.705Z
+date: 2020-09-03T12:24:53.705Z
 author: Thomas
 thumbnail: /assets/commit42-recrute.jpg
 tags:
