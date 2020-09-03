@@ -77,9 +77,9 @@ Salaire entre 1950 euros et 2250€ nets + d’autres avantages :
 
 Sans compter d’autres avantages tels que les tickets resto, les chèques vacances, les chèques cadeaux à Noël et une bonne mutuelle à 100% parce que la santé c’est important.
 
-On préfère parler en net, mais pour aider à comparer avec des offres moins claires, ça donne environ 2500 à 3000 brut/mois ou **entre 30K€ et 36K€ brut annuel.** (hors autres avantages et primes)
+On préfère parler en net, mais pour aider à comparer avec des offres moins claires, ça donne environ 2500 à 3000 brut/mois ou **entre 30K€ et 36K€ brut annuel.** Si on ajoute les avantages, les primes, l’intéressement, nous arrivons à **un réel de 41,6K brut annuel** sur le dernier exercice !
 
-Les salaires sont augmentés régulièrement pour être en adéquation avec l’activité.
+Les salaires sont régulièrement augmentés pour être en adéquation avec l’activité.
 
 ## Conditions
 
